@@ -1,0 +1,135 @@
+{
+  "runDate": "2026-04-03",
+  "runNumber": 2,
+  "keywords": [
+    "wireless cat water fountain",
+    "cat water fountain stainless steel wireless",
+    "small dog water fountain wireless",
+    "automatic dog water fountain stainless steel",
+    "water fountain for small dogs wireless",
+    "wireless stainless steel pet water fountain"
+  ],
+  "competitors": [
+    {
+      "rank": 1, "brand": "PETKIT", "asin": "B0BF5CQMKX",
+      "price": 25.99, "stars": 4.3, "reviews": 13496,
+      "capacity": "1.85L/65oz", "battery": "N/A (wired, wireless pump)",
+      "motionSensor": false, "material": "Plastic (wireless pump)",
+      "titleLead": "PETKIT New Cat Water Fountain with Wireless Pump, Ultra Quiet 65oz/1.85L",
+      "angle": "Brand trust + volume: wireless pump 3.0, easy clean",
+      "keywordsInTitle": ["petkit", "wireless pump", "ultra quiet", "easy to clean"]
+    },
+    {
+      "rank": 2, "brand": "FEELNEEDY", "asin": "B0D1CH5KMY",
+      "price": 42.99, "stars": 4.4, "reviews": 4893,
+      "capacity": "3.5L/118oz", "battery": "45 days / 4000mAh",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Wireless Cat Water Fountain [Water & Battery Separation] FEELNEEDY Stainless Steel",
+      "angle": "Safety-first: separated battery/water design",
+      "keywordsInTitle": ["wireless", "stainless steel", "battery separation", "4000mAh"]
+    },
+    {
+      "rank": 3, "brand": "PawPoll", "asin": "B0DPX9RJZB",
+      "price": 22.99, "stars": 4.2, "reviews": 3476,
+      "capacity": "3.2L/108oz", "battery": "Not stated",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Wireless Cat Water Fountain Stainless Steel - 3.2L/108oz Cordless",
+      "angle": "Value wireless stainless steel at aggressive price",
+      "keywordsInTitle": ["wireless", "stainless steel", "cordless", "battery operated", "ultra silent"],
+      "newEntrant": true
+    },
+    {
+      "rank": 4, "brand": "PETLIBRO", "asin": "B0FDKVJNXB",
+      "price": 81.99, "stars": 4.4, "reviews": 2276,
+      "capacity": "3L/101oz", "battery": "30 days",
+      "motionSensor": false, "material": "Stainless Steel Tray",
+      "titleLead": "PETLIBRO Upgrade Cat Water Fountain, Cordless Cat Fountain Battery Operated, App Monitoring",
+      "angle": "Smart tech: app hydration tracking, 5GHz WiFi",
+      "keywordsInTitle": ["cordless", "app monitoring", "wifi", "stainless steel"]
+    },
+    {
+      "rank": 5, "brand": "DownyPaws", "asin": "B0C8SMHH6G",
+      "price": 26.57, "stars": 4.2, "reviews": 2245,
+      "capacity": "2.5L/84oz", "battery": "30 days / 4000mAh",
+      "motionSensor": true, "material": "Plastic (BPA-Free)",
+      "titleLead": "DownyPaws Cat Water Fountain Cordless, 84oz/2.5L Fursink Wireless",
+      "angle": "Budget-friendly: BPA-free, quiet, motion sensor",
+      "keywordsInTitle": ["downyPaws", "cordless", "wireless", "motion sensor", "quiet", "bpa-free"]
+    },
+    {
+      "rank": 6, "brand": "APETDOLA", "asin": "B0BV6QPXF2",
+      "price": 58.88, "stars": 4.3, "reviews": 1287,
+      "capacity": "4L/135oz", "battery": "N/A (battery operated, no days stated)",
+      "motionSensor": false, "material": "Stainless Steel",
+      "titleLead": "Wireless Cat Water Fountain Stainless Steel,135floz/4L Battery Operated",
+      "angle": "Capacity king: 4L multi-cat/outdoor",
+      "keywordsInTitle": ["wireless", "stainless steel", "4L", "multi cat", "cordless outdoor"]
+    },
+    {
+      "rank": 7, "brand": "oneisall", "asin": "B0DNJT76WJ",
+      "price": 39.99, "stars": 4.3, "reviews": 809,
+      "capacity": "3.5L/118oz", "battery": "60 days / 5000mAh",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "oneisall Wireless Cat Water Fountain, 3.5L/118oz Battery Operated Stainless Steel",
+      "angle": "Safety + longevity: 60 days, 5000mAh, outdoor",
+      "keywordsInTitle": ["oneisall", "wireless", "stainless steel", "battery operated", "motion sensor"]
+    },
+    {
+      "rank": 8, "brand": "TOONIOOS", "asin": "B0DJ75MRST",
+      "price": 29.99, "stars": 4.1, "reviews": 715,
+      "capacity": "3.2L/108oz", "battery": "60 days / 4000mAh",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Cat Water Fountain Wireless Cordless: Cat Fountain Battery Operated - Stainless Steel",
+      "angle": "Battery-forward: 60 days claim at budget price",
+      "keywordsInTitle": ["wireless", "cordless", "stainless steel", "60 day", "motion sensor"]
+    },
+    {
+      "rank": 9, "brand": "NOBXBON", "asin": "B0FPM74S54",
+      "price": 29.99, "stars": 4.4, "reviews": 663,
+      "capacity": "2.6L/88oz", "battery": "7 days",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Wireless Cat Water Fountain Cordless: Stainless Steel Cat Fountains for Drinking - 88oz/2.6L",
+      "angle": "Value: premium features at $30",
+      "keywordsInTitle": ["wireless", "cordless", "stainless steel", "battery operated", "motion sensor"]
+    },
+    {
+      "rank": 10, "brand": "Emdoro", "asin": "B0FN8JG923",
+      "price": 35.99, "stars": 4.6, "reviews": 301,
+      "capacity": "3.2L/108oz", "battery": "N/A",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Cat Water Fountain Wireless - Stainless Steel 3.2L/108oz Cordless",
+      "angle": "Highest rated: safety + filtration + quiet",
+      "keywordsInTitle": ["wireless", "stainless steel", "cordless", "motion sensor", "quiet pump"]
+    }
+  ],
+  "exited": [
+    {
+      "brand": "PETKIT MAX", "asin": "B0CXHM344N",
+      "reason": "Replaced by PawPoll (B0DPX9RJZB) which has far more reviews (3,476 vs 446)"
+    }
+  ],
+  "pawPure": {
+    "asin_main": "B0DJHQVJYF",
+    "asin_2": "B0GMDM6CG2",
+    "asin_3": "B0FWXJ1GKT",
+    "price": 49.99,
+    "stars": 4.5,
+    "reviews": 20,
+    "capacity": "3L/108oz",
+    "battery": "not stated",
+    "motionSensor": false,
+    "material": "Stainless Steel Tray + ABS",
+    "alert": "CORRECTED: Previous ASIN B0C8TG35BF was incorrect (belongs to DownyPaws). Correct main ASIN is B0DJHQVJYF. CI data needs to be re-collected against correct ASINs."
+  },
+  "keyFindings": [
+    "NEW ENTRANT: PawPoll (B0DPX9RJZB) entered top 10 with 3,476 reviews at $22.99 — aggressive budget stainless steel positioning",
+    "EXITED: PETKIT MAX (B0CXHM344N) dropped from top 10",
+    "PRICE INCREASE: PETLIBRO raised price from $76.47 to $81.99 (+$5.52)",
+    "CORRECTED: Previous ASIN B0C8TG35BF was wrong — actual Paw Pure ASINs are B0DJHQVJYF (main), B0GMDM6CG2, B0FWXJ1GKT. No hijack occurred.",
+    "Review velocity very low across most competitors this period (0-3 reviews gained)",
+    "Battery life in days: 7/10 competitors feature this claim — Paw Pure does not",
+    "Motion sensor: 8/10 competitors feature this — Paw Pure does not",
+    "Only product stating actual dB number (20 dB)",
+    "Review gap remains critical: 20 reviews vs 301-13,496"
+  ]
+}

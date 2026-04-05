@@ -1,0 +1,208 @@
+{
+  "date": "2026-04-04",
+  "period": "7-day",
+  "source": "Seller Central + Amazon Advertising — scraped via Chrome",
+  "status": "COMPLETE",
+  "timestamp": "2026-04-04T18:30:00Z",
+
+  "business_reports": {
+    "note": "Date range defaulted to 31-day custom (03/04–04/04/2026). Shadow DOM prevented changing to Last 7 Days. 7-day specific data not separately available.",
+    "date_range": "03/04/2026 – 04/04/2026",
+    "period_days": 31,
+    "asins": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz",
+        "sessions": 232,
+        "session_percentage": 90.63,
+        "page_views": 328,
+        "page_view_percentage": 91.36,
+        "featured_offer_percentage": 100,
+        "units_ordered": 7,
+        "cvr_estimated": 3.02
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges",
+        "sessions": 17,
+        "session_percentage": 6.64,
+        "page_views": 24,
+        "page_view_percentage": 6.69,
+        "featured_offer_percentage": 100,
+        "units_ordered": 4,
+        "cvr_estimated": 23.53
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit (Bundle)",
+        "sessions": null,
+        "session_percentage": 2.73,
+        "page_views": null,
+        "page_view_percentage": 1.95,
+        "featured_offer_percentage": 83.33,
+        "units_ordered": null,
+        "cvr_estimated": null
+      }
+    }
+  },
+
+  "business_reports_30day": {
+    "note": "Same as business_reports since the date range was already 31 days (03/04–04/04).",
+    "see": "business_reports"
+  },
+
+  "campaign_manager": {
+    "date_range_overview": "Mar 28 – Apr 3, 2026 (7-day)",
+    "overview_metrics": {
+      "impressions": 13222,
+      "clicks": 60,
+      "branded_searches": 0,
+      "detail_page_views": 0,
+      "purchases": 0,
+      "sales": 0.00
+    },
+    "performance_lifetime": {
+      "date_range": "Jan 6 – Apr 4, 2026",
+      "total_cost": 356.08,
+      "note": "From performance chart on Campaign Manager page"
+    },
+    "campaigns": [
+      {
+        "name": "Manual Keywords Campaign",
+        "campaign_id": "A04350122JYLYFMZ59A3X",
+        "type": "MANUAL",
+        "program_type": "SP",
+        "status": "Delivering",
+        "budget_daily": 30.00,
+        "start_date": "2025-09-13",
+        "end_date": null,
+        "impressions": 25316,
+        "clicks": 218,
+        "ctr_pct": 0.86,
+        "spend": 278.82,
+        "cpc": null,
+        "cpm": 11.01,
+        "sales": 209.98,
+        "orders": 3,
+        "acos_pct": 179.91,
+        "roas": 0.56,
+        "ntb_orders": 0,
+        "ntb_sales": 0.00,
+        "currency": "USD"
+      },
+      {
+        "name": "Close Automatic Campign",
+        "campaign_id": "A022989918IF7J7DW716B",
+        "type": "AUTOMATIC",
+        "program_type": "SP",
+        "status": "Delivering",
+        "budget_daily": 15.00,
+        "start_date": "2025-08-03",
+        "end_date": null,
+        "impressions": 15483,
+        "clicks": 64,
+        "ctr_pct": 0.41,
+        "spend": 77.26,
+        "cpc": null,
+        "cpm": 4.99,
+        "sales": 119.98,
+        "orders": 3,
+        "acos_pct": 64.39,
+        "roas": 1.55,
+        "ntb_orders": 0,
+        "ntb_sales": 0.00,
+        "currency": "USD"
+      }
+    ],
+    "campaigns_total": {
+      "impressions": 40799,
+      "clicks": 282,
+      "spend": 356.08,
+      "sales": 329.96,
+      "orders": 6,
+      "acos_pct": 107.92,
+      "roas": 0.93
+    }
+  },
+
+  "fba_inventory": {
+    "scraped_from": "Manage All Inventory page",
+    "asins": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz",
+        "sku": "8V-EUFB-4UF2",
+        "status": "Active",
+        "available": 377,
+        "inbound": 0,
+        "unfulfillable": 1,
+        "reserved": 6,
+        "fulfillment": "FBA",
+        "price": 49.99,
+        "featured_offer_price": "$49.99 + $0.00",
+        "sales_30day": 249,
+        "units_sold_30day": 7,
+        "sales_rank": 144487,
+        "sales_rank_category": "Pet Supplies",
+        "total_fees_per_unit": 14.28,
+        "fba_fee_per_unit": 6.78
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges",
+        "sku": "97-VFBK-LUWE",
+        "status": "Active",
+        "available": 142,
+        "inbound": 0,
+        "unfulfillable": 0,
+        "reserved": 1,
+        "fulfillment": "FBA",
+        "price": 20.00,
+        "featured_offer_price": "$20.00 + $0.00",
+        "sales_30day": 80,
+        "units_sold_30day": 4,
+        "sales_rank": null,
+        "sales_rank_category": null,
+        "total_fees_per_unit": 3.00,
+        "fba_fee_per_unit": 3.95
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit (Bundle)",
+        "sku": "WT-QN3Z-0I9S",
+        "status": "Bundle",
+        "available": null,
+        "inbound": null,
+        "unfulfillable": null,
+        "reserved": null,
+        "fulfillment": null,
+        "price": null,
+        "sales_30day": null,
+        "units_sold_30day": null,
+        "sales_rank": null,
+        "total_fees_per_unit": null,
+        "fba_fee_per_unit": null,
+        "note": "Bundle listing — inventory data and performance not displayed separately"
+      }
+    }
+  },
+
+  "amazon_fees": {
+    "scraped_from": "Payments Dashboard — Statement View",
+    "settlement_period": "3/28/2026 – Present (Open)",
+    "settlement_scheduled_charge": {
+      "amount": -119.29,
+      "date": "2026-04-11"
+    },
+    "summary": {
+      "total_balance": -119.29,
+      "funds_available": 0.00,
+      "recent_payouts": "No recent fund transfers"
+    },
+    "net_proceeds_breakdown": {
+      "beginning_balance": 50.54,
+      "product_charges": 189.97,
+      "promo_rebates": -99.98,
+      "amazon_fees": -42.34,
+      "cost_of_advertising": null,
+      "expenses_total": -359.80,
+      "account_level_reserve": 0.00,
+      "net_proceeds": -119.29
+    },
+    "notes": "Cost of Advertising is included within the Expenses total (-$359.80) alongside Amazon fees (-$42.34) and promo rebates (-$99.98). The advertising portion = $359.80 - $42.34 - $99.98 = ~$217.48 (estimated from this period only)."
+  }
+}

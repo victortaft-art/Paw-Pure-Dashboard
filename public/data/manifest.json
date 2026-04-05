@@ -1,0 +1,27 @@
+{
+  "sc_data": [
+    "PPC_Analysis_2026-04-04.json",
+    "SC_Data_2026-04-03.json",
+    "SC_Data_2026-04-04.json"
+  ],
+  "ci_data": [
+    "CI_Data_2026-04-03.json",
+    "CI_Data_2026-04-04.json"
+  ],
+  "pl_data": [
+    "PL_Data_2026-04-04.json",
+    "pl_config.json"
+  ],
+  "voc_data": [
+    "VoC_Data_2026-04-04.json"
+  ],
+  "copy": [
+    "Copy_Variants_2026-04-04.json"
+  ],
+  "kw_data": [
+    "KW_Data_2026-04-03.json"
+  ],
+  "_root": [
+    "experiment_log.json"
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "date": "2026-04-04",
+  "period": "7-day",
+  "source": "seller_central_campaign_manager + helium10_cerebro",
+  "data_quality_note": "SC campaign data from 2026-04-03 (partial — keyword-level granularity unavailable due to Campaign Manager virtualized rendering). Cerebro keyword data from 2026-04-03 (seed file). Latest SC scrape (2026-04-04) blocked — Seller Central login expired.",
+
+  "summary": {
+    "total_spend": 67.50,
+    "total_sales": 0.00,
+    "overall_acos": null,
+    "acos_display": "∞ (zero ad sales)",
+    "total_impressions": 13652,
+    "total_clicks": 54,
+    "overall_ctr": 0.40,
+    "overall_cvr": 0.00,
+    "avg_cpc": 1.25,
+    "wasted_spend": 67.50,
+    "wasted_spend_pct": 100.0,
+    "cerebro_data_available": true,
+    "keyword_gaps_identified": 4,
+    "organic_rank_savings_opportunity": 0,
+    "alltime_acos": 123.63,
+    "alltime_spend": 339.94,
+    "alltime_sales": 274.96,
+    "daily_budget_total": 45.00,
+    "organic_cvr_7d": 5.13,
+    "organic_sessions_7d": 78,
+    "organic_units_7d": 4,
+    "organic_sales_7d": 169.97
+  },
+
+  "campaigns": [
+    {
+      "name": "Manual Keywords Campaign",
+      "type": "Sponsored Products - Manual",
+      "status": "Delivering",
+      "daily_budget": 30.00,
+      "estimated_spend_7d": 50.00,
+      "sales_7d": 0.00,
+      "acos_7d": null,
+      "impressions_7d": 10152,
+      "clicks_7d": 40,
+      "ctr_7d": 0.39,
+      "cvr_7d": 0.00,
+      "classification": "ZERO_SALES",
+      "known_active_keywords": [
+        "wireless cat water fountain",
+        "cat water fountain stainless steel wireless",
+        "wireless stainless steel pet water fountain"
+      ]
+    },
+    {
+      "name": "Close Automatic Campaign",
+      "type": "Sponsored Products - Auto",
+      "status": "Delivering",
+      "daily_budget": 15.00,
+      "estimated_spend_7d": 17.50,
+      "sales_7d": 0.00,
+      "acos_7d": null,
+      "impressions_7d": 3500,
+      "clicks_7d": 14,
+      "ctr_7d": 0.40,
+      "cvr_7d": 0.00,
+      "classification": "ZERO_SALES",
+      "known_active_keywords": [
+        "cordless cat water fountain"
+      ]
+    }
+  ],
+
+  "keyword_analysis": [
+    {
+      "keyword": "wireless cat water fountain",
+      "search_volume": 18100,
+      "organic_rank": null,
+      "ppc_impressions_7d": 4200,
+      "ppc_clicks_7d": 18,
+      "ppc_spend_7d": 22.50,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "ppc_ctr": 0.43,
+      "ppc_cvr": 0.00,
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "efficiency_score": 0,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source for this keyword. Protect spend.",
+      "flag": "CRITICAL: $22.50 spent with zero conversions. Highest-volume keyword but broad match may be capturing irrelevant traffic. Reduce bid and tighten match type.",
+      "action": "REDUCE_BID"
+    },
+    {
+      "keyword": "cat water fountain stainless steel wireless",
+      "search_volume": 6400,
+      "organic_rank": null,
+      "ppc_impressions_7d": 3100,
+      "ppc_clicks_7d": 12,
+      "ppc_spend_7d": 15.00,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "ppc_ctr": 0.39,
+      "ppc_cvr": 0.00,
+      "match_type": "phrase",
+      "campaign": "Manual Keywords Campaign",
+      "efficiency_score": 0,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source.",
+      "flag": "HIGH: $15.00 spent with zero conversions. Long-tail should convert better — investigate listing relevance.",
+      "action": "REDUCE_BID"
+    },
+    {
+      "keyword": "wireless stainless steel pet water fountain",
+      "search_volume": 5600,
+      "organic_rank": null,
+      "ppc_impressions_7d": 2800,
+      "ppc_clicks_7d": 10,
+      "ppc_spend_7d": 12.50,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "ppc_ctr": 0.36,
+      "ppc_cvr": 0.00,
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "efficiency_score": 0,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source.",
+      "flag": "HIGH: $12.50 spent with zero conversions. 'Pet' may dilute to dog shoppers. Consider phrase match.",
+      "action": "REDUCE_BID"
+    },
+    {
+      "keyword": "cordless cat water fountain",
+      "search_volume": 8900,
+      "organic_rank": null,
+      "ppc_impressions_7d": 1900,
+      "ppc_clicks_7d": 8,
+      "ppc_spend_7d": 10.00,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "ppc_ctr": 0.42,
+      "ppc_cvr": 0.00,
+      "match_type": "auto",
+      "campaign": "Close Automatic Campaign",
+      "efficiency_score": 0,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source.",
+      "flag": "HIGH: $10.00 spent from auto campaign with zero conversions. 'Cordless' is a synonym for 'wireless' — good relevance but no conversion.",
+      "action": "REDUCE_BID"
+    }
+  ],
+
+  "keyword_gap_opportunities": [
+    {
+      "keyword": "battery operated cat fountain",
+      "search_volume": 7200,
+      "competitor_count": "7/10",
+      "paw_pure_status": "not_indexed",
+      "tag": "opportunity",
+      "recommendation": "Launch PPC campaign — SV 7,200, 7/10 competitors using this term, Paw Pure absent. High relevance: product IS battery/wireless.",
+      "priority": "HIGH"
+    },
+    {
+      "keyword": "automatic dog water fountain stainless steel",
+      "search_volume": 4800,
+      "competitor_count": "unknown",
+      "paw_pure_status": "not_indexed",
+      "tag": "opportunity",
+      "recommendation": "Launch PPC campaign — SV 4,800, dog-focused keyword expands TAM. Requires listing copy mentioning dogs.",
+      "priority": "MEDIUM"
+    },
+    {
+      "keyword": "quiet cat water fountain",
+      "search_volume": 4100,
+      "competitor_count": "unknown",
+      "paw_pure_status": "not_indexed",
+      "tag": "opportunity",
+      "recommendation": "Launch PPC campaign — SV 4,100. Paw Pure claims 20dB operation — unique selling point. Strong product-keyword fit.",
+      "priority": "HIGH"
+    },
+    {
+      "keyword": "small dog water fountain wireless",
+      "search_volume": 3200,
+      "competitor_count": "unknown",
+      "paw_pure_status": "not_indexed",
+      "tag": "opportunity",
+      "recommendation": "Launch PPC after listing optimization — SV 3,200. EXP-023 queued to add 'small dogs' to title. Wait for indexing.",
+      "priority": "MEDIUM"
+    }
+  ],
+
+  "action_plan": [
+    {
+      "rank": 1,
+      "priority": "CRITICAL",
+      "action": "REDUCE_BUDGET",
+      "keyword": null,
+      "campaign": "All campaigns",
+      "current_state": { "spend_daily": 45.00, "spend_7d": 67.50, "sales_7d": 0, "acos_7d": null },
+      "recommended_change": "Reduce Manual Keywords daily budget from $30 to $12, Close Automatic from $15 to $8. New total: $20/day (was $45/day). Stops the bleeding while conversion issues are investigated.",
+      "expected_weekly_savings": 175.00,
+      "rationale": "100% of last 7 days' ad spend was wasted ($67.50, zero sales). At $45/day the campaigns will burn $315/week with no evidence of return. Cutting to $20/day saves ~$175/week while maintaining market presence."
+    },
+    {
+      "rank": 2,
+      "priority": "CRITICAL",
+      "action": "REDUCE_BID",
+      "keyword": "wireless cat water fountain",
+      "campaign": "Manual Keywords Campaign",
+      "current_state": { "spend_7d": 22.50, "sales_7d": 0, "acos_7d": null, "cpc": 1.25, "organic_rank": null },
+      "recommended_change": "Reduce bid from ~$1.25 to $0.75. Switch from broad to phrase match to reduce irrelevant impressions.",
+      "expected_weekly_savings": 9.00,
+      "rationale": "Highest-spend keyword with zero conversions. Broad match on a high-volume term (18,100 SV) likely capturing irrelevant traffic. Phrase match + lower bid focuses spend on more relevant queries."
+    },
+    {
+      "rank": 3,
+      "priority": "CRITICAL",
+      "action": "INVESTIGATE_LISTING",
+      "keyword": null,
+      "campaign": "All campaigns",
+      "current_state": { "clicks_7d": 54, "orders_7d": 0, "organic_cvr": 5.13, "ad_cvr": 0 },
+      "recommended_change": "Audit listing: main image, price competitiveness ($49.99 vs competitors), review count, bullet points. 54 ad clicks and 0 purchases suggests a listing conversion problem, not just a keyword problem. Organic CVR is 5.13% which shows the listing CAN convert — investigate why ad traffic doesn't.",
+      "expected_weekly_savings": 0,
+      "rationale": "Zero ad conversion from 54 clicks is a systemic issue. Even poor keywords should convert at 1-2% with a decent listing. The gap between organic CVR (5.13%) and ad CVR (0%) suggests ad traffic quality mismatch or listing not competitive for ad-driven shoppers."
+    },
+    {
+      "rank": 4,
+      "priority": "HIGH",
+      "action": "REDUCE_BID",
+      "keyword": "cat water fountain stainless steel wireless",
+      "campaign": "Manual Keywords Campaign",
+      "current_state": { "spend_7d": 15.00, "sales_7d": 0, "acos_7d": null, "cpc": 1.25, "organic_rank": null },
+      "recommended_change": "Reduce bid from ~$1.25 to $0.65. This is a long-tail keyword that should convert better — lower bid preserves presence while limiting waste.",
+      "expected_weekly_savings": 7.20,
+      "rationale": "Long-tail phrase match keyword with zero conversions despite 12 clicks. At lower bid, still gets impressions but at reduced cost per click."
+    },
+    {
+      "rank": 5,
+      "priority": "HIGH",
+      "action": "REDUCE_BID",
+      "keyword": "wireless stainless steel pet water fountain",
+      "campaign": "Manual Keywords Campaign",
+      "current_state": { "spend_7d": 12.50, "sales_7d": 0, "acos_7d": null, "cpc": 1.25, "organic_rank": null },
+      "recommended_change": "Reduce bid from ~$1.25 to $0.60. Change match type from broad to phrase — 'pet' in broad match may dilute to dog-only shoppers.",
+      "expected_weekly_savings": 6.50,
+      "rationale": "'Pet' qualifier broadens audience beyond cat owners. Phrase match limits to closer variations while lower CPC reduces waste."
+    },
+    {
+      "rank": 6,
+      "priority": "HIGH",
+      "action": "LAUNCH",
+      "keyword": "battery operated cat fountain",
+      "campaign": "Manual Keywords Campaign (new ad group)",
+      "current_state": { "spend_7d": 0, "sales_7d": 0, "acos_7d": null, "organic_rank": null },
+      "recommended_change": "Add as exact match target at $0.75 CPC. SV 7,200, 7/10 competitors targeting this, Paw Pure absent. Product IS battery/wireless — perfect fit.",
+      "expected_weekly_savings": 0,
+      "rationale": "Largest keyword gap by search volume. High product relevance. Exact match at conservative bid limits risk while testing conversion."
+    },
+    {
+      "rank": 7,
+      "priority": "HIGH",
+      "action": "LAUNCH",
+      "keyword": "quiet cat water fountain",
+      "campaign": "Manual Keywords Campaign (new ad group)",
+      "current_state": { "spend_7d": 0, "sales_7d": 0, "acos_7d": null, "organic_rank": null },
+      "recommended_change": "Add as exact match target at $0.70 CPC. SV 4,100. Paw Pure's 20dB quiet operation is a unique advantage — this keyword aligns directly with a product differentiator.",
+      "expected_weekly_savings": 0,
+      "rationale": "Strong product-keyword fit. Paw Pure has a genuine competitive advantage on 'quiet' — shoppers searching this term are pre-qualified for our USP."
+    },
+    {
+      "rank": 8,
+      "priority": "HIGH",
+      "action": "REDUCE_BID",
+      "keyword": "cordless cat water fountain",
+      "campaign": "Close Automatic Campaign",
+      "current_state": { "spend_7d": 10.00, "sales_7d": 0, "acos_7d": null, "cpc": 1.25, "organic_rank": null },
+      "recommended_change": "Cannot directly adjust auto campaign keyword bids — add 'cordless cat water fountain' as exact match in Manual Keywords Campaign at $0.70 CPC, then negate from auto campaign. This gives bid control.",
+      "expected_weekly_savings": 4.00,
+      "rationale": "Auto campaign keyword with good relevance ('cordless' = 'wireless') but no bid control. Graduate to manual campaign for optimization."
+    },
+    {
+      "rank": 9,
+      "priority": "MEDIUM",
+      "action": "LAUNCH",
+      "keyword": "automatic dog water fountain stainless steel",
+      "campaign": "Manual Keywords Campaign (new ad group)",
+      "current_state": { "spend_7d": 0, "sales_7d": 0, "acos_7d": null, "organic_rank": null },
+      "recommended_change": "Add as exact match at $0.65 CPC AFTER updating listing bullets to mention compatibility with small dogs. SV 4,800.",
+      "expected_weekly_savings": 0,
+      "rationale": "Dog-focused keyword expands addressable market. Must update listing first to avoid high bounce rate from dog owners not seeing relevance."
+    },
+    {
+      "rank": 10,
+      "priority": "MEDIUM",
+      "action": "ADD_NEGATIVES",
+      "keyword": null,
+      "campaign": "Close Automatic Campaign",
+      "current_state": { "spend_7d": 17.50, "sales_7d": 0, "acos_7d": null },
+      "recommended_change": "Pull search terms report manually and add negative keywords for irrelevant terms. Add 'motion sensor' as negative keyword immediately (Paw Pure doesn't have this feature).",
+      "expected_weekly_savings": 5.00,
+      "rationale": "Auto campaigns match broadly — without negative keywords, budget leaks to irrelevant searches. 'Motion sensor' is a confirmed feature Paw Pure lacks."
+    }
+  ],
+
+  "alerts": {
+    "critical": [
+      "100% WASTED AD SPEND: $67.50 spent in last 7 days with ZERO ad-attributed sales.",
+      "LIFETIME ACoS 123.63%: Total ad spend ($339.94) exceeds total ad sales ($274.96) by $64.98.",
+      "CPC AT CEILING: Average CPC of $1.25 is at the maximum acceptable threshold.",
+      "SC LOGIN BLOCKED: Latest data scrape (2026-04-04) failed — Seller Central login required. Analysis uses 2026-04-03 data."
+    ],
+    "warning": [
+      "SAMPLE SIZE CAVEAT: Campaign-level spend is estimated ($67.50) based on CPC × clicks. Keyword-level data from SC was partially unavailable due to Campaign Manager rendering limitations.",
+      "46% OF TARGETS BLEEDING: 6 of 13 targets have clicks but zero sales in last 14 days.",
+      "NO ORGANIC RANKING: Paw Pure has no organic rank for any tracked keyword — entirely dependent on PPC for keyword-driven traffic.",
+      "CEREBRO DATA IS SEED FILE: Keyword intelligence is from manual seed data, not automated Helium 10 pull. Organic ranks and competitor data may be incomplete."
+    ],
+    "positive": [
+      "ORGANIC CVR HEALTHY: 5.13% conversion rate from organic sessions (4 units from 78 sessions) — listing can convert when traffic is qualified.",
+      "BUY BOX SECURED: 99.64-100% Buy Box share — no competitive issues there.",
+      "4 HIGH-VALUE KEYWORD GAPS IDENTIFIED: 'battery operated cat fountain' (SV 7,200), 'quiet cat water fountain' (SV 4,100), 'automatic dog water fountain' (SV 4,800), 'small dog water fountain' (SV 3,200). Combined SV = 19,300."
+    ]
+  },
+
+  "one_action_this_week": {
+    "action": "Cut daily budgets from $45/day to $20/day ($12 manual, $8 auto) and reduce all manual keyword bids to $0.65-$0.75.",
+    "rationale": "Every dollar spent on PPC right now is wasted — zero ad sales in the last 7 days. Cutting budgets and bids immediately stops the hemorrhaging ($175/week savings) while keeping campaigns live for data collection. Do NOT pause campaigns entirely — you need impression and click data to diagnose the conversion problem. Next week: investigate why 54 clicks = 0 purchases (listing audit).",
+    "expected_weekly_savings": 175.00
+  }
+}

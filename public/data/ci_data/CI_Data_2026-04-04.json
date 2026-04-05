@@ -1,0 +1,181 @@
+{
+  "runDate": "2026-04-04",
+  "runNumber": 3,
+  "keywords": [
+    "wireless cat water fountain",
+    "cat water fountain stainless steel wireless",
+    "small dog water fountain wireless",
+    "automatic dog water fountain stainless steel",
+    "water fountain for small dogs wireless",
+    "wireless stainless steel pet water fountain"
+  ],
+  "competitors": [
+    {
+      "rank": 1, "brand": "FEELNEEDY", "asin": "B0D1CH5KMY",
+      "price": 42.99, "stars": 4.4, "reviews": 4905,
+      "capacity": "3.5L/118oz", "battery": "45 days / 4000mAh",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Wireless Cat Water Fountain [Water & Battery Separation] FEELNEEDY Stainless Steel",
+      "angle": "Safety-first: separated battery/water design",
+      "keywordsInTitle": ["wireless", "battery separation", "stainless steel", "4000mAh", "automatic"],
+      "keywordAppearances": 4
+    },
+    {
+      "rank": 2, "brand": "APETDOLA", "asin": "B0BV6QPXF2",
+      "price": 49.46, "stars": 4.3, "reviews": 1287,
+      "capacity": "4L/135oz", "battery": "N/A (battery operated, no days stated)",
+      "motionSensor": false, "material": "Stainless Steel",
+      "titleLead": "Wireless Cat Water Fountain Stainless Steel,135floz/4L Battery Operated Automatic",
+      "angle": "Capacity king: 4L multi-cat/outdoor",
+      "keywordsInTitle": ["wireless", "stainless steel", "4L", "battery operated", "cordless", "multicat"],
+      "keywordAppearances": 4
+    },
+    {
+      "rank": 3, "brand": "PETLIBRO", "asin": "B0BYDS9KHV",
+      "price": 69.99, "stars": 4.3, "reviews": 8173,
+      "capacity": "2.5L/84oz", "battery": "5000mAh (days not stated on this model)",
+      "motionSensor": false, "material": "Stainless Steel Tray",
+      "titleLead": "PETLIBRO Cat Water Fountain, Cordless Battery Operated, 2.5L/84oz Dockstream",
+      "angle": "Brand trust + dockstream charging design",
+      "keywordsInTitle": ["cordless", "battery operated", "stainless steel tray", "easy to clean", "BPA-free"],
+      "keywordAppearances": 3,
+      "note": "Different ASIN from previous PETLIBRO entry (B0FDKVJNXB). This is the Dockstream model."
+    },
+    {
+      "rank": 4, "brand": "PawPoll", "asin": "B0DPX9RJZB",
+      "price": 22.99, "stars": 4.2, "reviews": 3484,
+      "capacity": "3.2L/108oz", "battery": "Not stated",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Wireless Cat Water Fountain Stainless Steel - 3.2L/108oz Cordless Pet Water Fountain",
+      "angle": "Value wireless stainless steel at aggressive price",
+      "keywordsInTitle": ["wireless", "stainless steel", "cordless", "battery operated", "ultra silent"],
+      "keywordAppearances": 3
+    },
+    {
+      "rank": 5, "brand": "FEELNEEDY", "asin": "B0F9WQGMH7",
+      "price": 37.98, "stars": 4.5, "reviews": 863,
+      "capacity": "3.2L/108oz", "battery": "4000mAh (days not stated)",
+      "motionSensor": true, "material": "Stainless Steel (Heavy-Duty)",
+      "titleLead": "Cordless Cat Water Fountain : [Visual Filter] & [Heavy-Duty Stainless Steel] 3.2L",
+      "angle": "Visual filter innovation + heavy-duty build",
+      "keywordsInTitle": ["cordless", "visual filter", "stainless steel", "4000mAh", "sensor"],
+      "keywordAppearances": 3,
+      "newEntrant": true
+    },
+    {
+      "rank": 6, "brand": "KittySpout", "asin": "B0DQC6H9FB",
+      "price": 69.95, "stars": 4.3, "reviews": 790,
+      "capacity": "4L/135oz", "battery": "N/A (corded)",
+      "motionSensor": false, "material": "Stainless Steel",
+      "titleLead": "KittySpout Stainless Steel Cat Water Fountain Automatic Drinking Fountain, Quiet",
+      "angle": "Premium corded: dishwasher safe, under 20dB",
+      "keywordsInTitle": ["stainless steel", "automatic", "quiet", "dishwasher safe"],
+      "keywordAppearances": 3,
+      "newEntrant": true
+    },
+    {
+      "rank": 7, "brand": "PEKTACO", "asin": "B0FPQZ2M7Y",
+      "price": 49.98, "stars": 4.6, "reviews": 588,
+      "capacity": "3.2L/108oz", "battery": "Not stated",
+      "motionSensor": false, "material": "Stainless Steel (304)",
+      "titleLead": "PEKTACO Wireless Cat Water Fountain Stainless Steel, 108oz/3.2L Cordless Battery",
+      "angle": "Premium SS build + high rating at mid-price",
+      "keywordsInTitle": ["wireless", "stainless steel", "cordless", "battery operated", "quiet pump", "BPA-free"],
+      "keywordAppearances": 2,
+      "newEntrant": true
+    },
+    {
+      "rank": 8, "brand": "PETKIT", "asin": "B0BF5CQMKX",
+      "price": 25.99, "stars": 4.3, "reviews": 13496,
+      "capacity": "1.85L/65oz", "battery": "N/A (wired, wireless pump)",
+      "motionSensor": false, "material": "Plastic (wireless pump)",
+      "titleLead": "PETKIT New Cat Water Fountain with Wireless Pump, Ultra Quiet 65oz/1.85L",
+      "angle": "Brand trust + volume: wireless pump 3.0, easy clean",
+      "keywordsInTitle": ["petkit", "wireless pump", "ultra quiet", "easy to clean", "detachable"],
+      "keywordAppearances": 1
+    },
+    {
+      "rank": 9, "brand": "Veken", "asin": "B0FPFZ3C5K",
+      "price": 39.99, "stars": 4.3, "reviews": 15308,
+      "capacity": "3.2L/108oz", "battery": "N/A (corded)",
+      "motionSensor": false, "material": "Stainless Steel (304)",
+      "titleLead": "Veken Innovation Award Winner Stainless Steel Cat Water Fountain, 108oz/3.2L Auto",
+      "angle": "Innovation award winner + massive reviews + 6 filters included",
+      "keywordsInTitle": ["stainless steel", "automatic", "innovation award", "silicone mat"],
+      "keywordAppearances": 1,
+      "newEntrant": true
+    },
+    {
+      "rank": 10, "brand": "TOONIOOS", "asin": "B0DJ75MRST",
+      "price": 29.99, "stars": 4.1, "reviews": 715,
+      "capacity": "3.2L/108oz", "battery": "60 days / 4000mAh",
+      "motionSensor": true, "material": "Stainless Steel",
+      "titleLead": "Cat Water Fountain Wireless Cordless: Cat Fountain Battery Operated - Stainless Steel",
+      "angle": "Battery-forward: 60 days claim at budget price",
+      "keywordsInTitle": ["wireless", "cordless", "stainless steel", "battery operated", "motion sensor"],
+      "keywordAppearances": 1
+    }
+  ],
+  "exited": [
+    {
+      "brand": "DownyPaws", "asin": "B0C8SMHH6G",
+      "reason": "Dropped from top 10 — replaced by new entrants FEELNEEDY FN-W17, KittySpout, PEKTACO, Veken"
+    },
+    {
+      "brand": "oneisall", "asin": "B0DNJT76WJ",
+      "reason": "Dropped from top 10 — no longer appearing in top 8 of any target keyword"
+    },
+    {
+      "brand": "NOBXBON", "asin": "B0FPM74S54",
+      "reason": "Dropped from top 10 — no longer appearing in top 8 of any target keyword"
+    },
+    {
+      "brand": "Emdoro", "asin": "B0FN8JG923",
+      "reason": "Dropped from top 10 — no longer appearing in top 8 of any target keyword"
+    }
+  ],
+  "newEntrants": [
+    {
+      "brand": "FEELNEEDY (FN-W17)", "asin": "B0F9WQGMH7",
+      "note": "Second FEELNEEDY product with visual filter innovation, 863 reviews, 4.5 stars"
+    },
+    {
+      "brand": "KittySpout", "asin": "B0DQC6H9FB",
+      "note": "Corded stainless steel fountain, 790 reviews, $69.95, premium positioning"
+    },
+    {
+      "brand": "PEKTACO", "asin": "B0FPQZ2M7Y",
+      "note": "Wireless SS fountain, 588 reviews, 4.6 stars — highest rated in set"
+    },
+    {
+      "brand": "Veken", "asin": "B0FPFZ3C5K",
+      "note": "Massive player with 15,308 reviews, Innovation Award, corded SS, $39.99"
+    }
+  ],
+  "pawPure": {
+    "asin_main": "B0DJHQVJYF",
+    "asin_2": "B0GMDM6CG2",
+    "asin_3": "B0FWXJ1GKT",
+    "price": 49.99,
+    "stars": 4.5,
+    "reviews": 20,
+    "capacity": "3L/108oz",
+    "battery": "30 days (auto mode)",
+    "motionSensor": false,
+    "material": "Stainless Steel Tray + ABS"
+  },
+  "keyFindings": [
+    "4 NEW ENTRANTS: FEELNEEDY FN-W17 (B0F9WQGMH7), KittySpout (B0DQC6H9FB), PEKTACO (B0FPQZ2M7Y), Veken (B0FPFZ3C5K) entered top 10",
+    "4 EXITS: DownyPaws, oneisall, NOBXBON, Emdoro all dropped from top 10",
+    "PETLIBRO now represented by B0BYDS9KHV (Dockstream, $69.99, 8173 reviews) instead of B0FDKVJNXB",
+    "Veken is the largest player by reviews (15,308) at $39.99 — corded but Innovation Award winner",
+    "FEELNEEDY now has 2 products in top 10 (B0D1CH5KMY + B0F9WQGMH7) — brand dominance increasing",
+    "APETDOLA price increased from $58.88 to $49.46 — actually a DECREASE of $9.42",
+    "PawPoll reviews grew from 3,476 to 3,484 (+8 this week) — still aggressive at $22.99",
+    "FEELNEEDY main listing reviews grew from 4,893 to 4,905 (+12 this week)",
+    "PAW PURE reviews unchanged at 20 — critical gap remains vs competitors",
+    "PEKTACO has highest star rating in set at 4.6 with 588 reviews — threat to Paw Pure premium positioning",
+    "KittySpout also claims under 20dB — Paw Pure no longer unique on dB claim",
+    "Review gap critical: 20 reviews vs 588-15,308 in competitor set"
+  ]
+}

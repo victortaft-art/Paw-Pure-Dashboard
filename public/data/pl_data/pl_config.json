@@ -1,0 +1,103 @@
+{
+  "_instructions": "Victor's real unit economics. COGS and fees are confirmed from Victor's spreadsheet (April 2026). Only update COGS if supplier pricing changes. Inventory is now pulled automatically from Seller Central by the SC Data Collector agent — no manual update needed. Lead time = 90 days (3 months from PO to FBA available).",
+  "_last_updated": "2026-04-03",
+  "_updated_by": "Victor",
+  "_data_source": "Victor's unit economics spreadsheet (screenshots April 2026)",
+
+  "products": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "name": "Paw Pure Wireless Pet Water Fountain",
+      "asp": 49.99,
+      "amazon_total_fee": 15.50,
+      "_fee_breakdown": "Referral ($7.50 at 15%) + FBA fulfillment ($8.00) = $15.50 (31%)",
+      "cogs": 17.58,
+      "_cogs_note": "Confirmed: costo producto from Victor's spreadsheet",
+      "target_acos_per_unit": 12.50,
+      "_acos_note": "25% ACoS target = $12.50/unit ad budget",
+      "total_cost_per_unit": 45.57,
+      "_total_cost_note": "$15.50 fee + $17.58 COGS + $12.50 ACoS = $45.58",
+      "profit_per_unit": 4.42,
+      "margin_pct": 9,
+      "breakeven_acos_pct": 33.5,
+
+      "supply_chain": {
+        "total_lead_time_days": 90,
+        "_lead_time_note": "3 months from PO placed to FBA available",
+        "case_pack_qty": 12,
+        "moq": 100
+      },
+
+      "safety_stock_days": 30
+    },
+
+    "filters": {
+      "asin": "B0GMDM6CG2",
+      "name": "Paw Pure Replacement Filter Pack",
+      "asp": 20.00,
+      "amazon_total_fee": 6.95,
+      "_fee_breakdown": "Referral ($3.00 at 15%) + FBA fulfillment ($3.95) = $6.95 (34.75%)",
+      "cogs": 3.97,
+      "_cogs_note": "Confirmed: costo producto from Victor's spreadsheet",
+      "target_acos_per_unit": 0.00,
+      "_acos_note": "No PPC on filters currently — sells organically via repurchase",
+      "total_cost_per_unit": 10.92,
+      "_total_cost_note": "$6.95 fee + $3.97 COGS = $10.92",
+      "profit_per_unit": 9.08,
+      "margin_pct": 45,
+
+      "supply_chain": {
+        "total_lead_time_days": 90,
+        "_lead_time_note": "3 months from PO to FBA available",
+        "case_pack_qty": 24,
+        "moq": 200
+      },
+
+      "safety_stock_days": 45,
+      "_safety_note": "Extra buffer — filter stockout kills LTV engine"
+    },
+
+    "bundle": {
+      "asin": "B0FWXJ1GKT",
+      "name": "Paw Pure Fountain + Filter Bundle",
+      "asp": 64.99,
+      "amazon_total_fee": 15.25,
+      "_fee_breakdown": "Estimated: Referral ($9.75 at 15%) + FBA ($5.50) = $15.25. UPDATE if actual fee differs.",
+      "cogs": 21.55,
+      "_cogs_note": "Estimated: fountain COGS $17.58 + filter COGS $3.97 = $21.55. UPDATE if bundle has separate kitting cost.",
+      "total_cost_per_unit": 36.80,
+      "profit_per_unit": 28.19,
+      "_profit_note": "ESTIMATE — confirm bundle fees and COGS with Victor",
+      "margin_pct": 43,
+
+      "supply_chain": {
+        "total_lead_time_days": 90,
+        "_lead_time_note": "3 months, same as fountain",
+        "case_pack_qty": 12,
+        "moq": 50
+      },
+
+      "safety_stock_days": 30
+    }
+  },
+
+  "inventory_source": "auto",
+  "_inventory_note": "FBA inventory levels are pulled automatically by the SC Data Collector agent every Saturday at 6:30 PM. Saved to SC_Data_[date].json under 'fba_inventory' field. P&L agent reads from there — no manual input needed.",
+
+  "business_model": {
+    "razor_blade_target_ratio": 1.0,
+    "_note": "Target: at least 1 filter sold per fountain sold per month",
+    "filter_monthly_ltv_per_customer": 9.08,
+    "annual_ltv_per_customer": 108.96,
+    "breakeven_acos_pct": 33.5,
+    "target_acos_pct": 25.0,
+    "target_cvr_pct": 8.0
+  },
+
+  "alerts": {
+    "critical_days_remaining": 14,
+    "warning_days_remaining": 30,
+    "overstock_days_remaining": 90,
+    "max_wasted_ad_spend_pct": 30
+  }
+}

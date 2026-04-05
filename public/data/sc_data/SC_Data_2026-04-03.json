@@ -1,0 +1,175 @@
+{
+  "runDate": "2026-04-03",
+  "dataStatus": "partial",
+  "dataErrors": [
+    "Keyword-level performance data could not be fully extracted — Campaign Manager table uses virtualized rendering that limits direct data scraping. Summary metrics and targeting insights were captured.",
+    "7-day ad spend estimated from overall CPC ($1.25) x clicks (54) = ~$67.50. Exact per-campaign spend not available from this run.",
+    "Search terms report was not accessible in this session."
+  ],
+
+  "businessReports": {
+    "period_7d": {
+      "dateRange": "2026-03-26 to 2026-04-01",
+      "sessions": 78,
+      "pageViews": 111,
+      "unitsOrdered": 4,
+      "orderedProductSales": 169.97,
+      "unitSessionPercentage": 5.13,
+      "buyBoxPercentage": 100.0,
+      "salesPerDay": 0.57,
+      "onTrackToGoal": false
+    },
+    "period_30d": {
+      "dateRange": "2026-03-03 to 2026-04-01",
+      "sessions": 252,
+      "pageViews": 350,
+      "unitsOrdered": 11,
+      "orderedProductSales": 429.93,
+      "unitSessionPercentage": 4.21,
+      "buyBoxPercentage": 99.64,
+      "salesPerDay": 0.37,
+      "onTrackToGoal": false
+    },
+    "dailyBreakdown_7d": [
+      { "date": "2026-03-26", "sales": 0.00, "units": 0, "pageViews": 9, "sessions": 6, "buyBox": 100 },
+      { "date": "2026-03-27", "sales": 20.00, "units": 1, "pageViews": 17, "sessions": 8, "buyBox": 100 },
+      { "date": "2026-03-28", "sales": 49.99, "units": 1, "pageViews": 15, "sessions": 11, "buyBox": 100 },
+      { "date": "2026-03-29", "sales": 0.00, "units": 0, "pageViews": 9, "sessions": 8, "buyBox": 100 },
+      { "date": "2026-03-30", "sales": 49.99, "units": 1, "pageViews": 12, "sessions": 9, "buyBox": 100 },
+      { "date": "2026-03-31", "sales": 49.99, "units": 1, "pageViews": 26, "sessions": 22, "buyBox": 100 },
+      { "date": "2026-04-01", "sales": 0.00, "units": 0, "pageViews": 23, "sessions": 14, "buyBox": 100 }
+    ],
+    "asinBreakdown_30d": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz",
+        "sessionsMobileApp": 135,
+        "sessionsBrowser": 94,
+        "sessionsTotal": 229,
+        "sessionsMobileB2B": 4,
+        "sessionsBrowserB2B": 2,
+        "sessionsTotalB2B": 6
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters (4+4)",
+        "sessionsMobileApp": 10,
+        "sessionsBrowser": 6,
+        "sessionsTotal": 16,
+        "sessionsMobileB2B": 0,
+        "sessionsBrowserB2B": 0,
+        "sessionsTotalB2B": 0
+      },
+      "BUNDLE": {
+        "title": "Paw Pure Wireless Fountain + Replacement Filters Kit",
+        "sessionsMobileApp": 3,
+        "sessionsBrowser": 4,
+        "sessionsTotal": 7,
+        "sessionsMobileB2B": 0,
+        "sessionsBrowserB2B": 0,
+        "sessionsTotalB2B": 0
+      }
+    }
+  },
+
+  "campaignSummary": {
+    "dateRange_7d": "Mar 27 - Apr 2, 2026",
+    "totalImpressions_7d": 13652,
+    "totalClicks_7d": 54,
+    "ctr_percent": 0.40,
+    "totalSpend_7d_estimated": 67.50,
+    "totalAdSales_7d": 0.00,
+    "overallACoS_percent_7d": null,
+    "totalOrders_7d": 0,
+    "acosStatus": "RED - above break-even (infinite — zero ad sales with active spend)",
+    "cvrStatus": "LOW - conversion is the bottleneck",
+
+    "allTime": {
+      "dateRange": "Jan 5 - Apr 4, 2026",
+      "totalCost": 339.94,
+      "totalSales": 274.96,
+      "acos_percent": 123.63,
+      "cpc": 1.25
+    },
+
+    "campaigns": [
+      {
+        "name": "Manual Keywords Campaign",
+        "type": "Sponsored Products - Manual Targeting",
+        "status": "Delivering",
+        "startDate": "2025-09-13",
+        "dailyBudget": 30.00
+      },
+      {
+        "name": "Close Automatic Campaign",
+        "type": "Sponsored Products - Automatic Targeting",
+        "status": "Delivering",
+        "startDate": "2025-08-03",
+        "dailyBudget": 15.00
+      }
+    ],
+
+    "targetingInsights": {
+      "totalTargets": 13,
+      "targetsWithClicksNoSales_14d": 6,
+      "targetsWithSales_14d": 2,
+      "note": "46% of targets are wasting budget (clicks but no sales). Only 15% of targets generating any sales."
+    }
+  },
+
+  "keywords": {
+    "top_performers": [],
+    "revenue_leaks": [
+      {
+        "note": "6 of 13 targets have clicks but zero sales in the last 14 days — these are actively leaking revenue"
+      }
+    ],
+    "scale_candidates": [
+      {
+        "note": "2 of 13 targets have generated sales in the last 14 days — these are the only viable scale candidates pending keyword identification"
+      }
+    ],
+    "all_keywords": [],
+    "dataNote": "Individual keyword-level metrics could not be extracted in this run due to Campaign Manager table virtualization. Navigate to Targeting page manually to review the 13 targets."
+  },
+
+  "searchTerms": {
+    "top_converting": [],
+    "high_impression_no_conversion": [],
+    "new_keyword_opportunities": [],
+    "all_terms": [],
+    "dataNote": "Search terms report was not accessible in this automated session."
+  },
+
+  "weekOverWeekTrends": {
+    "sessions_change": null,
+    "sessions_change_pct": null,
+    "cvr_change_pp": null,
+    "units_per_day_change": null,
+    "acos_change_pp": null,
+    "spend_change": null,
+    "improving_keywords": [],
+    "worsening_keywords": [],
+    "note": "No previous SC_Data file with complete/partial status available for comparison. This is the first successful data collection run."
+  },
+
+  "diagnosis": {
+    "primary_bottleneck": "ppc_efficiency",
+    "bottleneck_reasoning": "PPC is the most critical issue. Over the lifetime of both campaigns (Jan-Apr 2026), ACoS is 123.63% — spending $339.94 to generate only $274.96 in ad-attributed sales, far above the 33.5% break-even threshold. In the last 7 days specifically, PPC generated 13,652 impressions and 54 clicks but ZERO purchases and $0.00 in sales, meaning all ad spend was completely wasted. Meanwhile, 46% of targets (6 of 13) have clicks but no sales. Organic conversion (5.13% CVR from 78 sessions) is in the LOW range but not the primary problem — the PPC spend is actively destroying margin. Additionally, sales velocity at 0.57 units/day is well below the 1/day goal.",
+    "urgentActions": [
+      "PAUSE or drastically reduce bids on the 6 targets with clicks but zero sales — these are burning budget with no return.",
+      "Review the Close Automatic Campaign for irrelevant search term matches. Consider pausing it entirely given zero sales from ads in the last 7 days.",
+      "Reduce daily budgets from $30+$15=$45/day to $15-$20/day total until ACoS improves below 33.5%.",
+      "Add negative keywords aggressively based on search terms generating clicks but no conversions.",
+      "Investigate why 54 ad clicks in 7 days generated 0 purchases — potential listing quality issue (images, bullets, reviews, price competitiveness) or targeting mismatch."
+    ],
+    "keyFindings": [
+      "Lifetime ACoS is 123.63% — every $1 of ad sales costs $1.24 in ad spend. This is 3.7x above the 33.5% break-even.",
+      "Last 7 days: 54 ad clicks, 0 ad purchases — 100% wasted ad spend.",
+      "Organic performance is weak but present: 4 units from 78 sessions (5.13% CVR) in the last 7 days.",
+      "Fountain drives 91% of sessions (229 of 252 total 30d sessions). Filter and bundle products have negligible traffic.",
+      "The $20.00 sale on 3/27 appears to be a filter sale (2 units × $20 filter pack = $40 actually, but business report shows $20). The $49.99 sales are fountain units.",
+      "Mobile app sessions (135) slightly exceed browser sessions (94) for the fountain, suggesting mobile optimization is important.",
+      "Buy Box percentage is excellent at 99.64%-100% — not a factor in poor conversion.",
+      "Daily budget of $45/day ($30 manual + $15 auto) is substantial relative to the $49.99 product price and current sales velocity."
+    ]
+  }
+}

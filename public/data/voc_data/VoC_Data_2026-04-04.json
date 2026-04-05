@@ -1,0 +1,321 @@
+{
+  "date": "2026-04-04",
+  "paw_pure": {
+    "total_reviews_scraped": 10,
+    "avg_rating": 4.5,
+    "total_ratings": 20,
+    "new_this_week": 0,
+    "positive_themes": {
+      "quiet_operation": 3,
+      "wireless_cordless": 2,
+      "easy_to_clean": 2,
+      "pet_adoption": 4,
+      "build_quality_stainless": 3,
+      "filter_quality": 2,
+      "easy_setup": 2,
+      "water_freshness": 1,
+      "value_for_money": 2,
+      "design_aesthetics": 3,
+      "light_feature": 1,
+      "sturdy_stable": 1,
+      "portable_travel": 1
+    },
+    "negative_themes": {
+      "filter_availability": 1,
+      "battery_charging": 1,
+      "no_brand_info_on_product": 2
+    },
+    "copy_language": [
+      {
+        "quote": "Really quiet, can barely hear it running",
+        "source": "R1QCRMOJNJKUIX",
+        "placement": "Bullet 1 + lifestyle image overlay"
+      },
+      {
+        "quote": "My cats started drinking from it right away",
+        "source": "R1QCRMOJNJKUIX",
+        "placement": "A+ content / social proof section"
+      },
+      {
+        "quote": "The wireless feature is great - no cords for them to chew on",
+        "source": "R1QCRMOJNJKUIX",
+        "placement": "Title / Bullet 2"
+      },
+      {
+        "quote": "From day 1 my dog switched instantly to her new water fountain",
+        "source": "RAGTIYN8BOCG6",
+        "placement": "A+ lifestyle image / testimonial"
+      },
+      {
+        "quote": "Easy to clean and also practical for to-go trips",
+        "source": "RAGTIYN8BOCG6",
+        "placement": "Bullet 3 / travel use case"
+      },
+      {
+        "quote": "The stainless steel tray is a big plus",
+        "source": "R1812UG4TF6U0L",
+        "placement": "Bullet about materials"
+      },
+      {
+        "quote": "This pet drinking fountain is amazing. My dogs love it and the water looks so much fresher",
+        "source": "R3QCYRA9VHTSCU",
+        "placement": "A+ hero quote"
+      },
+      {
+        "quote": "Sturdy enough to withstand dogs bumping into it",
+        "source": "R2SA5WO0TF04L6",
+        "placement": "Bullet about durability"
+      }
+    ],
+    "urgent_flags": [
+      {
+        "review_id": "R2Y0IH607CKLGL",
+        "title": "Filter availability",
+        "rating": 1,
+        "date": "September 2025",
+        "issue": "Filter availability complaint - customer returning product"
+      }
+    ],
+    "unanswered_questions": []
+  },
+  "competitors": [
+    {
+      "asin": "B0D1CH5KMY",
+      "name": "FEELNEEDY Wireless 3.5L 4000mAh",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "mold_slime",
+        "short_lifespan",
+        "pump_failure",
+        "filter_issues",
+        "leaking"
+      ],
+      "top_praise": [
+        "customer_service",
+        "pet_loves_it"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    },
+    {
+      "asin": "B0BV6QPXF2",
+      "name": "APD APETDOLA Wireless 4L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "cleaning_difficulty",
+        "pump_failure",
+        "short_lifespan",
+        "build_quality"
+      ],
+      "top_praise": [
+        "quiet",
+        "value",
+        "design",
+        "pet_loves_it",
+        "easy_clean"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    },
+    {
+      "asin": "B0BYDS9KHV",
+      "name": "PETLIBRO Dockstream 2.5L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "pump_failure",
+        "short_lifespan"
+      ],
+      "top_praise": [
+        "pet_loves_it",
+        "quiet",
+        "easy_clean"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    },
+    {
+      "asin": "B0DPX9RJZB",
+      "name": "PawPoll Wireless 3.2L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "cleaning_difficulty",
+        "pump_failure",
+        "misleading_listing",
+        "filter_issues",
+        "build_quality"
+      ],
+      "top_praise": [
+        "pet_loves_it",
+        "quiet"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    },
+    {
+      "asin": "B0F9WQGMH7",
+      "name": "FEELNEEDY FN-W17 Visual Filter 3.2L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "pump_failure",
+        "filter_issues"
+      ],
+      "top_praise": [
+        "quiet"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    },
+    {
+      "asin": "B0DQC6H9FB",
+      "name": "KittySpout Stainless Steel 4L Corded",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "cleaning_difficulty",
+        "mold_slime",
+        "short_lifespan",
+        "misleading_listing",
+        "build_quality"
+      ],
+      "top_praise": [
+        "pet_loves_it",
+        "quiet",
+        "easy_clean"
+      ],
+      "weakness_opportunity": "Mold/bacteria buildup - Paw Pure stainless steel + easy-clean design addresses this"
+    },
+    {
+      "asin": "B0FPQZ2M7Y",
+      "name": "PEKTACO Wireless 3.2L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "safety"
+      ],
+      "top_praise": [],
+      "weakness_opportunity": "Safety concerns (fire/shock) - Paw Pure can emphasize BPA-free and safety testing"
+    },
+    {
+      "asin": "B0BF5CQMKX",
+      "name": "PETKIT Wireless Pump 1.85L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "pump_failure",
+        "short_lifespan",
+        "filter_issues"
+      ],
+      "top_praise": [
+        "customer_service"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    },
+    {
+      "asin": "B0FPFZ3C5K",
+      "name": "Veken Stainless Steel 3.2L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "pump_failure",
+        "short_lifespan",
+        "build_quality"
+      ],
+      "top_praise": [
+        "pet_loves_it",
+        "quiet"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    },
+    {
+      "asin": "B0DJ75MRST",
+      "name": "Generic Wireless Cat Fountain 3.2L",
+      "reviews_scraped": 6,
+      "top_complaints": [
+        "cleaning_difficulty",
+        "short_lifespan",
+        "pump_failure",
+        "filter_issues",
+        "build_quality"
+      ],
+      "top_praise": [
+        "pet_loves_it",
+        "stainless_steel"
+      ],
+      "weakness_opportunity": "Pump durability - Paw Pure can differentiate with reliability messaging"
+    }
+  ],
+  "cross_category_insights": {
+    "universal_complaints": [
+      [
+        "short_lifespan",
+        12
+      ],
+      [
+        "pump_failure",
+        11
+      ],
+      [
+        "filter_issues",
+        7
+      ],
+      [
+        "build_quality",
+        7
+      ],
+      [
+        "cleaning_difficulty",
+        6
+      ]
+    ],
+    "universal_praise": [
+      [
+        "pet_loves_it",
+        10
+      ],
+      [
+        "quiet",
+        8
+      ],
+      [
+        "easy_clean",
+        3
+      ],
+      [
+        "customer_service",
+        2
+      ],
+      [
+        "value",
+        1
+      ]
+    ],
+    "unmet_needs": [
+      "Reliable long-term pump performance (3+ competitor products fail within 2-4 months)",
+      "Truly safe/non-toxic materials - several competitors have fire/shock/plastic concerns despite 'stainless steel' marketing",
+      "Easy filter replacement availability and affordability - filter ecosystem is broken for most brands"
+    ]
+  },
+  "copy_angles": [
+    {
+      "angle": "Whisper-Quiet 20 dB",
+      "quote": "can barely hear it running",
+      "placement": "Bullet 1, secondary image overlay"
+    },
+    {
+      "angle": "Instant Pet Adoption",
+      "quote": "From day 1 my dog switched instantly",
+      "placement": "A+ lifestyle image, social proof"
+    },
+    {
+      "angle": "True Cordless Freedom",
+      "quote": "no cords for them to chew on",
+      "placement": "Title, Bullet 2"
+    },
+    {
+      "angle": "Stainless Steel Safety",
+      "quote": "The stainless steel tray is a big plus",
+      "placement": "Bullet 3, comparison chart"
+    },
+    {
+      "angle": "Built to Last",
+      "quote": "sturdy enough to withstand dogs bumping into it",
+      "placement": "Bullet 4, durability claim"
+    }
+  ],
+  "experiments_added": [
+    "EXP-028",
+    "EXP-029",
+    "EXP-030"
+  ]
+}
