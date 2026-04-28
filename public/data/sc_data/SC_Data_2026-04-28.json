@@ -4,7 +4,7 @@
   "data_source": "sp_api",
   "source": "SP-API pipeline: Orders + Inventory + Catalog + Reports (GET_SALES_AND_TRAFFIC_REPORT) + Finances",
   "status": "Composed automatically by amazon_api/build_sc_data.py",
-  "timestamp": "2026-04-28T03:08:41.386383Z",
+  "timestamp": "2026-04-28T12:16:54.584725Z",
   "highlights": {
     "revenue_7d": "7-day revenue $334.94 across 8 orders (8 units).",
     "sessions_7d": "7-day sessions N/A (quota exceeded).",
@@ -141,125 +141,16 @@
     "_ad_note": "Today's ad spend: Ads API reports use yesterday's data (today still accumulating)."
   },
   "campaign_manager": {
-    "_data_source": "ads_api",
-    "_note": "Per-keyword and per-campaign data from Amazon Advertising API v2.",
-    "_report_date": "2026-04-27",
-    "ad_spend_1d": 22.79,
+    "_data_source": "sp_api_finances",
+    "_note": "Ad spend from Finances API ProductAdsPaymentEventList. Per-keyword detail requires Ads API.",
     "ad_spend_7day": 500.85,
     "ad_spend_30day": 718.33,
-    "_spend_note": "ad_spend_1d = Advertising API (yesterday, 1-day). ad_spend_7day/30day = Finances API billing events (may include billing lag).",
-    "impressions_1d": 3678,
-    "clicks_1d": 11,
-    "attributed_sales_7d": 0.0,
-    "overall_acos": null,
-    "overall_ctr": 0.003,
-    "overall_cpc": 2.0718,
-    "campaigns": [
-      {
-        "campaign": "Manual Keywords Campaign",
-        "campaign_id": 419389443127224,
-        "impressions": 3678,
-        "clicks": 11,
-        "spend": 22.79,
-        "attributed_sales_7d": 0.0,
-        "conversions_7d": 0,
-        "acos": null,
-        "ctr": 0.003,
-        "cpc": 2.0718
-      }
-    ],
-    "keywords": [
-      {
-        "keyword": "stainless steel cat water fountain",
-        "match_type": "exact",
-        "campaign": "Manual Keywords Campaign",
-        "ad_group": "Phrase Match",
-        "bid": 1.6,
-        "impressions": 2094,
-        "clicks": 7,
-        "spend": 14.77,
-        "attributed_sales_7d": 0.0,
-        "conversions_7d": 0,
-        "acos": null,
-        "ctr": 0.0033,
-        "cpc": 2.11
-      },
-      {
-        "keyword": "cat water fountain stainless steel",
-        "match_type": "exact",
-        "campaign": "Manual Keywords Campaign",
-        "ad_group": "Manual Keywords Campaign",
-        "bid": 1.49,
-        "impressions": 418,
-        "clicks": 2,
-        "spend": 4.46,
-        "attributed_sales_7d": 0.0,
-        "conversions_7d": 0,
-        "acos": null,
-        "ctr": 0.0048,
-        "cpc": 2.23
-      },
-      {
-        "keyword": "cat fountain stainless steel",
-        "match_type": "exact",
-        "campaign": "Manual Keywords Campaign",
-        "ad_group": "Phrase Match",
-        "bid": 1.8,
-        "impressions": 1150,
-        "clicks": 2,
-        "spend": 3.56,
-        "attributed_sales_7d": 0.0,
-        "conversions_7d": 0,
-        "acos": null,
-        "ctr": 0.0017,
-        "cpc": 1.78
-      },
-      {
-        "keyword": "cordless cat water fountain stainless steel",
-        "match_type": "exact",
-        "campaign": "Manual Keywords Campaign",
-        "ad_group": "Manual Keywords Campaign",
-        "bid": 1.35,
-        "impressions": 8,
-        "clicks": 0,
-        "spend": 0.0,
-        "attributed_sales_7d": 0.0,
-        "conversions_7d": 0,
-        "acos": null,
-        "ctr": 0.0,
-        "cpc": null
-      },
-      {
-        "keyword": "wireless cat water fountain stainless steel",
-        "match_type": "exact",
-        "campaign": "Manual Keywords Campaign",
-        "ad_group": "Manual Keywords Campaign",
-        "bid": 1.3,
-        "impressions": 4,
-        "clicks": 0,
-        "spend": 0.0,
-        "attributed_sales_7d": 0.0,
-        "conversions_7d": 0,
-        "acos": null,
-        "ctr": 0.0,
-        "cpc": null
-      },
-      {
-        "keyword": "cat water fountain stainless steel",
-        "match_type": "phrase",
-        "campaign": "Manual Keywords Campaign",
-        "ad_group": "Phrase Match",
-        "bid": 1.13,
-        "impressions": 5,
-        "clicks": 0,
-        "spend": 0.0,
-        "attributed_sales_7d": 0.0,
-        "conversions_7d": 0,
-        "acos": null,
-        "ctr": 0.0,
-        "cpc": null
-      }
-    ]
+    "impressions_7day": null,
+    "clicks_7day": null,
+    "ad_sales_7day": null,
+    "acos_7day": null,
+    "acos_percent_30day": null,
+    "ad_sales_30day": null
   },
   "reviews": {
     "_data_source": "pending_api",
@@ -267,7 +158,7 @@
     "asin": "B0DJHQVJYF"
   },
   "fba_inventory": {
-    "scraped_at": "2026-04-28T03:02:54.329001Z",
+    "scraped_at": "2026-04-28T12:01:01.888495Z",
     "data_source": "sp_api",
     "_source": "SP-API: /fba/inventory/v1/summaries + /catalog/2022-04-01/items",
     "fountain": {
@@ -276,9 +167,9 @@
       "fba_available": 363,
       "inbound": 0,
       "reserved": 7,
-      "bsr_pet_supplies": 69134,
+      "bsr_pet_supplies": 72052,
       "bsr_subcategory": {
-        "rank": 994,
+        "rank": 1027,
         "category": "Cat Fountains"
       },
       "_bsr_source": "SP-API Catalog (displayGroupRanks + classificationRanks)",
