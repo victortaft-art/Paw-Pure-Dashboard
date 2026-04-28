@@ -1,0 +1,383 @@
+{
+  "_schema_version": "2.0",
+  "_schema_note": "3-section schema: weekly_strategy (current + 2 weeks), tracking (running experiments + metric variance), backlog (full queue with execution steps).",
+  "generated": "2026-04-27",
+  "today": "2026-04-27",
+
+  "weekly_strategy": [
+    {
+      "week_start": "2026-04-27",
+      "week_end": "2026-05-03",
+      "week_label": "This Week (Apr 27 — May 3)",
+      "is_current": true,
+      "growth_lever": "PPC Efficiency",
+      "target_metric": {
+        "name": "Portfolio ACoS",
+        "baseline": "44.0%",
+        "target": "<35%",
+        "baseline_value": 44.0,
+        "target_value": 35.0,
+        "unit": "%",
+        "direction": "down"
+      },
+      "thesis": "Ads API just went live (Apr 26). One keyword consumed 46% of spend with $0 sales (`stainless steel cat water fountain`). Cutting bleeder bid + adding 5 missing keywords + standing up filter PPC should compound to <35% ACoS within 7 days.",
+      "experiments": [
+        { "id": "EXP-046", "scheduled_date": "2026-04-27", "title": "Bid surgery on 6 active keywords", "status": "TODO" },
+        { "id": "EXP-047", "scheduled_date": "2026-04-28", "title": "Add 5 missing exact-match cat keywords", "status": "TODO" },
+        { "id": "EXP-048", "scheduled_date": "2026-04-28", "title": "Filter cross-sell campaign launch", "status": "TODO" },
+        { "id": "EXP-035", "scheduled_date": "2026-04-28", "title": "Request-a-Review for Apr 25 buyers", "status": "TODO" },
+        { "id": "EXP-040", "scheduled_date": "2026-04-29", "title": "Trigger bundle copy rewrite (0 sales 7d)", "status": "TODO" },
+        { "id": "EXP-034", "scheduled_date": "2026-04-30", "title": "Aged inventory removal decision (May 1 surcharge)", "status": "TODO" }
+      ]
+    },
+    {
+      "week_start": "2026-05-04",
+      "week_end": "2026-05-10",
+      "week_label": "Week of May 4 — May 10",
+      "is_current": false,
+      "growth_lever": "Conversion + Market Expansion",
+      "target_metric": {
+        "name": "Wave 3 listing copy published",
+        "baseline": "Cat-only listing",
+        "target": "Dog-friendly bullet 4 + A+ image live",
+        "unit": "",
+        "direction": "milestone"
+      },
+      "thesis": "Dog SV is 2-3x cat SV. We can't bid on dog terms profitably without listing support. May 4 also lands as the EXP-046/047 7-day decision date.",
+      "experiments": [
+        { "id": "EXP-046", "scheduled_date": "2026-05-04", "title": "Decision: score EXP-046 7d ACoS", "status": "DECISION" },
+        { "id": "EXP-047", "scheduled_date": "2026-05-04", "title": "Decision: score EXP-047 new keywords", "status": "DECISION" },
+        { "id": "EXP-049", "scheduled_date": "2026-05-05", "title": "Wave 3 listing copy — small dog/multi-pet bridge", "status": "QUEUED" }
+      ]
+    },
+    {
+      "week_start": "2026-05-11",
+      "week_end": "2026-05-17",
+      "week_label": "Week of May 11 — May 17",
+      "is_current": false,
+      "growth_lever": "Razor-blade ratio + new market validation",
+      "target_metric": {
+        "name": "Razor-blade ratio (filter:fountain)",
+        "baseline": "0.27",
+        "target": "0.35+",
+        "baseline_value": 0.27,
+        "target_value": 0.35,
+        "unit": "",
+        "direction": "up"
+      },
+      "thesis": "By May 11 we have 14 days of filter PPC data. If filter PPC works, scale it. EXP-050 launches dog PPC validation against Wave 3 listing.",
+      "experiments": [
+        { "id": "EXP-048", "scheduled_date": "2026-05-11", "title": "Decision: score EXP-048 14d filter PPC", "status": "DECISION" },
+        { "id": "EXP-050", "scheduled_date": "2026-05-11", "title": "Dog PPC validation launch", "status": "QUEUED" }
+      ]
+    }
+  ],
+
+  "tracking": [
+    {
+      "id": "EXP-046",
+      "title": "Bid surgery on 6 active keywords",
+      "started": "2026-04-27",
+      "decision_date": "2026-05-04",
+      "days_running": 0,
+      "days_until_decision": 7,
+      "target_metric": "Portfolio ACoS",
+      "baseline_value": 44.0,
+      "target_value": 35.0,
+      "current_value": null,
+      "current_value_label": "First daily pull tomorrow 7am",
+      "unit": "%",
+      "direction": "down",
+      "expected": "Cut $10/day from bleeder while protecting winner. Portfolio ACoS 44% → <35% in 7 days.",
+      "actual": "Day 0. Bid changes pending Victor's apply in Campaign Manager. Tomorrow 7am cron pulls Apr 27 data — first measurable signal.",
+      "learning": "First time per-keyword ACoS drives bid decisions instead of campaign-aggregate. Validates if a single-day cadence is responsive enough or if 7d window is right."
+    },
+    {
+      "id": "EXP-047",
+      "title": "Add 5 missing exact-match cat keywords",
+      "started": "2026-04-28",
+      "decision_date": "2026-05-04",
+      "days_running": 0,
+      "days_until_decision": 7,
+      "target_metric": "Incremental conversions from new keywords",
+      "baseline_value": 0,
+      "target_value": 1,
+      "current_value": null,
+      "current_value_label": "Not launched yet",
+      "unit": "units",
+      "direction": "up",
+      "expected": "Add ~$3-5/day spend at 30-40% ACoS. 1+ conversion across 5 new keywords in 7d.",
+      "actual": "Pending launch.",
+      "learning": "If H10 search-volume estimates correlate with real impressions captured."
+    },
+    {
+      "id": "EXP-048",
+      "title": "Filter cross-sell campaign launch (B0FWXJ1GKT)",
+      "started": "2026-04-28",
+      "decision_date": "2026-05-11",
+      "days_running": 0,
+      "days_until_decision": 14,
+      "target_metric": "Filter units sold via PPC",
+      "baseline_value": 0,
+      "target_value": 2,
+      "current_value": null,
+      "current_value_label": "Not launched yet",
+      "unit": "units",
+      "direction": "up",
+      "expected": "$5/day spend → 1-2 filter sales/wk at 30-50% ACoS.",
+      "actual": "Pending launch.",
+      "learning": "Whether branded-search filter buyers exist in volume sufficient to justify scaling."
+    },
+    {
+      "id": "EXP-035",
+      "title": "Request-a-Review systematic campaign",
+      "started": "2026-04-19",
+      "decision_date": "2026-05-04",
+      "days_running": 8,
+      "days_until_decision": 7,
+      "target_metric": "Star count",
+      "baseline_value": 21,
+      "target_value": 25,
+      "current_value": 21,
+      "current_value_label": "21 (no new reviews)",
+      "unit": "reviews",
+      "direction": "up",
+      "expected": "2-3 new reviews in 7 days. Recover Amazon's Choice badge.",
+      "actual": "Stars stable at 4.5 but no new reviews this week. Badge LOST since Apr 20. 4 fountain + 2 filter Apr 25 buyers are next-up requests.",
+      "learning": "Without a workflow to send reviews on schedule, the ask drifts. Need to systematize the Apr 25 batch this week."
+    },
+    {
+      "id": "EXP-040",
+      "title": "Bundle copy decision (rewrite or deactivate)",
+      "started": "2026-04-12",
+      "decision_date": "2026-04-29",
+      "days_running": 15,
+      "days_until_decision": 2,
+      "target_metric": "Bundle units sold per 7d",
+      "baseline_value": 0,
+      "target_value": 1,
+      "current_value": 0,
+      "current_value_label": "0 (zero sales last 7d)",
+      "unit": "units",
+      "direction": "up",
+      "expected": "1+ bundle sale per week sustained, OR trigger copy rewrite.",
+      "actual": "Apr 11-17 had 1 sale; Apr 18-26 had 0. The single sale was an outlier — no follow-on demand at current copy.",
+      "learning": "Title that buries the value prop produces single accidental conversions but no sustained demand. Trigger rewrite Apr 29."
+    },
+    {
+      "id": "EXP-034",
+      "title": "Aged inventory removal decision",
+      "started": "2026-04-12",
+      "decision_date": "2026-04-30",
+      "days_running": 15,
+      "days_until_decision": 3,
+      "target_metric": "Days of cover (fountain)",
+      "baseline_value": 1008,
+      "target_value": 365,
+      "current_value": 518,
+      "current_value_label": "518 days",
+      "unit": "days",
+      "direction": "down",
+      "expected": "Decision: absorb $128.84 surcharge OR remove N units before May 1.",
+      "actual": "Velocity improved 0.37/day → 0.71/day = days-of-cover halved 1008 → 518. But still 1.4 years of cover. Surcharge looms.",
+      "learning": "Velocity is improving with PPC discipline. Removal becomes harder to justify if trend continues — decide before May 1."
+    }
+  ],
+
+  "backlog": [
+    {
+      "id": "EXP-046",
+      "title": "Bid surgery on 6 active keywords",
+      "scheduled_date": "2026-04-27",
+      "priority": "CRITICAL",
+      "growth_metric": "Portfolio ACoS",
+      "listing": "fountain",
+      "assumption": "One keyword (`stainless steel cat water fountain`) is consuming 46% of Apr 26 PPC spend with $0 sales. Cutting its bid by 31% and raising winner bids by 11-21% should compound to ~30% portfolio ACoS within 7 days.",
+      "rationale": "Apr 26 Ads API gave us per-keyword ACoS for the first time. Bleeder has 1358 impressions / 5 clicks / 0 conversions = poor relevance. Cut bid first; if still 0 conversions in 7d at $1.10, pause entirely.",
+      "expected_change": "Daily spend $22 → $15-18. Portfolio ACoS 44% → <35%. Winner gains 30-50% more impression share.",
+      "execution_steps": [
+        "Open Seller Central > Campaigns > Sponsored Products > Manual Keywords Campaign > Phrase Match ad group",
+        "Find `stainless steel cat water fountain` — change bid $1.60 → $1.10",
+        "Find `cat fountain stainless steel` — change bid $1.80 → $2.00",
+        "Find `cat water fountain stainless steel` — change bid $1.49 → $1.80",
+        "Save. Daily 7am cron will pull new ACoS data automatically."
+      ]
+    },
+    {
+      "id": "EXP-047",
+      "title": "Add 5 missing exact-match cat keywords",
+      "scheduled_date": "2026-04-28",
+      "priority": "HIGH",
+      "growth_metric": "Conversions (incremental)",
+      "listing": "fountain",
+      "assumption": "These 5 keywords (~14K combined SV) have low title density and weak competitor ranks. The strategy doc assumed they were running but Ads API confirmed they are NOT. Adding at conservative bids should yield 1-2 incremental conversions/wk.",
+      "rationale": "We rank #160+ organically, so PPC is the only access. Conservative bids prevent runaway spend. If any keyword gets 0 impressions in 3 days, raise +20%.",
+      "expected_change": "+$3-5/day spend at 30-40% ACoS. 1-2 incremental units/wk.",
+      "execution_steps": [
+        "Open Manual Keywords Campaign > Phrase Match ad group > Add keywords",
+        "Add as exact match with these bids:",
+        "  • wireless cat water fountain — $0.90",
+        "  • cordless cat water fountain — $1.10",
+        "  • cat water fountain wireless — $1.00",
+        "  • cat water fountain cordless — $1.00",
+        "  • metal cat water fountain — $1.20",
+        "Save. Verify all 5 show 'Active' status.",
+        "Confirm campaign-level negatives (pumpless, filterless, ceramic, no filter) are scoped here."
+      ]
+    },
+    {
+      "id": "EXP-048",
+      "title": "Filter cross-sell campaign launch (B0FWXJ1GKT)",
+      "scheduled_date": "2026-04-28",
+      "priority": "HIGH",
+      "growth_metric": "Razor-blade ratio",
+      "listing": "filters",
+      "assumption": "Filter ASIN has 0 PPC, 2 organic units/7d, 43% gross margin (vs fountain 33%). Branded filter searches like `veken cat water fountain filters` (SV 3,256) have intent. $5/day at $0.80 exact bid = 1-2 sales/wk.",
+      "rationale": "Filter is the razor blade in the razor-blade model. Current ratio 0.27 — well below industry standard 0.6+. PPC on filters is the cheapest scale lever and the buyer cohort already converted on the fountain.",
+      "expected_change": "$5/day spend → 1-2 filter sales/wk at 30-50% ACoS. Razor-blade ratio 0.27 → 0.35+ within 30 days.",
+      "execution_steps": [
+        "Seller Central > Campaigns > Create campaign > Sponsored Products > Manual targeting",
+        "Campaign name: Filters_Manual_2026-04-28",
+        "Daily budget: $5",
+        "ASIN: B0FWXJ1GKT",
+        "Targeting: Manual > Keyword targeting > Exact match",
+        "Add keyword: `veken cat water fountain filters` at $0.80 bid",
+        "Add negatives at campaign level: `pawira filter`, `petlibro filter`, `paws & pals filter`",
+        "Save and launch."
+      ]
+    },
+    {
+      "id": "EXP-035",
+      "title": "Request-a-Review for Apr 25 buyers",
+      "scheduled_date": "2026-04-28",
+      "priority": "CRITICAL",
+      "growth_metric": "Star count + Amazon's Choice",
+      "listing": "brand",
+      "assumption": "Apr 25 had 6 orders (4 fountain + 2 filter). Sending Request-a-Review on the 5-day post-delivery mark catches buyers when satisfaction signal is fresh. 2-3 new reviews moves us from 21 → 23-24, closing the gap to badge recovery.",
+      "rationale": "Amazon's Choice badge LOST since Apr 20. Without it, organic CTR drops 15-25%. Reviews are the controllable input.",
+      "expected_change": "+2-3 reviews in 7 days. Move toward 25+ review threshold for badge recovery.",
+      "execution_steps": [
+        "Open Seller Central > Orders > Manage Orders",
+        "Filter to Apr 25 ship date",
+        "For each of 6 orders, click order → Contact buyer → 'Request a Review' (one-click button)",
+        "Schedule any buyer past their 5-day delivery mark today; rest at delivery+5",
+        "Log in cash_balance.json or new reviews_log.json with date sent."
+      ]
+    },
+    {
+      "id": "EXP-040",
+      "title": "Bundle copy rewrite (deactivate decision)",
+      "scheduled_date": "2026-04-29",
+      "priority": "HIGH",
+      "growth_metric": "Bundle units sold",
+      "listing": "bundle",
+      "assumption": "Apr 11-17 had 1 sale (outlier); Apr 18-26 had 0. Two consecutive zero-sale weeks confirms title buries the value prop. Rewrite leading with 'Starter Kit + Save' framing should drive 1+ sale within 14d.",
+      "rationale": "Bundle is the highest-margin item in the catalog and unlocks the filter subscription flywheel. Zero-sale weeks indicate copy problem, not demand problem (filter sells separately).",
+      "expected_change": "1+ bundle sale within 14 days OR formal deactivation (EXP-036).",
+      "execution_steps": [
+        "Open existing experiment_log.json EXP-040 execution block for full new title + bullets text",
+        "Seller Central > Inventory > B0GMDM6CG2 > Edit",
+        "Replace title with new copy. Replace bullets 1-5.",
+        "Submit. Approval ~24h.",
+        "If 0 sales by May 13, formally deactivate via EXP-036."
+      ]
+    },
+    {
+      "id": "EXP-034",
+      "title": "Aged inventory removal decision (May 1 surcharge)",
+      "scheduled_date": "2026-04-30",
+      "priority": "MEDIUM",
+      "growth_metric": "Cash on hand",
+      "listing": "ops",
+      "assumption": "Velocity improved 0.37 → 0.71/day this week. If trend holds, 365-day cover threshold is reachable in ~6 weeks. Absorbing the $128.84 surcharge is cheaper than removal fees IF velocity holds.",
+      "rationale": "Removal cost ~$0.50/unit + outbound shipping. 150 units removed = ~$100. Surcharge $128.84 once. Marginal savings unless velocity stalls.",
+      "expected_change": "Decision documented Apr 30: absorb surcharge (default) OR remove ~150 units.",
+      "execution_steps": [
+        "Open Seller Central > Inventory > Aged Inventory Surcharge report",
+        "Confirm exact surcharge amount and effective date",
+        "Pull last 14d daily velocity from PL_Data files",
+        "If velocity > 0.6/day: absorb surcharge",
+        "If velocity < 0.5/day: submit FBA removal order for ~150 units before midnight Apr 30"
+      ]
+    },
+    {
+      "id": "EXP-049",
+      "title": "Wave 3 listing copy — small dog/multi-pet bridge",
+      "scheduled_date": "2026-05-05",
+      "priority": "MEDIUM",
+      "growth_metric": "Conversion (CVR)",
+      "listing": "fountain",
+      "assumption": "Dog buyers bounce on cat-only listing copy. Adding multi-pet imagery + bullet 4 mention will let dog PPC (EXP-050) convert without harming cat CVR.",
+      "rationale": "Cerebro shows dog SV is 2-3x cat SV. We cannot bid on dog terms profitably until the listing answers 'will this work for my dog?' in the first scroll.",
+      "expected_change": "Unblocks EXP-050. Holds cat CVR within ±0.5pt of pre-publish baseline.",
+      "execution_steps": [
+        "Seller Central > Inventory > B0DJHQVJYF > Edit",
+        "Bullet 4: append '...also great for small dogs and multi-pet households — 67oz capacity serves multiple drinkers'",
+        "A+ Content: upload 1 image of small dog drinking from fountain (replace decorative cat image)",
+        "Submit for review. Approval 24-48h.",
+        "After live: do NOT touch cat-side bullets/title. Stability protects re-earning Amazon's Choice."
+      ]
+    },
+    {
+      "id": "EXP-050",
+      "title": "Dog PPC validation launch",
+      "scheduled_date": "2026-05-11",
+      "priority": "MEDIUM",
+      "growth_metric": "Dog category conversions",
+      "listing": "ppc",
+      "assumption": "Once Wave 3 listing publishes, bidding on 2 phrase-match dog keywords at $0.60 with $5/day cap should yield 1-2 dog-attributed sales in 14d at <60% ACoS. Above 60%, kill.",
+      "rationale": "Dog SV 2-3x cat. If even 30% of clicks convert, we unlock a market larger than current cat focus.",
+      "expected_change": "1+ dog-attributed sale in 14 days. ACoS data validates whether to scale or kill dog targeting.",
+      "execution_steps": [
+        "BLOCKED: confirm EXP-049 listing copy is published live before launching",
+        "Seller Central > Campaigns > Create campaign > Sponsored Products > Manual targeting",
+        "Campaign name: SP_Dog_Validation_2026-05-11",
+        "Daily budget: $5 (HARD CAP)",
+        "Add keywords (phrase match): `dog water fountain stainless steel` $0.60, `stainless steel dog water fountain` $0.60",
+        "Add negatives: `cat`, `kitten`, `kitty`",
+        "Save and launch.",
+        "Monitor daily. If 14d ACoS > 60%, pause."
+      ]
+    },
+    {
+      "id": "EXP-021",
+      "title": "Image overlay — feature callouts on hero image",
+      "scheduled_date": "2026-05-18",
+      "priority": "HIGH",
+      "growth_metric": "CTR from search",
+      "listing": "fountain",
+      "assumption": "Hero image is generic. Adding 3 callouts (`67oz`, `Wireless`, `Stainless Steel`) overlay should lift CTR 10-15%.",
+      "rationale": "Wave 4 element. Standard practice in pet category. Competitors all use overlays.",
+      "expected_change": "CTR +10-15% within 14 days of new image going live.",
+      "execution_steps": [
+        "Design overlay variant in Canva (3 callouts, brand colors)",
+        "Export PNG 2000x2000",
+        "Seller Central > Inventory > B0DJHQVJYF > Manage Images > replace position 1",
+        "Submit. ~6h propagation."
+      ]
+    },
+    {
+      "id": "EXP-022",
+      "title": "Bullet rewrite — convert visitors into buyers",
+      "scheduled_date": "2026-05-19",
+      "priority": "MEDIUM",
+      "growth_metric": "Conversion (CVR)",
+      "listing": "fountain",
+      "assumption": "Current bullets describe features. Rewrite with benefit-led structure (problem → solution → proof) lifts CVR from 3.4% → 4.5%+.",
+      "rationale": "Wave 3 priority experiment. Includes EXP-031 + EXP-033 sub-themes (price-anchor + filter-frequency).",
+      "expected_change": "CVR 3.4% → 4.5%+ within 14d of new bullets going live.",
+      "execution_steps": [
+        "See experiment_log.json EXP-022 execution block for full copy-paste bullets",
+        "Edit listing in Seller Central",
+        "Submit. 24h approval."
+      ]
+    }
+  ],
+
+  "data_freshness": {
+    "ads_api": "1 day of data (Apr 26). Daily 7am cron now active — accumulating.",
+    "sp_finances": "Apr 26 (current via daily pipeline)",
+    "sp_orders": "Apr 26 (current)",
+    "h10_cerebro": "Apr 26 cat-filter export ingested"
+  }
+}
