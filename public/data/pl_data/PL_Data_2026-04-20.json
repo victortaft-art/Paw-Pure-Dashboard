@@ -1,0 +1,301 @@
+{
+  "date": "2026-04-20",
+  "period": "7-day",
+  "data_source": "real",
+  "config_last_updated": "2026-04-03",
+  "_fee_note": "Using April 2026 updated FBA fees: Fountain $7.01 FBA, Filters $4.09 FBA.",
+  "sc_data_source": "SC_Data_2026-04-20.json (real: FBA Orders + Manage Inventory + partial Campaign Manager)",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 374,
+      "fba_inbound": 0,
+      "total_stock": 374,
+      "daily_velocity_30day": 0.4,
+      "daily_velocity_7day": 0.57,
+      "_velocity_note": "30-day: 12 units/30 days = 0.40/day (Manage Inventory display). 7-day: 4 fountain units/7 days = 0.57/day. 7-day velocity unchanged from Apr 19. 30-day improved as Mallory Apr 18 entered window.",
+      "days_of_cover_30day": 935,
+      "days_of_cover_7day": 656,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "bsr": 103823,
+      "_bsr_note": "BSR 103,823 — REGRESSION of +22,146 from Apr 19 (was 81,677). Two zero-sale days Apr 19-20 appear to be erasing badge gains. Amazon's Choice badge status not re-verified today."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 141,
+      "fba_inbound": 0,
+      "total_stock": 141,
+      "daily_velocity": 0.2,
+      "days_of_cover": 705,
+      "status": "HEALTHY",
+      "reorder_needed": false
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "VIRTUAL BUNDLE — uses component inventory"
+    }
+  },
+  "pl_7day": {
+    "_period": "Apr 14-20, 2026",
+    "_note": "5 order lines. 4 fountain units (3 standalone + 1 bundle component) + 1 filter (bundle component) + 1 bundle. Revenue $214.96. IDENTICAL to Apr 19 7-day window (Dee Apr 12 rolled off; no new orders Apr 19 or Apr 20 to replace).",
+    "fountain": {
+      "units": 3,
+      "revenue": 149.97,
+      "amazon_fee": 43.53,
+      "_fee_calc": "3 × $14.51",
+      "cogs": 52.74,
+      "_cogs_calc": "3 × $17.58",
+      "gross_profit": 53.7,
+      "margin_pct": 35.81,
+      "_note": "3 standalone fountain sales: Ruth $49.99 + Jennifer $49.99 + Mallory $49.99"
+    },
+    "filters": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0,
+      "_note": "No standalone filter sale this week. Jerry's bundle filter component counted under bundle."
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.59,
+      "cogs": 21.55,
+      "gross_profit": 27.85,
+      "margin_pct": 42.85,
+      "_note": "Jerry's bundle purchase Apr 15"
+    },
+    "totals": {
+      "units": 4,
+      "revenue": 214.96,
+      "gross_profit": 81.55,
+      "gross_margin_pct": 37.94,
+      "ad_spend_est": null,
+      "ad_spend_note": "7-day ad spend not captured today. Campaign Manager 'All' overview does not expose spend. Needs Sponsored Products tab or Campaigns list view. From Apr 19 estimate: ~$30/week. Today's ad spend $22.46 so far (single day) suggests weekly could be higher than $30 — flagging for re-estimation once spend is captured.",
+      "true_contribution_margin_est": null,
+      "contribution_margin_pct_est": null,
+      "_note": "True contribution margin cannot be calculated without 7-day ad spend. Per 'never invent' rule, holding these fields null until Campaign Manager spend is captured."
+    },
+    "razor_blade_ratio": 0.25,
+    "_razor_blade_note": "1 bundle / 3 standalone fountains + 0 standalone filters. Same as Apr 19. Filter attach opportunity from Ruth/Jennifer/Mallory purchases (future reorders)."
+  },
+  "pl_30day": {
+    "_period": "Mar 21-Apr 20, 2026",
+    "_note": "Based on Manage Inventory 30-day sales display: Fountain $496 (12 units), Filter $118 (6 units). Same displayed values as Apr 19 — Manage Inventory may not have refreshed for today's window shift. Unit count on fountain updated from 10 to 12 today.",
+    "fountain": {
+      "units": 12,
+      "revenue": 496,
+      "_revenue_source": "real — Manage Inventory display ($496, 12 units sold)",
+      "amazon_fee": 174.12,
+      "_fee_calc": "12 × $14.51",
+      "cogs": 210.96,
+      "_cogs_calc": "12 × $17.58",
+      "gross_profit": 110.92,
+      "margin_pct": 22.36,
+      "_margin_note": "Margin dropped as $496 / 12 units = $41.33 avg price (below $49.99 list). Some sales were bundle components ($46.42) and/or Chelsea's refund reduced the net revenue figure."
+    },
+    "filters": {
+      "units": 6,
+      "revenue": 118,
+      "_revenue_source": "real — Manage Inventory display ($118, includes bundle component)",
+      "amazon_fee": 42.54,
+      "_fee_calc": "6 × $7.09",
+      "cogs": 23.82,
+      "_cogs_calc": "6 × $3.97",
+      "gross_profit": 51.64,
+      "margin_pct": 43.76
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.59,
+      "cogs": 21.55,
+      "gross_profit": 27.85,
+      "margin_pct": 42.85
+    },
+    "totals": {
+      "units": 19,
+      "revenue": 678.99,
+      "gross_profit": 190.41,
+      "gross_margin_pct": 28.04,
+      "ad_spend_est": null,
+      "true_contribution_margin": null,
+      "_note": "30-day gross profit recalculated at $190.41 (lower than Apr 19's $254.59) because fountain unit count is now 12 at $496 revenue = lower avg price per unit. Revenue $678.99 unchanged. Gross margin compressed to 28%. Needs 30-day ad spend refresh to complete contribution margin."
+    }
+  },
+  "daily_sales": {
+    "_data_source": "real",
+    "_source": "Derived from confirmed FBA orders (dates, buyers, ASINs, amounts) captured via Claude-in-Chrome orders-v3 page.",
+    "_window": "Apr 11 - Apr 20, 2026 (10 days)",
+    "_validation": "Apr 14-20 sum = $214.96 (matches pl_7day.totals.revenue). No orders Apr 11, 13, 14, 16, 19, 20 — all zero-revenue days confirmed.",
+    "days": [
+      {
+        "date": "2026-04-11",
+        "revenue": 0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-12",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "Dee 114-0775715-7617013 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-13",
+        "revenue": 0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-14",
+        "revenue": 0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-15",
+        "revenue": 64.99,
+        "units": 1,
+        "orders": [
+          "Jerry 112-2924548-1803455 bundle $64.99"
+        ]
+      },
+      {
+        "date": "2026-04-16",
+        "revenue": 0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-17",
+        "revenue": 99.98,
+        "units": 2,
+        "orders": [
+          "Ruth 113-9942143-7521824 fountain $49.99",
+          "Jennifer 111-5139369-7007431 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-18",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "Mallory 114-0094253-6041057 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "revenue": 0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-20",
+        "revenue": 0,
+        "units": 0,
+        "orders": []
+      }
+    ]
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-14 to 2026-04-20",
+      "actual_revenue": 214.96,
+      "actual_gross_profit": 81.55,
+      "est_ad_spend": null,
+      "est_contribution_margin": null,
+      "_note": "Actual revenue + gross profit real. Ad spend pending Campaign Manager refresh."
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-21 to 2026-04-27",
+      "projected_revenue": 249.95,
+      "projected_units": 5,
+      "projected_gross_profit": 94.57,
+      "projected_ad_spend": 30,
+      "projected_contribution_margin": 64.57,
+      "_note": "Projection adjusted DOWN from Apr 19 forecast ($299.94) due to BSR regression and 48h no-order streak. Need to verify badge status before next projection."
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-04-28 to 2026-05-04",
+      "projected_revenue": 299.94,
+      "projected_units": 6,
+      "projected_gross_profit": 113.57,
+      "projected_ad_spend": 30,
+      "projected_contribution_margin": 83.57,
+      "_note": "Wave 3 bullet rewrite live (Apr 26). If CVR recovers, target $300/week."
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-05 to 2026-05-11",
+      "projected_revenue": 349.93,
+      "projected_units": 7,
+      "projected_gross_profit": 132.47,
+      "projected_ad_spend": 30,
+      "projected_contribution_margin": 102.47,
+      "_note": "Assumes badge recovery + CVR lift from bullet rewrite. Aged inventory surcharge kicks in ~May 1."
+    }
+  ],
+  "alerts": {
+    "critical": [
+      "BSR regression: Fountain BSR jumped from 81,677 (Apr 19) to 103,823 (Apr 20), +22,146. Two zero-sale days Apr 19-20 appear to be erasing the badge-driven gains. VERIFY Amazon's Choice badge is still active on listing.",
+      "48-hour no-order streak: Apr 19 and Apr 20 both zero sales. Longest dry spell since badge activated Apr 17. Monitor Apr 21-22 closely — three dry days would signal badge loss.",
+      "PPC 7-day spend unknown: Campaign Manager 'All' overview hides spend/ACoS/orders. Need Sponsored Products tab screenshot to complete P&L."
+    ],
+    "warning": [
+      "30-day gross margin compressed from 37.50% (Apr 19) to 28.04% (Apr 20) — caused by fountain unit count updating to 12 at $496 revenue (avg $41.33 vs $49.99 list). Investigate: are bundle components + refunds pulling avg down, or is there genuine pricing erosion?",
+      "Review count not captured today — need manual check of listing page."
+    ],
+    "positive": [
+      "Inventory stable: Fountain 374, Filter 141 (no stockout risk).",
+      "7-day revenue holding at $214.96 — same as Apr 19 despite two zero-sale days, because Mallory + Ruth + Jennifer + Jerry orders still inside window."
+    ]
+  },
+  "kpis": {
+    "revenue_7d": 214.96,
+    "revenue_30d": 678.99,
+    "units_7d": 4,
+    "units_30d": 19,
+    "gross_margin_7d_pct": 37.94,
+    "gross_margin_30d_pct": 28.04,
+    "contribution_margin_7d_est": null,
+    "contribution_margin_pct_est": null,
+    "sessions_7d": null,
+    "sessions_per_day_7d": null,
+    "cvr_7d_pct": null,
+    "days_of_cover_fountain_30d": 935,
+    "days_of_cover_fountain_7d": 656,
+    "days_of_cover_filters": 705,
+    "razor_blade_ratio_7d": 0.25,
+    "review_count_est": 21,
+    "_review_note": "REAL — Verified Apr 20 via Campaign Manager Products page (Fountain row shows (21)). Still at 21, holding at badge threshold.",
+    "review_rating": 4.5,
+    "bsr_pet_supplies": 103823,
+    "bsr_delta_vs_apr19": 22146,
+    "_bsr_delta_note": "Regression. Need to verify badge status.",
+    "amazon_choice": null,
+    "_amazon_choice_note": "Not re-verified today. Public listing blocked for extension.",
+    "ppc_impressions_7d": 24772,
+    "ppc_clicks_7d": 132,
+    "ppc_sales_7d": 164.97,
+    "ppc_spend_7d": null,
+    "ppc_acos_7d": null,
+    "ppc_orders_7d": null,
+    "ppc_ctr_7d_pct": 0.53,
+    "_notes": "PARTIAL DATA: BSR regressed significantly. 48h no-order streak. Revenue stable because window math. PPC 7d shows 132 clicks generated $164.97 sales (32% of total 7d revenue came from PPC). Spend/ACoS/orders pending.",
+    "ppc_acos_30d": 166.67,
+    "ppc_spend_30d": 608.22,
+    "ppc_sales_30d": 364.93,
+    "ppc_roas_30d": 0.6,
+    "_ppc_30d_note": "REAL — Campaign Manager Products page Mar 21-Apr 20 window. Spend computed from Sales/ROAS. ACoS worsened from 149.06% yesterday."
+  }
+}

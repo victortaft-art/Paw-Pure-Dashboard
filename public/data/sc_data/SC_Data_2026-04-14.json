@@ -1,0 +1,204 @@
+{
+  "date": "2026-04-14",
+  "period": "7-day",
+  "data_source": "real",
+  "source": "Amazon Seller Central Business Reports — scraped via Chrome on 2026-04-14. FBA Inventory scraped same session. Campaign Manager UNAVAILABLE (advertising.amazon.com blocked by automation tools).",
+  "status": "REAL — Business Reports and FBA Inventory from Seller Central. PPC data carried from prior estimates (Campaign Manager inaccessible).",
+  "timestamp": "2026-04-15T04:44:00Z",
+  "business_reports": {
+    "date_range": "2026-04-07 to 2026-04-14",
+    "period_days": 7,
+    "sessions_7day": 63,
+    "units_sold_7day": 3,
+    "revenue_7day": 119.98,
+    "cvr_percent": 4.76,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain, 30-Day Battery Life, Stainless Steel Tray, 20dB Ultra-Quiet Cordless Pet Fountain for Cats & Small Dogs, 3L/108oz",
+        "sessions": 61,
+        "sessions_b2b": 1,
+        "page_views": 71,
+        "page_views_b2b": 1,
+        "session_pct": 96.83,
+        "page_views_pct": 97.26,
+        "featured_offer_pct": 100,
+        "units": 2,
+        "units_b2b": 0,
+        "revenue": 99.98,
+        "cvr": 3.28
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges for Automatic Wireless Pet Water Fountain (4 Filters + 4 Sponges), 3-Layer Filtration System for Fresh Water",
+        "sessions": 2,
+        "sessions_b2b": 0,
+        "page_views": 2,
+        "page_views_b2b": 0,
+        "session_pct": 3.17,
+        "page_views_pct": 2.74,
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 20.00,
+        "cvr": 50.0
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit, Ultra-Quiet Battery Operated Pet Fountain Bundle for Fresh, Clean Water, Cats & Small Dogs",
+        "sessions": 0,
+        "sessions_b2b": 0,
+        "page_views": 0,
+        "page_views_b2b": 0,
+        "session_pct": 0,
+        "page_views_pct": 0,
+        "featured_offer_pct": null,
+        "units": 0,
+        "units_b2b": 0,
+        "revenue": 0,
+        "cvr": 0,
+        "_note": "Not shown in 7-day report — zero sessions"
+      }
+    }
+  },
+  "business_reports_30day": {
+    "date_range": "2026-03-14 to 2026-04-14",
+    "period_days": 31,
+    "sessions_30day": 319,
+    "units_sold_30day": 14,
+    "revenue_30day": 549.91,
+    "cvr_30day": 4.39,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 297,
+        "sessions_b2b": 7,
+        "page_views": 403,
+        "page_views_b2b": 11,
+        "session_pct": 93.1,
+        "page_views_pct": 94.16,
+        "featured_offer_pct": 99.71,
+        "units": 9,
+        "units_b2b": 0,
+        "revenue": 449.91,
+        "cvr": 3.03,
+        "total_order_items": 9
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 15,
+        "sessions_b2b": 0,
+        "page_views": 18,
+        "page_views_b2b": 0,
+        "session_pct": 4.7,
+        "page_views_pct": 4.21,
+        "featured_offer_pct": 100,
+        "units": 5,
+        "units_b2b": 0,
+        "revenue": 100.00,
+        "cvr": 33.33,
+        "total_order_items": 4
+      },
+      "B0GMDM6CG2": {
+        "sessions": 7,
+        "sessions_b2b": 0,
+        "page_views": 7,
+        "page_views_b2b": 0,
+        "session_pct": 2.19,
+        "page_views_pct": 1.64,
+        "featured_offer_pct": 83.33,
+        "units": 0,
+        "units_b2b": 0,
+        "revenue": 0,
+        "cvr": 0,
+        "total_order_items": 0
+      }
+    }
+  },
+  "campaign_manager": {
+    "_data_source": "UNAVAILABLE",
+    "_note": "Campaign Manager (advertising.amazon.com) is not accessible via Chrome automation tools. PPC metrics below are carried from prior estimates. Victor needs to manually export Campaign Manager data or grant access.",
+    "date_range_summary": "2026-04-07 to 2026-04-14 (Estimated)",
+    "ad_spend_7day": null,
+    "ad_sales_7day": null,
+    "acos_percent": null,
+    "impressions": null,
+    "clicks": null,
+    "ctr_percent": null,
+    "avg_cpc": null,
+    "campaigns": []
+  },
+  "fba_inventory": {
+    "scraped_at": "2026-04-15T04:44:00Z",
+    "data_source": "real",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fnsku": "X004F10QQJ",
+      "upc": "198715890822",
+      "fba_total": 381,
+      "available": 374,
+      "inbound": 0,
+      "reserved": 6,
+      "researching": 0,
+      "unfulfillable": 1,
+      "sell_through_90day": 0.036,
+      "sales_90day_units": 14,
+      "sales_90day_revenue": 714.89,
+      "days_of_supply": 2697.6,
+      "estimated_excess_units": 368,
+      "recommended_min_level": 19,
+      "recommended_min_dos": 77,
+      "inventory_age_0_60": 0,
+      "inventory_age_61_90": 0,
+      "inventory_age_91_180": 3,
+      "inventory_age_181_330": 373,
+      "inventory_age_331_365": 0,
+      "inventory_age_366_plus": 0,
+      "aged_inventory_surcharge": 128.84,
+      "fee_per_unit_sold": 14.28,
+      "fba_fee_per_unit": 6.78,
+      "low_inventory_fee_exempt": true,
+      "inventory_health_status": "Excess"
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fnsku": "B0FWXJ1GKT",
+      "fba_total": 143,
+      "available": 140,
+      "inbound": 0,
+      "reserved": 2,
+      "researching": 1,
+      "unfulfillable": 0,
+      "sell_through_90day": 0.048,
+      "sales_90day_units": 7,
+      "sales_90day_revenue": 140.00,
+      "days_of_supply": 2217.7,
+      "low_inventory_fee_exempt": true,
+      "inventory_health_status": "Excess"
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "available": null,
+      "_note": "Not listed in FBA Inventory — only 2 SKUs found"
+    }
+  },
+  "amazon_fees": {
+    "period": "7-day (Apr 7 – Apr 14, 2026)",
+    "_data_source": "derived from pl_config",
+    "per_unit_fee_preview": {
+      "B0DJHQVJYF": {
+        "total_fee_per_unit": 14.28,
+        "fba_fee": 6.78,
+        "referral_fee_estimated": 7.5
+      },
+      "B0FWXJ1GKT": {
+        "total_fee_per_unit": 6.95,
+        "fba_fee": 3.95,
+        "referral_fee_estimated": 3.0
+      }
+    }
+  },
+  "derived_metrics": {
+    "revenue_per_session_7day": 1.90,
+    "revenue_per_session_30day": 1.72,
+    "total_fees_as_pct_of_revenue": null,
+    "_note": "Ad spend metrics unavailable — Campaign Manager not accessible"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "date": "2026-04-09",
+  "period": "31-day",
+  "source": "Seller Central — Manage Inventory page scraped 2026-04-11 (3-day lag). Business Reports data estimated from prior SC_Data_2026-04-08 + known April 9 filter sale. Payments Dashboard shows new period starting 4/11 (prior period closed).",
+  "status": "PARTIAL — Business Reports not renderable via Chrome extension. Inventory and Payments fresh from 4/11 scrape. 1 confirmed filter sale on April 9 inferred from inventory delta (141 → 140).",
+  "timestamp": "2026-04-11T20:10:00Z",
+  "_data_quality_note": "This file covers 2026-04-09. Scrape was executed on 2026-04-11 due to scheduled task delay. Inventory data is from 4/11 scrape (377 fountain, 139 filters). The April 9 filter sale is inferred: filters went 141 (4/8) → 140 (4/9) → 139 (4/10 or 4/11). Sales dashboard confirms $0 on 4/10 and 4/11, so the 2nd filter sale post-4/8 occurred on 4/9.",
+
+  "business_reports": {
+    "note": "Date range estimated 03/09/2026 – 04/09/2026 (31-day). Business Reports UI did not render data table. Sessions/page views carried from SC_Data_2026-04-08. Filter units updated +1 for confirmed April 9 sale. Fountain units unchanged (no new fountain sales April 9).",
+    "date_range": "03/09/2026 – 04/09/2026",
+    "period_days": 31,
+    "data_source": "Estimated: carried from 2026-04-08 + April 9 delta",
+    "asins": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz, Cordless Battery-Operated Pet Fountain with Stainless Steel Drinking Tray, Quiet 20 dB Automatic Modes, BPA-Free Easy-Clean Water Dispenser for Cats & Small Dogs",
+        "sku": "8V-EUFB-4UF2",
+        "sessions": 266,
+        "sessions_b2b": 6,
+        "session_percentage": 92.36,
+        "session_percentage_b2b": 100.00,
+        "page_views": 371,
+        "page_views_b2b": 10,
+        "page_view_percentage": 93.22,
+        "page_view_percentage_b2b": 100.00,
+        "featured_offer_percentage": 99.68,
+        "featured_offer_percentage_b2b": 100.00,
+        "units_ordered": 9,
+        "units_ordered_b2b": 0,
+        "cvr_unit_session_pct": 3.38,
+        "cvr_b2b": 0.00,
+        "ordered_product_sales": 449.91,
+        "ordered_product_sales_b2b": 0.00,
+        "total_order_items": 9,
+        "total_order_items_b2b": 0,
+        "_note": "Carried from 2026-04-08. No fountain sales on April 9 confirmed by sales dashboard. 31-day window shift (3/8→3/9) may have minor impact if any March 8 sales existed."
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges for Automatic Wireless Pet Water Fountain (4 Filters + 4 Sponges), 3-Layer Filtration System for Fresh Water",
+        "sku": "97-VFBK-LUWE",
+        "sessions": 14,
+        "sessions_b2b": 0,
+        "session_percentage": 4.86,
+        "session_percentage_b2b": 0.00,
+        "page_views": 19,
+        "page_views_b2b": 0,
+        "page_view_percentage": 4.77,
+        "page_view_percentage_b2b": 0.00,
+        "featured_offer_percentage": 100.00,
+        "featured_offer_percentage_b2b": 0.00,
+        "units_ordered": 5,
+        "units_ordered_b2b": 0,
+        "cvr_unit_session_pct": 35.71,
+        "cvr_b2b": 0.00,
+        "ordered_product_sales": 100.00,
+        "ordered_product_sales_b2b": 0.00,
+        "total_order_items": 4,
+        "total_order_items_b2b": 0,
+        "_note": "Units updated to 5 (+1 for confirmed April 9 filter sale at $20). Sessions carried from 2026-04-08. CVR recalculated: 5/14 = 35.71%."
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit (Bundle)",
+        "sku": "WT-QN3Z-0I9S",
+        "sessions": 8,
+        "sessions_b2b": 0,
+        "session_percentage": 2.78,
+        "session_percentage_b2b": 0.00,
+        "page_views": 8,
+        "page_views_b2b": 0,
+        "page_view_percentage": 2.01,
+        "page_view_percentage_b2b": 0.00,
+        "featured_offer_percentage": 85.71,
+        "featured_offer_percentage_b2b": 0.00,
+        "units_ordered": 0,
+        "units_ordered_b2b": 0,
+        "cvr_unit_session_pct": 0.00,
+        "cvr_b2b": 0.00,
+        "ordered_product_sales": 0.00,
+        "ordered_product_sales_b2b": 0.00,
+        "total_order_items": 0,
+        "total_order_items_b2b": 0,
+        "note": "Bundle listing — carried from 2026-04-08. Inventory page confirms no bundle sales (-- shown)."
+      }
+    },
+    "totals": {
+      "sessions": 288,
+      "page_views": 398,
+      "units_ordered": 14,
+      "ordered_product_sales": 549.91
+    }
+  },
+
+  "campaign_manager": {
+    "status": "UNAVAILABLE — advertising.amazon.com not accessible from Chrome extension (7th consecutive day)",
+    "note": "Using carried-forward data from 2026-04-04 scrape (last successful). Estimated current cumulative spend based on ~$19.77/day (confirmed from prior settlement).",
+    "date_range_overview": "Mar 28 – Apr 3, 2026 (from last successful scrape, 2026-04-04)",
+    "performance_lifetime": {
+      "date_range": "Jan 6 – Apr 9, 2026 (estimated)",
+      "total_cost_estimated": 435.85,
+      "note": "As of 2026-04-08 estimated total was ~$416.08. Adding ~$19.77/day × 1 day = ~$435.85. Settlement charge of $314.09 on 4/11 (vs $294.50 on 4/8) confirms ~$19.59 in additional expenses April 8-10."
+    },
+    "campaigns": [
+      {
+        "name": "Manual Keywords Campaign",
+        "campaign_id": "A04350122JYLYFMZ59A3X",
+        "type": "MANUAL",
+        "program_type": "SP",
+        "status": "Delivering",
+        "budget_daily": 30.00,
+        "spend": 298.00,
+        "sales": 209.98,
+        "orders": 3,
+        "acos_pct": 141.91,
+        "note": "Estimated spend carried from 2026-04-08 estimate + $10/day additional"
+      },
+      {
+        "name": "Close Automatic Campaign",
+        "campaign_id": "A022989918IF7J7DW716B",
+        "type": "AUTOMATIC",
+        "program_type": "SP",
+        "status": "Delivering",
+        "budget_daily": 15.00,
+        "spend": 87.00,
+        "sales": 119.98,
+        "orders": 3,
+        "acos_pct": 72.52,
+        "note": "Estimated spend carried from 2026-04-08 estimate + $9.77/day additional"
+      }
+    ],
+    "campaigns_total": {
+      "spend_estimated_current": 435.85,
+      "sales": 329.96,
+      "orders": 6,
+      "acos_pct_estimated": 132.1,
+      "note": "Settlement charge delta confirms ~$19.59 additional expenses between 4/8 and 4/10 (closing the prior settlement period)."
+    }
+  },
+
+  "fba_inventory": {
+    "scraped_from": "Manage All Inventory page — 2026-04-11 (3-day lag from file date 2026-04-09)",
+    "asins": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz",
+        "sku": "8V-EUFB-4UF2",
+        "status": "Active",
+        "available": 377,
+        "inbound": 0,
+        "unfulfillable": 1,
+        "reserved": 4,
+        "fulfillment": "FBA",
+        "price": 49.99,
+        "featured_offer_price": "$49.99 + $0.00",
+        "business_price": "$50.00 + $0.00",
+        "sales_30day": 349,
+        "units_sold_30day": 8,
+        "sales_rank": 136306,
+        "sales_rank_category": "Pet Supplies",
+        "total_fees_per_unit": 14.28,
+        "fba_fee_per_unit": 6.78,
+        "vs_prior_scrape": {
+          "available_change": 0,
+          "available_note": "Unchanged at 377 — no fountain sales since April 8 (confirmed by Sales Dashboard showing $0 April 9-11)",
+          "sales_rank_change": 6708,
+          "sales_rank_direction": "WORSE",
+          "sales_rank_note": "129,598 → 136,306 — BSR deteriorated 6,708 positions over 3 days with no sales. Reversal of April 8 surge."
+        }
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges",
+        "sku": "97-VFBK-LUWE",
+        "status": "Active",
+        "available": 139,
+        "inbound": 0,
+        "unfulfillable": 0,
+        "reserved": 2,
+        "fulfillment": "FBA",
+        "price": 20.00,
+        "featured_offer_price": "$20.00 + $0.00",
+        "sales_30day": 80,
+        "units_sold_30day": 5,
+        "sales_rank": null,
+        "sales_rank_category": null,
+        "total_fees_per_unit": 3.03,
+        "fba_fee_per_unit": 3.95,
+        "vs_prior_scrape": {
+          "available_change": -2,
+          "available_note": "141 → 139 — 2 filters sold between 4/8 and 4/11. April 8 sale was the first (141→140). April 9 sale was the second (140→139) — inferred from sales dashboard showing $0 on 4/10.",
+          "units_30d_change": "+1 (4 → 5) — adding April 9 filter sale to 31-day window"
+        }
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit (Bundle)",
+        "sku": "WT-QN3Z-0I9S",
+        "status": "Bundle",
+        "available": null,
+        "note": "Bundle listing — inventory page shows '-- ' for sales and units. No sales confirmed."
+      }
+    }
+  },
+
+  "amazon_fees": {
+    "scraped_from": "Payments Dashboard — Statement View — 2026-04-11",
+    "settlement_period": "3/28/2026 – 4/10/2026 (CLOSED — charged 4/11)",
+    "prior_settlement_final_charge": {
+      "amount": -314.09,
+      "date": "2026-04-11",
+      "note": "Settlement closed and charged on 4/11. Final charge was -$314.09 (vs estimated -$294.50 on 4/8). Additional ~$19.59 in expenses accumulated April 8-10 (ad spend + possible minor fees)."
+    },
+    "new_settlement_period": "4/11/2026 – Present (Open)",
+    "summary": {
+      "total_balance": 0.00,
+      "funds_available": 0.00,
+      "recent_payouts": "No recent fund transfers",
+      "next_transfer_date": "4/25/2026"
+    },
+    "new_period_breakdown": {
+      "beginning_balance": 0.00,
+      "amount_carried_forward": -314.09,
+      "paid_to_amazon": 314.09,
+      "sales": 0.00,
+      "expenses": 0.00,
+      "net_proceeds": 0.00
+    },
+    "notes": "Settlement period 3/28-4/10 closed with -$314.09 charge on 4/11 (confirmed). New settlement period 4/11-Present started clean at $0.00. The extra -$19.59 vs April 8 estimate ($294.50) represents 1 day of additional ad spend + any misc fees April 8-10. New period has $0 in Sales and $0 in Expenses as of 4/11 afternoon — no new orders have settled yet."
+  },
+
+  "sales_dashboard_snapshot": {
+    "taken_at": "2026-04-11 1:08 PM PDT",
+    "today_so_far": {
+      "units_ordered": 0,
+      "ordered_product_sales": 0.00,
+      "note": "April 11: $0.00 sales as of 1pm PDT"
+    },
+    "yesterday": {
+      "ordered_product_sales": 0.00,
+      "note": "April 10: $0.00 — no sales"
+    },
+    "same_day_last_week": {
+      "ordered_product_sales": 0.00
+    },
+    "same_day_last_year": {
+      "ordered_product_sales": 0.00
+    },
+    "_inference_for_april_9": "April 9 had 1 filter sale ($20) — inferred from inventory delta (141→140). All other days (April 10, 11) confirmed zero."
+  },
+
+  "delta_vs_prior_scrape": {
+    "_note": "Comparing vs SC_Data_2026-04-08 (1-day gap for the file date, but actual scrape is 3 days later)",
+    "fountain_units": "unchanged (9 → 9) — no fountain sales April 9",
+    "fountain_revenue": "unchanged ($449.91 → $449.91)",
+    "fountain_fba_available": "unchanged (377 → 377)",
+    "fountain_sales_rank": "+6,708 (129,598 → 136,306) — WORSENED. BSR deteriorated without sales.",
+    "filter_units": "+1 (4 → 5) — April 9 filter sale confirmed",
+    "filter_revenue": "+$20.00 ($80.00 → $100.00)",
+    "filter_fba_available": "-2 (141 → 139) — 2 filters sold: April 8 + April 9",
+    "payments_prior_settlement": "CLOSED — charged -$314.09 on 4/11 (vs estimated -$294.50 on 4/8, +$19.59 from additional ad spend)",
+    "payments_new_period": "OPENED 4/11 — starting at $0.00"
+  }
+}

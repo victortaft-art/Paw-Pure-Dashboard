@@ -1,0 +1,173 @@
+{
+  "date": "2026-04-11",
+  "period": "7-day",
+  "config_last_updated": "2026-04-03",
+  "sc_data_source": "SC_Data_2026-04-11.json",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 377,
+      "fba_inbound": 0,
+      "total_stock": 377,
+      "daily_velocity": 0.286,
+      "days_of_cover": 1320,
+      "status": "🔵 OVERSTOCKED",
+      "reorder_needed": false,
+      "reorder_by_date": "2029-07-23",
+      "reorder_status": "🟢 On Track",
+      "reorder_qty": 0,
+      "reorder_cost": 0,
+      "stockout_date": "2029-11-21"
+    },
+    "filters": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "fba_inbound": null,
+      "total_stock": null,
+      "daily_velocity": 0,
+      "days_of_cover": null,
+      "status": "⚠️ NOT IN FBA — inventory data unavailable",
+      "reorder_needed": null,
+      "reorder_by_date": null,
+      "reorder_qty": 0,
+      "reorder_cost": 0,
+      "stockout_date": null,
+      "_note": "B0GMDM6CG2 not listed in FBA Inventory. May not be FBA-fulfilled or has zero stock."
+    },
+    "bundle": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 140,
+      "fba_inbound": 0,
+      "total_stock": 140,
+      "daily_velocity": 0.143,
+      "days_of_cover": 980,
+      "status": "🔵 OVERSTOCKED",
+      "reorder_needed": false,
+      "reorder_by_date": "2028-08-18",
+      "reorder_status": "🟢 On Track",
+      "reorder_qty": 0,
+      "reorder_cost": 0,
+      "stockout_date": "2028-12-16"
+    }
+  },
+  "pl_7day": {
+    "fountain": {
+      "units": 2,
+      "revenue": 99.98,
+      "amazon_fee": 31,
+      "cogs": 35.16,
+      "gross_profit": 33.82,
+      "margin_pct": 33.83
+    },
+    "filters": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 20,
+      "amazon_fee": 3,
+      "cogs": 3.97,
+      "gross_profit": 13.03,
+      "margin_pct": 65.15,
+      "_note": "B0FWXJ1GKT selling at $20.00 (filter pack), not $64.99 (bundle). Used filter COGS ($3.97) and actual fee ($3.00)."
+    },
+    "totals": {
+      "units": 3,
+      "revenue": 119.98,
+      "gross_profit": 46.85,
+      "ad_spend": 163.31,
+      "true_contribution_margin": -116.46,
+      "contribution_margin_pct": -97.07,
+      "storage_fees": -246.63,
+      "subscription_fee": -36.59,
+      "total_all_in_profit": -399.68
+    },
+    "razor_blade_ratio": 0.5,
+    "actual_acos_pct": 326.69,
+    "vs_prior_week": {
+      "delta_revenue": 0,
+      "delta_contribution": -91.86,
+      "delta_razor_blade": 0,
+      "prior_date": "2026-04-05"
+    }
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-11",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 34,
+      "projected_ad_spend": 163.31,
+      "projected_net_cash": -116.46,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain 377 units, bundle 140 units",
+      "storage_fee_impact": 61.66
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-18",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 34,
+      "projected_ad_spend": 163.31,
+      "projected_net_cash": -116.46,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain 377 units, bundle 140 units",
+      "storage_fee_impact": 61.66
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-04-25",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 34,
+      "projected_ad_spend": 163.31,
+      "projected_net_cash": -116.46,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain 377 units, bundle 140 units",
+      "storage_fee_impact": 61.66
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-02",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 34,
+      "projected_ad_spend": 163.31,
+      "projected_net_cash": -116.46,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain 377 units, bundle 140 units",
+      "storage_fee_impact": 61.66
+    }
+  ],
+  "alerts": {
+    "critical": [
+      "🔴 NEGATIVE CONTRIBUTION MARGIN: $-116.46 this week. Business is burning cash.",
+      "🔴 ACoS 327%: Spending $163.31 on ads to generate $49.99 in ad sales. Catastrophic ad efficiency.",
+      "🔴 FBA STORAGE FEES: $246.63 charged this week for aged inventory."
+    ],
+    "warning": [
+      "🟡 AD SPEND EXCEEDS GROSS PROFIT: $163.31 ad spend vs $46.85 gross profit.",
+      "🟡 FILTERS NOT IN FBA: B0GMDM6CG2 has no FBA inventory data. Manual check needed.",
+      "🟡 BUNDLE ASP MISMATCH: Config says $64.99 but actual sales at $20.00. Config may need update.",
+      "🟡 MASSIVELY OVERSTOCKED: Fountain 377 units at 0.29/day = ~1,300 days cover. Storage fees accumulating."
+    ],
+    "positive": [
+      "🟢 FOUNTAIN SALES STABLE: 2 units this week, matching prior week.",
+      "🟢 INVENTORY SECURE: No stockout risk for any FBA product.",
+      "🟢 BUY BOX: Fountain 98.88%, Bundle 100%."
+    ]
+  },
+  "sunday_call_prep": {
+    "true_contribution_margin": "$-116.46 (worsened $91.86 WoW)",
+    "most_urgent_inventory_action": "No reorder needed — all products overstocked. Priority: reduce storage fees.",
+    "razor_blade_health": "0.50 filters per fountain (BELOW TARGET of 1.0)",
+    "biggest_concern": "Ad spend $163.31 generated only $49.99 in sales (ACoS 327%). Storage fees $246.63/week."
+  }
+}

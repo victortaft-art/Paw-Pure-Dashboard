@@ -1,0 +1,307 @@
+{
+  "date": "2026-04-08",
+  "period": "31-day (03/08/2026 – 04/08/2026)",
+  "config_last_updated": "2026-04-03",
+  "sc_data_source": "SC_Data_2026-04-08.json (fresh scrape — Business Reports, Inventory, and Payments Dashboard scraped today)",
+  "data_quality": "GOOD — business report, inventory, and payments data are fresh. PPC data carried from 2026-04-04 (Campaign Manager inaccessible 5th day). Ad spend CONFIRMED via Payments Dashboard ($217.48).",
+
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 377,
+      "fba_inbound": 0,
+      "unfulfillable": 1,
+      "reserved": 4,
+      "total_sellable_stock": 377,
+      "daily_velocity": 0.290,
+      "_velocity_note": "9 units / 31 days = 0.290 units/day. Improved from 0.258/day on 04/06.",
+      "days_of_cover": 1300,
+      "_days_of_cover_note": "377 available / 0.290/day = ~1,300 days — still MASSIVELY overstocked",
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "stockout_date": "~2029-10 (not a concern)",
+      "lead_time_days": 90,
+      "safety_stock_days": 30,
+      "overstock_alert": "377 units at 0.290/day = 1,300 days of cover. STORAGE FEES NOW CONFIRMED: $246.63 monthly storage charged in current settlement period.",
+      "storage_cost_monthly": 246.63,
+      "_storage_note": "FBA monthly inventory storage fee from Payments Dashboard. This covers ALL SKUs but majority is from fountain (377 units) and filters (141 units)."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 141,
+      "fba_inbound": 0,
+      "unfulfillable": 0,
+      "reserved": 2,
+      "total_sellable_stock": 141,
+      "daily_velocity": 0.129,
+      "_velocity_note": "4 units / 31 days = 0.129 units/day (unchanged)",
+      "days_of_cover": 1093,
+      "_days_of_cover_note": "141 / 0.129/day = ~1,093 days — still overstocked",
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "stockout_date": "~2029-03 (not a concern)",
+      "lead_time_days": 90,
+      "safety_stock_days": 45,
+      "overstock_alert": "141 units at 0.129/day = 1,093 days of cover. Storage fees accumulating (included in $246.63 monthly total)."
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "Bundle listing — no separate inventory",
+      "daily_velocity": 0,
+      "days_of_cover": null,
+      "note": "Bundle getting 8 sessions but 0 conversions (0% CVR). Featured offer at 85.71% — buy box issues continue."
+    }
+  },
+
+  "pl_31day": {
+    "fountain": {
+      "units": 9,
+      "revenue": 449.91,
+      "asp": 49.99,
+      "amazon_fee": 139.50,
+      "_fee_note": "9 units × $15.50/unit (referral $7.50 + FBA $8.00)",
+      "cogs": 158.22,
+      "_cogs_note": "9 units × $17.58/unit",
+      "gross_profit": 152.19,
+      "gross_margin_pct": 33.8,
+      "gross_profit_per_unit": 16.91
+    },
+    "filters": {
+      "units": 4,
+      "revenue": 80.00,
+      "asp": 20.00,
+      "amazon_fee": 27.80,
+      "_fee_note": "4 units × $6.95/unit (referral $3.00 + FBA $3.95)",
+      "cogs": 15.88,
+      "_cogs_note": "4 units × $3.97/unit",
+      "gross_profit": 36.32,
+      "gross_margin_pct": 45.4,
+      "gross_profit_per_unit": 9.08
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0
+    },
+    "totals": {
+      "units": 13,
+      "revenue": 529.91,
+      "amazon_fees": 167.30,
+      "cogs": 174.10,
+      "gross_profit": 188.51,
+      "gross_margin_pct": 35.6,
+      "ad_spend_confirmed": 217.48,
+      "_ad_spend_note": "CONFIRMED from Payments Dashboard: $217.48 in 'Cost of Advertising' for settlement period 3/28-present (11 days). Proportioned to 31-day: ~$217.48 × (31/11) = ~$612.72 run-rate equivalent (NOT actual — settlement period is shorter than report period).",
+      "ad_spend_31day_estimated": 310.00,
+      "_ad_spend_31day_note": "Estimated $10/day × 31 days = $310. Conservative vs $217.48 in 11 days ($19.77/day would imply $613).",
+      "storage_fees_monthly": 246.63,
+      "_storage_note": "NEWLY VISIBLE — monthly FBA storage fee from Payments Dashboard. Not previously tracked in P&L.",
+      "true_contribution_margin": -368.12,
+      "_tcm_note": "Gross Profit $188.51 - Ad Spend est. $310.00 - Storage Fees $246.63 = -$368.12",
+      "contribution_margin_pct": -69.5,
+      "contribution_margin_excl_storage": -121.49,
+      "_tcm_excl_storage_note": "Gross Profit $188.51 - Ad Spend $310.00 = -$121.49 (for comparison with prior days)"
+    }
+  },
+
+  "pl_7day": {
+    "_note": "Estimated 7-day P&L proportioned from 31-day data",
+    "fountain": {
+      "units": 2.03,
+      "revenue": 101.59,
+      "amazon_fee": 31.50,
+      "cogs": 35.71,
+      "gross_profit": 34.38,
+      "margin_pct": 33.8
+    },
+    "filters": {
+      "units": 0.90,
+      "revenue": 18.06,
+      "amazon_fee": 6.28,
+      "cogs": 3.59,
+      "gross_profit": 8.19,
+      "margin_pct": 45.3
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0
+    },
+    "totals": {
+      "revenue": 119.65,
+      "amazon_fees": 37.78,
+      "cogs": 39.30,
+      "gross_profit": 42.57,
+      "ad_spend": 138.39,
+      "_ad_spend_note": "Based on confirmed $19.77/day from settlement × 7 days = $138.39",
+      "storage_fees_weekly": 56.89,
+      "_storage_note": "$246.63/month ÷ 4.33 weeks = ~$56.89/week",
+      "true_contribution_margin": -152.71,
+      "contribution_margin_pct": -127.6
+    },
+    "razor_blade_ratio": 0.44,
+    "actual_acos_pct": "Settlement-confirmed: $217.48 ad cost / $449.91 fountain revenue = 48.3% (improved vs prior 72.5% estimate — settlement period shorter than 31-day report)"
+  },
+
+  "razor_blade_ratio": {
+    "fountains_sold_31d": 9,
+    "filters_sold_31d": 4,
+    "ratio": 0.44,
+    "target": 1.0,
+    "status": "BELOW TARGET",
+    "note": "0.44 filter units per fountain unit (declined from 0.50 on 04/06 as fountain sold 1 more but filters unchanged). Target is 1.0."
+  },
+
+  "unit_economics_per_fountain": {
+    "asp": 49.99,
+    "amazon_fee": 15.50,
+    "cogs": 17.58,
+    "gross_profit": 16.91,
+    "gross_margin_pct": 33.8,
+    "ad_cost_per_unit_sold": 34.44,
+    "_ad_cost_note": "Estimated: $310 ad spend / 9 units = $34.44/unit. Improved from $36.25 on 04/06. Target: $12.50/unit at 25% ACoS. Still 2.8x above target.",
+    "storage_cost_per_unit_sold": 27.40,
+    "_storage_note": "$246.63 / 9 units = $27.40/unit — storage is now a LARGER cost than COGS ($17.58)!",
+    "true_profit_per_unit": -44.93,
+    "_true_profit_note": "$16.91 gross - $34.44 ads - $27.40 storage = -$44.93/unit",
+    "breakeven_acos_pct": 33.8,
+    "current_acos_pct_estimated": 68.9,
+    "_current_acos_note": "31-day estimated: $310 / $449.91 = 68.9%. Settlement-confirmed rate: $217.48/$449.91 = 48.3% for 11-day period.",
+    "status": "DEEPLY UNPROFITABLE — storage fees now make each sale cost MORE to fulfill"
+  },
+
+  "payments_snapshot": {
+    "settlement_period": "3/28/2026 – Present",
+    "total_balance": -294.50,
+    "prior_balance": -83.58,
+    "balance_change": "-210.92 (WORSENED)",
+    "product_charges_period": 289.95,
+    "promo_rebates_period": -99.98,
+    "fba_fees_period": -246.63,
+    "fba_fees_detail": "Monthly inventory storage fee",
+    "cost_of_advertising_period": -217.48,
+    "amazon_fees_period": -70.90,
+    "expenses_total_period": -634.99,
+    "scheduled_charge_date": "2026-04-11",
+    "scheduled_charge_amount": -294.50,
+    "note": "Balance worsened $210.92 from 04/06 primarily due to $246.63 monthly storage fee hitting settlement. Product charges up +$49.99 (1 fountain sold). Amazon will CHARGE $294.50 on 4/11 — cash outflow in 3 days."
+  },
+
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "week_dates": "04/08 – 04/15",
+      "projected_revenue": 119.65,
+      "projected_cogs": 39.30,
+      "projected_fees": 37.78,
+      "projected_ad_spend": 138.39,
+      "_ad_note": "Based on confirmed $19.77/day. If campaigns paused: $0. If cut to $5/day: $35/week.",
+      "projected_storage": 56.89,
+      "projected_net_cash": -152.71,
+      "reorder_event": null,
+      "stockout_risk": "NONE — 377 units fountain, 141 units filters",
+      "special_events": "Amazon settlement charge -$294.50 due 04/11 — CASH OUTFLOW",
+      "overstock_cost_estimate": "$56.89/week in storage fees (confirmed)"
+    },
+    {
+      "week": 2,
+      "week_dates": "04/15 – 04/22",
+      "projected_revenue": 119.65,
+      "projected_cogs": 39.30,
+      "projected_fees": 37.78,
+      "projected_ad_spend": 35.00,
+      "_ad_note": "Assumes budget cut to $5/day actioned this week",
+      "projected_storage": 56.89,
+      "projected_net_cash": -49.32,
+      "reorder_event": null,
+      "stockout_risk": "NONE"
+    },
+    {
+      "week": 3,
+      "week_dates": "04/22 – 04/29",
+      "projected_revenue": 119.65,
+      "projected_cogs": 39.30,
+      "projected_fees": 37.78,
+      "projected_ad_spend": 35.00,
+      "projected_storage": 56.89,
+      "projected_net_cash": -49.32,
+      "reorder_event": null,
+      "stockout_risk": "NONE"
+    },
+    {
+      "week": 4,
+      "week_dates": "04/29 – 05/06",
+      "projected_revenue": 119.65,
+      "projected_cogs": 39.30,
+      "projected_fees": 37.78,
+      "projected_ad_spend": 35.00,
+      "projected_storage": 56.89,
+      "projected_net_cash": -49.32,
+      "reorder_event": null,
+      "stockout_risk": "NONE"
+    }
+  ],
+
+  "alerts": {
+    "critical": [
+      "STORAGE FEES HIT: $246.63 monthly FBA storage fee charged — this is now the SINGLE LARGEST COST LINE in the business, exceeding COGS ($174.10) and Amazon fees ($167.30).",
+      "AMAZON CHARGE DUE 4/11: -$294.50 scheduled — cash outflow in 3 days.",
+      "DEEPLY UNPROFITABLE: True contribution margin -$368.12 over 31 days (including storage). Business burning ~$11.88/day net.",
+      "AD SPEND STILL RUNNING: Confirmed $19.77/day average from settlement. Campaigns NOT paused despite 5 days of recommendations."
+    ],
+    "warning": [
+      "MASSIVELY OVERSTOCKED: Fountain 1,300 days cover (377 units), Filters 1,093 days cover (141 units). Storage fees will recur monthly.",
+      "RAZOR-BLADE RATIO 0.44: Declined from 0.50 — filter attach rate falling as fountain sales increase without matching filter sales.",
+      "PROMO REBATES -$99.98: Unchanged — large promotional spend continues.",
+      "BUNDLE DEAD: 8 sessions, 0 conversions, 85.71% featured offer. Consider deactivating."
+    ],
+    "positive": [
+      "BSR SURGED: 168,729 → 129,598 — improved 39,131 positions! Biggest BSR gain since launch. Yesterday's fountain sale drove significant rank improvement.",
+      "FOUNTAIN UNITS UP: 8 → 9 units in 31-day window (+12.5%). CVR improved 3.25% → 3.38%.",
+      "REVENUE GROWING: $479.92 → $529.91 (+$49.99, +10.4%) in 31-day window.",
+      "FILTER CVR 28.57%: Still extremely strong for repeat purchase.",
+      "BUY BOX STRONG: Fountain 99.68%, Filters 100%.",
+      "ORGANIC SALES WORKING: Dashboard shows consistent daily sales (filter today, fountain yesterday) — organic discovery improving independent of PPC.",
+      "CONFIRMED AD SPEND LOWER THAN ESTIMATED: Settlement shows $19.77/day actual vs $45/day budget capacity — budgets may already be underspending."
+    ]
+  },
+
+  "priority_actions": [
+    {
+      "rank": 1,
+      "action": "PAUSE manual campaign and cut auto to $5/day IMMEDIATELY",
+      "impact": "Save ~$100-175/week in confirmed wasted ad spend",
+      "urgency": "CRITICAL — OVERDUE 4 days. Settlement confirms $217.48 wasted with zero keyword-level conversions."
+    },
+    {
+      "rank": 2,
+      "action": "Investigate FBA removal or liquidation for excess fountain inventory",
+      "impact": "Reduce monthly storage fees ($246.63/month = $2,959/year). Even removing 200 units would significantly reduce fees.",
+      "urgency": "THIS WEEK — storage fees recur monthly"
+    },
+    {
+      "rank": 3,
+      "action": "Launch Request-a-Review campaign for all delivered orders",
+      "impact": "Accelerate review velocity from 0.66/week toward 3+/week — critical for organic conversion",
+      "urgency": "THIS WEEK"
+    },
+    {
+      "rank": 4,
+      "action": "Capitalize on BSR momentum — ensure listing is optimized for organic discovery",
+      "impact": "BSR improved 39K positions. Better listing = higher CVR from increased organic traffic.",
+      "urgency": "THIS WEEK"
+    },
+    {
+      "rank": 5,
+      "action": "Deactivate or rework bundle listing (B0GMDM6CG2)",
+      "impact": "0% CVR, 85.71% buy box — listing is not converting and may confuse shoppers",
+      "urgency": "LOW"
+    }
+  ]
+}

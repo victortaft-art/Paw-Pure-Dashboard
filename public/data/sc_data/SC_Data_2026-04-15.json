@@ -1,0 +1,227 @@
+{
+  "date": "2026-04-15",
+  "period": "7-day",
+  "data_source": "real",
+  "source": "Amazon Seller Central — Sales Dashboard and Manage Inventory scraped via Chrome on 2026-04-15 at ~8:45 PM PDT. FBA Inventory from Manage Inventory page. Business Reports 7-day/30-day table UNAVAILABLE (SPA shadow DOM rendering blocked). Campaign Manager UNAVAILABLE (advertising.amazon.com blocked).",
+  "status": "HYBRID — Sales Dashboard and FBA Inventory are real. 7-day/30-day Business Report metrics are derived from yesterday's real data + today's confirmed sales. BSR from Manage Inventory page (real).",
+  "timestamp": "2026-04-16T04:10:00Z",
+  "business_reports": {
+    "date_range": "2026-04-08 to 2026-04-15",
+    "period_days": 7,
+    "_data_source": "synthetic_estimated",
+    "_note": "Business Reports SPA table did not render accessible data during this automated session. 7-day figures derived: old 7-day (Apr 7-14) minus Apr 7 (est. $0) minus Apr 8 ($20 filter, confirmed via Sales Dashboard 'same day last week') plus Apr 15 ($64.99 bundle, confirmed via Sales Dashboard).",
+    "sessions_7day": 56,
+    "units_sold_7day": 4,
+    "revenue_7day": 164.97,
+    "cvr_percent": 7.14,
+    "_cvr_note": "4 units / 56 sessions = 7.1% — elevated due to bundle conversion",
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain, 30-Day Battery Life, Stainless Steel Tray, 20dB Ultra-Quiet Cordless Pet Fountain for Cats & Small Dogs, 3L/108oz",
+        "sessions": 54,
+        "sessions_b2b": 1,
+        "page_views": 62,
+        "page_views_b2b": 1,
+        "session_pct": 96.43,
+        "page_views_pct": 96.88,
+        "featured_offer_pct": 100,
+        "units": 2,
+        "units_b2b": 0,
+        "revenue": 99.98,
+        "cvr": 3.70,
+        "_note": "2 fountain sales assumed to have occurred Apr 9-14 (in-window). Derived from prior 7-day data."
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges for Automatic Wireless Pet Water Fountain (4 Filters + 4 Sponges), 3-Layer Filtration System for Fresh Water",
+        "sessions": 2,
+        "sessions_b2b": 0,
+        "page_views": 2,
+        "page_views_b2b": 0,
+        "session_pct": 3.57,
+        "page_views_pct": 3.13,
+        "featured_offer_pct": 100,
+        "units": 0,
+        "units_b2b": 0,
+        "revenue": 0,
+        "cvr": 0,
+        "_note": "Apr 8 filter sale ($20) confirmed via Sales Dashboard dropped out of new 7-day window. No standalone filter sale Apr 9-15."
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit, Ultra-Quiet Battery Operated Pet Fountain Bundle for Fresh, Clean Water, Cats & Small Dogs",
+        "sessions": 5,
+        "sessions_b2b": 0,
+        "page_views": 5,
+        "page_views_b2b": 0,
+        "session_pct": 0,
+        "page_views_pct": 0,
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 64.99,
+        "cvr": 20.0,
+        "_note": "FIRST BUNDLE SALE — confirmed via Sales Dashboard: 2 units ordered, $64.99 on Apr 15. Bundle reports as 1 ASIN unit but 2 physical units."
+      }
+    }
+  },
+  "sales_dashboard_today": {
+    "_data_source": "real",
+    "scraped_at": "2026-04-16T03:44:00Z",
+    "snapshot_time_pdt": "2026-04-15 8:44:45 PM PDT",
+    "total_order_items_today": 2,
+    "units_ordered_today": 2,
+    "revenue_today": 64.99,
+    "avg_units_per_order": 1.0,
+    "avg_sales_per_order": 32.50,
+    "yesterday_revenue": 0.00,
+    "same_day_last_week_revenue": 20.00,
+    "_interpretation": "1 bundle sale (B0GMDM6CG2 @ $64.99) = 2 line items (1 fountain component + 1 filter component). First bundle conversion recorded.",
+    "_yesterday_note": "Apr 14 had $0 in sales — all Apr 7-14 units were sold Apr 7-13."
+  },
+  "business_reports_30day": {
+    "date_range": "2026-03-16 to 2026-04-15",
+    "period_days": 30,
+    "_data_source": "synthetic_estimated",
+    "_note": "30-day derived from yesterday's real 30-day (Mar 14-Apr 14: 14 units, $549.91) minus Mar 14-15 estimated data + Apr 15 bundle sale.",
+    "sessions_30day": 328,
+    "units_sold_30day": 15,
+    "revenue_30day": 614.90,
+    "cvr_30day": 4.57,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 305,
+        "sessions_b2b": 7,
+        "page_views": 412,
+        "page_views_b2b": 11,
+        "session_pct": 93.0,
+        "page_views_pct": 94.1,
+        "featured_offer_pct": 99.7,
+        "units": 9,
+        "units_b2b": 0,
+        "revenue": 449.91,
+        "cvr": 2.95,
+        "total_order_items": 9
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 17,
+        "sessions_b2b": 0,
+        "page_views": 20,
+        "page_views_b2b": 0,
+        "session_pct": 5.18,
+        "page_views_pct": 4.57,
+        "featured_offer_pct": 100,
+        "units": 5,
+        "units_b2b": 0,
+        "revenue": 100.00,
+        "cvr": 29.41,
+        "total_order_items": 5
+      },
+      "B0GMDM6CG2": {
+        "sessions": 6,
+        "sessions_b2b": 0,
+        "page_views": 6,
+        "page_views_b2b": 0,
+        "session_pct": 1.83,
+        "page_views_pct": 1.37,
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 64.99,
+        "cvr": 16.67,
+        "total_order_items": 1,
+        "_note": "FIRST BUNDLE SALE — Apr 15, 2026. Validates bundle listing."
+      }
+    }
+  },
+  "campaign_manager": {
+    "_data_source": "UNAVAILABLE",
+    "_note": "Campaign Manager (advertising.amazon.com) not accessible via Chrome automation. PPC metrics unavailable for 14th consecutive day.",
+    "date_range_summary": "2026-04-08 to 2026-04-15 (Estimated)",
+    "ad_spend_7day": null,
+    "ad_sales_7day": null,
+    "acos_percent": null,
+    "impressions": null,
+    "clicks": null,
+    "ctr_percent": null,
+    "avg_cpc": null,
+    "campaigns": []
+  },
+  "fba_inventory": {
+    "scraped_at": "2026-04-16T03:57:00Z",
+    "data_source": "real",
+    "_source": "Scraped from Manage Your Inventory page (sellercentral.amazon.com/myinventory/inventory)",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fba_total": 380,
+      "available": 374,
+      "inbound": 0,
+      "reserved": 5,
+      "unfulfillable": 1,
+      "bsr_pet_supplies": 140726,
+      "_bsr_note": "BEST RANK EVER — 140,726 (was 154,800 yesterday, 175,000 last week). 14,074 rank improvement overnight. Bundle sale + PPC ads driving rank improvement.",
+      "sales_30day_manage_inventory": 349,
+      "units_30day_manage_inventory": 9,
+      "_manage_inv_note": "Manage Inventory shows $349 for 30-day sales (likely net after some fees or different metric vs Business Reports gross $449.91). Units match.",
+      "price": 49.99,
+      "total_fee_per_unit": 14.28,
+      "fba_fee_per_unit": 6.78,
+      "inventory_health_status": "Excess",
+      "days_of_supply_est": 1290,
+      "_velocity_note": "0.29 units/day (9 units / 31 days). 374 available / 0.29 = 1,290 days of cover."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fba_total": 141,
+      "available": 139,
+      "inbound": 0,
+      "reserved": 2,
+      "unfulfillable": 0,
+      "_delta_vs_yesterday": "Available: 139 (was 140 — down 1). Consistent with 1 filter unit pulled for Apr 15 bundle order (B0GMDM6CG2 bundles pull filter inventory).",
+      "sales_30day_manage_inventory": 100,
+      "units_30day_manage_inventory": 5,
+      "price": 20.00,
+      "total_fee_per_unit": 6.95,
+      "fba_fee_per_unit": 3.95,
+      "inventory_health_status": "Excess"
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "sku": "WT-QN3Z-0I9S",
+      "available": null,
+      "sales_30day": null,
+      "units_30day": null,
+      "_note": "Virtual bundle — no dedicated FBA inventory. Fulfilled using fountain (B0DJHQVJYF) + filter (B0FWXJ1GKT) component inventory. Today's bundle sale pulled 1 filter unit (confirmed: filter FBA dropped 140→139). Fountain FBA may not have updated yet or bundle pulls from different allocation."
+    }
+  },
+  "amazon_fees": {
+    "period": "7-day (Apr 8 – Apr 15, 2026)",
+    "_data_source": "derived from pl_config",
+    "per_unit_fee_preview": {
+      "B0DJHQVJYF": {
+        "total_fee_per_unit": 14.28,
+        "fba_fee": 6.78,
+        "referral_fee_estimated": 7.50
+      },
+      "B0FWXJ1GKT": {
+        "total_fee_per_unit": 6.95,
+        "fba_fee": 3.95,
+        "referral_fee_estimated": 3.00
+      },
+      "B0GMDM6CG2": {
+        "total_fee_per_unit": 15.25,
+        "fba_fee": 5.50,
+        "referral_fee_estimated": 9.75
+      }
+    }
+  },
+  "derived_metrics": {
+    "revenue_per_session_7day": 2.95,
+    "revenue_per_session_30day": 1.87,
+    "bsr_improvement_24h": 14074,
+    "bsr_improvement_7day": 34274,
+    "_bsr_trend": "STRONGLY IMPROVING — consistent BSR gains over 7 days as PPC campaigns build velocity",
+    "total_fees_as_pct_of_revenue": null,
+    "_note": "Ad spend metrics unavailable — Campaign Manager not accessible. Bundle sale milestone achieved."
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "date": "2026-04-14",
+  "period": "7-day",
+  "data_source": "real",
+  "config_last_updated": "2026-04-03",
+  "sc_data_source": "SC_Data_2026-04-14.json (real from Seller Central)",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 374,
+      "fba_total": 381,
+      "fba_inbound": 0,
+      "reserved": 6,
+      "unfulfillable": 1,
+      "total_stock": 374,
+      "daily_velocity": 0.29,
+      "daily_velocity_note": "9 units / 31 days = 0.29/day (30-day real data)",
+      "days_of_cover": 1290,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "inventory_health_status": "Excess",
+      "estimated_excess_units": 368
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 140,
+      "fba_total": 143,
+      "fba_inbound": 0,
+      "reserved": 2,
+      "researching": 1,
+      "total_stock": 140,
+      "daily_velocity": 0.16,
+      "daily_velocity_note": "5 units / 31 days = 0.16/day (30-day real data)",
+      "days_of_cover": 875,
+      "status": "HEALTHY",
+      "reorder_needed": false,
+      "inventory_health_status": "Excess"
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "NOT IN FBA",
+      "_note": "Not found in FBA Inventory. Zero sales in 30 days."
+    }
+  },
+  "pl_7day": {
+    "fountain": {
+      "units": 2,
+      "revenue": 99.98,
+      "amazon_fee": 31.00,
+      "cogs": 35.16,
+      "gross_profit": 33.82,
+      "margin_pct": 33.83,
+      "_calculation": "Revenue $99.98 - Fees $31.00 (2 x $15.50) - COGS $35.16 (2 x $17.58) = $33.82"
+    },
+    "filters": {
+      "units": 1,
+      "revenue": 20.00,
+      "amazon_fee": 6.95,
+      "cogs": 3.97,
+      "gross_profit": 9.08,
+      "margin_pct": 45.4,
+      "_calculation": "Revenue $20.00 - Fees $6.95 (1 x $6.95) - COGS $3.97 (1 x $3.97) = $9.08"
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0
+    },
+    "totals": {
+      "units": 3,
+      "revenue": 119.98,
+      "gross_profit": 42.90,
+      "ad_spend": null,
+      "true_contribution_margin": null,
+      "contribution_margin_pct": null,
+      "_calculation_notes": {
+        "gross_profit": "Revenue $119.98 - fees $37.95 - COGS $39.13 = $42.90",
+        "contribution_margin": "Cannot calculate — ad spend data unavailable (Campaign Manager inaccessible)"
+      }
+    },
+    "razor_blade_ratio": 0.50,
+    "_razor_blade_note": "1 filter unit for 2 fountain units = 0.50 ratio. Target is 1.0."
+  },
+  "pl_30day": {
+    "fountain": {
+      "units": 9,
+      "revenue": 449.91,
+      "amazon_fee": 139.50,
+      "cogs": 158.22,
+      "gross_profit": 152.19,
+      "margin_pct": 33.83
+    },
+    "filters": {
+      "units": 5,
+      "revenue": 100.00,
+      "amazon_fee": 34.75,
+      "cogs": 19.85,
+      "gross_profit": 45.40,
+      "margin_pct": 45.4
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0
+    },
+    "totals": {
+      "units": 14,
+      "revenue": 549.91,
+      "gross_profit": 197.59,
+      "ad_spend": null,
+      "true_contribution_margin": null,
+      "contribution_margin_pct": null,
+      "_note": "Ad spend data unavailable — Campaign Manager inaccessible. Gross profit is before ad spend."
+    }
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-14",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 37.95,
+      "projected_ad_spend": null,
+      "projected_gross_profit": 42.90,
+      "_note": "Based on real 7-day data. Ad spend unknown."
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-21",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 37.95,
+      "projected_ad_spend": null,
+      "projected_gross_profit": 42.90
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-04-28",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 37.95,
+      "projected_ad_spend": null,
+      "projected_gross_profit": 42.90
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-05",
+      "projected_revenue": 119.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 37.95,
+      "projected_ad_spend": null,
+      "projected_gross_profit": 42.90,
+      "_note": "May aged inventory surcharge ($128.84) expected around May 1."
+    }
+  ],
+  "alerts": [
+    {
+      "level": "CRITICAL",
+      "category": "DATA",
+      "message": "Campaign Manager data UNAVAILABLE — PPC spend, ACoS, and contribution margin cannot be calculated",
+      "action": "Victor needs to export Campaign Manager data manually from advertising.amazon.com"
+    },
+    {
+      "level": "WARNING",
+      "category": "AGED_INVENTORY",
+      "message": "373 fountain units in 181-330 day age band — aged inventory surcharge $128.84/month",
+      "action": "Accelerate sales velocity to reduce aged inventory drag"
+    },
+    {
+      "level": "WARNING",
+      "category": "VELOCITY",
+      "message": "7-day velocity dropped: 3 units (2 fountain + 1 filter) vs target of 7+ units/week",
+      "action": "Review PPC strategy and listing optimization experiments"
+    },
+    {
+      "level": "POSITIVE",
+      "category": "GROSS_MARGIN",
+      "message": "Gross profit (before ad spend) is $42.90/week — products are profitable at unit level",
+      "action": "Focus on volume growth and PPC efficiency to turn gross profit into net profit"
+    }
+  ],
+  "kpis": {
+    "revenue_7d": 119.98,
+    "revenue_30d": 549.91,
+    "units_7d": 3,
+    "units_30d": 14,
+    "acos_pct": null,
+    "tacos_pct": null,
+    "contribution_margin_7d": null,
+    "contribution_margin_pct": null,
+    "gross_margin_pct": 35.76,
+    "gross_margin_30d_pct": 35.93,
+    "days_of_cover_fountain": 1290,
+    "days_of_cover_filters": 875,
+    "razor_blade_ratio": 0.50,
+    "review_count": 21,
+    "review_rating": 4.5,
+    "_note": "ACoS/contribution margin null due to Campaign Manager being inaccessible"
+  }
+}

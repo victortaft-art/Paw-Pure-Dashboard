@@ -1,0 +1,231 @@
+{
+  "date": "2026-04-05",
+  "period": "7-day",
+  "source": "campaign_manager_carried_from_2026-04-04",
+  "data_quality_note": "Campaign Manager (advertising.amazon.com) inaccessible from Chrome extension. PPC campaign-level data carried from 2026-04-04 scrape. Business metrics (sessions, revenue) updated from today's SC scrape.",
+
+  "summary": {
+    "total_spend": 67.50,
+    "total_sales": 0.00,
+    "overall_acos": null,
+    "acos_display": "∞ (zero ad sales in last 7-day window from prior scrape)",
+    "total_impressions": 13652,
+    "total_clicks": 54,
+    "overall_ctr": 0.40,
+    "overall_cvr": 0.00,
+    "avg_cpc": 1.25,
+    "wasted_spend": 67.50,
+    "wasted_spend_pct": 100.0,
+    "alltime_acos": 107.92,
+    "alltime_spend": 356.08,
+    "alltime_sales": 329.96,
+    "daily_budget_total": 45.00,
+    "organic_cvr_31d": 2.94,
+    "organic_sessions_31d": 238,
+    "organic_units_31d": 7,
+    "organic_sales_31d": 349.93,
+    "organic_cvr_note": "31-day data from today's business report (03/05 – 04/05)"
+  },
+
+  "campaigns": [
+    {
+      "name": "Manual Keywords Campaign",
+      "type": "Sponsored Products - Manual",
+      "status": "Delivering",
+      "daily_budget": 30.00,
+      "estimated_spend_7d": 50.00,
+      "sales_7d": 0.00,
+      "acos_7d": null,
+      "impressions_7d": 10152,
+      "clicks_7d": 40,
+      "ctr_7d": 0.39,
+      "cvr_7d": 0.00,
+      "classification": "ZERO_SALES",
+      "known_active_keywords": [
+        "wireless cat water fountain",
+        "cat water fountain stainless steel wireless",
+        "wireless stainless steel pet water fountain"
+      ]
+    },
+    {
+      "name": "Close Automatic Campaign",
+      "type": "Sponsored Products - Auto",
+      "status": "Delivering",
+      "daily_budget": 15.00,
+      "estimated_spend_7d": 17.50,
+      "sales_7d": 0.00,
+      "acos_7d": null,
+      "impressions_7d": 3500,
+      "clicks_7d": 14,
+      "ctr_7d": 0.40,
+      "cvr_7d": 0.00,
+      "classification": "ZERO_SALES",
+      "known_active_keywords": [
+        "cordless cat water fountain"
+      ]
+    }
+  ],
+
+  "keyword_analysis": [
+    {
+      "keyword": "wireless cat water fountain",
+      "search_volume": 18100,
+      "organic_rank": null,
+      "ppc_impressions_7d": 4200,
+      "ppc_clicks_7d": 18,
+      "ppc_spend_7d": 22.50,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "flag": "CRITICAL: $22.50 spent, zero conversions. Highest-volume keyword.",
+      "action": "REDUCE_BID"
+    },
+    {
+      "keyword": "cat water fountain stainless steel wireless",
+      "search_volume": 6400,
+      "organic_rank": null,
+      "ppc_impressions_7d": 3100,
+      "ppc_clicks_7d": 12,
+      "ppc_spend_7d": 15.00,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "match_type": "phrase",
+      "campaign": "Manual Keywords Campaign",
+      "flag": "HIGH: $15.00 spent, zero conversions.",
+      "action": "REDUCE_BID"
+    },
+    {
+      "keyword": "wireless stainless steel pet water fountain",
+      "search_volume": 5600,
+      "organic_rank": null,
+      "ppc_impressions_7d": 2800,
+      "ppc_clicks_7d": 10,
+      "ppc_spend_7d": 12.50,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "flag": "HIGH: $12.50 spent, zero conversions.",
+      "action": "REDUCE_BID"
+    },
+    {
+      "keyword": "cordless cat water fountain",
+      "search_volume": 8900,
+      "organic_rank": null,
+      "ppc_impressions_7d": 1900,
+      "ppc_clicks_7d": 8,
+      "ppc_spend_7d": 10.00,
+      "ppc_sales_7d": 0,
+      "ppc_acos_7d": null,
+      "ppc_cpc": 1.25,
+      "match_type": "auto",
+      "campaign": "Close Automatic Campaign",
+      "flag": "HIGH: $10.00 spent from auto campaign, zero conversions.",
+      "action": "REDUCE_BID"
+    }
+  ],
+
+  "keyword_gap_opportunities": [
+    {
+      "keyword": "battery operated cat fountain",
+      "search_volume": 7200,
+      "paw_pure_status": "not_indexed",
+      "recommendation": "Launch PPC — SV 7,200, 7/10 competitors using this term.",
+      "priority": "HIGH"
+    },
+    {
+      "keyword": "quiet cat water fountain",
+      "search_volume": 4100,
+      "paw_pure_status": "not_indexed",
+      "recommendation": "Launch PPC — SV 4,100. Paw Pure's 20dB is a unique advantage.",
+      "priority": "HIGH"
+    },
+    {
+      "keyword": "automatic dog water fountain stainless steel",
+      "search_volume": 4800,
+      "paw_pure_status": "not_indexed",
+      "recommendation": "Launch after listing optimization mentioning dogs.",
+      "priority": "MEDIUM"
+    },
+    {
+      "keyword": "small dog water fountain wireless",
+      "search_volume": 3200,
+      "paw_pure_status": "not_indexed",
+      "recommendation": "Launch after EXP-023 (small dogs title update) completes.",
+      "priority": "MEDIUM"
+    }
+  ],
+
+  "action_plan": [
+    {
+      "rank": 1,
+      "priority": "CRITICAL",
+      "action": "REDUCE_BUDGET",
+      "campaign": "All campaigns",
+      "recommended_change": "Reduce Manual Keywords from $30 to $12/day, Close Automatic from $15 to $8/day. Total: $20/day (was $45/day).",
+      "expected_weekly_savings": 175.00,
+      "rationale": "100% wasted ad spend for 2nd consecutive week. Bleeding must stop. Carry forward from 2026-04-04 — NOT YET CONFIRMED ACTIONED."
+    },
+    {
+      "rank": 2,
+      "priority": "CRITICAL",
+      "action": "INVESTIGATE_LISTING",
+      "recommended_change": "Audit main image, price vs competitors, bullet points, review count. 54 clicks → 0 orders is a listing conversion failure.",
+      "expected_weekly_savings": 0,
+      "rationale": "Organic CVR is 2.94% but ad CVR is 0%. Traffic quality mismatch or listing not converting for ad shoppers."
+    },
+    {
+      "rank": 3,
+      "priority": "HIGH",
+      "action": "REDUCE_BID",
+      "keyword": "wireless cat water fountain",
+      "recommended_change": "Reduce bid from ~$1.25 to $0.75. Switch broad → phrase match.",
+      "expected_weekly_savings": 9.00
+    },
+    {
+      "rank": 4,
+      "priority": "HIGH",
+      "action": "LAUNCH",
+      "keyword": "battery operated cat fountain",
+      "recommended_change": "Add as exact match at $0.75 CPC.",
+      "expected_weekly_savings": 0
+    },
+    {
+      "rank": 5,
+      "priority": "HIGH",
+      "action": "LAUNCH",
+      "keyword": "quiet cat water fountain",
+      "recommended_change": "Add as exact match at $0.70 CPC. Product differentiator.",
+      "expected_weekly_savings": 0
+    }
+  ],
+
+  "alerts": {
+    "critical": [
+      "100% WASTED AD SPEND: $67.50 spent in last tracked 7-day window with ZERO ad-attributed sales.",
+      "LIFETIME ACoS 107.92%: Total ad spend ($356.08) now exceeds total ad sales ($329.96) by $26.12.",
+      "CAMPAIGN MANAGER INACCESSIBLE: advertising.amazon.com blocked by Chrome extension — PPC data is STALE (from 2026-04-04).",
+      "SALES RANK DECLINING: Fountain BSR worsened 13,897 positions (144,487 → 158,384) in one day."
+    ],
+    "warning": [
+      "NO ORGANIC RANKING: Paw Pure has no organic rank for any tracked keyword.",
+      "BUDGET CUT NOT CONFIRMED: Recommended budget reduction (to $20/day) from 2026-04-04 — unknown if actioned.",
+      "SALES RANK NEGATIVE TREND: If rank continues declining, it signals reduced organic visibility and sales momentum."
+    ],
+    "positive": [
+      "BUY BOX 100%: Full buy box ownership maintained.",
+      "FILTER CVR STRONG: 23.53% CVR on filter ASIN — razor-blade repeat purchase model working.",
+      "31-DAY REVENUE $429.93: Fountain $349.93 + Filters $80.00 combined."
+    ]
+  },
+
+  "one_action_this_week": {
+    "action": "Immediately cut budgets to $20/day total ($12 manual, $8 auto) and investigate why 54 PPC clicks produced zero orders. Check listing conversion rate from ad traffic source specifically.",
+    "rationale": "Same recommendation as last week — if not actioned, every day costs ~$10-15 in pure waste. Sales rank is declining, compounding the urgency.",
+    "expected_weekly_savings": 175.00
+  }
+}

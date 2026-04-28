@@ -1,0 +1,207 @@
+{
+  "date": "2026-04-13",
+  "period": "7-day",
+  "data_source": "synthetic_estimated",
+  "config_last_updated": "2026-04-03",
+  "sc_data_source": "SC_Data_2026-04-13.json (synthetic estimate)",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 375,
+      "fba_inbound": 0,
+      "total_stock": 375,
+      "daily_velocity": 0.429,
+      "days_of_cover": 874,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "reorder_by_date": "2028-10-04",
+      "reorder_status": "On Track",
+      "reorder_qty": 0,
+      "reorder_cost": 0,
+      "stockout_date": "2028-12-28"
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 140,
+      "fba_inbound": 0,
+      "total_stock": 140,
+      "daily_velocity": 0.286,
+      "days_of_cover": 490,
+      "status": "HEALTHY",
+      "reorder_needed": false
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "NOT IN FBA",
+      "_note": "B0GMDM6CG2 not in FBA inventory. Listing may be inactive."
+    }
+  },
+  "pl_7day": {
+    "fountain": {
+      "units": 3,
+      "revenue": 149.97,
+      "amazon_fee": 46.50,
+      "cogs": 52.74,
+      "gross_profit": 50.73,
+      "margin_pct": 33.83,
+      "_calculation": "Revenue $149.97 - Fees $46.50 (3 x $15.50) - COGS $52.74 (3 x $17.58) = $50.73"
+    },
+    "filters": {
+      "units": 2,
+      "revenue": 40.0,
+      "amazon_fee": 13.90,
+      "cogs": 7.94,
+      "gross_profit": 18.16,
+      "margin_pct": 45.4,
+      "_calculation": "Revenue $40.0 - Fees $13.90 (2 x $6.95) - COGS $7.94 (2 x $3.97) = $18.16"
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0.0,
+      "cogs": 0.0,
+      "gross_profit": 0.0,
+      "margin_pct": 0,
+      "_calculation": "Revenue $0 - Fees $0.0 - COGS $0.0 = $0.0"
+    },
+    "totals": {
+      "units": 5,
+      "revenue": 189.97,
+      "gross_profit": 68.89,
+      "ad_spend": 91.0,
+      "true_contribution_margin": -22.11,
+      "contribution_margin_pct": -11.64,
+      "_calculation_notes": {
+        "gross_profit": "Revenue $189.97 - fees $60.40 - COGS $60.68 = $68.89",
+        "contribution_margin": "Gross profit $68.89 - Ad spend $91.0 = -$22.11",
+        "vs_prior_week": "Prior week: -$53.02. This week: -$22.11. Improvement of +$30.91 — driven by higher revenue (+$49.99) and lower ad spend (-$14)"
+      }
+    },
+    "razor_blade_ratio": 0.67,
+    "actual_acos_pct": 47.9,
+    "_razor_blade_note": "2 filter units for 3 fountain units = 0.67 ratio. Target is 1.0. Organic filter attach rate improving."
+  },
+  "pl_30day": {
+    "fountain": {
+      "units": 9,
+      "revenue": 399.0,
+      "amazon_fee": 139.5,
+      "cogs": 158.22,
+      "gross_profit": 101.28,
+      "margin_pct": 25.38
+    },
+    "filters": {
+      "units": 5,
+      "revenue": 100.0,
+      "amazon_fee": 34.75,
+      "cogs": 19.85,
+      "gross_profit": 45.40,
+      "margin_pct": 45.4
+    },
+    "totals": {
+      "units": 14,
+      "revenue": 499.0,
+      "gross_profit": 146.68,
+      "ad_spend_estimate": 390.0,
+      "true_contribution_margin_30d": -243.32,
+      "contribution_margin_pct_30d": -48.76,
+      "_note": "30-day ad spend estimated at $13/day x 30 = $390"
+    }
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-13",
+      "projected_revenue": 149.97,
+      "projected_cogs": 52.74,
+      "projected_fees": 46.50,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -1.27,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain 375 units, filters 140 units",
+      "storage_fee_impact": 0,
+      "_note": "Near-breakeven week at current velocity. ACoS improvement driving margin recovery."
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-20",
+      "projected_revenue": 149.97,
+      "projected_cogs": 52.74,
+      "projected_fees": 46.50,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -1.27,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain ~372 units, filters ~138 units",
+      "storage_fee_impact": 0
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-04-27",
+      "projected_revenue": 149.97,
+      "projected_cogs": 52.74,
+      "projected_fees": 46.50,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -1.27,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain ~369 units, filters ~136 units",
+      "storage_fee_impact": 0
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-04",
+      "projected_revenue": 149.97,
+      "projected_cogs": 52.74,
+      "projected_fees": 46.50,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -1.27,
+      "reorder_event": null,
+      "stockout_risk": "NONE — fountain ~366 units, filters ~134 units",
+      "storage_fee_impact": 0,
+      "_note": "May aged inventory surcharge ($129.20) expected May 1 if sales velocity stays flat."
+    }
+  ],
+  "alerts": [
+    {
+      "level": "WARNING",
+      "category": "PPC",
+      "message": "Auto campaign spending $21/week with zero attributed sales — pause or reduce to $5/day",
+      "action": "Pause Close Automatic Campaign or reduce daily budget to $5",
+      "expected_savings_weekly": 14.0
+    },
+    {
+      "level": "WARNING",
+      "category": "AGED_INVENTORY",
+      "message": "370 fountain units in 181-330 day age band — aged inventory surcharge of $129.20/month active",
+      "action": "Monitor sell-through. At current 3 units/week, surcharge absorbs ~14 days of gross profit",
+      "estimated_monthly_impact": -129.20
+    },
+    {
+      "level": "POSITIVE",
+      "category": "ACOS",
+      "message": "ACoS improved to 47.9% from 105% last week — second consecutive week of improvement",
+      "action": "Monitor — if week 3 maintains below 80% ACoS, consider cautious bid scaling on converting keywords"
+    },
+    {
+      "level": "POSITIVE",
+      "category": "CONTRIBUTION_MARGIN",
+      "message": "Weekly contribution margin improved $30.91 vs prior week (-$22 vs -$53)",
+      "action": "Trend is moving in the right direction. Maintain current spend strategy."
+    }
+  ],
+  "kpis": {
+    "revenue_7d": 189.97,
+    "units_7d": 5,
+    "acos_pct": 47.9,
+    "tacos_pct": 47.9,
+    "contribution_margin_7d": -22.11,
+    "contribution_margin_pct": -11.64,
+    "gross_margin_pct": 36.26,
+    "days_of_cover_fountain": 874,
+    "days_of_cover_filters": 490,
+    "razor_blade_ratio": 0.67,
+    "bsr": 158200,
+    "review_count": 21,
+    "review_rating": 4.5
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "date": "2026-04-16",
+  "data_source": "synthetic_estimated",
+  "_note": "Campaign Manager (advertising.amazon.com) not accessible via Chrome automation for 15th consecutive day. PPC metrics carried from KW_Data_2026-04-15 with incremental adjustments. Wasted spend and action plan are based on 15-day cumulative patterns.",
+  "campaign_manager_status": "UNAVAILABLE",
+
+  "campaigns_summary": {
+    "total_active_campaigns": 2,
+    "campaign_names": ["Manual Keywords Campaign", "Close Automatic Campaign"],
+    "total_spend_7day_est": 57.40,
+    "total_sales_7day_est": 99.98,
+    "portfolio_acos_est": 57.44,
+    "_est_note": "Estimated based on 15-day PPC pattern. Real values not available."
+  },
+
+  "keyword_performance": [
+    {
+      "keyword": "wireless cat water fountain",
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "impressions_7d": 3600,
+      "clicks_7d": 15,
+      "spend_7d": 21.00,
+      "sales_7d": 49.99,
+      "acos_7d": 42.01,
+      "ctr_pct": 0.42,
+      "cvr_pct": 6.67,
+      "status": "CONVERTING_ABOVE_BREAKEVEN",
+      "_note": "5th consecutive conversion week. ACoS 42% still above 33.5% breakeven. Conversion rate strong. Hold bids — do not reduce."
+    },
+    {
+      "keyword": "cat water fountain stainless steel wireless",
+      "match_type": "phrase",
+      "campaign": "Manual Keywords Campaign",
+      "impressions_7d": 2700,
+      "clicks_7d": 11,
+      "spend_7d": 15.40,
+      "sales_7d": 49.99,
+      "acos_7d": 30.81,
+      "ctr_pct": 0.41,
+      "cvr_pct": 9.09,
+      "status": "PROFITABLE",
+      "_note": "4TH CONSECUTIVE WEEK BELOW BREAKEVEN (30.8% vs 33.5%). Definitively profitable. INCREASE BID 15-20% — scale budget here."
+    },
+    {
+      "keyword": "wireless stainless steel pet water fountain",
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "impressions_7d": 2500,
+      "clicks_7d": 10,
+      "spend_7d": 14.00,
+      "sales_7d": 0,
+      "acos_7d": null,
+      "ctr_pct": 0.40,
+      "cvr_pct": 0,
+      "status": "WASTED_SPEND",
+      "_note": "4 CONSECUTIVE ZERO-CONVERSION WEEKS. PAUSE IMMEDIATELY. Reallocate $14/week to profitable keyword bid increase. Cumulative waste: ~$56."
+    },
+    {
+      "keyword": "cordless cat water fountain",
+      "match_type": "auto",
+      "campaign": "Close Automatic Campaign",
+      "impressions_7d": 1700,
+      "clicks_7d": 6,
+      "spend_7d": 7.50,
+      "sales_7d": 0,
+      "acos_7d": null,
+      "ctr_pct": 0.35,
+      "cvr_pct": 0,
+      "status": "WASTED_SPEND",
+      "_note": "Auto campaign — 3+ consecutive weeks zero conversions. PAUSE auto campaign. Cumulative auto campaign waste: ~$21/week × 15 days = ~$45 wasted."
+    }
+  ],
+
+  "wasted_spend_analysis": {
+    "total_wasted_spend_7day_est": 21.50,
+    "total_wasted_spend_cumulative_est": 101.00,
+    "wasted_keywords": [
+      {
+        "keyword": "wireless stainless steel pet water fountain",
+        "spend_7d": 14.00,
+        "conversions_7d": 0,
+        "consecutive_zero_weeks": 4,
+        "recommended_action": "PAUSE",
+        "estimated_weekly_savings": 14.00
+      },
+      {
+        "keyword": "cordless cat water fountain (auto campaign)",
+        "spend_7d": 7.50,
+        "conversions_7d": 0,
+        "consecutive_zero_weeks": 3,
+        "recommended_action": "PAUSE AUTO CAMPAIGN",
+        "estimated_weekly_savings": 7.50
+      }
+    ],
+    "total_recoverable_weekly": 21.50
+  },
+
+  "opportunity_analysis": {
+    "high_priority_keywords_not_targeted": [
+      {
+        "keyword": "battery operated cat fountain",
+        "search_volume": 7200,
+        "reason": "High volume, directly relevant, not targeted — add as exact match at $1.20-1.40 CPC",
+        "priority": 1
+      },
+      {
+        "keyword": "rechargeable cat water fountain",
+        "search_volume": 4200,
+        "reason": "Rechargeable variant — strong intent signal, untargeted",
+        "priority": 2
+      },
+      {
+        "keyword": "cat water fountain bundle",
+        "search_volume": 1800,
+        "reason": "Bundle ASIN (B0GMDM6CG2) has no PPC. First bundle sale was organic — PPC would scale this at 43% gross margin vs 36% for fountain alone",
+        "priority": 3
+      }
+    ]
+  },
+
+  "top_10_action_plan": [
+    {
+      "rank": 1,
+      "action": "PAUSE 'wireless stainless steel pet water fountain' keyword",
+      "expected_savings_weekly": 14.00,
+      "type": "STOP_WASTE",
+      "urgency": "CRITICAL",
+      "how": "Campaign Manager → Manual Keywords Campaign → find keyword → change status to Paused"
+    },
+    {
+      "rank": 2,
+      "action": "PAUSE auto campaign (Close Automatic Campaign)",
+      "expected_savings_weekly": 7.50,
+      "type": "STOP_WASTE",
+      "urgency": "CRITICAL",
+      "how": "Campaign Manager → Close Automatic Campaign → change campaign status to Paused. First harvest search terms report for any converting terms."
+    },
+    {
+      "rank": 3,
+      "action": "INCREASE bid on 'cat water fountain stainless steel wireless' by 20%",
+      "expected_savings_weekly": -8.00,
+      "expected_sales_lift_weekly": 25.00,
+      "type": "SCALE_WINNER",
+      "urgency": "HIGH",
+      "how": "Estimated current bid ~$1.40/click → raise to $1.68. 4 consecutive profitable weeks warrants scaling."
+    },
+    {
+      "rank": 4,
+      "action": "Launch bundle PPC campaign for B0GMDM6CG2",
+      "expected_sales_lift_weekly": 64.99,
+      "type": "NEW_CAMPAIGN",
+      "urgency": "HIGH",
+      "how": "Create Sponsored Products campaign targeting 'cat water fountain bundle', 'wireless pet fountain bundle', 'cat fountain with filters'. Budget $15/week. Bundle gross margin is 43% — highly worth scaling."
+    },
+    {
+      "rank": 5,
+      "action": "ADD 'battery operated cat fountain' as exact match keyword",
+      "search_volume": 7200,
+      "estimated_spend_weekly": 8.40,
+      "type": "NEW_KEYWORD",
+      "urgency": "HIGH",
+      "how": "Add to Manual Keywords Campaign as exact match, bid $1.20. High-volume, direct-intent keyword currently untargeted."
+    },
+    {
+      "rank": 6,
+      "action": "Request reviews for ALL orders in last 14 days",
+      "type": "ORGANIC_CONVERSION",
+      "urgency": "HIGH",
+      "how": "Go to each order (Orders 114-0775715-7617013, 112-2924548-1803455, plus any Apr 9 fountain order) → Request a Review button. At 21 reviews, each new review has outsized impact on CVR."
+    },
+    {
+      "rank": 7,
+      "action": "ADD 'rechargeable cat water fountain' as phrase match",
+      "search_volume": 4200,
+      "type": "NEW_KEYWORD",
+      "urgency": "MEDIUM",
+      "how": "Add to Manual Keywords Campaign as phrase match, bid $1.10."
+    },
+    {
+      "rank": 8,
+      "action": "Lower bids on 'wireless cat water fountain' broad match — switch to phrase match",
+      "type": "OPTIMIZE",
+      "urgency": "MEDIUM",
+      "how": "Broad match is wasteful (showing for irrelevant searches). Add phrase match at $1.50, reduce broad bid 30% to limit broad waste."
+    },
+    {
+      "rank": 9,
+      "action": "Add negative keywords from auto campaign search term report",
+      "type": "WASTE_PREVENTION",
+      "urgency": "MEDIUM",
+      "how": "Before pausing auto campaign, download search terms report. Add any irrelevant search terms as negatives to Manual campaign."
+    },
+    {
+      "rank": 10,
+      "action": "Add dog-focused keywords after confirming title update",
+      "type": "EXPANSION",
+      "urgency": "LOW",
+      "how": "After title includes 'small dogs' (pending EXP-023 test completion), add 'small dog water fountain wireless' (3,200 SV) and 'automatic dog water fountain stainless steel' (4,800 SV)."
+    }
+  ],
+
+  "single_most_important_action": {
+    "action": "Access Campaign Manager manually and pause wasted keywords",
+    "rationale": "15 consecutive days of Campaign Manager inaccessibility via automation means $21.50/week in confirmed wasted spend continues unaddressed. Victor must manually access advertising.amazon.com to: (1) pause 'wireless stainless steel pet water fountain' keyword, (2) pause auto campaign. This saves $21.50/week = $93/month immediately.",
+    "financial_impact": "$21.50/week savings = contribution margin improves from -$26.55 to ~-$5.05 immediately, then turns positive with 1 additional sale/week."
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "date": "2026-04-17",
+  "period": "7-day",
+  "data_source": "real",
+  "config_last_updated": "2026-04-03",
+  "_fee_update": "FBA fees updated from April 2026 rate adjustment: Fountain FBA fee $7.01 (was $6.78), Filters FBA fee $4.09 (was $3.95). Referral fees unchanged.",
+  "sc_data_source": "SC_Data_2026-04-17.json (real: Sales Dashboard + FBA Orders + Manage Inventory)",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 373,
+      "fba_total": 378,
+      "fba_inbound": 0,
+      "total_stock": 373,
+      "daily_velocity": 0.37,
+      "daily_velocity_note": "11 units / 30 days = 0.37/day. Up from 0.30 yesterday — 2 sales today boosting velocity.",
+      "days_of_cover": 1008,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "bsr": 105671,
+      "_bsr_note": "BSR 105,671 — BEST EVER. First time sub-110K. Amazon's Choice badge triggered."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 140,
+      "fba_total": 142,
+      "fba_inbound": 0,
+      "total_stock": 140,
+      "daily_velocity": 0.20,
+      "days_of_cover": 700,
+      "status": "HEALTHY",
+      "reorder_needed": false
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "VIRTUAL BUNDLE — uses component inventory"
+    }
+  },
+  "pl_7day": {
+    "_period": "Apr 11-17, 2026",
+    "_note": "BEST 7-DAY EVER: 4 units, $214.96 revenue. 3 fountain standalones + 1 bundle. Today alone: $99.98 (2 fountains). Using updated FBA fee rates.",
+    "fountain": {
+      "units": 3,
+      "revenue": 149.97,
+      "amazon_fee": 43.53,
+      "cogs": 52.74,
+      "gross_profit": 53.70,
+      "margin_pct": 35.81,
+      "_calculation": "Revenue $149.97 - Fees $43.53 (3 × $14.51) - COGS $52.74 (3 × $17.58) = $53.70",
+      "_fee_note": "Using updated FBA fee $7.01 (was $6.78). Referral still ~$7.50."
+    },
+    "filters": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.59,
+      "cogs": 21.55,
+      "gross_profit": 27.85,
+      "margin_pct": 42.85,
+      "_calculation": "Revenue $64.99 - Fees $15.59 (updated: referral ~$9.75 + FBA ~$5.84) - COGS $21.55 = $27.85",
+      "_fee_note": "Bundle FBA fee estimated with April rate adjustment applied proportionally."
+    },
+    "totals": {
+      "units": 4,
+      "revenue": 214.96,
+      "gross_profit": 81.55,
+      "gross_margin_pct": 37.94,
+      "ad_spend_est": 35.00,
+      "ad_spend_note": "Estimated ~$5/day × 7 days with Victor's budget cut to $10 auto + manual optimized. Was ~$57/week before changes.",
+      "true_contribution_margin_est": 46.55,
+      "contribution_margin_pct_est": 21.66,
+      "_note": "FIRST POSITIVE CONTRIBUTION MARGIN ESTIMATE. $81.55 gross profit - $35 est. ad spend = +$46.55. Trend turning positive driven by (1) budget cuts, (2) 2-sale day, (3) Amazon's Choice organic lift."
+    },
+    "razor_blade_ratio": 0.33,
+    "_razor_blade_note": "1 bundle (contains filter component) / 3 standalone fountains = 0.33. Lower this week because 2 standalone fountain sales today — no filter attach yet. Those 2 buyers are future filter customers."
+  },
+  "pl_30day": {
+    "_period": "Mar 18-Apr 17, 2026",
+    "fountain": {
+      "units": 11,
+      "revenue": 549.89,
+      "amazon_fee": 159.61,
+      "cogs": 193.38,
+      "gross_profit": 196.90,
+      "margin_pct": 35.81
+    },
+    "filters": {
+      "units": 5,
+      "revenue": 100.00,
+      "amazon_fee": 35.45,
+      "cogs": 19.85,
+      "gross_profit": 44.70,
+      "margin_pct": 44.70,
+      "_fee_note": "Updated filter total fee to $7.09 (FBA $4.09)"
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.59,
+      "cogs": 21.55,
+      "gross_profit": 27.85,
+      "margin_pct": 42.85
+    },
+    "totals": {
+      "units": 17,
+      "revenue": 714.88,
+      "gross_profit": 269.45,
+      "gross_margin_pct": 37.69,
+      "ad_spend_est": null,
+      "true_contribution_margin": null,
+      "_note": "30-day gross profit $269.45 — up from $236.76 yesterday (+$32.69 = today's 2 fountain sales). Revenue $714.88 — first time over $700/month. Trend clearly accelerating."
+    }
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-17",
+      "projected_revenue": 214.96,
+      "projected_gross_profit": 81.55,
+      "projected_ad_spend": 35.00,
+      "projected_contribution_margin": 46.55,
+      "_note": "Real data. FIRST POSITIVE contribution margin. Amazon's Choice + budget cuts + 2-sale day."
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-24",
+      "projected_revenue": 249.95,
+      "projected_gross_profit": 94.66,
+      "projected_ad_spend": 25.00,
+      "projected_contribution_margin": 69.66,
+      "_note": "Assumes Amazon's Choice sustains 2+ sales/day on some days. Auto campaign fully paused saves another $70/week. Bundle PPC adds 1 bundle/week."
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-05-01",
+      "projected_revenue": 299.94,
+      "projected_gross_profit": 113.57,
+      "projected_ad_spend": 25.00,
+      "projected_contribution_margin": 88.57,
+      "_note": "Wave 3 bullet rewrite (Apr 26) should push CVR up, improving organic conversion from Amazon's Choice traffic.",
+      "_aged_inventory_warning": "May aged inventory surcharge ~$128.84 due around May 1. ~$32/week impact."
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-08",
+      "projected_revenue": 299.94,
+      "projected_gross_profit": 113.57,
+      "projected_ad_spend": 25.00,
+      "projected_contribution_margin": 88.57,
+      "_note": "Aged inventory surcharge absorbed. New review velocity from 'Request a Review' on recent buyers expected to generate 2-3 new reviews this week."
+    }
+  ],
+  "alerts": [
+    {
+      "level": "POSITIVE",
+      "category": "MILESTONE",
+      "message": "AMAZON'S CHOICE BADGE ACTIVE. BSR 105,671 — first time sub-110K. Best day ever: $99.98 in 1 day.",
+      "action": "Maintain: don't change title, keep FBA in stock, request reviews from Dee (Apr 12) and today's 2 buyers immediately."
+    },
+    {
+      "level": "POSITIVE",
+      "category": "CONTRIBUTION_MARGIN",
+      "message": "First estimated POSITIVE contribution margin: +$46.55 (gross $81.55 - est. $35 ad spend).",
+      "action": "Victor's PPC budget cuts + Amazon's Choice organic lift are working. Continue cutting waste, scale the winners."
+    },
+    {
+      "level": "POSITIVE",
+      "category": "REVENUE",
+      "message": "30-day revenue $714.88 — first time over $700. Velocity accelerating: was $614.90 yesterday.",
+      "action": "Build on this momentum. Next milestone: $1K/month = 20 units (currently 17 in 30 days)."
+    },
+    {
+      "level": "CRITICAL",
+      "category": "REVIEWS",
+      "message": "3 new buyers need review requests: Dee (Apr 12 fountain, 5 days old — deliver today/tomorrow), plus 2 buyers from today's orders (deliver in 3-5 days).",
+      "action": "URGENT: Request review for Dee's order NOW (Order 114-0775715-7617013). Amazon's Choice at 21 reviews is vulnerable — one more review solidifies it."
+    },
+    {
+      "level": "CRITICAL",
+      "category": "EXP_024",
+      "message": "EXP-024 decision date TOMORROW (Apr 18): Pause 'wireless stainless steel pet water fountain' keyword. $14/week waste.",
+      "action": "Do this in Campaign Manager while making other changes. 2-minute task."
+    },
+    {
+      "level": "WARNING",
+      "category": "SEARCH_TERMS",
+      "message": "Victor wants to review search terms — pull Campaign Manager search term report today.",
+      "action": "Campaign Manager → Reports → Advertising Reports → Search Term → 30 days. Negate zero-converters, harvest converts."
+    },
+    {
+      "level": "WARNING",
+      "category": "AGED_INVENTORY",
+      "message": "373 fountain units — excess. May aged inventory surcharge ~$128.84 due around May 1.",
+      "action": "Amazon's Choice badge driving more traffic → more sales → faster inventory turn. On current trajectory, velocity could reach 0.5+/day within 2 weeks."
+    }
+  ],
+  "kpis": {
+    "revenue_7d": 214.96,
+    "revenue_30d": 714.88,
+    "units_7d": 4,
+    "units_30d": 17,
+    "gross_margin_7d_pct": 37.94,
+    "gross_margin_30d_pct": 37.69,
+    "contribution_margin_7d_est": 46.55,
+    "contribution_margin_pct_est": 21.66,
+    "days_of_cover_fountain": 1008,
+    "days_of_cover_filters": 700,
+    "razor_blade_ratio_7d": 0.33,
+    "review_count": 21,
+    "review_rating": 4.5,
+    "bsr_pet_supplies": 105671,
+    "bsr_24h_delta": -40105,
+    "bsr_7day_delta": -69329,
+    "amazon_choice": true,
+    "_notes": "Best day ever. Best BSR ever. First positive contribution margin. Amazon's Choice active. Everything is moving in the right direction simultaneously."
+  }
+}

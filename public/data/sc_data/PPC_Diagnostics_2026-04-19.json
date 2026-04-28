@@ -1,0 +1,206 @@
+{
+  "date": "2026-04-19",
+  "_note": "True 7-day and 30-day rolling windows require a fresh Seller Central export. The numbers below use the Apr 1-19 export (19 days of data) split two ways: (A) full 19-day window as closest proxy for 30-day, (B) Apr 13-19 7-day approximation using per-day averages from the 19-day dataset. Pull a fresh Campaign export + Search Term report on 2026-04-26 for clean 7d/30d numbers.",
+  "data_source": "PPC_Analysis_2026-04-19.json (Seller Central Apr 1-19, 2026)",
+  "window_30d_proxy": {
+    "_label": "19-day window (Apr 1-19) \u2014 used as 30-day proxy until fresh pull",
+    "portfolio": {
+      "spend": 454.52,
+      "sales": 264.95,
+      "purchases": 6,
+      "impressions": 40209,
+      "clicks": 233,
+      "ctr_pct": 0.579,
+      "cpc": 1.95,
+      "acos_pct": 171.55,
+      "roas": 0.58,
+      "sales_per_day": 0.32,
+      "spend_per_day": 23.92,
+      "purchases_per_day": 0.316
+    },
+    "by_campaign": {
+      "Manual_Keywords_Campaign": {
+        "spend": 417.5,
+        "sales": 264.95,
+        "purchases": 6,
+        "acos_pct": 157.58,
+        "roas": 0.63,
+        "ctr": 0.0059,
+        "cpc": 2.07
+      },
+      "Close_Automatic_Campign": {
+        "spend": 37.02,
+        "sales": 0,
+        "purchases": 0,
+        "acos_pct": null,
+        "roas": 0,
+        "note": "PAUSED as of 2026-04-19"
+      },
+      "SP_Test_Expansion_2026-04-19": {
+        "spend": 0.0,
+        "sales": 0.0,
+        "purchases": 0,
+        "acos_pct": null,
+        "roas": null,
+        "note": "LAUNCHED 2026-04-19 afternoon \u2014 no data yet"
+      }
+    }
+  },
+  "window_7d_approx": {
+    "_label": "Apr 13-19 approximation (19-day daily averages \u00d7 7)",
+    "_method": "Approximation only. For real 7-day numbers, pull Campaign export with date range 2026-04-13 to 2026-04-19.",
+    "portfolio": {
+      "spend_est": 167.45,
+      "sales_est": 97.61,
+      "purchases_est": 2.21,
+      "acos_pct": 171.55
+    }
+  },
+  "keyword_level_19d": [
+    {
+      "keyword": "cat water fountain stainless steel",
+      "match_type": "phrase",
+      "campaign": "Manual Keywords Campaign",
+      "ad_group": "Phrase Match",
+      "status_today": "ACTIVE (bid reduced $1.49 -> $1.00)",
+      "real_19day_acos": 131.57,
+      "spend": 282.81,
+      "sales": 214.96,
+      "purchases": 5,
+      "clicks": 134,
+      "impressions": 18344,
+      "action": "REDUCE BID"
+    },
+    {
+      "keyword": "cat water fountain stainless steel",
+      "match_type": "exact",
+      "campaign": "Manual Keywords Campaign",
+      "ad_group": "Manual Keywords Campaign",
+      "status_today": "ACTIVE (bid reduced to $1.00)",
+      "real_19day_acos": 212.46,
+      "spend": 106.21,
+      "sales": 49.99,
+      "purchases": 1,
+      "action": "REDUCE BID"
+    },
+    {
+      "keyword": "cat water fountain",
+      "match_type": "phrase",
+      "status_today": "PAUSED",
+      "real_19day_acos": null,
+      "spend": 7.37,
+      "sales": 0,
+      "purchases": 0
+    },
+    {
+      "keyword": "wireless cat water fountain",
+      "match_type": "phrase",
+      "status_today": "PAUSED",
+      "real_19day_acos": null,
+      "spend": 4.88,
+      "sales": 0,
+      "purchases": 0
+    },
+    {
+      "keyword": "wireless pet water fountain",
+      "match_type": "phrase",
+      "status_today": "PAUSED",
+      "real_19day_acos": null,
+      "spend": 4.58,
+      "sales": 0,
+      "purchases": 0
+    },
+    {
+      "keyword": "pet drinking fountain",
+      "match_type": "phrase",
+      "status_today": "PAUSED",
+      "real_19day_acos": null,
+      "spend": 0.82,
+      "sales": 0,
+      "purchases": 0
+    },
+    {
+      "keyword": "cordless cat water fountain stainless steel",
+      "match_type": "exact",
+      "status_today": "NEW TODAY @ $1.49",
+      "real_19day_acos": 33.65
+    },
+    {
+      "keyword": "wireless cat water fountain stainless steel",
+      "match_type": "exact",
+      "status_today": "NEW TODAY @ $1.30",
+      "real_19day_acos": 40.87
+    }
+  ],
+  "search_term_insights": {
+    "hidden_winners_harvested": [
+      {
+        "search_term": "cordless cat water fountain stainless steel",
+        "matched_under": "cat water fountain stainless steel (phrase)",
+        "clicks": 8,
+        "spend": 16.82,
+        "purchases": 1,
+        "sales": 49.99,
+        "acos_pct": 33.65,
+        "action_today": "Added as EXACT @ $1.49"
+      },
+      {
+        "search_term": "wireless cat water fountain stainless steel",
+        "matched_under": "cat water fountain stainless steel (phrase)",
+        "clicks": 10,
+        "spend": 20.43,
+        "purchases": 1,
+        "sales": 49.99,
+        "acos_pct": 40.87,
+        "action_today": "Added as EXACT @ $1.30"
+      }
+    ],
+    "intent_mismatch_negated": [
+      {
+        "term": "cat water fountain stainless steel no filter",
+        "spend": 10.02,
+        "pattern": "no filter"
+      },
+      {
+        "term": "pumpless cat water fountain stainless steel",
+        "spend": 11.35,
+        "pattern": "pumpless"
+      },
+      {
+        "term": "wireless pumpless cat water fountain stainless steel",
+        "spend": 8.69,
+        "pattern": "pumpless"
+      },
+      {
+        "term": "cat water fountain stainless steel filterless",
+        "spend": 8.4,
+        "pattern": "filterless"
+      },
+      {
+        "term": "cat water fountain stainless steel battery",
+        "spend": 5.35,
+        "pattern": "battery"
+      }
+    ],
+    "_diagnosis": "Our product has a pump and filter. Every 'pumpless / filterless / no filter' search term is shopping for a different product. Negating these families (as phrase) blocks future matches automatically."
+  },
+  "diagnosis": {
+    "headline": "Portfolio ACoS 171.55% over 19 days. Losing $1.72 in ad spend for every $1 in sales. The rescue actions (Phase 1+2+2.5) target this directly.",
+    "root_causes": [
+      "Manual Keywords Campaign converter keyword ('cat water fountain stainless steel' phrase + exact) is over-bid at $1.49 \u2014 real 19-day ACoS on phrase = 131.57%, exact = 212.46%. Bids cut to $1.00 on Apr 19.",
+      "Close Automatic Campign spent $37.02 with zero purchases in 19 days. Paused Apr 19.",
+      "5 intent-mismatch search terms (pumpless/filterless/no filter/battery) spent $43.81 for zero sales. Negated Apr 19."
+    ],
+    "wins_buried_in_data": [
+      "'cordless cat water fountain stainless steel' search term: 33.65% ACoS over 19 days. Harvested as exact @ $1.35.",
+      "'wireless cat water fountain stainless steel' search term: 40.87% ACoS over 19 days. Harvested as exact @ $1.30."
+    ]
+  },
+  "post_rescue_daily_spend_target": {
+    "pre_rescue_baseline": 23.0,
+    "planned": 20.0,
+    "actual_apr19_pm": 30.0,
+    "_note": "Victor adjusted Manual to $22 (plan $15) + SP_Test_Expansion to $8 (plan $5). Still -33% vs pre-rescue $45 baseline."
+  },
+  "next_checkpoint": "2026-04-26 \u2014 pull fresh Campaign CSV + Search Term report + Cerebro rerun. Run Phase 4 decision tree."
+}

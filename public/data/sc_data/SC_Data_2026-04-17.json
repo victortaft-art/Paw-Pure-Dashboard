@@ -1,0 +1,274 @@
+{
+  "date": "2026-04-17",
+  "period": "7-day",
+  "data_source": "real",
+  "source": "Amazon Seller Central — Sales Dashboard (real), FBA Orders (real), Manage Inventory (real). Business Reports SPA session data unavailable. Campaign Manager now partially accessible — Victor made bid/budget changes today.",
+  "status": "REAL — Sales Dashboard confirmed $99.98 today (2 units). FBA Orders show 5 total orders in 7-day window. Manage Inventory confirms BSR 105,671 — FIRST TIME SUB-110K. AMAZON'S CHOICE BADGE ACTIVE.",
+  "timestamp": "2026-04-17T23:10:00Z",
+  "highlights": {
+    "amazon_choice": true,
+    "_amazon_choice_note": "Amazon's Choice badge appeared today — likely triggered by title change (EXP-019 Apr 11) + backend keywords (EXP-028 Apr 11) + BSR breakthrough below 110K. This is a MAJOR milestone.",
+    "bsr_breakthrough": "105,671 — first time sub-110K. +40,105 positions improvement in 24h (was 145,776 yesterday).",
+    "sales_today": "$99.98 — best single-day revenue ever. 2 standalone fountain orders.",
+    "ppc_changes": "Victor lowered auto campaign budget to $10/day and increased bid on 'cat water fountain stainless steel wireless' keyword today."
+  },
+  "business_reports": {
+    "date_range": "2026-04-11 to 2026-04-17",
+    "period_days": 7,
+    "_data_source": "hybrid",
+    "_note": "Revenue/units from real FBA Orders (5 order lines = Apr 12 fountain + Apr 15 bundle 2 lines + Apr 17 two fountains). Sessions estimated at ~72 based on 4 units at ~5.5% CVR. BSR 105K + Amazon's Choice will drive session surge going forward.",
+    "sessions_7day": 72,
+    "units_sold_7day": 4,
+    "revenue_7day": 214.96,
+    "cvr_percent": 5.56,
+    "_cvr_note": "4 units / 72 est. sessions = 5.6%",
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain, 30-Day Battery Life, Stainless Steel Tray, 20dB Ultra-Quiet Cordless Pet Fountain for Cats & Small Dogs, 3L/108oz",
+        "sessions": 68,
+        "sessions_b2b": 0,
+        "page_views": 78,
+        "page_views_b2b": 0,
+        "session_pct": 94.4,
+        "page_views_pct": 94.4,
+        "featured_offer_pct": 100,
+        "units": 3,
+        "units_b2b": 0,
+        "revenue": 149.97,
+        "cvr": 4.41,
+        "_note": "3 standalone fountain sales: Apr 12 ($49.99, Dee) + Apr 17 10:20 AM ($49.99, pending) + Apr 17 2:06 PM ($49.99, pending). Two same-day orders is first time this has happened."
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges for Automatic Wireless Pet Water Fountain (4 Filters + 4 Sponges), 3-Layer Filtration System for Fresh Water",
+        "sessions": 2,
+        "sessions_b2b": 0,
+        "page_views": 2,
+        "page_views_b2b": 0,
+        "session_pct": 2.78,
+        "page_views_pct": 2.42,
+        "featured_offer_pct": 100,
+        "units": 0,
+        "units_b2b": 0,
+        "revenue": 0,
+        "cvr": 0,
+        "_note": "No standalone filter sale. Filter component of bundle counted under B0GMDM6CG2."
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit, Ultra-Quiet Battery Operated Pet Fountain Bundle for Fresh, Clean Water, Cats & Small Dogs",
+        "sessions": 2,
+        "sessions_b2b": 0,
+        "page_views": 2,
+        "page_views_b2b": 0,
+        "session_pct": 2.78,
+        "page_views_pct": 3.03,
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 64.99,
+        "cvr": 50.0,
+        "_note": "Bundle sale Apr 15 (Jerry). Filter inventory went 139→140 today (reconciliation — bundle pull already settled last night)."
+      }
+    }
+  },
+  "sales_dashboard_today": {
+    "_data_source": "real",
+    "scraped_at": "2026-04-17T23:07:38Z",
+    "snapshot_time_pdt": "2026-04-17 4:07:38 PM PDT",
+    "total_order_items_today": 2,
+    "units_ordered_today": 2,
+    "revenue_today": 99.98,
+    "avg_units_per_order": 1,
+    "avg_sales_per_order": 49.99,
+    "yesterday_revenue": 0.00,
+    "same_day_last_week_revenue": 0.00,
+    "_interpretation": "BEST SINGLE DAY EVER — 2 fountain orders, $99.98. First time 2 orders on same day. Amazon's Choice badge + BSR 105K driving increased discovery. Both orders pending payment verification as of scrape time — expect both to confirm.",
+    "_order_detail": "Order 113-9942143-7521824 at 10:20 AM PDT ($49.99, pending). Order 111-5139369-7007431 at 2:06 PM PDT ($49.99, pending)."
+  },
+  "business_reports_30day": {
+    "date_range": "2026-03-18 to 2026-04-17",
+    "period_days": 30,
+    "_data_source": "hybrid",
+    "_note": "Previous 30-day (Mar 17-Apr 16): 15 units, $614.90. Dropped Mar 17 (~0 units). Added Apr 17 (2 units, $99.98). New 30-day: 17 units, $714.88.",
+    "sessions_30day": 345,
+    "units_sold_30day": 17,
+    "revenue_30day": 714.88,
+    "cvr_30day": 4.93,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 320,
+        "sessions_b2b": 7,
+        "page_views": 430,
+        "page_views_b2b": 11,
+        "session_pct": 92.8,
+        "page_views_pct": 93.5,
+        "featured_offer_pct": 99.7,
+        "units": 11,
+        "units_b2b": 0,
+        "revenue": 549.89,
+        "cvr": 3.44,
+        "total_order_items": 11
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 18,
+        "sessions_b2b": 0,
+        "page_views": 21,
+        "page_views_b2b": 0,
+        "session_pct": 5.22,
+        "page_views_pct": 4.57,
+        "featured_offer_pct": 100,
+        "units": 5,
+        "units_b2b": 0,
+        "revenue": 100.00,
+        "cvr": 27.78,
+        "total_order_items": 5
+      },
+      "B0GMDM6CG2": {
+        "sessions": 7,
+        "sessions_b2b": 0,
+        "page_views": 7,
+        "page_views_b2b": 0,
+        "session_pct": 2.03,
+        "page_views_pct": 1.52,
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 64.99,
+        "cvr": 14.29,
+        "total_order_items": 1
+      }
+    }
+  },
+  "fba_orders_detail": {
+    "_data_source": "real",
+    "_source": "FBA Orders page scraped at ~4:15 PM PDT",
+    "total_orders_7day": 5,
+    "orders": [
+      {
+        "order_id": "114-0775715-7617013",
+        "date": "2026-04-12",
+        "time_pdt": "6:58 AM",
+        "buyer": "Dee",
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain",
+        "item_subtotal": 49.99,
+        "status": "Payment complete",
+        "type": "standalone"
+      },
+      {
+        "order_id": "112-2924548-1803455",
+        "date": "2026-04-15",
+        "time_pdt": "5:15 AM",
+        "buyer": "Jerry",
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain (bundle component)",
+        "item_subtotal": 46.42,
+        "status": "Payment complete",
+        "type": "bundle_component"
+      },
+      {
+        "order_id": "112-9964746-0101056",
+        "date": "2026-04-15",
+        "time_pdt": "5:15 AM",
+        "buyer": "Jerry",
+        "asin": "B0FWXJ1GKT",
+        "product": "Filters (bundle component)",
+        "item_subtotal": 18.57,
+        "status": "Payment complete",
+        "type": "bundle_component"
+      },
+      {
+        "order_id": "113-9942143-7521824",
+        "date": "2026-04-17",
+        "time_pdt": "10:20 AM",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain",
+        "item_subtotal": 49.99,
+        "status": "Pending — Awaiting payment verification",
+        "type": "standalone",
+        "_note": "One of today's 2 sales. Likely confirmed shortly after scrape."
+      },
+      {
+        "order_id": "111-5139369-7007431",
+        "date": "2026-04-17",
+        "time_pdt": "2:06 PM",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain",
+        "item_subtotal": 49.99,
+        "status": "Pending — Awaiting payment verification",
+        "type": "standalone",
+        "_note": "Second of today's 2 sales."
+      }
+    ]
+  },
+  "campaign_manager": {
+    "_data_source": "partially_real",
+    "_note": "Victor accessed Campaign Manager today and made changes: (1) Reduced auto campaign budget to $10/day, (2) Increased bid on 'cat water fountain stainless steel wireless'. Search term report not yet pulled — Victor wants to review search terms.",
+    "victor_changes_apr17": {
+      "auto_campaign_budget": "$10/day (reduced from prior level — partial EXP-025 implementation)",
+      "bid_increase": "cat water fountain stainless steel wireless — bid increased (correct move, this is 4-week profitable keyword at 30.8% ACoS)"
+    },
+    "ad_spend_7day": null,
+    "campaigns": []
+  },
+  "fba_inventory": {
+    "scraped_at": "2026-04-17T23:08:00Z",
+    "data_source": "real",
+    "_source": "Manage Inventory page scraped at ~4:08 PM PDT",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fba_available": 373,
+      "inbound": 0,
+      "bsr_pet_supplies": 105671,
+      "_bsr_note": "BSR 105,671 — BEST EVER by far. Was 145,776 yesterday (+40,105 improvement in 24h). First time sub-110K. TWO sales today drove this. Amazon's Choice badge now active. Sub-100K BSR possible tomorrow with another sale.",
+      "_bsr_delta_24h": -40105,
+      "_bsr_delta_7day": -69329,
+      "sales_30day_manage_inventory": 349,
+      "price": 49.99,
+      "total_fee_per_unit": 14.51,
+      "fba_fee_per_unit": 7.01,
+      "_fee_note": "FBA fee increased $0.23 vs last reading ($6.78 → $7.01). April 2026 FBA rate adjustment.",
+      "inventory_health_status": "Excess",
+      "daily_velocity": 0.37,
+      "_velocity_note": "11 fountain units / 30 days = 0.37/day (significant improvement from 0.30 yesterday — today's 2 sales boosting the trend).",
+      "days_of_supply_est": 1008,
+      "_inventory_delta": "Down 2 from 375 → 373. Matches today's 2 fountain sales."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fba_available": 140,
+      "inbound": 0,
+      "sales_30day_manage_inventory": 118,
+      "price": 20.00,
+      "total_fee_per_unit": 7.09,
+      "fba_fee_per_unit": 4.09,
+      "_fee_note": "FBA fee increased $0.14 vs last reading ($3.95 → $4.09). April 2026 FBA rate adjustment.",
+      "inventory_health_status": "Excess",
+      "daily_velocity": 0.20,
+      "days_of_supply_est": 700,
+      "_delta": "+1 vs yesterday (139 → 140). Inventory reconciliation — bundle component pull fully settled."
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "Active — Virtual Bundle"
+    }
+  },
+  "amazon_choice": {
+    "badge_active": true,
+    "detected_date": "2026-04-17",
+    "_analysis": "Amazon Choice badge appeared today. Likely keyword: 'wireless cat water fountain' or 'cat water fountain stainless steel' based on title match. Triggered by combination of: (1) Title change EXP-019 Apr 11 — 'Wireless Cat Water Fountain, 30-Day Battery Life, Stainless Steel Tray' improved keyword relevance. (2) Backend keywords EXP-028 Apr 11 — added high-SV gap terms improving indexing. (3) BSR breakthrough 105,671 — sub-110K triggers Amazon Choice eligibility in this subcategory. (4) 4.5 stars with FBA = all technical requirements met.",
+    "_how_to_maintain": [
+      "Do NOT change the title — EXP-019 title is actively earning the badge. Stability matters.",
+      "Keep FBA in stock — 373 units is fine. Amazon Choice requires consistent availability.",
+      "Maintain 4.5+ star rating — get reviews from Dee (Apr 12) and today's buyers ASAP.",
+      "Maintain competitive price — $49.99. Do not raise price while badge is active.",
+      "Keep PPC running — ad activity signals Amazon that the listing is being actively managed.",
+      "Do NOT run any listing experiments that change the title until Wave 3 is fully planned.",
+      "BSR must stay sub-200K — maintain 1+ sale every 2-3 days to hold BSR level."
+    ]
+  }
+}

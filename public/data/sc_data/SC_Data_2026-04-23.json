@@ -1,0 +1,354 @@
+{
+  "date": "2026-04-23",
+  "period": "daily",
+  "data_source": "sp_api",
+  "source": "SP-API pipeline: Orders + Inventory + Catalog + Reports (GET_SALES_AND_TRAFFIC_REPORT) + Finances",
+  "status": "Composed automatically by amazon_api/build_sc_data.py",
+  "timestamp": "2026-04-23T03:37:32.048015Z",
+  "highlights": {
+    "revenue_7d": "7-day revenue $149.97 across 3 orders (3 units).",
+    "sessions_7d": "7-day sessions 157, CVR 3.18%.",
+    "fountain_cover": "Fountain days of cover (7d velocity): 867."
+  },
+  "business_reports": {
+    "date_range": "2026-04-15 to 2026-04-22",
+    "period_days": 7,
+    "_data_source": "sp_api_reports",
+    "_note": "Pulled via Reports API: GET_SALES_AND_TRAFFIC_REPORT",
+    "units_sold": 5,
+    "revenue": 214.96,
+    "sessions_total": 157,
+    "page_views_total": 209,
+    "cvr_percent": 3.18,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 149,
+        "sessions_b2b": 2,
+        "page_views": 198,
+        "page_views_b2b": 3,
+        "browser_sessions": 38,
+        "mobile_app_sessions": 111,
+        "units": 4,
+        "ordered_product_sales": 196.39,
+        "total_order_items": 4,
+        "cvr_pct": 2.68,
+        "buy_box_pct_avg": 97.18
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 5,
+        "sessions_b2b": 0,
+        "page_views": 5,
+        "page_views_b2b": 0,
+        "browser_sessions": 2,
+        "mobile_app_sessions": 3,
+        "units": 1,
+        "ordered_product_sales": 18.57,
+        "total_order_items": 1,
+        "cvr_pct": 20.0,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 3,
+        "sessions_b2b": 0,
+        "page_views": 6,
+        "page_views_b2b": 0,
+        "browser_sessions": 1,
+        "mobile_app_sessions": 2,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    },
+    "_all_asins": {
+      "B0DJHQVJYF": {
+        "sessions": 149,
+        "sessions_b2b": 2,
+        "page_views": 198,
+        "page_views_b2b": 3,
+        "browser_sessions": 38,
+        "mobile_app_sessions": 111,
+        "units": 4,
+        "ordered_product_sales": 196.39,
+        "total_order_items": 4,
+        "cvr_pct": 2.68,
+        "buy_box_pct_avg": 97.18
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 5,
+        "sessions_b2b": 0,
+        "page_views": 5,
+        "page_views_b2b": 0,
+        "browser_sessions": 2,
+        "mobile_app_sessions": 3,
+        "units": 1,
+        "ordered_product_sales": 18.57,
+        "total_order_items": 1,
+        "cvr_pct": 20.0,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 3,
+        "sessions_b2b": 0,
+        "page_views": 6,
+        "page_views_b2b": 0,
+        "browser_sessions": 1,
+        "mobile_app_sessions": 2,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    }
+  },
+  "business_reports_30day": {
+    "date_range": "2026-03-23 to 2026-04-22",
+    "period_days": 30,
+    "_data_source": "sp_api_reports",
+    "_note": "Pulled via Reports API: GET_SALES_AND_TRAFFIC_REPORT",
+    "units_sold": 16,
+    "revenue": 644.89,
+    "sessions_total": 430,
+    "page_views_total": 574,
+    "cvr_percent": 3.72,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 408,
+        "sessions_b2b": 7,
+        "page_views": 548,
+        "page_views_b2b": 11,
+        "browser_sessions": 142,
+        "mobile_app_sessions": 266,
+        "units": 11,
+        "ordered_product_sales": 546.32,
+        "total_order_items": 11,
+        "cvr_pct": 2.7,
+        "buy_box_pct_avg": 98.53
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 13,
+        "sessions_b2b": 0,
+        "page_views": 14,
+        "page_views_b2b": 0,
+        "browser_sessions": 6,
+        "mobile_app_sessions": 7,
+        "units": 5,
+        "ordered_product_sales": 98.57,
+        "total_order_items": 4,
+        "cvr_pct": 38.46,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 9,
+        "sessions_b2b": 0,
+        "page_views": 12,
+        "page_views_b2b": 0,
+        "browser_sessions": 5,
+        "mobile_app_sessions": 4,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    },
+    "_all_asins": {
+      "B0DJHQVJYF": {
+        "sessions": 408,
+        "sessions_b2b": 7,
+        "page_views": 548,
+        "page_views_b2b": 11,
+        "browser_sessions": 142,
+        "mobile_app_sessions": 266,
+        "units": 11,
+        "ordered_product_sales": 546.32,
+        "total_order_items": 11,
+        "cvr_pct": 2.7,
+        "buy_box_pct_avg": 98.53
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 13,
+        "sessions_b2b": 0,
+        "page_views": 14,
+        "page_views_b2b": 0,
+        "browser_sessions": 6,
+        "mobile_app_sessions": 7,
+        "units": 5,
+        "ordered_product_sales": 98.57,
+        "total_order_items": 4,
+        "cvr_pct": 38.46,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 9,
+        "sessions_b2b": 0,
+        "page_views": 12,
+        "page_views_b2b": 0,
+        "browser_sessions": 5,
+        "mobile_app_sessions": 4,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    }
+  },
+  "fba_orders_detail": {
+    "_data_source": "sp_api_orders",
+    "_source": "SP-API: /orders/v0/orders + /orders/v0/orders/{id}/orderItems",
+    "total_order_lines_7day": 3,
+    "orders": [
+      {
+        "order_id": "113-9942143-7521824",
+        "date": "2026-04-17",
+        "time_utc": "17:20:56",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Paw Pure Wireless Pet Water Fountain",
+        "item_subtotal": 49.99,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "111-5139369-7007431",
+        "date": "2026-04-17",
+        "time_utc": "21:06:19",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Paw Pure Wireless Pet Water Fountain",
+        "item_subtotal": 49.99,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "114-0094253-6041057",
+        "date": "2026-04-18",
+        "time_utc": "12:05:27",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Paw Pure Wireless Pet Water Fountain",
+        "item_subtotal": 49.99,
+        "status": "Shipped",
+        "type": "standalone"
+      }
+    ]
+  },
+  "sales_today": {
+    "_data_source": "sp_api_orders",
+    "total_order_items_today": 0,
+    "units_ordered_today": 0,
+    "revenue_today": 0,
+    "ad_spend_today_so_far": null,
+    "_ad_note": "Today's ad spend requires Ads API (pending approval)"
+  },
+  "campaign_manager": {
+    "_data_source": "sp_api_finances",
+    "_note": "Ad spend pulled from Finances API ProductAdsPaymentEventList. Click counts, impressions, and per-campaign detail require Ads API (pending approval).",
+    "ad_spend_7day": null,
+    "ad_spend_30day": 217.48,
+    "impressions_7day": null,
+    "clicks_7day": null,
+    "ad_sales_7day": null,
+    "acos_7day": null,
+    "acos_percent_30day": null,
+    "ad_sales_30day": null,
+    "_pending": "impressions_7day, clicks_7day, ad_sales_7day, acos_7day, acos_percent_30day \u2014 pending Ads API approval"
+  },
+  "reviews": {
+    "_data_source": "pending_api",
+    "_note": "Review count not yet pulled from API; existing value carried forward manually.",
+    "asin": "B0DJHQVJYF"
+  },
+  "fba_inventory": {
+    "scraped_at": "2026-04-23T03:36:51.820574Z",
+    "data_source": "sp_api",
+    "_source": "SP-API: /fba/inventory/v1/summaries + /catalog/2022-04-01/items",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fba_available": 373,
+      "inbound": 0,
+      "reserved": 3,
+      "bsr_pet_supplies": 137864,
+      "bsr_subcategory": {
+        "rank": 1555,
+        "category": "Cat Fountains"
+      },
+      "_bsr_source": "SP-API Catalog (displayGroupRanks + classificationRanks)",
+      "units_sold_7day": 3,
+      "units_sold_30day": 10,
+      "revenue_7day": 149.97,
+      "revenue_30day": 496.33,
+      "price": 49.99,
+      "total_fee_per_unit": 15.5,
+      "daily_velocity_7day": 0.43,
+      "daily_velocity_30day": 0.33,
+      "days_of_supply_est_7day": 867,
+      "days_of_supply_est_30day": 1130
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fba_available": 141,
+      "inbound": 0,
+      "reserved": 0,
+      "bsr_pet_supplies": null,
+      "bsr_subcategory": {
+        "rank": null,
+        "category": null
+      },
+      "_bsr_source": "SP-API Catalog (displayGroupRanks + classificationRanks)",
+      "units_sold_7day": 0,
+      "units_sold_30day": 5,
+      "revenue_7day": 0.0,
+      "revenue_30day": 98.57,
+      "price": 20.0,
+      "total_fee_per_unit": 6.95,
+      "daily_velocity_7day": 0.0,
+      "daily_velocity_30day": 0.17,
+      "days_of_supply_est_7day": null,
+      "days_of_supply_est_30day": 829
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "sku": null,
+      "fba_available": null,
+      "inbound": null,
+      "reserved": null,
+      "bsr_pet_supplies": null,
+      "bsr_subcategory": {
+        "rank": null,
+        "category": null
+      },
+      "_bsr_source": "SP-API Catalog (displayGroupRanks + classificationRanks)",
+      "units_sold_7day": 0,
+      "units_sold_30day": 0,
+      "revenue_7day": 0.0,
+      "revenue_30day": 0.0,
+      "price": 64.99,
+      "total_fee_per_unit": 15.25,
+      "daily_velocity_7day": 0.0,
+      "daily_velocity_30day": 0.0,
+      "days_of_supply_est_7day": null,
+      "days_of_supply_est_30day": null
+    }
+  },
+  "amazon_choice": {
+    "_data_source": "manual",
+    "_note": "Amazon's Choice badge status requires manual verification (no public SP-API field)."
+  },
+  "pending_data_requests": [
+    "Ads API: impressions, clicks, per-campaign data",
+    "Solicitations API: request-review status (ready but gated)",
+    "RDT for PII: buyer names in fba_orders_detail"
+  ],
+  "_financials_summary": {
+    "refunds_7d": -53.86,
+    "refunds_30d": -53.86,
+    "ads_payments_7d": 0.0,
+    "ads_payments_30d": -217.48
+  }
+}

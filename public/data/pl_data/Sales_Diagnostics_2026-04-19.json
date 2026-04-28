@@ -1,0 +1,137 @@
+{
+  "date": "2026-04-19",
+  "_note": "3-ASIN sales snapshot. Source PL_Data is dated 2026-04-17 (2 days stale). Apr 18-19 sales not yet recorded in PL pipeline \u2014 pull SC sales dashboard on Apr 26 for fresh numbers.",
+  "data_source": "PL_Data_2026-04-17.json (7-day window Apr 11-17, 30-day window Mar 18-Apr 17)",
+  "asins": {
+    "B0DJHQVJYF": {
+      "name": "Paw Pure Wireless Pet Water Fountain",
+      "asp": 49.99,
+      "window_7d": {
+        "period": "Apr 11-17",
+        "units": 3,
+        "revenue": 149.97,
+        "amazon_fee": 43.53,
+        "cogs": 52.74,
+        "gross_profit": 53.7,
+        "margin_pct": 35.81
+      },
+      "window_30d": {
+        "period": "Mar 18-Apr 17",
+        "units": 11,
+        "revenue": 549.89,
+        "amazon_fee": 159.61,
+        "cogs": 193.38,
+        "gross_profit": 196.9,
+        "margin_pct": 35.81
+      },
+      "inventory": {
+        "asin": "B0DJHQVJYF",
+        "fba_available": 373,
+        "fba_total": 378,
+        "fba_inbound": 0,
+        "total_stock": 373,
+        "daily_velocity": 0.37,
+        "daily_velocity_note": "11 units / 30 days = 0.37/day. Up from 0.30 yesterday \u2014 2 sales today boosting velocity.",
+        "days_of_cover": 1008,
+        "status": "OVERSTOCKED",
+        "reorder_needed": false,
+        "bsr": 105671,
+        "_bsr_note": "BSR 105,671 \u2014 BEST EVER. First time sub-110K. Amazon's Choice badge triggered."
+      },
+      "assessment": "BEST 7-day ever (3 units). Amazon's Choice badge active since Apr 17. Over-stocked (1,008 days cover) \u2014 velocity must climb. 30-day revenue $549.89 trending up."
+    },
+    "B0FWXJ1GKT": {
+      "name": "Paw Pure Replacement Filter Pack",
+      "asp": 20.0,
+      "window_7d": {
+        "period": "Apr 11-17",
+        "units": 0,
+        "revenue": 0,
+        "amazon_fee": 0,
+        "cogs": 0,
+        "gross_profit": 0,
+        "margin_pct": 0
+      },
+      "window_30d": {
+        "period": "Mar 18-Apr 17",
+        "units": 5,
+        "revenue": 100.0,
+        "amazon_fee": 35.45,
+        "cogs": 19.85,
+        "gross_profit": 44.7,
+        "margin_pct": 44.7
+      },
+      "inventory": {
+        "asin": "B0FWXJ1GKT",
+        "fba_available": 140,
+        "fba_total": 142,
+        "fba_inbound": 0,
+        "total_stock": 140,
+        "daily_velocity": 0.2,
+        "days_of_cover": 700,
+        "status": "HEALTHY",
+        "reorder_needed": false
+      },
+      "assessment": "Zero 7-day sales. 5 units over 30 days. Razor-blade ratio 0.33 last 7d (target 1.0). Every fountain buyer is a future filter customer \u2014 the lag is natural (filter replacement ~30 days post-purchase)."
+    },
+    "B0GMDM6CG2": {
+      "name": "Paw Pure Fountain + Filter Bundle",
+      "asp": 64.99,
+      "window_7d": {
+        "period": "Apr 11-17",
+        "units": 1,
+        "revenue": 64.99,
+        "amazon_fee": 15.59,
+        "cogs": 21.55,
+        "gross_profit": 27.85,
+        "margin_pct": 42.85
+      },
+      "window_30d": {
+        "period": "Mar 18-Apr 17",
+        "units": 1,
+        "revenue": 64.99,
+        "amazon_fee": 15.59,
+        "cogs": 21.55,
+        "gross_profit": 27.85,
+        "margin_pct": 42.85
+      },
+      "inventory": {
+        "asin": "B0GMDM6CG2",
+        "fba_available": null,
+        "status": "VIRTUAL BUNDLE \u2014 uses component inventory"
+      },
+      "assessment": "FIRST EVER BUNDLE SALE in 7-day window (1 unit, $64.99). 43% margin \u2014 highest of any SKU. EXP-040 value-led rewrite may be driving this. Keep running."
+    }
+  },
+  "portfolio_totals": {
+    "window_7d": {
+      "period": "Apr 11-17",
+      "units": 4,
+      "revenue": 214.96,
+      "gross_profit": 81.55,
+      "gross_margin_pct": 37.94,
+      "ad_spend_est": 35.0,
+      "contribution_margin_est": 46.55,
+      "contribution_margin_pct_est": 21.66
+    },
+    "window_30d": {
+      "period": "Mar 18-Apr 17",
+      "units": 17,
+      "revenue": 714.88,
+      "gross_profit": 269.45,
+      "gross_margin_pct": 37.69
+    }
+  },
+  "kpis_snapshot": {
+    "revenue_7d": 214.96,
+    "revenue_30d": 714.88,
+    "units_7d": 4,
+    "units_30d": 17,
+    "razor_blade_ratio_7d": 0.33,
+    "review_count": 21,
+    "review_rating": 4.5,
+    "bsr_pet_supplies": 105671,
+    "amazon_choice": true
+  },
+  "data_freshness_alert": "PL pipeline last ran 2026-04-17. Apr 18-19 sales not yet ingested. Fresh pull due Apr 26."
+}

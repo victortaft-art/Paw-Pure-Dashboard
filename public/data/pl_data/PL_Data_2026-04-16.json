@@ -1,0 +1,258 @@
+{
+  "date": "2026-04-16",
+  "period": "7-day",
+  "data_source": "real",
+  "config_last_updated": "2026-04-03",
+  "sc_data_source": "SC_Data_2026-04-16.json (real: Sales Dashboard + FBA Orders + FBA Inventory; estimated: 7-day/30-day sessions)",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 375,
+      "fba_total": 380,
+      "fba_inbound": 0,
+      "reserved": 4,
+      "unfulfillable": 1,
+      "total_stock": 375,
+      "daily_velocity": 0.30,
+      "daily_velocity_note": "9 units / 30 days (Mar 17-Apr 16) = 0.30/day. Slightly improved from 0.29 yesterday.",
+      "days_of_cover": 1250,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "inventory_health_status": "Excess",
+      "estimated_excess_units": 366,
+      "bsr": 145776,
+      "_bsr_note": "BSR softened to 145,776 (from 140,726 yesterday — zero-sale day). 7-day trend: +29,224 improvement vs last week. BSR will recover with next sale.",
+      "_inventory_delta": "+1 available vs yesterday (374→375). Reserved released (5→4). No net inventory change."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 139,
+      "fba_total": 141,
+      "fba_inbound": 0,
+      "reserved": 2,
+      "unfulfillable": 0,
+      "total_stock": 139,
+      "daily_velocity": 0.20,
+      "daily_velocity_note": "6 filter units (5 standalone + 1 bundle component) / 30 days = 0.20/day",
+      "days_of_cover": 695,
+      "status": "HEALTHY",
+      "reorder_needed": false,
+      "inventory_health_status": "Excess",
+      "_delta_note": "Unchanged at 139 vs yesterday."
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "VIRTUAL BUNDLE — uses component inventory",
+      "_note": "Bundle sale Apr 15 confirmed via FBA orders. Component inventory settled."
+    }
+  },
+  "pl_7day": {
+    "_period": "Apr 10-16, 2026",
+    "_note": "7-day P&L: 1 standalone fountain + 1 bundle. ZERO-SALE DAY today (Apr 16). Revenue DOWN vs last 7-day ($114.98 vs $164.97) because Apr 9 fountain ($49.99) dropped out of window — window math, not business deterioration.",
+    "fountain": {
+      "units": 1,
+      "revenue": 49.99,
+      "amazon_fee": 14.28,
+      "cogs": 17.58,
+      "gross_profit": 18.13,
+      "margin_pct": 36.27,
+      "_calculation": "Revenue $49.99 - Fees $14.28 - COGS $17.58 = $18.13"
+    },
+    "filters": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0,
+      "_note": "No standalone filter sale in Apr 10-16 window."
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.25,
+      "cogs": 21.55,
+      "gross_profit": 28.19,
+      "margin_pct": 43.37,
+      "_calculation": "Revenue $64.99 - Fees $15.25 - COGS $21.55 (fountain $17.58 + filter $3.97) = $28.19"
+    },
+    "totals": {
+      "units": 2,
+      "revenue": 114.98,
+      "gross_profit": 46.32,
+      "ad_spend": null,
+      "true_contribution_margin": null,
+      "contribution_margin_pct": null,
+      "_calculation_notes": {
+        "gross_profit": "Fountain $18.13 + Bundle $28.19 = $46.32",
+        "wow_change": "Revenue DOWN $49.99 vs last 7-day ($164.97) due to Apr 9 fountain exiting window. Gross profit DOWN from $64.45 to $46.32. This is window math — cumulative revenue trend still positive.",
+        "contribution_margin": "Cannot calculate — ad spend data unavailable (Campaign Manager inaccessible). Estimated ad spend ~$57/week → estimated contribution margin: $46.32 - $57.40 = -$11.08"
+      }
+    },
+    "razor_blade_ratio": 0.0,
+    "_razor_blade_note": "0 standalone filter units / 1 fountain unit = 0.0. Bundle contains 1 filter component counted as bundle revenue. Effective filter attach rate via bundle: 1/1 = 1.0. Combined ratio ≥ 1.0 when counting bundle filters — target achieved this week."
+  },
+  "pl_30day": {
+    "_period": "Mar 17-Apr 16, 2026",
+    "fountain": {
+      "units": 9,
+      "revenue": 449.91,
+      "amazon_fee": 128.52,
+      "cogs": 158.22,
+      "gross_profit": 163.17,
+      "margin_pct": 36.27
+    },
+    "filters": {
+      "units": 5,
+      "revenue": 100.00,
+      "amazon_fee": 34.75,
+      "cogs": 19.85,
+      "gross_profit": 45.40,
+      "margin_pct": 45.4
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.25,
+      "cogs": 21.55,
+      "gross_profit": 28.19,
+      "margin_pct": 43.37
+    },
+    "totals": {
+      "units": 15,
+      "revenue": 614.90,
+      "gross_profit": 236.76,
+      "ad_spend": null,
+      "true_contribution_margin": null,
+      "contribution_margin_pct": null,
+      "_note": "30-day unchanged from yesterday (dropped Mar 16 with 0 sales, added Apr 16 with 0 sales). Gross margin steady at $236.76. Estimated 30-day ad spend ~$390 → estimated 30-day contribution margin: $236.76 - $390 = -$153."
+    }
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-16",
+      "projected_revenue": 114.98,
+      "projected_cogs": 39.13,
+      "projected_fees": 29.53,
+      "projected_ad_spend": 57.40,
+      "projected_gross_profit": 46.32,
+      "projected_contribution_margin": -11.08,
+      "_note": "Real 7-day data. Zero-sale day (Apr 16) weighs on week. Contribution margin -$11.08 (better than -$26.55 from 2 weeks ago — trend improving). If auto campaign paused: improves to +$10.42."
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-23",
+      "projected_revenue": 164.97,
+      "projected_cogs": 56.71,
+      "projected_fees": 43.81,
+      "projected_ad_spend": 57.40,
+      "projected_gross_profit": 64.45,
+      "projected_contribution_margin": 7.05,
+      "_note": "Assumes 1 fountain + 1 bundle (consistent with recent 7-day trend). If auto/losing keyword paused saves $21.50/week → contribution margin improves to $28.55."
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-04-30",
+      "projected_revenue": 164.97,
+      "projected_cogs": 56.71,
+      "projected_fees": 43.81,
+      "projected_ad_spend": 35.90,
+      "projected_gross_profit": 64.45,
+      "projected_contribution_margin": 28.55,
+      "_note": "Assumes PPC optimizations implemented (pause waste, scale winner). Approaching May aged inventory surcharge.",
+      "_aged_inventory_warning": "May aged inventory surcharge ~$128.84 due around May 1. Approximately $32/week impact if spread over 4 weeks."
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-07",
+      "projected_revenue": 179.97,
+      "projected_cogs": 61.69,
+      "projected_fees": 47.51,
+      "projected_ad_spend": 35.90,
+      "projected_gross_profit": 70.77,
+      "projected_contribution_margin": 34.87,
+      "_note": "Assumes 1 additional bundle/week as bundle PPC launches. Surcharge already absorbed in prior week."
+    }
+  ],
+  "alerts": [
+    {
+      "level": "CRITICAL",
+      "category": "PPC_WASTE",
+      "message": "Auto campaign + losing keyword: $21.50/week ongoing waste — 15 consecutive days unaddressed.",
+      "action": "Victor must manually access advertising.amazon.com to pause these. Saves $93/month immediately. Contribution margin goes from -$11 to +$10.50 per week."
+    },
+    {
+      "level": "CRITICAL",
+      "category": "DATA",
+      "message": "Campaign Manager UNAVAILABLE for 15th consecutive day — true contribution margin cannot be calculated.",
+      "action": "Victor needs to access advertising.amazon.com manually or grant browser access for automation."
+    },
+    {
+      "level": "WARNING",
+      "category": "REVENUE_WINDOW",
+      "message": "7-day revenue fell to $114.98 (from $164.97 last week) — Apr 9 fountain ($49.99) dropped out of window. Not a business decline.",
+      "action": "No action needed. Gross profit -$18 is window math. Next fountain sale restores revenue trend."
+    },
+    {
+      "level": "WARNING",
+      "category": "COMPETITOR",
+      "message": "FEELNEEDY B0F9WQGMH7 CROSSED 1,000 reviews TODAY. Amazon milestone boost likely over next 7-14 days.",
+      "action": "Monitor FEELNEEDY BSR daily this week. Increase bids on profitable keywords by 10-15% to maintain visibility. Focus on review acquisition to close gap."
+    },
+    {
+      "level": "WARNING",
+      "category": "REVIEWS",
+      "message": "0 new reviews in 8+ days. 21 reviews total. Buyers from Apr 9, 12, 15 have not reviewed.",
+      "action": "URGENT: Use 'Request a Review' for all 3 recent orders immediately. Apr 12 buyer (fountain) received product by now — best window for review request today."
+    },
+    {
+      "level": "WARNING",
+      "category": "AGED_INVENTORY",
+      "message": "375 fountain units in excess. May aged inventory surcharge ~$128.84/month approaching (~May 1).",
+      "action": "BSR recovery and next sale are the primary lever. Continue PPC consistency."
+    },
+    {
+      "level": "POSITIVE",
+      "category": "BUNDLE_ECONOMICS",
+      "message": "Bundle sale (Apr 15) contributes $28.19 gross profit vs $18.13 for standalone fountain — 56% more profit per transaction.",
+      "action": "Launch bundle PPC campaign targeting 'cat water fountain bundle' and 'fountain with filters' keywords. Budget $15/week for 43% margin product."
+    },
+    {
+      "level": "POSITIVE",
+      "category": "BSR_TREND",
+      "message": "BSR 145,776 today — softened from best-ever 140,726 (expected on zero-sale day). 7-day improvement: +29,224 positions vs last week.",
+      "action": "Next sale will push BSR back toward or below 140K. Consistent 1-2 sales/week maintains BSR trajectory toward sub-100K."
+    },
+    {
+      "level": "POSITIVE",
+      "category": "CONTRIBUTION_MARGIN",
+      "message": "Estimated 7-day contribution margin -$11.08 — improved from -$26.55 two weeks ago. Trend improving without even pausing waste.",
+      "action": "Pausing auto campaign + losing keyword immediately improves to +$10.42/week. Bundle PPC adds ~$15-20 more. Path to cash-positive operations is clear."
+    }
+  ],
+  "kpis": {
+    "revenue_7d": 114.98,
+    "revenue_30d": 614.90,
+    "units_7d": 2,
+    "units_30d": 15,
+    "bundle_units_30d": 1,
+    "acos_pct": null,
+    "tacos_pct": null,
+    "contribution_margin_7d_est": -11.08,
+    "contribution_margin_pct_est": -9.64,
+    "gross_margin_7d_pct": 40.28,
+    "gross_margin_30d_pct": 38.50,
+    "days_of_cover_fountain": 1250,
+    "days_of_cover_filters": 695,
+    "razor_blade_ratio_standalone": 0.0,
+    "razor_blade_ratio_effective": 1.0,
+    "review_count": 21,
+    "review_rating": 4.5,
+    "bsr_pet_supplies": 145776,
+    "bsr_24h_delta": 5050,
+    "bsr_7day_delta": -29224,
+    "_notes": "Zero-sale day Apr 16. 7-day revenue/profit lower due to window shift (Apr 9 fountain dropping out). 30-day unchanged at 15 units/$614.90. Gross margin improved to 40.3% (bundle has higher margin). Estimated contribution margin -$11/week (better than -$26.55 peak). Effective razor/blade ratio = 1.0 when counting bundle filter component."
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "date": "2026-04-05",
+  "period": "31-day",
+  "source": "Seller Central Business Reports + Manage Inventory — scraped via Chrome",
+  "status": "PARTIAL — PPC data unavailable (advertising.amazon.com inaccessible from Chrome extension)",
+  "timestamp": "2026-04-06T02:58:00Z",
+
+  "business_reports": {
+    "note": "Date range 03/05/2026 – 04/05/2026 (31-day). Downloaded via BusinessReport-4-05-26.csv.",
+    "date_range": "03/05/2026 – 04/05/2026",
+    "period_days": 31,
+    "asins": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz, Cordless Battery-Operated Pet Fountain with Stainless Steel Drinking Tray, Quiet 20 dB Automatic Modes, BPA-Free Easy-Clean Water Dispenser for Cats & Small Dogs",
+        "sku": "8V-EUFB-4UF2",
+        "sessions": 238,
+        "sessions_b2b": 6,
+        "session_percentage": 93.33,
+        "session_percentage_b2b": 100.00,
+        "page_views": 336,
+        "page_views_b2b": 10,
+        "page_view_percentage": 93.33,
+        "page_view_percentage_b2b": 100.00,
+        "featured_offer_percentage": 100.00,
+        "featured_offer_percentage_b2b": 100.00,
+        "units_ordered": 7,
+        "units_ordered_b2b": 0,
+        "cvr_unit_session_pct": 2.94,
+        "cvr_b2b": 0.00,
+        "ordered_product_sales": 349.93,
+        "ordered_product_sales_b2b": 0.00,
+        "total_order_items": 7,
+        "total_order_items_b2b": 0
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges for Automatic Wireless Pet Water Fountain (4 Filters + 4 Sponges), 3-Layer Filtration System for Fresh Water",
+        "sku": "97-VFBK-LUWE",
+        "sessions": 17,
+        "sessions_b2b": 0,
+        "session_percentage": 6.67,
+        "session_percentage_b2b": 0.00,
+        "page_views": 24,
+        "page_views_b2b": 0,
+        "page_view_percentage": 6.67,
+        "page_view_percentage_b2b": 0.00,
+        "featured_offer_percentage": 100.00,
+        "featured_offer_percentage_b2b": 0.00,
+        "units_ordered": 4,
+        "units_ordered_b2b": 0,
+        "cvr_unit_session_pct": 23.53,
+        "cvr_b2b": 0.00,
+        "ordered_product_sales": 80.00,
+        "ordered_product_sales_b2b": 0.00,
+        "total_order_items": 3,
+        "total_order_items_b2b": 0
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit (Bundle)",
+        "sku": "WT-QN3Z-0I9S",
+        "sessions": null,
+        "session_percentage": null,
+        "page_views": null,
+        "featured_offer_percentage": null,
+        "units_ordered": null,
+        "cvr_unit_session_pct": null,
+        "note": "Bundle listing — not returned in ASIN-level business report"
+      }
+    },
+    "totals": {
+      "sessions": 255,
+      "page_views": 360,
+      "units_ordered": 11,
+      "ordered_product_sales": 429.93
+    }
+  },
+
+  "campaign_manager": {
+    "status": "UNAVAILABLE — advertising.amazon.com not accessible from Chrome extension",
+    "note": "Using carried-forward data from 2026-04-04 scrape. Lifetime totals likely updated by ~$8-12/day in ad spend.",
+    "date_range_overview": "Mar 28 – Apr 3, 2026 (from last successful scrape, 2026-04-04)",
+    "overview_metrics": {
+      "impressions": 13222,
+      "clicks": 60,
+      "purchases": 0,
+      "sales": 0.00
+    },
+    "performance_lifetime": {
+      "date_range": "Jan 6 – Apr 4, 2026",
+      "total_cost": 356.08,
+      "note": "As of 2026-04-04. Estimated current total: ~$376 (adding ~$20 at ~$10/day since budget cut recommendation)"
+    },
+    "campaigns": [
+      {
+        "name": "Manual Keywords Campaign",
+        "campaign_id": "A04350122JYLYFMZ59A3X",
+        "type": "MANUAL",
+        "program_type": "SP",
+        "status": "Delivering",
+        "budget_daily": 30.00,
+        "impressions": 25316,
+        "clicks": 218,
+        "spend": 278.82,
+        "sales": 209.98,
+        "orders": 3,
+        "acos_pct": 179.91,
+        "roas": 0.56,
+        "note": "Carried from 2026-04-04"
+      },
+      {
+        "name": "Close Automatic Campaign",
+        "campaign_id": "A022989918IF7J7DW716B",
+        "type": "AUTOMATIC",
+        "program_type": "SP",
+        "status": "Delivering",
+        "budget_daily": 15.00,
+        "impressions": 15483,
+        "clicks": 64,
+        "spend": 77.26,
+        "sales": 119.98,
+        "orders": 3,
+        "acos_pct": 64.39,
+        "roas": 1.55,
+        "note": "Carried from 2026-04-04"
+      }
+    ],
+    "campaigns_total": {
+      "impressions": 40799,
+      "clicks": 282,
+      "spend": 356.08,
+      "sales": 329.96,
+      "orders": 6,
+      "acos_pct": 107.92,
+      "roas": 0.93
+    }
+  },
+
+  "fba_inventory": {
+    "scraped_from": "Manage All Inventory page — 2026-04-05",
+    "asins": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz",
+        "sku": "8V-EUFB-4UF2",
+        "status": "Active",
+        "available": 376,
+        "inbound": 0,
+        "unfulfillable": 1,
+        "reserved": 7,
+        "fulfillment": "FBA",
+        "price": 49.99,
+        "featured_offer_price": "$49.99 + $0.00",
+        "business_price": "$50.00 + $0.00",
+        "sales_30day": 249,
+        "units_sold_30day": 7,
+        "sales_rank": 158384,
+        "sales_rank_category": "Pet Supplies",
+        "total_fees_per_unit": 14.28,
+        "fba_fee_per_unit": 6.78,
+        "vs_prior_day": {
+          "available_change": -1,
+          "sales_rank_change": 13897,
+          "sales_rank_direction": "WORSE"
+        }
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges",
+        "sku": "97-VFBK-LUWE",
+        "status": "Active",
+        "available": 142,
+        "inbound": 0,
+        "unfulfillable": 0,
+        "reserved": 1,
+        "fulfillment": "FBA",
+        "price": 20.00,
+        "featured_offer_price": "$20.00 + $0.00",
+        "sales_30day": 80,
+        "units_sold_30day": 4,
+        "sales_rank": null,
+        "sales_rank_category": null,
+        "total_fees_per_unit": 3.00,
+        "fba_fee_per_unit": 3.95,
+        "vs_prior_day": {
+          "available_change": 0,
+          "sales_rank_change": null
+        }
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit (Bundle)",
+        "sku": "WT-QN3Z-0I9S",
+        "status": "Bundle",
+        "available": null,
+        "note": "Bundle listing — inventory data not displayed separately"
+      }
+    }
+  },
+
+  "amazon_fees": {
+    "scraped_from": "Payments Dashboard — Statement View",
+    "settlement_period": "3/28/2026 – Present (Open)",
+    "settlement_scheduled_charge": {
+      "amount": -119.29,
+      "date": "2026-04-11"
+    },
+    "summary": {
+      "total_balance": -119.29,
+      "funds_available": 0.00,
+      "recent_payouts": "No recent fund transfers"
+    },
+    "net_proceeds_breakdown": {
+      "beginning_balance": 50.54,
+      "product_charges": 189.97,
+      "promo_rebates": -99.98,
+      "amazon_fees": -42.34,
+      "expenses_total": -359.80,
+      "account_level_reserve": 0.00,
+      "net_proceeds": -119.29
+    },
+    "notes": "Same settlement period as 2026-04-04. Cost of advertising included in expenses total (-$359.80). Ad portion estimated: $359.80 - $42.34 - $99.98 = ~$217.48."
+  },
+
+  "delta_vs_prior_day": {
+    "fountain_sessions": "+6 (232 → 238)",
+    "fountain_page_views": "+8 (328 → 336)",
+    "fountain_units": "0 (7 → 7)",
+    "fountain_fba_available": "-1 (377 → 376)",
+    "fountain_sales_rank": "+13,897 (144,487 → 158,384) — rank worsened",
+    "filter_sessions": "0 (17 → 17)",
+    "filter_units": "0 (4 → 4)",
+    "filter_fba_available": "0 (142 → 142)",
+    "payments_settlement": "Unchanged — same open period"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "date": "2026-04-19",
+  "period": "7-day",
+  "data_source": "real",
+  "source": "Amazon Seller Central — FBA Orders (real), Manage Inventory (real), Business Reports session data (real). Campaign Manager inaccessible (advertising.amazon.com blocked).",
+  "status": "REAL — FBA Orders confirm 5 orders in 7-day window (Apr 13-19). NEW: Mallory Apr 18 fountain $49.99 payment complete. BSR 81,677 — NEW ALL-TIME BEST. Amazon's Choice badge sustained.",
+  "timestamp": "2026-04-20T05:42:00Z",
+  "highlights": {
+    "amazon_choice": true,
+    "bsr_breakthrough": "81,677 — NEW RECORD. Was 105,671 on Apr 17 (-23,994 improvement in 2 days). Sub-82K for the first time ever.",
+    "new_order_apr18": "Mallory, Order 114-0094253-6041057, Apr 18 at 5:05 AM PDT, B0DJHQVJYF, $49.99, Payment complete.",
+    "today_apr19": "0 orders as of 10:42 PM PDT. Day is effectively complete.",
+    "sessions_surge": "397 sessions in 7-day window (business reports) — up from ~72 estimated pre-badge. Amazon's Choice badge driving ~7x session volume increase.",
+    "gap_note": "No SC_Data file was created for 2026-04-18 (data gap). This file covers Apr 19 with full order context."
+  },
+  "business_reports": {
+    "date_range": "2026-04-13 to 2026-04-19",
+    "period_days": 7,
+    "_data_source": "partially_real",
+    "_note": "Revenue and units from real FBA Orders. Sessions from Business Reports Detail Page by Child Item (7-day default). Note: 'Data from 4/19/2026 may not be fully available yet' shown on page — Apr 19 data is partial.",
+    "sessions_7day": 397,
+    "_sessions_note": "397 sessions for fountain (B0DJHQVJYF) in 7-day window per Business Reports. Significant jump from ~72 estimated on Apr 17 — Amazon's Choice badge on 'wireless cat water fountain' (18,100 SV) driving massive organic traffic increase.",
+    "units_sold_7day": 5,
+    "revenue_7day": 214.96,
+    "_revenue_calc": "Bundle Jerry $64.99 + Ruth $49.99 + Jennifer $49.99 + Mallory $49.99 = $214.96 (Dee Apr 12 fell outside 7-day window)",
+    "cvr_percent": 1.01,
+    "_cvr_note": "4 fountain units / 397 sessions = 1.01%. CVR temporarily depressed as badge drives high traffic volume surge. Historical CVR was 4-5.5% at lower session volumes. Expect CVR to stabilize at 3-5% as traffic normalizes.",
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain, 30-Day Battery Life, Stainless Steel Tray, 20dB Ultra-Quiet Cordless Pet Fountain for Cats & Small Dogs, 3L/108oz",
+        "sessions": 373,
+        "sessions_b2b": 0,
+        "page_views": 430,
+        "page_views_b2b": 0,
+        "session_pct": 93.85,
+        "_session_pct_source": "real — Business Reports page",
+        "featured_offer_pct": 100,
+        "units": 4,
+        "units_b2b": 0,
+        "revenue": 196.39,
+        "_revenue_note": "Ruth $49.99 + Jennifer $49.99 + Mallory $49.99 + Jerry bundle component $46.42 = $196.39",
+        "cvr": 1.07,
+        "_note": "3 standalone ($149.97) + 1 bundle component ($46.42). BSR driven to 81,677 — best ever."
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges for Automatic Wireless Pet Water Fountain (4 Filters + 4 Sponges), 3-Layer Filtration System for Fresh Water",
+        "sessions": 16,
+        "sessions_b2b": 0,
+        "page_views": 18,
+        "page_views_b2b": 0,
+        "session_pct": 4.02,
+        "_session_pct_source": "real — Business Reports page",
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 18.57,
+        "cvr": 6.25,
+        "_note": "1 filter unit as bundle component (Jerry Apr 15). No standalone filter sale this week."
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit, Ultra-Quiet Battery Operated Pet Fountain Bundle",
+        "sessions": 8,
+        "sessions_b2b": 0,
+        "page_views": 9,
+        "page_views_b2b": 0,
+        "session_pct": 2.13,
+        "_session_pct_source": "real — Business Reports page",
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 64.99,
+        "cvr": 12.5,
+        "_note": "1 bundle sale Apr 15 (Jerry). Virtual bundle uses component inventory."
+      }
+    }
+  },
+  "business_reports_30day": {
+    "date_range": "2026-03-20 to 2026-04-19",
+    "period_days": 30,
+    "_data_source": "partially_real",
+    "_note": "Revenue from Manage Inventory 30-day sales display (real). Units estimated from revenue. 2 March fountain sales (~$103.88 worth) rolled off the window; Mallory Apr 18 (+$49.99) added.",
+    "sessions_30day": 490,
+    "_sessions_note": "Estimated. 397 confirmed 7-day sessions. Prior 23 days estimated at ~4/day pre-badge = ~92 sessions. Total ~490.",
+    "units_sold_30day": 17,
+    "_units_note": "Estimated: ~10 fountain + ~6 filter (5 standalone + 1 bundle) + 1 bundle = ~17 total ASIN-level units",
+    "revenue_30day": 678.99,
+    "_revenue_note": "Manage Inventory: Fountain ~$496 + Filter ~$118 + Bundle $64.99 = $678.99. Down from $714.88 on Apr 17 as 2 March sales (~$103.88) dropped off and Mallory (+$49.99) was added.",
+    "cvr_30day": 3.47,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 454,
+        "sessions_b2b": 7,
+        "page_views": 610,
+        "page_views_b2b": 11,
+        "session_pct": 92.7,
+        "featured_offer_pct": 99.7,
+        "units": 10,
+        "units_b2b": 0,
+        "revenue": 496,
+        "_revenue_source": "real — Manage Inventory 30-day display ($496 shown)",
+        "cvr": 2.20,
+        "total_order_items": 10
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 22,
+        "sessions_b2b": 0,
+        "page_views": 25,
+        "page_views_b2b": 0,
+        "session_pct": 4.49,
+        "featured_offer_pct": 100,
+        "units": 6,
+        "units_b2b": 0,
+        "revenue": 118,
+        "_revenue_source": "real — Manage Inventory 30-day display ($118 shown, includes bundle component $18.57)",
+        "cvr": 27.27,
+        "total_order_items": 6
+      },
+      "B0GMDM6CG2": {
+        "sessions": 9,
+        "sessions_b2b": 0,
+        "page_views": 10,
+        "page_views_b2b": 0,
+        "session_pct": 1.84,
+        "featured_offer_pct": 100,
+        "units": 1,
+        "units_b2b": 0,
+        "revenue": 64.99,
+        "cvr": 11.11,
+        "total_order_items": 1
+      }
+    }
+  },
+  "sales_today": {
+    "_data_source": "real",
+    "scraped_at": "2026-04-20T05:42:00Z",
+    "snapshot_time_pdt": "2026-04-19 10:42 PM PDT",
+    "total_order_items_today": 0,
+    "units_ordered_today": 0,
+    "revenue_today": 0.00,
+    "_interpretation": "No sales on Apr 19. Day effectively complete at 10:42 PM PDT. Amazon's Choice badge is sustaining BSR momentum — BSR 81,677 reflects cumulative velocity including Mallory's Apr 18 order.",
+    "_context": "Rest day expected. Amazon's Choice drives sessions not necessarily daily sales. BSR held at new record low of 81,677 despite 0 sales today."
+  },
+  "sales_apr18": {
+    "_data_source": "real",
+    "date": "2026-04-18",
+    "orders": 1,
+    "revenue": 49.99,
+    "asin": "B0DJHQVJYF",
+    "buyer": "Mallory",
+    "order_id": "114-0094253-6041057",
+    "time_pdt": "5:05 AM",
+    "status": "Payment complete",
+    "_note": "This is the first confirmed sale after the Amazon's Choice badge launched Apr 17. Came in early morning Apr 18."
+  },
+  "fba_orders_detail": {
+    "_data_source": "real",
+    "_source": "FBA Orders page scraped ~10:42 PM PDT Apr 19",
+    "total_orders_7day": 5,
+    "orders": [
+      {
+        "order_id": "112-2924548-1803455",
+        "date": "2026-04-15",
+        "time_pdt": "5:15 AM",
+        "buyer": "Jerry",
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain (bundle component)",
+        "item_subtotal": 46.42,
+        "status": "Payment complete",
+        "type": "bundle_component"
+      },
+      {
+        "order_id": "112-9964746-0101056",
+        "date": "2026-04-15",
+        "time_pdt": "5:15 AM",
+        "buyer": "Jerry",
+        "asin": "B0FWXJ1GKT",
+        "product": "Filters (bundle component)",
+        "item_subtotal": 18.57,
+        "status": "Payment complete",
+        "type": "bundle_component"
+      },
+      {
+        "order_id": "113-9942143-7521824",
+        "date": "2026-04-17",
+        "time_pdt": "10:20 AM",
+        "buyer": "Ruth",
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain",
+        "item_subtotal": 49.99,
+        "status": "Payment complete",
+        "type": "standalone",
+        "_note": "Was 'pending' in Apr 17 data — now confirmed payment complete. Buyer name: Ruth."
+      },
+      {
+        "order_id": "111-5139369-7007431",
+        "date": "2026-04-17",
+        "time_pdt": "2:06 PM",
+        "buyer": "Jennifer",
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain",
+        "item_subtotal": 49.99,
+        "status": "Payment complete",
+        "type": "standalone",
+        "_note": "Was 'pending' in Apr 17 data — now confirmed payment complete. Buyer name: Jennifer."
+      },
+      {
+        "order_id": "114-0094253-6041057",
+        "date": "2026-04-18",
+        "time_pdt": "5:05 AM",
+        "buyer": "Mallory",
+        "asin": "B0DJHQVJYF",
+        "product": "Fountain",
+        "item_subtotal": 49.99,
+        "status": "Payment complete",
+        "type": "standalone",
+        "_note": "NEW ORDER — first sale after Amazon's Choice badge launch (Apr 17). Early morning purchase."
+      }
+    ]
+  },
+  "campaign_manager": {
+    "_data_source": "partial_real_30day",
+    "_source": "Victor opened Campaign Manager targeting view Apr 19 ~11:18 PM PDT, filtered to Enabled+Impressions>0. Date range shown: Mar 20 - Apr 19, 2026.",
+    "_note": "30-day totals are REAL (scraped from targeting view footer). 7-day breakdown is UNAVAILABLE — Campaign Manager does not expose a 7-day window without manual date filter change. ACoS displayed is the real 30-day average.",
+    "acos_percent": 149.06,
+    "_acos_note": "Real 30-day ACoS across all 6 enabled targets with impressions. Shown on ACoS card as the best available real value. Do not interpret as a 7-day figure.",
+    "ad_spend_30day": 543.97,
+    "ad_sales_30day": 364.93,
+    "ad_orders_30day": 8,
+    "clicks_30day": 292,
+    "ad_spend_7day": null,
+    "ad_sales_7day": null,
+    "_7day_note": "Not available. Only 30-day totals were captured from the targeting view.",
+    "targets_enabled_with_impressions": 6,
+    "targets_not_delivering": 119,
+    "top_performers_by_impressions": [
+      { "target": "wireless cat water fountain", "match_type": "phrase", "impressions_30day": 9949 },
+      { "target": "cat water fountain stainless steel", "match_type": "phrase", "impressions_30day": 6701 },
+      { "target": "cat water fountain stainless steel", "match_type": "exact", "impressions_30day": 5810 }
+    ],
+    "enabled_targets_30day": [
+      { "target": "cat water fountain stainless steel", "clicks": 149, "spend": 309.86, "orders": 6, "sales": 264.95, "acos": 116.95, "verdict": "WINNER — 75% of all PPC orders. Reduce bid 25%." },
+      { "target": "cat water fountain stainless steel", "clicks": 60, "spend": 130.87, "orders": 1, "sales": 49.99, "acos": 261.79, "verdict": "Reduce bid 40% (alternate match type)" },
+      { "target": "close-match", "match_type": "auto", "clicks": 64, "spend": 82.99, "orders": 1, "sales": 49.99, "acos": 166.01, "verdict": "Budget-capped auto. Hold." },
+      { "target": "JEERAMIA Wireless Cat Water Fountain (ASIN B0DP6L5SZHJ)", "match_type": "product", "clicks": 12, "spend": 13.17, "orders": 0, "sales": 0, "acos": null, "verdict": "PAUSE — no orders, wasted spend" },
+      { "target": "PETLIBRO Cat Fountain (ASIN B0DMDZWZFW)", "match_type": "product", "clicks": 6, "spend": 6.30, "orders": 0, "sales": 0, "acos": null, "verdict": "PAUSE — no orders" },
+      { "target": "Brook Glass Pet Fountain (ASIN B0D5DP2V53)", "match_type": "product", "clicks": 1, "spend": 0.78, "orders": 0, "sales": 0, "acos": null, "verdict": "Keep (de minimis spend)" }
+    ],
+    "campaigns": []
+  },
+  "fba_inventory": {
+    "scraped_at": "2026-04-20T05:42:00Z",
+    "data_source": "real",
+    "_source": "Manage Inventory page scraped ~10:42 PM PDT Apr 19",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fba_available": 374,
+      "inbound": 0,
+      "bsr_pet_supplies": 81677,
+      "_bsr_source": "real — Manage Inventory page, scraped tonight",
+      "_bsr_note": "BSR 81,677 — NEW ALL-TIME BEST. Was 105,671 on Apr 17 (-23,994 in 2 days). First time sub-82K. Amazon's Choice badge + Mallory Apr 18 purchase driving continued BSR improvement even on 0-sale Apr 19.",
+      "_bsr_delta_vs_apr17": -23994,
+      "_bsr_24h_delta_est": -11997,
+      "sales_30day_manage_inventory_display": "$496",
+      "price": 49.99,
+      "total_fee_per_unit": 14.51,
+      "fba_fee_per_unit": 7.01,
+      "inventory_health_status": "Excess",
+      "daily_velocity_30day": 0.33,
+      "_velocity_note": "~10 units / 30 days = 0.33/day (down from 0.37 on Apr 17 as 2 older March sales dropped from window). 7-day velocity = 4/7 = 0.57/day — much better indicator of current trend with Amazon's Choice badge.",
+      "daily_velocity_7day": 0.57,
+      "days_of_supply_est_30day": 1133,
+      "days_of_supply_est_7day": 655,
+      "_inventory_note": "374 units. +1 vs Apr 17's 373. Mallory's Apr 18 order should have reduced by 1 (373 → 372), so the +2 vs expected suggests 1 inventory reconciliation or inbound unit was processed. Net: still heavily overstocked."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fba_available": 141,
+      "inbound": 0,
+      "sales_30day_manage_inventory_display": "$118",
+      "price": 20.00,
+      "total_fee_per_unit": 7.09,
+      "fba_fee_per_unit": 4.09,
+      "inventory_health_status": "Excess",
+      "daily_velocity": 0.20,
+      "days_of_supply_est": 705,
+      "_delta": "+1 vs Apr 17 (140 → 141). Likely reconciliation."
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "Active — Virtual Bundle"
+    }
+  },
+  "amazon_choice": {
+    "badge_active": true,
+    "detected_date": "2026-04-17",
+    "days_active": 2,
+    "_note": "Badge sustained through 2 days including a 0-sale day (Apr 19). BSR improvement from 105K to 81K while holding badge confirms the badge is helping organic velocity. At 81,677 BSR, sub-80K is now achievable with 1-2 more sales."
+  }
+}

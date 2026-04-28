@@ -1,0 +1,251 @@
+{
+  "date": "2026-04-15",
+  "period": "7-day",
+  "data_source": "real",
+  "config_last_updated": "2026-04-03",
+  "sc_data_source": "SC_Data_2026-04-15.json (real: Sales Dashboard + FBA Inventory; estimated: 7-day/30-day Business Reports)",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 374,
+      "fba_total": 380,
+      "fba_inbound": 0,
+      "reserved": 5,
+      "unfulfillable": 1,
+      "total_stock": 374,
+      "daily_velocity": 0.29,
+      "daily_velocity_note": "9 units / 31 days = 0.29/day (30-day). Unchanged from yesterday.",
+      "days_of_cover": 1290,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "inventory_health_status": "Excess",
+      "estimated_excess_units": 366,
+      "bsr": 140726,
+      "_bsr_note": "BEST BSR EVER — 140,726 (was 154,800 yesterday). Excess inventory + BSR improvement = aging clock ticking."
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 139,
+      "fba_total": 141,
+      "fba_inbound": 0,
+      "reserved": 2,
+      "unfulfillable": 0,
+      "total_stock": 139,
+      "daily_velocity": 0.19,
+      "daily_velocity_note": "5 standalone units / 31 days + 1 bundle component today = 6 total filter units / 32 days ≈ 0.19/day",
+      "days_of_cover": 732,
+      "status": "HEALTHY",
+      "reorder_needed": false,
+      "inventory_health_status": "Excess",
+      "_delta_note": "Down 1 from yesterday (140→139) — confirmed bundle component pull for Apr 15 order."
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "VIRTUAL BUNDLE — uses component inventory",
+      "_note": "First sale today (Apr 15, $64.99). Pulled 1 filter from inventory (confirmed). Fountain pull may be delayed in inventory reporting."
+    }
+  },
+  "pl_7day": {
+    "_period": "Apr 8-15, 2026",
+    "_note": "7-day P&L: 2 fountain sales (PPC) + 0 standalone filter + 1 bundle (organic). First period with bundle revenue.",
+    "fountain": {
+      "units": 2,
+      "revenue": 99.98,
+      "amazon_fee": 28.56,
+      "cogs": 35.16,
+      "gross_profit": 36.26,
+      "margin_pct": 36.27,
+      "_calculation": "Revenue $99.98 - Fees $28.56 (2 x $14.28) - COGS $35.16 (2 x $17.58) = $36.26"
+    },
+    "filters": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0,
+      "cogs": 0,
+      "gross_profit": 0,
+      "margin_pct": 0,
+      "_note": "Apr 8 filter sale dropped out of new 7-day window. Next standalone filter purchase expected from bundle customer."
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.25,
+      "cogs": 21.55,
+      "gross_profit": 28.19,
+      "margin_pct": 43.37,
+      "_calculation": "Revenue $64.99 - Fees $15.25 - COGS $21.55 (fountain $17.58 + filter $3.97) = $28.19",
+      "_milestone": "FIRST BUNDLE SALE — 43.4% gross margin vs 36.3% for fountain alone"
+    },
+    "totals": {
+      "units": 3,
+      "revenue": 164.97,
+      "gross_profit": 64.45,
+      "ad_spend": null,
+      "true_contribution_margin": null,
+      "contribution_margin_pct": null,
+      "_calculation_notes": {
+        "gross_profit": "Fountain $36.26 + Bundle $28.19 = $64.45",
+        "wow_change": "Gross profit UP from $42.90 (Apr 8-14) to $64.45 (Apr 8-15) — +$21.55 or +50% week-over-week",
+        "contribution_margin": "Cannot calculate — ad spend data unavailable (Campaign Manager inaccessible)"
+      }
+    },
+    "razor_blade_ratio": 0.33,
+    "_razor_blade_note": "0 standalone filter units / 2 fountain units = 0. Bundle contains 1 filter but counted as bundle revenue. Effective filter attach rate: 1 bundle / 2 fountain = 0.5. Target is 1.0."
+  },
+  "pl_30day": {
+    "_period": "Mar 16-Apr 15, 2026",
+    "fountain": {
+      "units": 9,
+      "revenue": 449.91,
+      "amazon_fee": 128.52,
+      "cogs": 158.22,
+      "gross_profit": 163.17,
+      "margin_pct": 36.27
+    },
+    "filters": {
+      "units": 5,
+      "revenue": 100.00,
+      "amazon_fee": 34.75,
+      "cogs": 19.85,
+      "gross_profit": 45.40,
+      "margin_pct": 45.4
+    },
+    "bundle": {
+      "units": 1,
+      "revenue": 64.99,
+      "amazon_fee": 15.25,
+      "cogs": 21.55,
+      "gross_profit": 28.19,
+      "margin_pct": 43.37
+    },
+    "totals": {
+      "units": 15,
+      "revenue": 614.90,
+      "gross_profit": 236.76,
+      "ad_spend": null,
+      "true_contribution_margin": null,
+      "contribution_margin_pct": null,
+      "_note": "30-day gross profit $236.76. Ad spend estimated at ~$390 (30 days × $13/day) → true contribution margin approximately -$153 before aged inventory surcharge. Gross margin improving as bundle adds higher-margin revenue."
+    }
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-15",
+      "projected_revenue": 164.97,
+      "projected_cogs": 56.71,
+      "projected_fees": 43.81,
+      "projected_ad_spend": 91.00,
+      "projected_gross_profit": 64.45,
+      "projected_contribution_margin": -26.55,
+      "_note": "Real 7-day data. Contribution margin negative at current PPC spend. If auto campaign paused (-$21/week), contribution margin improves to -$5.55."
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-22",
+      "projected_revenue": 164.97,
+      "projected_cogs": 56.71,
+      "projected_fees": 43.81,
+      "projected_ad_spend": 70.00,
+      "projected_gross_profit": 64.45,
+      "projected_contribution_margin": -5.55,
+      "_note": "Assumes auto campaign paused (saves $21/week), 'pet' keyword paused (saves $14/week). Optimistic scenario."
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-04-29",
+      "projected_revenue": 179.97,
+      "projected_cogs": 61.69,
+      "projected_fees": 47.51,
+      "projected_ad_spend": 70.00,
+      "projected_gross_profit": 70.77,
+      "projected_contribution_margin": 0.77,
+      "_note": "Week 3: assumes 1 additional bundle sale per week + PPC optimizations. Approaching breakeven.",
+      "_aged_inventory_warning": "May aged inventory surcharge ~$128.84 due around May 1"
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-06",
+      "projected_revenue": 179.97,
+      "projected_cogs": 61.69,
+      "projected_fees": 47.51,
+      "projected_ad_spend": 70.00,
+      "projected_gross_profit": 70.77,
+      "projected_contribution_margin": 0.77,
+      "_note": "Post-aged-inventory-surcharge week. If surcharge hits ~May 1, cash flow takes -$32/week hit ($128.84/4 weeks)."
+    }
+  ],
+  "alerts": [
+    {
+      "level": "POSITIVE",
+      "category": "MILESTONE",
+      "message": "FIRST BUNDLE SALE — B0GMDM6CG2 sold organically on Apr 15 at $64.99. 43.4% gross margin vs 36.3% for fountain.",
+      "action": "Launch bundle PPC campaign. Bundle buyer is highest-LTV customer — also request review from this buyer immediately."
+    },
+    {
+      "level": "POSITIVE",
+      "category": "BSR",
+      "message": "BSR 140,726 — BEST EVER. Was 154,800 yesterday, 175,000 last week. Improving 14,000 positions/day.",
+      "action": "Continue PPC consistency. BSR momentum will drive organic discovery. Sub-100K BSR possible within 2-3 weeks."
+    },
+    {
+      "level": "POSITIVE",
+      "category": "GROSS_PROFIT",
+      "message": "7-day gross profit $64.45 — up 50% week-over-week (from $42.90). Bundle adds $28.19 incremental gross profit.",
+      "action": "Bundle economics are superior — prioritize bundle PPC and organic ranking."
+    },
+    {
+      "level": "CRITICAL",
+      "category": "PPC_WASTE",
+      "message": "Auto campaign: 14 consecutive days zero conversions, $148 lifetime spend, $21/week ongoing waste.",
+      "action": "PAUSE IMMEDIATELY. Access Campaign Manager, harvest search terms first, then pause."
+    },
+    {
+      "level": "CRITICAL",
+      "category": "DATA",
+      "message": "Campaign Manager UNAVAILABLE for 14th consecutive day — contribution margin cannot be calculated.",
+      "action": "Victor needs to access advertising.amazon.com manually or grant browser access."
+    },
+    {
+      "level": "WARNING",
+      "category": "AGED_INVENTORY",
+      "message": "373 fountain units in 181-330 day age band — $128.84/month aged inventory surcharge active.",
+      "action": "BSR improvement is the lever — better rank → more organic traffic → faster inventory turn."
+    },
+    {
+      "level": "WARNING",
+      "category": "CONTRIBUTION_MARGIN",
+      "message": "Estimated 7-day contribution margin: -$26.55 (gross profit $64.45 minus estimated $91 PPC spend).",
+      "action": "PPC optimizations (pause auto, pause pet variant, scale winning keyword) improve this to ~-$5.55/week immediately."
+    },
+    {
+      "level": "WARNING",
+      "category": "COMPETITOR",
+      "message": "FEELNEEDY B0F9WQGMH7 crosses 1,000 review milestone tomorrow — expect temporary BSR surge from competitor.",
+      "action": "Monitor FEELNEEDY BSR tomorrow. Our BSR momentum should buffer against competitor milestone."
+    }
+  ],
+  "kpis": {
+    "revenue_7d": 164.97,
+    "revenue_30d": 614.90,
+    "units_7d": 3,
+    "units_30d": 15,
+    "bundle_units_30d": 1,
+    "acos_pct": null,
+    "tacos_pct": null,
+    "contribution_margin_7d": null,
+    "contribution_margin_pct": null,
+    "gross_margin_7d_pct": 39.07,
+    "gross_margin_30d_pct": 38.50,
+    "days_of_cover_fountain": 1290,
+    "days_of_cover_filters": 732,
+    "razor_blade_ratio_standalone": 0.0,
+    "razor_blade_ratio_effective": 0.5,
+    "review_count": 21,
+    "review_rating": 4.5,
+    "bsr_pet_supplies": 140726,
+    "bsr_24h_delta": -14074,
+    "_notes": "Gross margin improved to 39.1% (vs 35.8% yesterday) due to higher-margin bundle sale. ACoS/contribution margin null due to Campaign Manager inaccessibility. Bundle ASIN now contributes to revenue mix."
+  }
+}

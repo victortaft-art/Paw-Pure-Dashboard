@@ -1,0 +1,151 @@
+{
+  "date": "2026-04-09",
+  "source": "Carried from PPC_Analysis_2026-04-08 — advertising.amazon.com blocked (7th consecutive day). Settlement period closed 4/11 at -$314.09, confirming ~$19.59 in additional ad spend April 8-10.",
+  "data_quality": "STALE — keyword-level data from 2026-04-04. Settlement-derived ad spend estimates updated.",
+
+  "confirmed_ad_spend": {
+    "source": "Payments Dashboard delta — prior settlement closed 4/11 at -$314.09",
+    "prior_period_close_amount": 314.09,
+    "prior_period_open_amount": 294.50,
+    "additional_spend_apr8_to_apr10": 19.59,
+    "avg_daily_spend_confirmed": 19.77,
+    "estimated_spend_apr9": 19.77,
+    "note": "Settlement charged $314.09 on 4/11, up $19.59 from $294.50 on 4/8. This covers 3 days (Apr 8-10). ~$6.53/day incremental — lower than prior $19.77/day average, suggesting some campaigns may have been throttled or budgets underspent. April 9 estimated spend: ~$6.53-19.77."
+  },
+
+  "per_keyword_performance": {
+    "_note": "Keyword-level data carried from 2026-04-04 — last successful Campaign Manager scrape. 7th consecutive day of inaccessibility.",
+    "keywords": [
+      {
+        "keyword": "wireless cat water fountain",
+        "match_type": "broad",
+        "campaign": "Manual Keywords Campaign",
+        "impressions_7d": 4200,
+        "clicks_7d": 18,
+        "spend_7d": 22.50,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.43,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions, 4+ weeks running"
+      },
+      {
+        "keyword": "cat water fountain stainless steel wireless",
+        "match_type": "phrase",
+        "campaign": "Manual Keywords Campaign",
+        "impressions_7d": 3100,
+        "clicks_7d": 12,
+        "spend_7d": 15.00,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.39,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions"
+      },
+      {
+        "keyword": "wireless stainless steel pet water fountain",
+        "match_type": "broad",
+        "campaign": "Manual Keywords Campaign",
+        "impressions_7d": 2800,
+        "clicks_7d": 10,
+        "spend_7d": 12.50,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.36,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions"
+      },
+      {
+        "keyword": "cordless cat water fountain",
+        "match_type": "auto",
+        "campaign": "Close Automatic Campaign",
+        "impressions_7d": 1900,
+        "clicks_7d": 8,
+        "spend_7d": 10.00,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.42,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions"
+      }
+    ]
+  },
+
+  "wasted_spend": {
+    "total_7d_wasted": 60.00,
+    "keywords_with_zero_sales": 4,
+    "all_active_keywords_zero_conversions": true,
+    "cumulative_estimated_waste_since_jan6": 435.85,
+    "note": "ALL 4 active PPC keywords have ZERO conversions. Settlement charge of $314.09 confirms prior period total expenses included massive ad spend. Campaigns still NOT paused (7th day of recommendation being ignored)."
+  },
+
+  "action_plan_ranked": [
+    {
+      "rank": 1,
+      "action": "PAUSE all manual campaigns immediately — OVERDUE 5 days",
+      "expected_savings_weekly": 138.00,
+      "rationale": "Manual campaign ACoS 141%+ lifetime (estimated). Zero conversions on all tracked keywords. Settlement confirmed $314.09 charged — avg $6.53/day residual spend still running. Each day of inaction costs ~$7-20.",
+      "urgency": "CRITICAL — OVERDUE since 04/04. Now 7 days past recommendation."
+    },
+    {
+      "rank": 2,
+      "action": "Reduce auto campaign budget from $15/day to $5/day",
+      "expected_savings_weekly": 70.00,
+      "rationale": "Auto campaign performs relatively better (ACoS ~72%) but still losing money. Reduce to gather data at lower cost while fixing listing."
+    },
+    {
+      "rank": 3,
+      "action": "Negative-match zero-conversion keywords in auto campaign",
+      "expected_savings_weekly": 15.00,
+      "rationale": "Prevent auto campaign from bidding on same keywords that failed in manual campaign."
+    },
+    {
+      "rank": 4,
+      "action": "Fix listing conversion before resuming any PPC",
+      "expected_savings_weekly": 0,
+      "rationale": "3.38% CVR from organic traffic vs 0% from paid. Fix listing or targeting before re-spending."
+    },
+    {
+      "rank": 5,
+      "action": "Test exact-match 'cordless cat water fountain' at low bid ($0.50)",
+      "expected_savings_weekly": 0,
+      "rationale": "8,900 SV, 0.42% CTR — best CTR among active keywords. Start at tight bid after pausing manuals."
+    },
+    {
+      "rank": 6,
+      "action": "Add 'battery operated cat fountain' exact-match ($0.50 bid)",
+      "expected_savings_weekly": 0,
+      "rationale": "7,200 SV, 7/10 competitors use this keyword. Currently untargeted."
+    },
+    {
+      "rank": 7,
+      "action": "Add 'quiet cat water fountain' exact-match ($0.50 bid)",
+      "expected_savings_weekly": 0,
+      "rationale": "4,100 SV. Paw Pure's 20dB claim is a genuine differentiator."
+    },
+    {
+      "rank": 8,
+      "action": "Negative-match 'motion sensor' across all campaigns",
+      "expected_savings_weekly": 5.00,
+      "rationale": "Paw Pure lacks motion sensor. 8/10 competitors have it. Wasted clicks."
+    },
+    {
+      "rank": 9,
+      "action": "Negative-match 'with app' and 'wifi' across all campaigns",
+      "expected_savings_weekly": 3.00,
+      "rationale": "HAPAW 2026 has app/WiFi — Paw Pure doesn't. Avoid feature-mismatch clicks."
+    },
+    {
+      "rank": 10,
+      "action": "Monitor organic BSR before scaling PPC back up",
+      "expected_savings_weekly": 0,
+      "rationale": "BSR now 136,306 (worsened from 129,598 after 3 days with no sales). Organic momentum stalled."
+    }
+  ],
+
+  "single_most_important_action": {
+    "action": "PAUSE manual campaigns IMMEDIATELY — this is 5 days overdue",
+    "why": "Settlement period closed at -$314.09. The additional $19.59 from April 8-10 represents continued ad waste even after 5+ days of pause recommendations. Every day campaigns run costs ~$7-20 with ZERO keyword conversions. New settlement period started April 11 — pause now to avoid another month of waste.",
+    "expected_impact": "Save ~$138-245/week. New settlement period clean slate — start it with campaigns paused and organic focus."
+  }
+}

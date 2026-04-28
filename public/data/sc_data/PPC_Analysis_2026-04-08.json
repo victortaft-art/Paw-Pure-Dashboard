@@ -1,0 +1,148 @@
+{
+  "date": "2026-04-08",
+  "source": "Carried from PPC_Analysis_2026-04-06 — advertising.amazon.com blocked (5th consecutive day). Updated with confirmed ad spend from Payments Dashboard ($217.48 in current settlement).",
+  "data_quality": "STALE — keyword-level data from 2026-04-04. Settlement-confirmed ad spend is fresh.",
+
+  "confirmed_ad_spend": {
+    "source": "Payments Dashboard — settlement period 3/28/2026 to present",
+    "cost_of_advertising": 217.48,
+    "period_days": 11,
+    "avg_daily_spend": 19.77,
+    "note": "This is confirmed spend from Amazon settlement, not estimates. $217.48 over 11 days (3/28-4/8) = ~$19.77/day average."
+  },
+
+  "per_keyword_performance": {
+    "_note": "Keyword-level data carried from 2026-04-04 — last successful Campaign Manager scrape",
+    "keywords": [
+      {
+        "keyword": "wireless cat water fountain",
+        "match_type": "broad",
+        "campaign": "Manual Keywords Campaign",
+        "impressions_7d": 4200,
+        "clicks_7d": 18,
+        "spend_7d": 22.50,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.43,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions, 3+ weeks running"
+      },
+      {
+        "keyword": "cat water fountain stainless steel wireless",
+        "match_type": "phrase",
+        "campaign": "Manual Keywords Campaign",
+        "impressions_7d": 3100,
+        "clicks_7d": 12,
+        "spend_7d": 15.00,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.39,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions"
+      },
+      {
+        "keyword": "wireless stainless steel pet water fountain",
+        "match_type": "broad",
+        "campaign": "Manual Keywords Campaign",
+        "impressions_7d": 2800,
+        "clicks_7d": 10,
+        "spend_7d": 12.50,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.36,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions"
+      },
+      {
+        "keyword": "cordless cat water fountain",
+        "match_type": "auto",
+        "campaign": "Close Automatic Campaign",
+        "impressions_7d": 1900,
+        "clicks_7d": 8,
+        "spend_7d": 10.00,
+        "sales_7d": 0,
+        "acos_7d": null,
+        "ctr_pct": 0.42,
+        "cvr_pct": 0,
+        "status": "WASTED — zero conversions"
+      }
+    ]
+  },
+
+  "wasted_spend": {
+    "total_7d_wasted": 60.00,
+    "keywords_with_zero_sales": 4,
+    "all_active_keywords_zero_conversions": true,
+    "note": "ALL 4 active PPC keywords have ZERO conversions. 100% of PPC spend is wasted at keyword level. Settlement data confirms $217.48 in advertising costs for the 11-day settlement period."
+  },
+
+  "action_plan_ranked": [
+    {
+      "rank": 1,
+      "action": "PAUSE all manual campaigns immediately",
+      "expected_savings_weekly": 175.00,
+      "rationale": "Manual campaign ACoS 179.91% lifetime. Zero conversions on all tracked keywords. $278+ spent with only $210 in attributed sales (3 orders total). Confirmed $217.48 ad spend in 11-day settlement.",
+      "urgency": "CRITICAL — OVERDUE since 04/04"
+    },
+    {
+      "rank": 2,
+      "action": "Reduce auto campaign budget from $15/day to $5/day",
+      "expected_savings_weekly": 70.00,
+      "rationale": "Auto campaign performs relatively better (ACoS 64%) but still losing money. Reduce to gather data at lower cost while working on listing conversion."
+    },
+    {
+      "rank": 3,
+      "action": "Negative-match zero-conversion keywords in auto campaign",
+      "expected_savings_weekly": 15.00,
+      "rationale": "Prevent auto campaign from bidding on same keywords that failed in manual campaign"
+    },
+    {
+      "rank": 4,
+      "action": "Fix listing conversion before resuming any PPC",
+      "expected_savings_weekly": 0,
+      "rationale": "3.38% CVR from organic traffic vs 0% from paid suggests listing or targeting mismatch. Fix before spending more."
+    },
+    {
+      "rank": 5,
+      "action": "Test exact-match on 'cordless cat water fountain' at low bid ($0.50)",
+      "expected_savings_weekly": 0,
+      "rationale": "8,900 search volume, 0.42% CTR — best CTR among active keywords. Test with tight bid."
+    },
+    {
+      "rank": 6,
+      "action": "Add 'battery operated cat fountain' as exact-match test ($0.50 bid)",
+      "expected_savings_weekly": 0,
+      "rationale": "7,200 search volume, 7/10 competitors use this keyword. Paw Pure doesn't target it yet."
+    },
+    {
+      "rank": 7,
+      "action": "Add 'quiet cat water fountain' as exact-match test ($0.50 bid)",
+      "expected_savings_weekly": 0,
+      "rationale": "4,100 search volume. Paw Pure's 20dB claim is a genuine differentiator for this keyword."
+    },
+    {
+      "rank": 8,
+      "action": "Negative-match 'motion sensor' across all campaigns",
+      "expected_savings_weekly": 5.00,
+      "rationale": "Paw Pure lacks motion sensor. 8/10 competitors have it. Wasted clicks from shoppers expecting this feature."
+    },
+    {
+      "rank": 9,
+      "action": "Negative-match 'with app' and 'wifi' across all campaigns",
+      "expected_savings_weekly": 3.00,
+      "rationale": "HAPAW 2026 has app/WiFi — Paw Pure doesn't. Avoid clicks from shoppers looking for smart features."
+    },
+    {
+      "rank": 10,
+      "action": "Monitor organic BSR recovery before scaling PPC back up",
+      "expected_savings_weekly": 0,
+      "rationale": "BSR improved 39K positions (168,729→129,598). Let organic momentum build before reintroducing heavy PPC."
+    }
+  ],
+
+  "single_most_important_action": {
+    "action": "PAUSE manual campaigns and reduce auto to $5/day IMMEDIATELY",
+    "why": "Confirmed $217.48 ad spend in 11 days with zero PPC conversions on all tracked keywords. Business is hemorrhaging cash — settlement shows -$294.50 balance with $246.63 in storage fees ON TOP of ad waste. Every day without pausing costs ~$20 in pure waste.",
+    "expected_impact": "Save ~$245/week ($1,000+/month). Combined with organic BSR improvement, pause won't significantly impact the 9 organic units being sold."
+  }
+}

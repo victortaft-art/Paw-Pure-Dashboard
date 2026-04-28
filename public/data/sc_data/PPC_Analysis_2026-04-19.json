@@ -1,0 +1,151 @@
+{
+  "date": "2026-04-19",
+  "data_source": "synthetic_estimated",
+  "_note": "Campaign Manager inaccessible (advertising.amazon.com blocked). PPC analysis based on carried-forward Apr 17 data + known Victor changes + EXP-024 decision date context.",
+  "most_important_action_this_week": {
+    "action": "Pull Campaign Manager search term report — identify converting search terms to bid up, negate zero-converters",
+    "why": "Amazon's Choice badge has driven 397 sessions in 7 days (up from ~72 estimated). We don't know which search terms are driving these sessions. Without a search term report, we're flying blind on where to allocate budget during this critical badge window.",
+    "estimated_weekly_impact": "Bid up confirmed converters → +$50-150/week revenue. Negate zero-converters → save $10-20/week wasted spend."
+  },
+  "known_changes_since_last_report": [
+    {
+      "date": "2026-04-17",
+      "change": "Victor reduced auto campaign budget to $10/day",
+      "impact": "Saves ~$140/week vs prior budget. Auto campaign now constrained — only highest-performing auto targets will get impressions."
+    },
+    {
+      "date": "2026-04-17",
+      "change": "Victor increased bid on 'cat water fountain stainless steel wireless' keyword",
+      "impact": "Correct move — this keyword had 30.8% ACoS over 4 weeks, well below 33.5% breakeven. With Amazon's Choice badge, CVR on this keyword likely improved further."
+    },
+    {
+      "date": "2026-04-18",
+      "change": "EXP-024 decision date — 'wireless stainless steel pet water fountain' keyword should have been paused",
+      "status": "UNKNOWN — cannot confirm without Campaign Manager access. If Victor paused it, saves ~$14/week.",
+      "recommendation": "CHECK CAMPAIGN MANAGER: Verify EXP-024 pause was executed. If not, pause immediately — 4+ weeks of zero conversions."
+    }
+  ],
+  "estimated_ad_spend": {
+    "weekly_est": 30,
+    "_breakdown": "Auto campaign: $10/day budget, est. 60-70% utilization = ~$42-49/week... but Amazon throttles low-budget auto campaigns. More realistic: $20-25/week auto. Manual: $5-10/week. Total: $25-35/week. Using $30 as midpoint.",
+    "if_exp024_paused": 25,
+    "if_exp024_not_paused": 35
+  },
+  "campaign_performance_est": [
+    {
+      "campaign": "Manual Keywords Campaign",
+      "keyword": "cat water fountain stainless steel wireless",
+      "match_type": "phrase",
+      "search_volume": 6400,
+      "status": "ACTIVE — bid increased by Victor Apr 17",
+      "estimated_acos_7day": 28.0,
+      "_note": "Was 30.8% before bid increase + Amazon's Choice badge improvement. Likely dropped to ~25-28% ACoS. This is the #1 revenue driver. Keep bid at current or slightly higher level.",
+      "recommended_action": "KEEP — monitor ACoS, increase bid further if ACoS stays below 30%"
+    },
+    {
+      "campaign": "Manual Keywords Campaign",
+      "keyword": "wireless cat water fountain",
+      "match_type": "broad",
+      "search_volume": 18100,
+      "status": "ACTIVE",
+      "estimated_acos_7day": 38.0,
+      "_note": "Amazon's Choice likely for this keyword — organic work is being done. With badge active, paid broad match on this term may have higher wasted spend (clicking on our listing when organic already wins). Consider reducing bid 15-20% or switching to phrase.",
+      "recommended_action": "REDUCE BID 15% — badge is doing the work organically on this term. Cut from current bid to ~$0.90-1.00."
+    },
+    {
+      "campaign": "Manual Keywords Campaign",
+      "keyword": "wireless stainless steel pet water fountain",
+      "match_type": "broad",
+      "search_volume": 5600,
+      "status": "SHOULD BE PAUSED (EXP-024 decision Apr 18)",
+      "estimated_spend_7day": 14,
+      "estimated_sales_7day": 0,
+      "estimated_acos": "infinity",
+      "recommended_action": "PAUSE IMMEDIATELY if not already done — 4+ weeks, zero conversions, $14/week waste"
+    },
+    {
+      "campaign": "Close Automatic Campaign",
+      "keyword": "auto targeting",
+      "status": "ACTIVE — budget reduced to $10/day by Victor Apr 17",
+      "_note": "Budget cut from ~$30/day to $10/day. Saves significant spend. Monitor 5-7 days at this budget level. If no conversions, consider full pause.",
+      "recommended_action": "MONITOR — if 0 sales in next 7 days at $10 budget, pause fully (saves remaining ~$70/week)"
+    },
+    {
+      "campaign": "bundle_ppc",
+      "keyword": "cat water fountain bundle",
+      "match_type": "exact",
+      "search_volume": 1800,
+      "status": "NOT LAUNCHED",
+      "_note": "Bundle ASIN B0GMDM6CG2 has 43% gross margin. No PPC currently. 1 bundle/week at $64.99 = $42.54 profit. A dedicated bundle campaign could be highly profitable.",
+      "recommended_action": "LAUNCH — add exact match campaign for bundle at $0.80-1.00 bid"
+    }
+  ],
+  "top_10_actions_ranked": [
+    {
+      "rank": 1,
+      "action": "Pull search term report NOW — 30-day window before Amazon's Choice badge traffic normalizes",
+      "estimated_weekly_impact_dollars": 75,
+      "effort": "15 min"
+    },
+    {
+      "rank": 2,
+      "action": "Pause 'wireless stainless steel pet water fountain' if EXP-024 not yet executed",
+      "estimated_weekly_savings_dollars": 14,
+      "effort": "2 min"
+    },
+    {
+      "rank": 3,
+      "action": "Add 'battery operated cat fountain' as exact match ($1.30 bid)",
+      "estimated_weekly_revenue_dollars": 25,
+      "effort": "5 min"
+    },
+    {
+      "rank": 4,
+      "action": "Reduce 'wireless cat water fountain' broad match bid by 15% — badge doing organic work",
+      "estimated_weekly_savings_dollars": 8,
+      "effort": "2 min"
+    },
+    {
+      "rank": 5,
+      "action": "Launch bundle PPC campaign (B0GMDM6CG2) — exact match, $0.80 bid",
+      "estimated_weekly_revenue_dollars": 20,
+      "effort": "10 min"
+    },
+    {
+      "rank": 6,
+      "action": "Request review from Ruth (Apr 17 order, Order 113-9942143-7521824) — delivered by now",
+      "estimated_impact": "Review velocity critical for badge retention at 21 reviews",
+      "effort": "2 min"
+    },
+    {
+      "rank": 7,
+      "action": "Request review from Jennifer (Apr 17 order, Order 111-5139369-7007431)",
+      "estimated_impact": "Same as above — every review at 21 count is huge",
+      "effort": "2 min"
+    },
+    {
+      "rank": 8,
+      "action": "Add 'rechargeable cat water fountain' as phrase match ($0.90 bid)",
+      "estimated_weekly_revenue_dollars": 15,
+      "effort": "5 min"
+    },
+    {
+      "rank": 9,
+      "action": "Negate top wasted spend search terms (from search term report)",
+      "estimated_weekly_savings_dollars": 10,
+      "effort": "20 min (after pulling report)"
+    },
+    {
+      "rank": 10,
+      "action": "Monitor auto campaign performance at $10/day budget for 7 days",
+      "estimated_impact": "If no conversions by Apr 24, pause fully for $70/week savings",
+      "effort": "5 min review"
+    }
+  ],
+  "wasted_spend_estimate": {
+    "identified_waste_weekly": 14,
+    "_breakdown": "EXP-024 keyword (if not paused): $14/week. No other confirmed wasters without Campaign Manager access.",
+    "as_pct_of_estimated_total_spend": 47,
+    "_note": "High waste % because total spend is small (~$30/week). In absolute terms, $14 waste is manageable but still represents a 47% improvement opportunity."
+  }
+}

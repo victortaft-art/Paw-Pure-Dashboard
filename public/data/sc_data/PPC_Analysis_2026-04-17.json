@@ -1,0 +1,133 @@
+{
+  "date": "2026-04-17",
+  "data_source": "partially_real",
+  "_note": "Victor accessed Campaign Manager today and made two changes: (1) auto campaign budget lowered to $10/day, (2) 'cat water fountain stainless steel wireless' bid increased. Search term data not yet pulled — recommended immediately.",
+  "victor_changes_today": {
+    "auto_campaign_budget_new": 10.00,
+    "auto_campaign_budget_old_est": 30.00,
+    "auto_campaign_savings_weekly_est": 140.00,
+    "bid_increased_keyword": "cat water fountain stainless steel wireless",
+    "bid_increase_rationale": "4 consecutive weeks below 33.5% breakeven ACoS (30.8%). Correct move — scale the winner."
+  },
+
+  "campaign_summary": {
+    "manual_campaign_status": "Active",
+    "auto_campaign_status": "Active — budget reduced to $10/day",
+    "total_estimated_daily_spend_new": 15.00,
+    "total_estimated_daily_spend_old": 30.00,
+    "estimated_weekly_savings": 105.00,
+    "_note": "Victor's changes cut estimated weekly ad spend from ~$210 to ~$105. Massive improvement. Full auto pause (EXP-025) would save another $70/week."
+  },
+
+  "keyword_performance": [
+    {
+      "keyword": "cat water fountain stainless steel wireless",
+      "match_type": "phrase",
+      "campaign": "Manual Keywords Campaign",
+      "status": "SCALING — bid increased today",
+      "acos_4week_avg": 30.81,
+      "vs_breakeven": -2.69,
+      "consecutive_profitable_weeks": 4,
+      "victor_action": "BID INCREASED — correct. 4 profitable weeks validates this.",
+      "_recommendation": "Monitor next 7 days for impression/click increase. If ACoS stays under 35%, increase budget allocation here further."
+    },
+    {
+      "keyword": "wireless cat water fountain",
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "status": "CONVERTING — above breakeven",
+      "acos_4week_avg": 42.01,
+      "vs_breakeven": 8.51,
+      "_recommendation": "Amazon's Choice badge may improve CVR on this keyword, bringing ACoS below breakeven. Hold bids for 1 week and re-evaluate after badge effect is measured."
+    },
+    {
+      "keyword": "cordless cat water fountain",
+      "match_type": "auto",
+      "campaign": "Close Automatic Campaign",
+      "status": "ACTIVE — budget reduced to $10",
+      "acos_4week_avg": null,
+      "vs_breakeven": null,
+      "_recommendation": "Budget cut to $10 is an improvement. Full pause (EXP-025) saves the remaining $70/week. Amazon's Choice may make auto campaign more efficient now — monitor for 1 week before full pause decision."
+    },
+    {
+      "keyword": "wireless stainless steel pet water fountain",
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "status": "ZERO CONVERSION — should be paused",
+      "acos_4week_avg": null,
+      "consecutive_zero_weeks": 4,
+      "_recommendation": "Still needs to be paused. EXP-024 decision date is TOMORROW (Apr 18). This is $14/week saved with zero downside."
+    }
+  ],
+
+  "search_terms_analysis": {
+    "_status": "NOT YET PULLED — Victor needs to download search term report",
+    "_priority": "HIGH — do this while in Campaign Manager",
+    "_what_to_do": "In Campaign Manager: Reports → Advertising Reports → Search Term → select last 30 days → Download CSV",
+    "_what_to_look_for": {
+      "negate_these": [
+        "Any search term with $5+ spend and 0 sales — add as Negative Exact to Manual campaign",
+        "Generic terms like 'water fountain', 'cat fountain' (no 'wireless'/'cordless'/'stainless') — likely low-intent",
+        "Terms with 'cheap', 'cheap cat fountain', 'under $20' — wrong price intent",
+        "Competitor brand names appearing in auto campaign (e.g., 'FEELNEEDY fountain', 'PawPoll fountain') — waste"
+      ],
+      "harvest_these": [
+        "Any search term with 1+ sales and ACoS under 50% — add as Exact Match to Manual campaign",
+        "High-impression terms with 0 clicks (CTR under 0.2%) — study why and fix title/image",
+        "Any terms with 3+ clicks and 0 sales — add to negate list after 14 days",
+        "Surprising converts (e.g., 'dog water dispenser', 'pet water bowl wireless') — add as phrase match"
+      ],
+      "_note": "The search term report is the single most actionable data source in Campaign Manager. Pull it every time you're in there. The auto campaign especially generates unknown search terms — that's where waste hides."
+    },
+    "_amazon_choice_impact": "Amazon's Choice badge for 'wireless cat water fountain' means organic click share will increase. Watch for: (1) Session spike in next 7 days without PPC, (2) Organic CVR holding above 5%, (3) Lower cost-per-sale as organic lifts."
+  },
+
+  "ppc_improvements_recommended": [
+    {
+      "priority": 1,
+      "action": "Pull search term report TODAY",
+      "how": "Campaign Manager → Reports → Advertising Reports → Search Term → last 30 days → Download",
+      "why": "You made bid/budget changes — now find the exact terms that are wasting money and those that are converting secretly. This tells you exactly what to negate and what new exact-match keywords to add.",
+      "time": "10 minutes"
+    },
+    {
+      "priority": 2,
+      "action": "Pause 'wireless stainless steel pet water fountain' keyword — EXP-024 decision date TOMORROW",
+      "how": "Manual Keywords Campaign → find keyword → Pause",
+      "saves": "$14/week",
+      "time": "2 minutes"
+    },
+    {
+      "priority": 3,
+      "action": "Fully pause auto campaign (go from $10 to $0) — complete EXP-025",
+      "how": "Close Automatic Campaign → toggle to Paused",
+      "saves": "$70/week",
+      "why": "Amazon's Choice badge now drives organic traffic. Auto campaign is redundant and wastes money on low-intent searches. The $10 budget still gets spent on bad terms.",
+      "time": "1 minute",
+      "_note": "Wait 3-5 days first — monitor if badge drives sufficient organic sessions before cutting all auto spend."
+    },
+    {
+      "priority": 4,
+      "action": "Add 'battery operated cat fountain' as Exact Match at $1.30 bid",
+      "search_volume": 7200,
+      "how": "Manual Keywords Campaign → Add keywords → Exact match → 'battery operated cat fountain' → $1.30 bid",
+      "why": "7,200 monthly searches. Amazon's Choice badge will help win the placement. High intent keyword that's currently untargeted.",
+      "time": "3 minutes"
+    },
+    {
+      "priority": 5,
+      "action": "Launch dedicated bundle campaign for B0GMDM6CG2",
+      "how": "Create new Sponsored Products campaign: target 'cat water fountain bundle', 'fountain with filters', 'wireless cat fountain kit'. Budget $12/day. $1.10 bid.",
+      "why": "Bundle margin is 43% vs 36% for fountain. One bundle sale generates $28.19 gross profit vs $18.13. Amazon's Choice on the main listing drives bundle discovery too. Time to push this.",
+      "time": "15 minutes"
+    }
+  ],
+
+  "amazon_choice_ppc_strategy": {
+    "_note": "Amazon's Choice badge changes the PPC calculus significantly.",
+    "immediate": "Reduce auto waste (already done partially). Don't spend money on broad traffic Amazon's Choice is already delivering organically.",
+    "scale": "Put freed budget into Exact Match keywords — these are high-intent and the badge improves CVR so your ACoS naturally drops.",
+    "watch": "Sessions/day will climb as badge drives organic clicks. If sessions jump to 15+/day this week, organic conversion is working — you can reduce manual bid on 'wireless cat water fountain' broad match and let organic carry it.",
+    "measure": "In 7 days, compare sessions before/after badge. If up 50%+, consider pausing all broad match and keeping only exact match."
+  }
+}

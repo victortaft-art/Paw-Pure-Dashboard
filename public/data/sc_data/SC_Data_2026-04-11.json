@@ -1,0 +1,318 @@
+{
+  "date": "2026-04-11",
+  "period": "7-day",
+  "source": "Seller Central — scraped via Chrome (Business Reports, Campaign Manager, FBA Inventory, Transaction View)",
+  "status": "COMPLETE — All four data sets scraped successfully",
+  "timestamp": "2026-04-11T18:30:00Z",
+
+  "business_reports": {
+    "date_range": "2026-04-04 to 2026-04-11",
+    "period_days": 7,
+    "sessions_7day": 79,
+    "units_sold_7day": 3,
+    "revenue_7day": 119.98,
+    "cvr_percent": 3.80,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz",
+        "sessions": 76,
+        "page_views": 95,
+        "featured_offer_pct": 98.88,
+        "units": 2,
+        "revenue": 99.98,
+        "cvr": 2.63
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Filters",
+        "sessions": 1,
+        "page_views": 1,
+        "featured_offer_pct": null,
+        "units": 0,
+        "revenue": 0,
+        "cvr": 0
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges (Bundle)",
+        "sessions": 2,
+        "page_views": 2,
+        "featured_offer_pct": 100,
+        "units": 1,
+        "revenue": 20.00,
+        "cvr": 50.00
+      }
+    }
+  },
+
+  "business_reports_30day": {
+    "date_range": "2026-03-12 to 2026-04-11",
+    "period_days": 30,
+    "sessions_30day": 288,
+    "units_sold_30day": 13,
+    "revenue_30day": 499.92,
+    "cvr_30day": 4.51,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 273,
+        "page_views": 377,
+        "featured_offer_pct": 99.69,
+        "units": 8,
+        "revenue": 399.92,
+        "cvr": 2.93
+      },
+      "B0GMDM6CG2": {
+        "sessions": 0,
+        "page_views": 0,
+        "featured_offer_pct": null,
+        "units": 0,
+        "revenue": 0,
+        "cvr": 0,
+        "_note": "Not listed in 30-day report — no traffic or sales"
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 15,
+        "page_views": 18,
+        "featured_offer_pct": 100,
+        "units": 5,
+        "revenue": 100.00,
+        "cvr": 33.33
+      }
+    }
+  },
+
+  "campaign_manager": {
+    "date_range_summary": "2026-04-04 to 2026-04-10 (Last 7 days)",
+    "date_range_table": "2026-04-01 to 2026-04-11",
+    "ad_spend_7day": 163.31,
+    "ad_sales_7day": 49.99,
+    "acos_percent": 326.69,
+    "tacos_percent": 136.12,
+    "impressions": 13260,
+    "clicks": 88,
+    "ctr_percent": 0.66,
+    "avg_cpc": 1.86,
+    "summary_bar": {
+      "date_range": "Apr 4 – Apr 10, 2026",
+      "clicks": 56,
+      "branded_searches": 0,
+      "detail_page_views": 0,
+      "purchases_new_to_brand": 0,
+      "sales": 49.99
+    },
+    "campaigns": [
+      {
+        "name": "Manual Keywords Campaign",
+        "type": "Sponsored Products — Manual Targeting",
+        "status": "Delivering",
+        "start_date": "2025-09-13",
+        "end_date": null,
+        "budget": "25.00/daily",
+        "impressions": 9628,
+        "clicks": 66,
+        "ctr": 0.69,
+        "spend": 138.55,
+        "cpc": 2.10,
+        "purchases": 1,
+        "sales": 49.99,
+        "acos": 277.16,
+        "roas": 0.36,
+        "top_of_search_pct": "<5%"
+      },
+      {
+        "name": "Close Automatic Campaign",
+        "type": "Sponsored Products — Automatic Targeting",
+        "status": "Delivering",
+        "start_date": "2025-08-03",
+        "end_date": null,
+        "budget": "15.00/daily",
+        "impressions": 3632,
+        "clicks": 22,
+        "ctr": 0.61,
+        "spend": 24.76,
+        "cpc": 1.13,
+        "purchases": 0,
+        "sales": 0,
+        "acos": null,
+        "roas": null,
+        "top_of_search_pct": "<5%"
+      }
+    ],
+    "search_terms": [],
+    "top_keywords": [],
+    "_note": "Search term and keyword data not extracted this run — requires drilling into each campaign"
+  },
+
+  "fba_inventory": {
+    "scraped_at": "2026-04-11T18:30:00Z",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fnsku": "X004F10QQJ",
+      "fba_total": 382,
+      "available": 377,
+      "inbound": 0,
+      "reserved": 0,
+      "researching": 0,
+      "unfulfillable": 0,
+      "sell_through_90day": 0.033,
+      "sales_90day_units": 13,
+      "sales_90day_revenue": 664.90,
+      "days_of_supply": 2927.9,
+      "estimated_excess_units": 336,
+      "inventory_age_total": 377,
+      "inventory_age_0_90": 0,
+      "inventory_age_91_180": 3,
+      "inventory_age_181_330": 374,
+      "inventory_age_331_plus": 0,
+      "aged_inventory_surcharge": 129.20,
+      "fee_per_unit_sold": 14.28,
+      "fba_fee_per_unit": 6.78,
+      "low_inventory_fee_exempt": true
+    },
+    "filters": {
+      "asin": "B0GMDM6CG2",
+      "available": null,
+      "inbound": null,
+      "reserved": null,
+      "unfulfillable": null,
+      "_note": "Not listed in FBA Inventory — may not be FBA or has zero inventory"
+    },
+    "bundle": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fnsku": "B0FWXJ1GKT",
+      "fba_total": 143,
+      "available": 140,
+      "inbound": 0,
+      "reserved": 0,
+      "researching": 0,
+      "unfulfillable": 0,
+      "sell_through_90day": 0.048,
+      "sales_90day_units": 7,
+      "sales_90day_revenue": 140.00,
+      "days_of_supply": 2223.5,
+      "estimated_excess_units": 140,
+      "inventory_age_total": 141,
+      "inventory_age_0_90": 0,
+      "inventory_age_91_180": 141,
+      "inventory_age_181_330": 0,
+      "inventory_age_331_plus": 0,
+      "aged_inventory_surcharge": 0,
+      "fee_per_unit_sold": 3.03,
+      "fba_fee_per_unit": 3.95,
+      "low_inventory_fee_exempt": true
+    }
+  },
+
+  "amazon_fees": {
+    "period": "7-day (Apr 4 – Apr 11, 2026)",
+    "total_selling_fees": -31.56,
+    "total_fba_fees": 0,
+    "total_other_fees": -283.22,
+    "total_fees_combined": -314.78,
+    "fee_per_unit_actual": 10.52,
+    "transactions_in_period": [
+      {
+        "date": "2026-04-11",
+        "type": "Paid to Amazon | Seller repayment",
+        "product_charges": 0,
+        "promo_rebates": 0,
+        "amazon_fees": 0,
+        "other": 314.09,
+        "total": 314.09
+      },
+      {
+        "date": "2026-04-10",
+        "type": "Service Fees — Subscription Fee",
+        "product_charges": 0,
+        "promo_rebates": 0,
+        "amazon_fees": -36.59,
+        "other": 0,
+        "total": -36.59
+      },
+      {
+        "date": "2026-04-09",
+        "type": "Order Payment",
+        "order_id": "113-8321562-4207448",
+        "product": "Paw Pure Replacement Filters and Sponges (B0FWXJ1GKT)",
+        "product_charges": 20.00,
+        "promo_rebates": 0,
+        "amazon_fees": -3.00,
+        "other": 0,
+        "total": 17.00
+      },
+      {
+        "date": "2026-04-08",
+        "type": "Order Payment",
+        "order_id": "113-1129197-2945016",
+        "product": "Wireless Cat Water Fountain (B0DJHQVJYF)",
+        "product_charges": 49.99,
+        "promo_rebates": 0,
+        "amazon_fees": -14.28,
+        "other": 0,
+        "total": 35.71
+      },
+      {
+        "date": "2026-04-07",
+        "type": "Service Fees — FBA Inventory Storage Fee",
+        "product_charges": 0,
+        "promo_rebates": 0,
+        "amazon_fees": 0,
+        "other": -246.63,
+        "total": -246.63
+      },
+      {
+        "date": "2026-04-06",
+        "type": "Order Payment",
+        "order_id": "113-6263818-0381002",
+        "product": "Wireless Cat Water Fountain (B0DJHQVJYF)",
+        "product_charges": 49.99,
+        "promo_rebates": 0,
+        "amazon_fees": -14.28,
+        "other": 0,
+        "total": 35.71
+      }
+    ],
+    "fee_summary": {
+      "order_fees_total": -31.56,
+      "subscription_fee": -36.59,
+      "fba_storage_fee": -246.63,
+      "advertising_cost_apr2": -217.48,
+      "_note": "Advertising cost of $217.48 on 4/2 is outside 7-day window but in the same settlement"
+    },
+    "per_unit_fee_preview": {
+      "B0DJHQVJYF": {
+        "total_fee_per_unit": 14.28,
+        "fba_fee": 6.78,
+        "referral_fee_estimated": 7.50
+      },
+      "B0GMDM6CG2": {
+        "total_fee_per_unit": null,
+        "_note": "Not in FBA inventory — fee data unavailable"
+      },
+      "B0FWXJ1GKT": {
+        "total_fee_per_unit": 3.03,
+        "fba_fee": 3.95,
+        "referral_fee_estimated": null,
+        "_note": "Fee per unit from FBA inventory page — $3.03 includes $3.95 FBA fee label may indicate different breakdown"
+      }
+    },
+    "_note": "Fees from Payments Transaction View + Fee Preview from FBA Inventory page"
+  },
+
+  "derived_metrics": {
+    "revenue_per_session_7day": 1.52,
+    "revenue_per_session_30day": 1.74,
+    "ad_spend_to_revenue_ratio": 1.36,
+    "organic_revenue_estimate": 69.99,
+    "ppc_attributed_revenue": 49.99,
+    "ppc_share_of_revenue": 41.67,
+    "total_fees_as_pct_of_revenue": 262.37,
+    "storage_fee_monthly": 246.63,
+    "net_profit_before_cogs": -357.11,
+    "_calculation_notes": {
+      "organic_revenue": "Total revenue $119.98 minus PPC-attributed $49.99 = $69.99",
+      "net_profit": "Revenue $119.98 - Order fees $31.56 - Storage $246.63 - Subscription $36.59 - Ad spend $163.31 = -$357.11",
+      "tacos": "Ad spend $163.31 / Total revenue $119.98 = 136.12%"
+    }
+  }
+}

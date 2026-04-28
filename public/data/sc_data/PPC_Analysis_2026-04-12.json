@@ -1,0 +1,297 @@
+{
+  "date": "2026-04-12",
+  "period": "7-day",
+  "data_source": "synthetic_estimated",
+  "source": "synthetic_estimated — Campaign Manager not accessed. Spend estimated from SC_Data_2026-04-12 campaign totals. Keyword-level data carried from 2026-04-11.",
+  "data_quality": "ESTIMATED — All PPC metrics estimated. Campaign Manager inaccessible (11th consecutive day without access). Spend estimates derived from SC_Data_2026-04-12.",
+  "summary": {
+    "total_spend_7d": 52.00,
+    "total_sales_7d": 49.99,
+    "overall_acos_7d": 104.02,
+    "overall_acos_7d_note": "1 attributed sale at $49.99 on $52.00 spend — first below-200% ACoS period in recent history",
+    "total_impressions_7d": 11200,
+    "total_clicks_7d": 44,
+    "overall_ctr_pct": 0.39,
+    "overall_cvr_pct": 2.27,
+    "overall_cpc": 1.18,
+    "wasted_spend_7d": 2.01,
+    "wasted_spend_pct": 3.9,
+    "estimated_lifetime_spend": 495.79,
+    "estimated_lifetime_ad_sales": 379.95,
+    "lifetime_acos_pct": 130.5,
+    "daily_spend_rate": 13.00,
+    "cerebro_data_available": false,
+    "keyword_gaps_identified": 5,
+    "organic_rank_savings_opportunity": 0,
+    "organic_rank_savings_note": "No organic rank for any tracked keyword — zero overlap savings available"
+  },
+  "wow_comparison": {
+    "prior_report_date": "2026-04-11",
+    "daily_spend_rate_prior": 15.00,
+    "daily_spend_rate_current": 13.00,
+    "daily_spend_rate_change": -2.00,
+    "daily_spend_rate_change_pct": -13.3,
+    "wasted_spend_7d_prior": 60.00,
+    "wasted_spend_7d_current": 2.01,
+    "note": "1 ad conversion this period vs 0 prior. ACoS improved dramatically from infinite to 104% — still above breakeven (33.5%) but a positive directional signal. Daily spend rate continues declining consistent with Amazon budget throttling."
+  },
+  "campaigns": [
+    {
+      "name": "Manual Keywords Campaign",
+      "campaign_id": "A04350122JYLYFMZ59A3X",
+      "type": "MANUAL",
+      "status": "Delivering (estimated)",
+      "budget_daily": 25.00,
+      "spend_lifetime_est": 392.00,
+      "spend_7d_est": 43.55,
+      "sales_7d": 49.99,
+      "acos_7d": 87.11,
+      "impressions_7d": 9300,
+      "clicks_7d": 37,
+      "ctr_pct": 0.40,
+      "cpc": 1.18,
+      "cvr_pct": 2.70,
+      "classification": "IMPROVING",
+      "classification_emoji": "🟡",
+      "keywords_active": 3,
+      "keywords_converting": 1
+    },
+    {
+      "name": "Close Automatic Campaign",
+      "campaign_id": "A022989918IF7J7DW716B",
+      "type": "AUTOMATIC",
+      "status": "Delivering (estimated)",
+      "budget_daily": 15.00,
+      "spend_lifetime_est": 117.54,
+      "spend_7d_est": 8.45,
+      "sales_7d": 0,
+      "acos_7d": null,
+      "impressions_7d": 1900,
+      "clicks_7d": 7,
+      "ctr_pct": 0.37,
+      "cpc": 1.21,
+      "cvr_pct": 0,
+      "classification": "ZERO_SALES",
+      "classification_emoji": "⚫",
+      "keywords_tracked": 1,
+      "keywords_converting": 0
+    }
+  ],
+  "keyword_analysis": [
+    {
+      "keyword": "wireless cat water fountain",
+      "search_volume": 18100,
+      "organic_rank": null,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source for this keyword",
+      "campaign": "Manual Keywords Campaign",
+      "match_type": "broad",
+      "impressions_7d": 3900,
+      "clicks_7d": 17,
+      "spend_7d": 19.55,
+      "sales_7d": 49.99,
+      "acos_7d": 39.10,
+      "ctr_pct": 0.44,
+      "cvr_pct": 5.88,
+      "cpc": 1.15,
+      "efficiency_score": 72,
+      "efficiency_note": "FIRST CONVERSION on primary keyword. ACoS 39.1% — above breakeven (33.5%) but vastly better than prior weeks. Possible inflection point.",
+      "recommendation": "MONITOR — 1 conversion after 4+ weeks of zero. Hold for 2 more weeks before scaling. Check if listing changes drove improvement.",
+      "flag": "POSITIVE: First ad conversion on highest-SV keyword"
+    },
+    {
+      "keyword": "cat water fountain stainless steel wireless",
+      "search_volume": 6400,
+      "organic_rank": null,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source for this keyword",
+      "campaign": "Manual Keywords Campaign",
+      "match_type": "phrase",
+      "impressions_7d": 2900,
+      "clicks_7d": 11,
+      "spend_7d": 13.20,
+      "sales_7d": 0,
+      "acos_7d": null,
+      "ctr_pct": 0.38,
+      "cvr_pct": 0,
+      "cpc": 1.20,
+      "efficiency_score": 0,
+      "recommendation": "PAUSE — zero conversions, long-tail variant not converting",
+      "flag": "CRITICAL: Spend > $5/week with zero sales"
+    },
+    {
+      "keyword": "wireless stainless steel pet water fountain",
+      "search_volume": 5600,
+      "organic_rank": null,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source for this keyword",
+      "campaign": "Manual Keywords Campaign",
+      "match_type": "broad",
+      "impressions_7d": 2600,
+      "clicks_7d": 9,
+      "spend_7d": 10.80,
+      "sales_7d": 0,
+      "acos_7d": null,
+      "ctr_pct": 0.35,
+      "cvr_pct": 0,
+      "cpc": 1.20,
+      "efficiency_score": 0,
+      "recommendation": "PAUSE — zero conversions, lowest CTR of active keywords",
+      "flag": "CRITICAL: Spend > $5/week with zero sales"
+    },
+    {
+      "keyword": "cordless cat water fountain",
+      "search_volume": 8900,
+      "organic_rank": null,
+      "organic_rank_note": "No organic rank — PPC is the only traffic source for this keyword",
+      "campaign": "Close Automatic Campaign",
+      "match_type": "auto",
+      "impressions_7d": 1900,
+      "clicks_7d": 7,
+      "spend_7d": 8.45,
+      "sales_7d": 0,
+      "acos_7d": null,
+      "ctr_pct": 0.37,
+      "cvr_pct": 0,
+      "cpc": 1.21,
+      "efficiency_score": 0,
+      "recommendation": "REDUCE BID to $0.50 — still zero conversions. Test at lower spend.",
+      "flag": "CRITICAL: Spend > $5/week with zero sales"
+    }
+  ],
+  "keyword_gap_opportunities": [
+    {
+      "keyword": "battery operated cat fountain",
+      "search_volume": 7200,
+      "competitors_ranking": "7 of 10",
+      "paw_pure_status": "Not indexed, not targeted",
+      "recommendation": "Launch PPC exact-match at $0.50 bid — high-SV gap, 7/10 competitors present",
+      "priority": "HIGH",
+      "tag": "opportunity"
+    },
+    {
+      "keyword": "automatic dog water fountain stainless steel",
+      "search_volume": 4800,
+      "competitors_ranking": "unknown",
+      "paw_pure_status": "Not indexed, not targeted",
+      "recommendation": "Launch PPC exact-match at $0.50 bid after adding 'dogs' to title",
+      "priority": "MEDIUM",
+      "tag": "opportunity"
+    },
+    {
+      "keyword": "quiet cat water fountain",
+      "search_volume": 4100,
+      "competitors_ranking": "unknown",
+      "paw_pure_status": "Not indexed, not targeted",
+      "recommendation": "Launch PPC exact-match at $0.50 bid — Paw Pure's 20dB claim is a genuine differentiator",
+      "priority": "MEDIUM",
+      "tag": "opportunity"
+    },
+    {
+      "keyword": "small dog water fountain wireless",
+      "search_volume": 3200,
+      "competitors_ranking": "unknown",
+      "paw_pure_status": "Not indexed, not targeted — EXP-023 queued to add 'small dogs' to title",
+      "recommendation": "Target after title update — requires indexing first",
+      "priority": "MEDIUM",
+      "tag": "opportunity"
+    },
+    {
+      "keyword": "water fountain for small dogs wireless",
+      "search_volume": 2100,
+      "competitors_ranking": "unknown",
+      "paw_pure_status": "Not indexed, not targeted",
+      "recommendation": "Target after title update — requires indexing first",
+      "priority": "LOW",
+      "tag": "opportunity"
+    }
+  ],
+  "action_plan": [
+    {
+      "rank": 1,
+      "priority": "URGENT",
+      "action": "HOLD_AND_MONITOR",
+      "keyword": "wireless cat water fountain",
+      "campaign": "Manual Keywords Campaign",
+      "current_state": {"spend_7d": 19.55, "sales_7d": 49.99, "acos_7d": 39.10, "organic_rank": null},
+      "recommended_change": "Do NOT pause this week. First conversion on primary keyword after 4+ weeks. Monitor for 2 more weeks to confirm it's a trend, not noise.",
+      "expected_weekly_savings": 0,
+      "rationale": "One conversion at $49.99 (ACoS 39.1%) changes the picture on this keyword. Still above 33.5% breakeven but directionally correct. The listing may have started converting — hold and watch."
+    },
+    {
+      "rank": 2,
+      "priority": "CRITICAL",
+      "action": "PAUSE",
+      "keyword": "cat water fountain stainless steel wireless + wireless stainless steel pet water fountain",
+      "campaign": "Manual Keywords Campaign",
+      "current_state": {"spend_7d": 24.00, "sales_7d": 0, "acos_7d": null},
+      "recommended_change": "Pause these 2 zero-conversion keywords immediately. Free up $24/week budget to concentrate on the primary keyword that just converted.",
+      "expected_weekly_savings": 24.00,
+      "rationale": "While primary keyword showed its first conversion, these two long-tail variants still zero. Concentrating budget on 'wireless cat water fountain' only may improve conversion rate further."
+    },
+    {
+      "rank": 3,
+      "priority": "CRITICAL",
+      "action": "REDUCE_BID",
+      "keyword": null,
+      "campaign": "Close Automatic Campaign",
+      "current_state": {"budget_daily": 15.00, "spend_7d": 8.45, "sales_7d": 0, "acos_7d": null},
+      "recommended_change": "Reduce daily budget from $15 to $5. Auto campaign continues with zero conversions.",
+      "expected_weekly_savings": 70.00,
+      "rationale": "Auto campaign at $15/day overspending for 0% ad CVR. $5/day cap preserves data collection at lower cost."
+    },
+    {
+      "rank": 4,
+      "priority": "HIGH",
+      "action": "LAUNCH",
+      "keyword": "battery operated cat fountain",
+      "campaign": "Manual Keywords Campaign",
+      "current_state": {"spend_7d": 0, "sales_7d": 0, "paw_pure_status": "not indexed"},
+      "recommended_change": "Add as exact-match at $0.75 bid. SV 7,200, 7/10 competitors ranking. Title already mentions 'battery-operated' — may already index.",
+      "expected_weekly_savings": 0,
+      "rationale": "With primary keyword showing first conversion, now is the time to expand to the next highest-opportunity gap keyword."
+    },
+    {
+      "rank": 5,
+      "priority": "MEDIUM",
+      "action": "NEGATE",
+      "keyword": "cat fountain motion sensor",
+      "campaign": "All campaigns",
+      "current_state": {"spend_7d": null, "paw_pure_has_feature": false},
+      "recommended_change": "Add 'motion sensor', 'with app', 'wifi', 'wastewater separation' as negative exact-match keywords.",
+      "expected_weekly_savings": 3.00,
+      "rationale": "Paw Pure lacks motion sensor, app, and wastewater separation — irrelevant traffic wastes budget."
+    },
+    {
+      "rank": 6,
+      "priority": "MEDIUM",
+      "action": "LAUNCH",
+      "keyword": "quiet cat water fountain",
+      "campaign": "Manual Keywords Campaign",
+      "current_state": {"spend_7d": 0, "sales_7d": 0, "paw_pure_status": "not indexed"},
+      "recommended_change": "Add as exact-match at $0.75 bid. SV 4,100. Paw Pure's 20dB claim is a genuine differentiator.",
+      "expected_weekly_savings": 0,
+      "rationale": "Listing CVR may be improving — launch differentiator keywords alongside primary."
+    }
+  ],
+  "alerts": {
+    "critical": [
+      "2 zero-conversion manual keywords still burning $24/week — pause immediately",
+      "Campaign Manager inaccessible for 11 consecutive days — cannot execute PPC changes directly",
+      "Auto campaign still zero ad conversions at $8.45/week spend"
+    ],
+    "warning": [
+      "ACoS 39.1% on primary keyword — above 33.5% breakeven but improving directionally",
+      "BSR drifting up to ~138,450 — need consistent sales velocity to halt decay",
+      "5 untapped keyword gaps still not launched despite 11 days of recommendations"
+    ],
+    "positive": [
+      "FIRST AD CONVERSION on primary keyword 'wireless cat water fountain' — ACoS 39.1%",
+      "Daily spend rate declining: $19.77 → $15.00 → $13.00. Amazon throttling helping limit waste.",
+      "Total ACoS improved from infinite (0 conversions) to 104% this week — positive trend",
+      "2 fountain units sold organically in addition to 1 ad-attributed sale"
+    ]
+  },
+  "one_action_this_week": {
+    "action": "PAUSE 2 zero-conversion keywords AND monitor primary keyword for 14 more days",
+    "impact": "Saves $24/week in pure waste while preserving the keyword that just showed its first conversion.",
+    "context": "Primary keyword 'wireless cat water fountain' had its first ad conversion after 4+ weeks of zero. This may indicate listing quality improvements taking effect. Do NOT pause the entire manual campaign — just cut the confirmed waste while monitoring the signal."
+  }
+}

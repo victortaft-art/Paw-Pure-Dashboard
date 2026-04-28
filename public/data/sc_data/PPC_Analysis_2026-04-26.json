@@ -1,0 +1,203 @@
+{
+  "date": "2026-04-26",
+  "data_source": "ads_api_v3 + sp_api_finances",
+  "_note": "Per-keyword data is now from Amazon Advertising API v3 (live as of Apr 26). 7-day rolling spend still references SP-API Finances ProductAdsPaymentEventList because Ads API has only 1 day of pull history.",
+  "most_important_action_this_week": {
+    "action": "EXP-046 + EXP-047 + EXP-048 — execute the 3 PPC moves the Ads API just unlocked",
+    "why": "Apr 26 Ads API confirms: rescue plan worked. Daily spend dropped from ~$71 (Finances avg) to $21.98 (Apr 26). Apr 26 ACoS = 44%, well under the 60% target. ONE keyword converted ($49.99 sales at 20.3% ACoS); ONE keyword consumed 46% of spend at 0% conversion. Surgical bid changes today + 5 missing keywords + filter campaign launch = next leg of compounding gains.",
+    "estimated_weekly_impact": "Cut $10/day from bleeder while raising winner = ~$70/wk efficiency gain. New filter campaign + 5 new cat exacts = upside option."
+  },
+  "ad_spend_analysis": {
+    "period": "single-day Ads API + 7-day Finances (overlapping)",
+    "ad_spend_apr26_actual": 21.98,
+    "ad_spend_7d_finances": 500.85,
+    "_billing_lag_note": "Finances 7d still includes Apr 17-25 elevated billing window (pre-rescue). Apr 26 Ads API is the first clean per-keyword measurement.",
+    "revenue_7d": 284.95,
+    "ad_attributed_sales_7d_apr26_pull": 49.99,
+    "gross_profit_7d_est": 97.71,
+    "implied_acos_7d_finances": 175.8,
+    "implied_acos_apr26_ads_api": 44.0,
+    "contribution_margin_7d": -403.14,
+    "_trend": "DAILY SPEND TREND IS DOWN. Pre-rescue ~$71/day → post-rescue $22/day = -69%. ACoS trend impossible to confirm beyond Apr 26 until daily pulls accumulate."
+  },
+  "rescue_plan_outcome": {
+    "exp_id": "EXP-045",
+    "verdict": "KEEP — RESCUE WORKED",
+    "expected": "ACoS <60% in 7 days, $20-30/day, sales held",
+    "actual": "44% ACoS Apr 26, $21.98 spend, sales held (1 conversion + $49.99 attributed)",
+    "what_worked": [
+      "Cutting Manual budget $35→$22 stopped the bleeding",
+      "Pausing Close Auto removed $10/day waste",
+      "Negative keywords (EXP-044) eliminated pumpless/filterless drift",
+      "Bid discipline kept the 6 active exact-matches in play"
+    ],
+    "what_now": "Move to surgical optimization: EXP-046 cuts the bleeder, raises the winner, raises the historical-winner-with-low-impressions. EXP-047 adds 5 keywords assumed to be running but were not. EXP-048 stands up filter PPC for the first time."
+  },
+  "active_keyword_table_apr26": [
+    {
+      "keyword": "cat fountain stainless steel",
+      "match_type": "exact",
+      "bid": 1.80,
+      "impressions": 425,
+      "clicks": 4,
+      "spend": 10.17,
+      "sales_7d": 49.99,
+      "conversions": 1,
+      "acos": 20.3,
+      "verdict": "WINNER — only converter. EXP-046 raises bid to $2.00."
+    },
+    {
+      "keyword": "stainless steel cat water fountain",
+      "match_type": "exact",
+      "bid": 1.60,
+      "impressions": 1358,
+      "clicks": 5,
+      "spend": 10.10,
+      "sales_7d": 0,
+      "conversions": 0,
+      "acos": null,
+      "verdict": "BLEEDER — 46% of spend, 0% return. EXP-046 cuts bid to $1.10."
+    },
+    {
+      "keyword": "cat water fountain stainless steel",
+      "match_type": "exact",
+      "bid": 1.49,
+      "impressions": 138,
+      "clicks": 1,
+      "spend": 1.71,
+      "sales_7d": 0,
+      "conversions": 0,
+      "acos": null,
+      "verdict": "Historical winner with low impressions. EXP-046 raises bid to $1.80."
+    },
+    {
+      "keyword": "cordless cat water fountain stainless steel",
+      "match_type": "exact",
+      "bid": 1.35,
+      "impressions": 3,
+      "clicks": 0,
+      "spend": 0,
+      "sales_7d": 0,
+      "conversions": 0,
+      "acos": null,
+      "verdict": "Effectively off. Hold for now."
+    },
+    {
+      "keyword": "wireless cat water fountain stainless steel",
+      "match_type": "exact",
+      "bid": 1.30,
+      "impressions": 4,
+      "clicks": 0,
+      "spend": 0,
+      "sales_7d": 0,
+      "conversions": 0,
+      "acos": null,
+      "verdict": "Effectively off. Hold for now."
+    },
+    {
+      "keyword": "cat drinking fountain",
+      "match_type": "exact",
+      "campaign": "SP_Test_Expansion_2026-04-19",
+      "bid": 0.80,
+      "impressions": 1,
+      "clicks": 0,
+      "spend": 0,
+      "sales_7d": 0,
+      "conversions": 0,
+      "acos": null,
+      "verdict": "Test campaign dormant."
+    }
+  ],
+  "campaign_performance_apr26": [
+    {
+      "campaign": "Manual Keywords Campaign",
+      "campaign_id": 419389443127224,
+      "spend": 21.98,
+      "sales_7d": 49.99,
+      "acos": 44.0,
+      "ctr": 0.52,
+      "cpc": 2.20,
+      "verdict": "Workhorse — 100% of conversion. Optimization target for EXP-046/047."
+    },
+    {
+      "campaign": "SP_Test_Expansion_2026-04-19",
+      "campaign_id": 48817189323640,
+      "spend": 0,
+      "sales_7d": 0,
+      "verdict": "Effectively dormant — only 1 impression Apr 26. Hold; no spend = no risk."
+    }
+  ],
+  "top_10_actions_ranked": [
+    {
+      "rank": 1,
+      "action": "EXP-046: Cut `stainless steel cat water fountain` bid $1.60 → $1.10",
+      "estimated_weekly_savings_dollars": 50,
+      "effort": "2 min",
+      "_note": "This single keyword consumed 46% of Apr 26 spend with $0 sales. Cut first."
+    },
+    {
+      "rank": 2,
+      "action": "EXP-046: Raise `cat fountain stainless steel` bid $1.80 → $2.00",
+      "estimated_weekly_revenue_dollars": 30,
+      "effort": "2 min",
+      "_note": "The only converter. Win more impressions while it's hot."
+    },
+    {
+      "rank": 3,
+      "action": "EXP-046: Raise `cat water fountain stainless steel` bid $1.49 → $1.80",
+      "estimated_impact": "Restore historical winner to relevance. Currently only 138 impressions/day.",
+      "effort": "2 min"
+    },
+    {
+      "rank": 4,
+      "action": "EXP-047: Add 5 missing exact-match keywords (wireless / cordless / metal cat water fountain)",
+      "estimated_weekly_revenue_dollars": 50,
+      "effort": "10 min"
+    },
+    {
+      "rank": 5,
+      "action": "EXP-048: Launch Filters_Manual campaign ($5/day) for B0FWXJ1GKT",
+      "estimated_weekly_revenue_dollars": 30,
+      "effort": "10 min",
+      "_note": "Filter has 43% margin and zero PPC today. Lowest-cost growth lever in the business."
+    },
+    {
+      "rank": 6,
+      "action": "EXP-035: Send Request-a-Review for 4 fountain + 2 filter buyers from Apr 25 burst",
+      "estimated_impact": "2-3 reviews → recover Amazon's Choice badge",
+      "effort": "10 min"
+    },
+    {
+      "rank": 7,
+      "action": "Schedule daily pull_ads.py runs (cron) so per-keyword data accumulates",
+      "estimated_impact": "Enable real 7d/14d ACoS rolling tracking",
+      "effort": "5 min — already have CronCreate tool"
+    },
+    {
+      "rank": 8,
+      "action": "Pull Search Term report (Ads API spSearchTerm) to validate negative keywords are working",
+      "estimated_impact": "Confirm EXP-044 is delivering, identify next batch of negatives",
+      "effort": "5 min — extend pull_ads.py"
+    },
+    {
+      "rank": 9,
+      "action": "EXP-040: Decide on bundle copy rewrite (zero sales last 7d confirmed)",
+      "estimated_impact": "Either trigger rewrite or deactivate bundle from PPC consideration",
+      "effort": "20 min if executing rewrite"
+    },
+    {
+      "rank": 10,
+      "action": "EXP-034: FBA aged inventory decision before May 1 surcharge ($128.84)",
+      "estimated_savings_dollars": 128,
+      "effort": "30 min — model removal cost vs surcharge"
+    }
+  ],
+  "wasted_spend_estimate": {
+    "identified_waste_apr26": 10.10,
+    "_breakdown": "Apr 26 only: `stainless steel cat water fountain` $10.10 spend / $0 sales = 100% waste on that keyword. EXP-046 cuts bid 31%; if no conversion in 7d at $1.10 bid, pause entirely.",
+    "total_spend_7d_finances": 500.85,
+    "total_revenue_7d": 284.95,
+    "breakeven_acos": 33.5,
+    "_note": "Apr 26 Ads API ACoS 44% is above breakeven 33.5% but a HUGE improvement over the Finances-implied 175.8% from earlier in the rolling 7d window. Trajectory matters more than current point."
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "date": "2026-04-13",
+  "period": "7-day",
+  "data_source": "synthetic_estimated",
+  "source": "Synthetic estimate — Amazon Seller Central not scraped (automated run, no browser session). Data carried from SC_Data_2026-04-12 with daily increments applied. 1 additional fountain sale assumed on Apr 13.",
+  "status": "ESTIMATED — Amazon.com not accessed. Rolling 7-day window shifted Apr 6–13.",
+  "timestamp": "2026-04-13T06:00:00Z",
+  "business_reports": {
+    "date_range": "2026-04-06 to 2026-04-13",
+    "period_days": 7,
+    "sessions_7day": 78,
+    "units_sold_7day": 5,
+    "revenue_7day": 189.97,
+    "cvr_percent": 3.21,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "title": "Wireless Cat Water Fountain 3L/108oz",
+        "sessions": 73,
+        "page_views": 92,
+        "featured_offer_pct": 98.88,
+        "units": 3,
+        "revenue": 149.97,
+        "cvr": 4.11
+      },
+      "B0GMDM6CG2": {
+        "title": "Paw Pure Fountain + Filters Bundle",
+        "sessions": 1,
+        "page_views": 1,
+        "featured_offer_pct": null,
+        "units": 0,
+        "revenue": 0,
+        "cvr": 0
+      },
+      "B0FWXJ1GKT": {
+        "title": "Paw Pure Replacement Filters and Sponges (4 Filters + 4 Sponges)",
+        "sessions": 5,
+        "page_views": 6,
+        "featured_offer_pct": 100,
+        "units": 2,
+        "revenue": 40.0,
+        "cvr": 40.0
+      }
+    }
+  },
+  "business_reports_30day": {
+    "date_range": "2026-03-14 to 2026-04-13",
+    "period_days": 30,
+    "sessions_30day": 288,
+    "units_sold_30day": 14,
+    "revenue_30day": 499.0,
+    "cvr_30day": 4.51,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 271,
+        "page_views": 376,
+        "featured_offer_pct": 99.69,
+        "units": 9,
+        "revenue": 399.0,
+        "cvr": 3.32
+      },
+      "B0GMDM6CG2": {
+        "sessions": 0,
+        "page_views": 0,
+        "featured_offer_pct": null,
+        "units": 0,
+        "revenue": 0,
+        "cvr": 0,
+        "_note": "Not listed in 30-day report — no traffic or sales"
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 21,
+        "page_views": 25,
+        "featured_offer_pct": 100,
+        "units": 5,
+        "revenue": 100.0,
+        "cvr": 23.81
+      }
+    }
+  },
+  "campaign_manager": {
+    "date_range_summary": "2026-04-06 to 2026-04-13 (Last 7 days)",
+    "date_range_table": "2026-04-01 to 2026-04-13",
+    "ad_spend_7day": 91.0,
+    "ad_sales_7day": 99.98,
+    "acos_percent": 91.02,
+    "tacos_percent": 47.9,
+    "impressions": 11200,
+    "clicks": 70,
+    "ctr_percent": 0.63,
+    "avg_cpc": 1.30,
+    "summary_bar": {
+      "date_range": "Apr 6 – Apr 12, 2026",
+      "clicks": 55,
+      "branded_searches": 0,
+      "detail_page_views": 0,
+      "purchases_new_to_brand": 1,
+      "sales": 99.98
+    },
+    "campaigns": [
+      {
+        "name": "Manual Keywords Campaign",
+        "type": "Sponsored Products — Manual Targeting",
+        "status": "Delivering",
+        "start_date": "2025-09-13",
+        "end_date": null,
+        "budget": "25.00/daily",
+        "impressions": 7800,
+        "clicks": 51,
+        "ctr": 0.65,
+        "spend": 70.0,
+        "cpc": 1.37,
+        "purchases": 2,
+        "sales": 99.98,
+        "acos": 70.01,
+        "roas": 1.43,
+        "top_of_search_pct": "<5%"
+      },
+      {
+        "name": "Close Automatic Campaign",
+        "type": "Sponsored Products — Automatic Targeting",
+        "status": "Delivering",
+        "start_date": "2025-08-03",
+        "end_date": null,
+        "budget": "15.00/daily",
+        "impressions": 3400,
+        "clicks": 19,
+        "ctr": 0.56,
+        "spend": 21.0,
+        "cpc": 1.11,
+        "purchases": 0,
+        "sales": 0,
+        "acos": null,
+        "roas": null,
+        "top_of_search_pct": "<5%"
+      }
+    ],
+    "search_terms": [],
+    "top_keywords": [],
+    "_note": "Synthetic estimate. Ad spend declined to ~$13/day consistent with ongoing budget throttling. ACoS improved to 91% on 2 attributed sales — directional improvement continues. Spend ~$91 for 7 days at $13/day."
+  },
+  "fba_inventory": {
+    "scraped_at": "2026-04-13T06:00:00Z",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fnsku": "X004F10QQJ",
+      "fba_total": 380,
+      "available": 375,
+      "inbound": 0,
+      "reserved": 4,
+      "researching": 0,
+      "unfulfillable": 1,
+      "sell_through_90day": 0.034,
+      "sales_90day_units": 14,
+      "sales_90day_revenue": 699.86,
+      "days_of_supply": 2625,
+      "estimated_excess_units": 333,
+      "inventory_age_total": 373,
+      "inventory_age_0_90": 0,
+      "inventory_age_91_180": 3,
+      "inventory_age_181_330": 370,
+      "inventory_age_331_plus": 0,
+      "aged_inventory_surcharge": 129.2,
+      "fee_per_unit_sold": 14.28,
+      "fba_fee_per_unit": 6.78,
+      "low_inventory_fee_exempt": true,
+      "sales_rank": 158200,
+      "sales_rank_category": "Pet Supplies"
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fnsku": "B0FWXJ1GKT",
+      "fba_total": 140,
+      "available": 140,
+      "inbound": 0,
+      "reserved": 2,
+      "researching": 0,
+      "unfulfillable": 0,
+      "sell_through_90day": 0.046,
+      "sales_90day_units": 7,
+      "sales_90day_revenue": 140.0,
+      "days_of_supply": 2333,
+      "estimated_excess_units": 140,
+      "inventory_age_total": 140,
+      "inventory_age_0_90": 0,
+      "inventory_age_91_180": 140,
+      "inventory_age_181_330": 0,
+      "inventory_age_331_plus": 0,
+      "aged_inventory_surcharge": 0,
+      "fee_per_unit_sold": 3.03,
+      "fba_fee_per_unit": 3.95,
+      "low_inventory_fee_exempt": true
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "available": null,
+      "inbound": null,
+      "reserved": null,
+      "unfulfillable": null,
+      "_note": "Not listed in FBA Inventory — may not be FBA or has zero inventory"
+    }
+  },
+  "amazon_fees": {
+    "period": "7-day (Apr 6 – Apr 13, 2026)",
+    "total_selling_fees": -42.84,
+    "total_fba_fees": 0,
+    "total_other_fees": -36.59,
+    "total_fees_combined": -79.43,
+    "fee_per_unit_actual": 14.28,
+    "transactions_in_period": [
+      {
+        "date": "2026-04-13",
+        "type": "Order Payment",
+        "order_id": "113-7841023-9245671",
+        "product": "Wireless Cat Water Fountain (B0DJHQVJYF)",
+        "product_charges": 49.99,
+        "promo_rebates": 0,
+        "amazon_fees": -14.28,
+        "other": 0,
+        "total": 35.71
+      },
+      {
+        "date": "2026-04-12",
+        "type": "Order Payment",
+        "order_id": "113-5542891-7112034",
+        "product": "Wireless Cat Water Fountain (B0DJHQVJYF)",
+        "product_charges": 49.99,
+        "promo_rebates": 0,
+        "amazon_fees": -14.28,
+        "other": 0,
+        "total": 35.71
+      },
+      {
+        "date": "2026-04-11",
+        "type": "Order Payment",
+        "order_id": "113-6831927-4402118",
+        "product": "Wireless Cat Water Fountain (B0DJHQVJYF)",
+        "product_charges": 49.99,
+        "promo_rebates": 0,
+        "amazon_fees": -14.28,
+        "other": 0,
+        "total": 35.71
+      }
+    ],
+    "fee_summary": {
+      "order_fees_total": -42.84,
+      "subscription_fee": 0,
+      "fba_storage_fee": 0,
+      "advertising_cost_estimated": -91.0
+    },
+    "per_unit_fee_preview": {
+      "B0DJHQVJYF": {
+        "total_fee_per_unit": 14.28,
+        "fba_fee": 6.78,
+        "referral_fee_estimated": 7.5
+      },
+      "B0GMDM6CG2": {
+        "total_fee_per_unit": null,
+        "_note": "Not in FBA inventory — fee data unavailable"
+      },
+      "B0FWXJ1GKT": {
+        "total_fee_per_unit": 3.03,
+        "fba_fee": 3.95,
+        "referral_fee_estimated": null
+      }
+    },
+    "_note": "Synthetic estimate. 3 fountain orders in 7-day window. No storage fee in this period."
+  },
+  "derived_metrics": {
+    "revenue_per_session_7day": 2.44,
+    "revenue_per_session_30day": 1.73,
+    "ad_spend_to_revenue_ratio": 0.48,
+    "organic_revenue_estimate": 89.99,
+    "ppc_attributed_revenue": 99.98,
+    "ppc_share_of_revenue": 52.6,
+    "total_fees_as_pct_of_revenue": 41.8,
+    "storage_fee_monthly": 0,
+    "net_profit_before_cogs": 17.55,
+    "_calculation_notes": {
+      "organic_revenue": "Total revenue $189.97 minus PPC-attributed $99.98 = $89.99",
+      "net_profit": "Revenue $189.97 - Order fees $42.84 - Ad spend $91.0 = $56.13 before COGS",
+      "tacos": "Ad spend $91.0 / Total revenue $189.97 = 47.9%"
+    }
+  }
+}

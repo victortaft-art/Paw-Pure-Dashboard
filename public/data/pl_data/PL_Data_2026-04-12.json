@@ -1,0 +1,159 @@
+{
+  "date": "2026-04-12",
+  "period": "7-day",
+  "data_source": "partial_verified",
+  "config_last_updated": "2026-04-03",
+  "sc_data_source": "SC_Data_2026-04-12.json (corrected from SC screenshots)",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 376,
+      "fba_inbound": 0,
+      "total_stock": 376,
+      "daily_velocity": 0.286,
+      "days_of_cover": 1316,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "reorder_by_date": "2029-08-04",
+      "reorder_status": "On Track",
+      "reorder_qty": 0,
+      "reorder_cost": 0,
+      "stockout_date": "2029-11-04"
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 140,
+      "fba_inbound": 0,
+      "total_stock": 140,
+      "daily_velocity": 0.286,
+      "days_of_cover": 490,
+      "status": "HEALTHY",
+      "reorder_needed": false
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "status": "NOT IN FBA",
+      "_note": "B0GMDM6CG2 not in FBA inventory. Listing may be inactive."
+    }
+  },
+  "pl_7day": {
+    "fountain": {
+      "units": 2,
+      "revenue": 99.98,
+      "amazon_fee": 31.0,
+      "cogs": 35.16,
+      "gross_profit": 33.82,
+      "margin_pct": 33.83,
+      "_calculation": "Revenue $99.98 - Fees $31.0 - COGS $35.16 (2 x $17.58) = $33.82"
+    },
+    "filters": {
+      "units": 2,
+      "revenue": 40.0,
+      "amazon_fee": 13.9,
+      "cogs": 7.94,
+      "gross_profit": 18.16,
+      "margin_pct": 45.4,
+      "_calculation": "Revenue $40.0 - Fees $13.9 - COGS $7.94 (2 x $3.97) = $18.16"
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0,
+      "amazon_fee": 0.0,
+      "cogs": 0.0,
+      "gross_profit": 0.0,
+      "margin_pct": 0,
+      "_calculation": "Revenue $0 - Fees $0.0 - COGS $0.0 (0 x $21.55) = $0.0"
+    },
+    "totals": {
+      "units": 4,
+      "revenue": 139.98000000000002,
+      "gross_profit": 51.980000000000004,
+      "ad_spend": 105.0,
+      "true_contribution_margin": -53.02,
+      "contribution_margin_pct": -37.88,
+      "_calculation_notes": {
+        "gross_profit": "Revenue $139.98000000000002 - all fees & COGS = $51.980000000000004",
+        "contribution_margin": "Gross profit $51.980000000000004 - Ad spend $105.0 = $-53.02"
+      }
+    },
+    "razor_blade_ratio": 1.0,
+    "actual_acos_pct": 75.01
+  },
+  "cash_flow_4week": [
+    {
+      "week": 1,
+      "dates": "Week of 2026-04-12",
+      "projected_revenue": 99.98,
+      "projected_cogs": 35.16,
+      "projected_fees": 28.56,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -15.74,
+      "reorder_event": null,
+      "stockout_risk": "NONE \u2014 fountain 373 units, bundle 140 units",
+      "storage_fee_impact": 0
+    },
+    {
+      "week": 2,
+      "dates": "Week of 2026-04-19",
+      "projected_revenue": 99.98,
+      "projected_cogs": 35.16,
+      "projected_fees": 28.56,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -15.74,
+      "reorder_event": null,
+      "stockout_risk": "NONE \u2014 fountain 371 units, bundle 140 units",
+      "storage_fee_impact": 0
+    },
+    {
+      "week": 3,
+      "dates": "Week of 2026-04-26",
+      "projected_revenue": 99.98,
+      "projected_cogs": 35.16,
+      "projected_fees": 28.56,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -15.74,
+      "reorder_event": null,
+      "stockout_risk": "NONE \u2014 fountain 369 units, bundle 140 units",
+      "storage_fee_impact": 0
+    },
+    {
+      "week": 4,
+      "dates": "Week of 2026-05-03",
+      "projected_revenue": 99.98,
+      "projected_cogs": 35.16,
+      "projected_fees": 28.56,
+      "projected_ad_spend": 52.0,
+      "projected_net_cash": -76.06,
+      "reorder_event": null,
+      "stockout_risk": "NONE \u2014 fountain 367 units, bundle 139 units",
+      "storage_fee_impact": 60.32,
+      "_note": "Storage fee (~$60/week amortized from ~$246/month) expected to post early May."
+    }
+  ],
+  "alerts": {
+    "critical": [
+      "NEGATIVE CONTRIBUTION MARGIN: $-53.02 this week. Ad spend ($105.0) exceeds gross profit ($51.980000000000004).",
+      "ACoS 75.01%: Still above breakeven 33.5%."
+    ],
+    "warning": [
+      "OVERSTOCKED: Fountain at 1316 days of cover (376 units). Storage fees accumulating."
+    ],
+    "positive": [
+      "FILTERS SELLING: 2 filter packs sold this week ($40.0). Razor-blade ratio: 1.0.",
+      "FILTER MARGIN: 45.4% gross margin on filters vs 33.83% on fountain."
+    ]
+  },
+  "sunday_call_prep": {
+    "true_contribution_margin": "$-15.74 (improved $100.72 WoW \u2014 best week since launch)",
+    "most_urgent_inventory_action": "No reorder needed \u2014 all products overstocked. Priority: reduce storage fees via removal or pricing strategy.",
+    "razor_blade_health": "0.0 filters per fountain this week (BELOW TARGET of 1.0). No filter sales for 7 days.",
+    "biggest_concern": "Storage fees returning ~$246/month. At $52/week ad spend and $100/week revenue, contribution is still negative. Ad efficiency must improve further.",
+    "bright_spot": "First PPC conversion on primary keyword after 4+ weeks. ACoS 39.1% \u2014 first time near breakeven range. If this trend holds, break-even PPC may be achievable within 2-4 weeks.",
+    "key_decisions_needed": [
+      "Pause 2 zero-conversion manual keywords ($24/week savings) while holding primary keyword",
+      "Decide whether to implement removal order for aged inventory to stop ~$246/month storage fees",
+      "Launch 'battery operated cat fountain' and 'quiet cat water fountain' as new exact-match keywords"
+    ]
+  }
+}
