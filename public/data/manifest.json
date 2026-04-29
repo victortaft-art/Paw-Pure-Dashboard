@@ -32,7 +32,8 @@
     "SC_Data_2026-04-20.json",
     "SC_Data_2026-04-23.json",
     "SC_Data_2026-04-27.json",
-    "SC_Data_2026-04-28.json"
+    "SC_Data_2026-04-28.json",
+    "SC_Data_2026-04-29.json"
   ],
   "ci_data": [
     "CI_Data_2026-04-03.json",
@@ -69,6 +70,7 @@
     "PL_Data_2026-04-23.json",
     "PL_Data_2026-04-27.json",
     "PL_Data_2026-04-28.json",
+    "PL_Data_2026-04-29.json",
     "Sales_Diagnostics_2026-04-19.json",
     "pl_config.json"
   ],
@@ -106,7 +108,8 @@
     "KW_Data_2026-04-17.json",
     "KW_Data_2026-04-18.json",
     "KW_Data_2026-04-19.json",
-    "KW_Data_2026-04-26.json"
+    "KW_Data_2026-04-26.json",
+    "cerebro_opportunities_2026-04-28.json"
   ],
   "_root": [
     "experiment_log.json",
