@@ -14,6 +14,8 @@
     "PPC_Analysis_2026-04-17.json",
     "PPC_Analysis_2026-04-19.json",
     "PPC_Analysis_2026-04-26.json",
+    "PPC_Analysis_2026-04-27.json",
+    "PPC_Analysis_2026-04-28.json",
     "PPC_Diagnostics_2026-04-19.json",
     "SC_Data_2026-04-03.json",
     "SC_Data_2026-04-04.json",
@@ -33,7 +35,8 @@
     "SC_Data_2026-04-23.json",
     "SC_Data_2026-04-27.json",
     "SC_Data_2026-04-28.json",
-    "SC_Data_2026-04-29.json"
+    "SC_Data_2026-04-29.json",
+    "SC_Data_2026-04-30.json"
   ],
   "ci_data": [
     "CI_Data_2026-04-03.json",
@@ -71,6 +74,7 @@
     "PL_Data_2026-04-27.json",
     "PL_Data_2026-04-28.json",
     "PL_Data_2026-04-29.json",
+    "PL_Data_2026-04-30.json",
     "Sales_Diagnostics_2026-04-19.json",
     "pl_config.json"
   ],
@@ -109,7 +113,8 @@
     "KW_Data_2026-04-18.json",
     "KW_Data_2026-04-19.json",
     "KW_Data_2026-04-26.json",
-    "cerebro_opportunities_2026-04-28.json"
+    "cerebro_opportunities_2026-04-28.json",
+    "rank_history_2026-04-29.json"
   ],
   "_root": [
     "experiment_log.json",
@@ -121,5 +126,8 @@
     "strategy_target_kws.json",
     "touchpoint_assets.json",
     "product_issues.json"
+  ],
+  "competitor_snapshots": [
+    "snapshot_2026-04-29.json"
   ]
 }

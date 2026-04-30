@@ -1,0 +1,389 @@
+{
+  "date": "2026-04-30",
+  "period": "daily",
+  "data_source": "sp_api",
+  "config_last_updated": "2026-04-03",
+  "_fee_note": "Fees are computed from pl_config.json per-unit schedule. Real settlement fees available in Finances dump (amazon_api/data/raw/).",
+  "sc_data_source": "sp_api_composite",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 362,
+      "fba_inbound": 0,
+      "total_stock": 362,
+      "daily_velocity_7day": 0.86,
+      "daily_velocity_30day": 0.47,
+      "days_of_cover_7day": 420,
+      "days_of_cover_30day": 770,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "bsr": 87316,
+      "bsr_subcategory": {
+        "rank": 1157,
+        "category": "Cat Fountains"
+      }
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 138,
+      "fba_inbound": 0,
+      "total_stock": 138,
+      "daily_velocity_7day": 0.29,
+      "daily_velocity_30day": 0.13,
+      "days_of_cover_7day": 475,
+      "days_of_cover_30day": 1061,
+      "status": "OVERSTOCKED",
+      "reorder_needed": false,
+      "bsr": null,
+      "bsr_subcategory": {
+        "rank": null,
+        "category": null
+      }
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "fba_inbound": 0,
+      "total_stock": null,
+      "daily_velocity_7day": 0.0,
+      "daily_velocity_30day": 0.0,
+      "days_of_cover_7day": null,
+      "days_of_cover_30day": null,
+      "status": null,
+      "reorder_needed": null,
+      "bsr": null,
+      "bsr_subcategory": {
+        "rank": null,
+        "category": null
+      }
+    }
+  },
+  "pl_7day": {
+    "fountain": {
+      "units": 6,
+      "revenue": 296.37,
+      "amazon_fee": 93.0,
+      "_fee_calc": "6 \u00d7 $15.5",
+      "cogs": 105.48,
+      "_cogs_calc": "6 \u00d7 $17.58",
+      "gross_profit": 97.89,
+      "margin_pct": 33.03
+    },
+    "filters": {
+      "units": 2,
+      "revenue": 38.57,
+      "amazon_fee": 13.9,
+      "_fee_calc": "2 \u00d7 $6.95",
+      "cogs": 7.94,
+      "_cogs_calc": "2 \u00d7 $3.97",
+      "gross_profit": 16.73,
+      "margin_pct": 43.38
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0.0,
+      "amazon_fee": 0.0,
+      "_fee_calc": "0 \u00d7 $15.25",
+      "cogs": 0.0,
+      "_cogs_calc": "0 \u00d7 $21.55",
+      "gross_profit": 0.0,
+      "margin_pct": 0.0
+    },
+    "totals": {
+      "units": 8,
+      "revenue": 334.94,
+      "amazon_fee": 106.9,
+      "cogs": 113.42,
+      "gross_profit": 114.62,
+      "gross_margin_pct": 34.22,
+      "ad_spend_est": null,
+      "true_contribution_margin_est": null,
+      "contribution_margin_pct_est": null
+    }
+  },
+  "pl_30day": {
+    "fountain": {
+      "units": 14,
+      "revenue": 692.72,
+      "amazon_fee": 217.0,
+      "_fee_calc": "14 \u00d7 $15.5",
+      "cogs": 246.12,
+      "_cogs_calc": "14 \u00d7 $17.58",
+      "gross_profit": 229.6,
+      "margin_pct": 33.14
+    },
+    "filters": {
+      "units": 4,
+      "revenue": 77.14,
+      "amazon_fee": 27.8,
+      "_fee_calc": "4 \u00d7 $6.95",
+      "cogs": 15.88,
+      "_cogs_calc": "4 \u00d7 $3.97",
+      "gross_profit": 33.46,
+      "margin_pct": 43.38
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0.0,
+      "amazon_fee": 0.0,
+      "_fee_calc": "0 \u00d7 $15.25",
+      "cogs": 0.0,
+      "_cogs_calc": "0 \u00d7 $21.55",
+      "gross_profit": 0.0,
+      "margin_pct": 0.0
+    },
+    "totals": {
+      "units": 18,
+      "revenue": 769.86,
+      "amazon_fee": 244.8,
+      "cogs": 262.0,
+      "gross_profit": 263.06,
+      "gross_margin_pct": 34.17,
+      "ad_spend_est": 718.33,
+      "true_contribution_margin_est": -455.27,
+      "contribution_margin_pct_est": -59.14
+    }
+  },
+  "daily_sales": {
+    "_data_source": "sp_api_orders",
+    "_source": "Aggregated from /orders/v0/orders response",
+    "days": [
+      {
+        "date": "2026-03-31",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-01",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-02",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-03",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-04",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-05",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "113-6263818-0381002 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-06",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-07",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "113-1129197-2945016 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-08",
+        "revenue": 20.0,
+        "units": 1,
+        "orders": [
+          "113-8321562-4207448 filters $20.0"
+        ]
+      },
+      {
+        "date": "2026-04-09",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-10",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-11",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-12",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "114-0775715-7617013 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-13",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-14",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-15",
+        "revenue": 64.99,
+        "units": 2,
+        "orders": [
+          "112-2924548-1803455 fountain $46.42",
+          "112-9964746-0101056 filters $18.57"
+        ]
+      },
+      {
+        "date": "2026-04-16",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-17",
+        "revenue": 99.98,
+        "units": 2,
+        "orders": [
+          "113-9942143-7521824 fountain $49.99",
+          "111-5139369-7007431 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-18",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "114-0094253-6041057 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-20",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-21",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-22",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "114-0494929-5195467 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-23",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-24",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-25",
+        "revenue": 234.96,
+        "units": 6,
+        "orders": [
+          "114-3312621-1849860 fountain $49.99",
+          "112-4765410-4757055 fountain $46.42",
+          "112-9114378-6872258 filters $18.57",
+          "111-2302094-7255466 fountain $49.99",
+          "111-7183059-2670632 filters $20.0",
+          "112-9038089-3605005 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-26",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "112-8497967-0537060 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-27",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-28",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-04-29",
+        "revenue": 49.99,
+        "units": 1,
+        "orders": [
+          "112-6666461-6605869 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-04-30",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      }
+    ]
+  },
+  "kpis": {
+    "revenue_7d": 334.94,
+    "revenue_30d": 769.86,
+    "units_7d": 8,
+    "units_30d": 18,
+    "gross_margin_7d_pct": 34.22,
+    "gross_margin_30d_pct": 34.17,
+    "contribution_margin_7d_est": null,
+    "contribution_margin_pct_est": null,
+    "sessions_7d": null,
+    "sessions_per_day_7d": null,
+    "cvr_7d_pct": null,
+    "days_of_cover_fountain_30d": 770,
+    "days_of_cover_fountain_7d": 420,
+    "days_of_cover_filters": 1061,
+    "razor_blade_ratio_30d": 0.29,
+    "ppc_spend_7d": null,
+    "ppc_spend_30d": 718.33,
+    "refunds_7d": 0.0,
+    "refunds_30d": -53.86
+  }
+}
