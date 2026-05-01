@@ -36,7 +36,8 @@
     "SC_Data_2026-04-27.json",
     "SC_Data_2026-04-28.json",
     "SC_Data_2026-04-29.json",
-    "SC_Data_2026-04-30.json"
+    "SC_Data_2026-04-30.json",
+    "SC_Data_2026-05-01.json"
   ],
   "ci_data": [
     "CI_Data_2026-04-03.json",
@@ -75,6 +76,7 @@
     "PL_Data_2026-04-28.json",
     "PL_Data_2026-04-29.json",
     "PL_Data_2026-04-30.json",
+    "PL_Data_2026-05-01.json",
     "Sales_Diagnostics_2026-04-19.json",
     "pl_config.json"
   ],
@@ -129,5 +131,20 @@
   ],
   "competitor_snapshots": [
     "snapshot_2026-04-29.json"
+  ],
+  "_singletons": [
+    "active_tracker.json",
+    "cash_balance.json",
+    "competitor_intel.json",
+    "daily_kpis_history.json",
+    "experiment_advisor.json",
+    "experiment_log.json",
+    "listing_map.json",
+    "margin_path.json",
+    "product_issues.json",
+    "strategy_pricing.json",
+    "strategy_target_kws.json",
+    "targets.json",
+    "touchpoint_assets.json"
   ]
 }

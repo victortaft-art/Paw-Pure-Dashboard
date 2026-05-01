@@ -82,13 +82,15 @@
           "id": "EXP-054",
           "scheduled_date": "2026-04-30",
           "title": "Filter listing audit + refresh",
-          "status": "QUEUED"
+          "status": "DONE",
+          "completed_date": "2026-04-30"
         },
         {
           "id": "EXP-055",
           "scheduled_date": "2026-05-01",
           "title": "Bundle listing audit + refresh",
-          "status": "QUEUED"
+          "status": "DONE",
+          "completed_date": "2026-04-30"
         },
         {
           "id": "EXP-056",
@@ -125,6 +127,12 @@
           "scheduled_date": "2026-04-30",
           "title": "Kill SP_Test_Expansion + fold KW into Manual",
           "status": "TODO"
+        },
+        {
+          "id": "EXP-062",
+          "scheduled_date": "2026-05-04",
+          "title": "Upgrade filter to A+ Premium",
+          "status": "QUEUED"
         }
       ]
     },
@@ -613,7 +621,9 @@
         "unit": "%",
         "direction": "up",
         "how_to_measure": "SP-API Business Reports \u2014 sessions/units conversion for B0FWXJ1GKT"
-      }
+      },
+      "status": "DONE",
+      "completed_date": "2026-04-30"
     },
     {
       "id": "EXP-055",
@@ -640,7 +650,9 @@
         "unit": "%",
         "direction": "up",
         "how_to_measure": "SP-API Orders \u2014 bundle SKU orders / fountain SKU orders"
-      }
+      },
+      "status": "DONE",
+      "completed_date": "2026-04-30"
     },
     {
       "id": "EXP-056",
@@ -818,6 +830,39 @@
         "unit": "impressions",
         "direction": "up",
         "how_to_measure": "Ads API SP Targeting report \u2014 filter keyword 'cat drinking fountain'."
+      }
+    },
+    {
+      "id": "EXP-062",
+      "title": "Upgrade filter listing (B0FWXJ1GKT) to A+ Premium",
+      "scheduled_date": "2026-05-04",
+      "decision_date": "2026-05-18",
+      "priority": "MEDIUM",
+      "growth_metric": "Filter CVR + brand consistency",
+      "listing": "filters",
+      "assumption": "Bundle (B0GMDM6CG2) and main fountain (B0DJHQVJYF) are both on A+ Premium. Filter (B0FWXJ1GKT) is the only Paw Pure listing still on basic A+ Content. A+ Premium adds video modules, 1000-pixel hero rows, hover-zoom, and comparison tables \u2014 all of which lift CVR ~5-15% per Amazon's own benchmarks for sub-$30 SKUs.",
+      "rationale": "We just shipped EXP-054 quick fixes (title + bullet 1 sponge count + OEM bullet + multi-layer wording). Filter Campaign EXP-051 starts driving paid traffic this week. Every dollar of new PPC traffic on the filter converts at a higher rate when the listing has Premium A+ vs basic. Closing the gap brings filter listing parity with bundle and main listing.",
+      "expected_change": "Filter session-to-order CVR lifts 5-15% post-Premium upgrade. Hover-zoom + 1000px hero rows give buyers more detail before clicking away. Comparison module helps frame Paw Pure vs RIZZARI on real attributes (e.g. compatibility specifically with Paw Pure fountain).",
+      "execution_steps": [
+        "Confirm Brand Registry 2.0 status on Paw Pure brand (required for A+ Premium)",
+        "Seller Central > Stores > Manage A+ Content > Create A+ Premium Content",
+        "Use the same module library as the bundle/fountain Premium A+ but tailor to filter narrative:",
+        "  Module 1: Hero with hover-zoom \u2014 'Multi-Layer Filtration Inside'",
+        "  Module 2: Video module \u2014 30s show-and-tell of swapping a filter (already have footage, edit and upload)",
+        "  Module 3: 1000px crossover row \u2014 three side-by-side panels: (a) cotton mesh, (b) activated carbon, (c) ion-exchange resin \u2014 each with a single-line benefit",
+        "  Module 4: Comparison table \u2014 Paw Pure OEM filter vs generic third-party filters on: dimensions match, pump compatibility, multi-layer construction, food-grade materials",
+        "  Module 5: 'When to replace' calendar visual \u2014 4 filters covering 4-6 months",
+        "  Module 6: Cross-link CTA \u2014 'Don't have the fountain yet?' with link to B0DJHQVJYF and bundle B0GMDM6CG2",
+        "Submit for Amazon review (Premium A+ approval typically 24-72h)",
+        "Once approved, monitor filter CVR weekly \u2014 expect lift to register by 2026-05-18"
+      ],
+      "success_criteria": {
+        "metric": "filter_session_to_order_cvr",
+        "baseline": "TBD (post EXP-059 Reports API recovery)",
+        "target": "+10%",
+        "unit": "%",
+        "direction": "up",
+        "how_to_measure": "SP-API Business Reports \u2014 sessions_total / units_ordered for B0FWXJ1GKT, weekly delta vs prior 14d baseline."
       }
     }
   ],
