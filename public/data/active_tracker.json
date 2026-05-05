@@ -921,7 +921,8 @@
         "EXP-065 (Broad)",
         "EXP-066 (PAT defensive)",
         "EXP-067 (PAT offensive)"
-      ]
+      ],
+      "may5_update": "MAY 5 UPDATE: KT data revealed 4 'paused' KWs (cordless/wireless cluster) are fastest-rising organics. Reverse pause + bid up to $1.40-1.50. Also: 'stainless steel cat water fountain' Phrase-group Exact at $1.10 with 25% conversion \u2192 bid up to $1.60. Maintain $1.89 on flagship despite -83 organic rank drop (PPC currently buying what organic lost)."
     },
     {
       "id": "EXP-065",
@@ -1013,6 +1014,29 @@
         "Run 14 days"
       ],
       "decision_after": "14 days. Decision tree: (a) <30 dog-search clicks \u2192 market thinner than expected, kill. (b) >=30 clicks + 0 sales \u2192 listing-fit is the blocker \u2192 ship EXP-049/060 listing bridge. (c) >=30 clicks + 1+ sales \u2192 audience is real and listing-tolerant \u2192 graduate to Stage 2/3 expansion."
+    },
+    {
+      "id": "EXP-070",
+      "status": "TODO",
+      "priority": "HIGH",
+      "title": "Cat Cerebro re-pull with correct locked-7 ASINs (tomorrow's H10 session)",
+      "depends_on": "\u2014",
+      "hypothesis": "The ASIN list used in 2026-05-05 H10 session was wrong (hallucinated by Claude). Correct list is documented in reference_competitor_asins.md. Re-pulling Cerebro on the right 7 unlocks: (a) Broad match seed list (EXP-065), (b) PAT offensive targets (EXP-067), (c) gap KWs we don't bid on yet.",
+      "rationale": "Without cat Cerebro data we can't ship EXP-064 phase 2 (broad seeding) or EXP-067 (PAT). This is a 5-minute fix tomorrow.",
+      "execution_steps": [
+        "Open Helium 10 \u2192 Cerebro",
+        "Paste these 7 ASINs (one per line):",
+        "  B0CK1MXC7J (Veken Award 95oz)",
+        "  B08NCDBT7Q (Veken older 95oz)",
+        "  B0F9WQGMH7 (FEELNEEDY)",
+        "  B0FPQZ2M7Y (Pektaco)",
+        "  B0FR4J9TPC (Selene Pets)",
+        "  B0DS2N3T3X (oneisall)",
+        "  B0DQ877DCJ (APAUK)",
+        "Get Keywords \u2192 Export CSV to ~/Downloads/",
+        "Send file path to Claude for analysis"
+      ],
+      "decision_after": "Same session \u2014 outputs feed EXP-065/067 seed lists."
     }
   ],
   "data_freshness": {

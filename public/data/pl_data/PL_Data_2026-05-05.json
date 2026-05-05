@@ -8,30 +8,30 @@
   "inventory": {
     "fountain": {
       "asin": "B0DJHQVJYF",
-      "fba_available": 359,
+      "fba_available": 358,
       "fba_inbound": 0,
-      "total_stock": 359,
-      "daily_velocity_7day": 0.43,
+      "total_stock": 358,
+      "daily_velocity_7day": 0.57,
       "daily_velocity_30day": 0.53,
-      "days_of_cover_7day": 834,
-      "days_of_cover_30day": 677,
+      "days_of_cover_7day": 628,
+      "days_of_cover_30day": 675,
       "status": "OVERSTOCKED",
       "reorder_needed": false,
-      "bsr": 124730,
+      "bsr": 78673,
       "bsr_subcategory": {
-        "rank": 1506,
+        "rank": 1066,
         "category": "Cat Fountains"
       }
     },
     "filters": {
       "asin": "B0FWXJ1GKT",
-      "fba_available": 137,
+      "fba_available": 136,
       "fba_inbound": 0,
-      "total_stock": 137,
+      "total_stock": 136,
       "daily_velocity_7day": 0.14,
       "daily_velocity_30day": 0.17,
-      "days_of_cover_7day": 978,
-      "days_of_cover_30day": 805,
+      "days_of_cover_7day": 971,
+      "days_of_cover_30day": 799,
       "status": "OVERSTOCKED",
       "reorder_needed": false,
       "bsr": null,
@@ -60,13 +60,13 @@
   },
   "pl_7day": {
     "fountain": {
-      "units": 3,
-      "revenue": 149.97,
-      "amazon_fee": 46.5,
-      "_fee_calc": "3 \u00d7 $15.5",
-      "cogs": 52.74,
-      "_cogs_calc": "3 \u00d7 $17.58",
-      "gross_profit": 50.73,
+      "units": 4,
+      "revenue": 199.96,
+      "amazon_fee": 62.0,
+      "_fee_calc": "4 \u00d7 $15.5",
+      "cogs": 70.32,
+      "_cogs_calc": "4 \u00d7 $17.58",
+      "gross_profit": 67.64,
       "margin_pct": 33.83
     },
     "filters": {
@@ -90,12 +90,12 @@
       "margin_pct": 0.0
     },
     "totals": {
-      "units": 4,
-      "revenue": 169.97,
-      "amazon_fee": 53.45,
-      "cogs": 56.71,
-      "gross_profit": 59.81,
-      "gross_margin_pct": 35.19,
+      "units": 5,
+      "revenue": 219.96,
+      "amazon_fee": 68.95,
+      "cogs": 74.29,
+      "gross_profit": 76.72,
+      "gross_margin_pct": 34.88,
       "ad_spend_est": null,
       "true_contribution_margin_est": null,
       "contribution_margin_pct_est": null
@@ -150,11 +150,9 @@
     "days": [
       {
         "date": "2026-04-05",
-        "revenue": 49.99,
-        "units": 1,
-        "orders": [
-          "113-6263818-0381002 fountain $49.99"
-        ]
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
       },
       {
         "date": "2026-04-06",
@@ -357,10 +355,11 @@
       },
       {
         "date": "2026-05-04",
-        "revenue": 49.99,
-        "units": 1,
+        "revenue": 99.98,
+        "units": 2,
         "orders": [
-          "112-4449671-2653817 fountain $49.99"
+          "112-4449671-2653817 fountain $49.99",
+          "113-0939264-6562669 fountain $49.99"
         ]
       },
       {
@@ -372,20 +371,20 @@
     ]
   },
   "kpis": {
-    "revenue_7d": 169.97,
+    "revenue_7d": 219.96,
     "revenue_30d": 889.84,
-    "units_7d": 4,
+    "units_7d": 5,
     "units_30d": 21,
-    "gross_margin_7d_pct": 35.19,
+    "gross_margin_7d_pct": 34.88,
     "gross_margin_30d_pct": 34.38,
     "contribution_margin_7d_est": null,
     "contribution_margin_pct_est": null,
-    "sessions_7d": 84,
-    "sessions_per_day_7d": 12.0,
-    "cvr_7d_pct": 3.57,
-    "days_of_cover_fountain_30d": 677,
-    "days_of_cover_fountain_7d": 834,
-    "days_of_cover_filters": 805,
+    "sessions_7d": 98,
+    "sessions_per_day_7d": 14.0,
+    "cvr_7d_pct": 5.1,
+    "days_of_cover_fountain_30d": 675,
+    "days_of_cover_fountain_7d": 628,
+    "days_of_cover_filters": 799,
     "razor_blade_ratio_30d": 0.31,
     "ppc_spend_7d": null,
     "ppc_spend_30d": 500.85,
