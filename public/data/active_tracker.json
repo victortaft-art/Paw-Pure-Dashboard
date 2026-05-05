@@ -2,7 +2,7 @@
   "_schema_version": "2.0",
   "_schema_note": "3-section schema: weekly_strategy (current + 2 weeks), tracking (running experiments + metric variance), backlog (full queue with execution steps).",
   "generated": "2026-04-30",
-  "today": "2026-04-30",
+  "today": "2026-05-04",
   "weekly_strategy": [
     {
       "week_start": "2026-04-27",
@@ -43,7 +43,8 @@
           "id": "EXP-035",
           "scheduled_date": "2026-04-28",
           "title": "Request-a-Review for Apr 25 buyers",
-          "status": "TODO"
+          "status": "DONE",
+          "completed_date": "2026-05-04"
         },
         {
           "id": "EXP-040",
@@ -126,7 +127,8 @@
           "id": "EXP-061",
           "scheduled_date": "2026-04-30",
           "title": "Kill SP_Test_Expansion + fold KW into Manual",
-          "status": "TODO"
+          "status": "DONE",
+          "completed_date": "2026-05-04"
         },
         {
           "id": "EXP-062",
@@ -274,7 +276,10 @@
       "direction": "up",
       "expected": "2-3 new reviews in 7 days. Recover Amazon's Choice badge.",
       "actual": "Stars stable at 4.5 but no new reviews this week. Badge LOST since Apr 20. 4 fountain + 2 filter Apr 25 buyers are next-up requests.",
-      "learning": "Without a workflow to send reviews on schedule, the ask drifts. Need to systematize the Apr 25 batch this week."
+      "learning": "Without a workflow to send reviews on schedule, the ask drifts. Need to systematize the Apr 25 batch this week.",
+      "status": "DONE",
+      "completed_date": "2026-05-04",
+      "outcome_note": "Founder confirmed all available eligible orders had review requests sent on 2026-05-04 (Apr 25 buyer + Apr 29 buyer). Going forward managed by EXP-058 (automation) cadence."
     },
     {
       "id": "EXP-040",
@@ -391,7 +396,9 @@
         "For each of 6 orders, click order \u2192 Contact buyer \u2192 'Request a Review' (one-click button)",
         "Schedule any buyer past their 5-day delivery mark today; rest at delivery+5",
         "Log in cash_balance.json or new reviews_log.json with date sent."
-      ]
+      ],
+      "status": "DONE",
+      "completed_date": "2026-05-04"
     },
     {
       "id": "EXP-040",
@@ -427,7 +434,10 @@
         "Pull last 14d daily velocity from PL_Data files",
         "If velocity > 0.6/day: absorb surcharge",
         "If velocity < 0.5/day: submit FBA removal order for ~150 units before midnight Apr 30"
-      ]
+      ],
+      "status": "SUPERSEDED",
+      "superseded_by": "EXP-063",
+      "superseded_reason": "Founder decision 2026-05-04: hold inventory, accept surcharge. Replaced by discount campaign experiment (EXP-063)."
     },
     {
       "id": "EXP-049",
@@ -445,7 +455,9 @@
         "A+ Content: upload 1 image of small dog drinking from fountain (replace decorative cat image)",
         "Submit for review. Approval 24-48h.",
         "After live: do NOT touch cat-side bullets/title. Stability protects re-earning Amazon's Choice."
-      ]
+      ],
+      "gating_note": "Now gated by EXP-069 result. Ship listing bridge ONLY if Stage 1 dog validation shows clicks-without-conversion (proves audience exists but listing blocks).",
+      "depends_on": "EXP-069"
     },
     {
       "id": "EXP-050",
@@ -466,7 +478,9 @@
         "Add negatives: `cat`, `kitten`, `kitty`",
         "Save and launch.",
         "Monitor daily. If 14d ACoS > 60%, pause."
-      ]
+      ],
+      "gating_note": "Now gated by EXP-069 result. Full dog PPC validation graduates from Stage 1 only if Stage 1 produces 1+ sales.",
+      "depends_on": "EXP-069"
     },
     {
       "id": "EXP-021",
@@ -802,7 +816,9 @@
         "unit": "keywords",
         "direction": "up",
         "how_to_measure": "Count of dog KWs (those matching DOG_REGEX) where rank_history shows organic rank \u2264 306"
-      }
+      },
+      "gating_note": "Now gated by EXP-069 result. Wave 3 dog bullet copy ships only after Stage 1 audience validation.",
+      "depends_on": "EXP-069"
     },
     {
       "id": "EXP-061",
@@ -830,14 +846,16 @@
         "unit": "impressions",
         "direction": "up",
         "how_to_measure": "Ads API SP Targeting report \u2014 filter keyword 'cat drinking fountain'."
-      }
+      },
+      "status": "DONE",
+      "completed_date": "2026-05-04"
     },
     {
       "id": "EXP-062",
       "title": "Upgrade filter listing (B0FWXJ1GKT) to A+ Premium",
       "scheduled_date": "2026-05-04",
       "decision_date": "2026-05-18",
-      "priority": "MEDIUM",
+      "priority": "HIGH",
       "growth_metric": "Filter CVR + brand consistency",
       "listing": "filters",
       "assumption": "Bundle (B0GMDM6CG2) and main fountain (B0DJHQVJYF) are both on A+ Premium. Filter (B0FWXJ1GKT) is the only Paw Pure listing still on basic A+ Content. A+ Premium adds video modules, 1000-pixel hero rows, hover-zoom, and comparison tables \u2014 all of which lift CVR ~5-15% per Amazon's own benchmarks for sub-$30 SKUs.",
@@ -863,7 +881,138 @@
         "unit": "%",
         "direction": "up",
         "how_to_measure": "SP-API Business Reports \u2014 sessions_total / units_ordered for B0FWXJ1GKT, weekly delta vs prior 14d baseline."
-      }
+      },
+      "priority_change_note": "Bumped 2026-05-04: filter cross-sell campaign live, listing must convert."
+    },
+    {
+      "id": "EXP-063",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "title": "Discount campaign on aged inventory \u2014 Coupon or Lightning Deal",
+      "hypothesis": "A 15-20% coupon on the fountain (aged inventory subset) drives velocity and avoids further surcharge accumulation. Founder accepts current surcharge but wants to reduce SKU exposure without reverse-logistics cost.",
+      "rationale": "Days of cover currently 1244 (fountain) at 7d velocity. Surcharge already paid May 1. Removal/return cost $X per unit + ships back to supplier. A coupon costs only the discount + clicks. If 15% off ($42.49) lifts daily velocity from 0.4 \u2192 1.0 units/day, days of cover drop from 1244 \u2192 ~360 in 30 days.",
+      "execution_steps": [
+        "Seller Central \u2192 Advertising \u2192 Coupons \u2192 Create new coupon",
+        "Select B0DJHQVJYF",
+        "Discount: 15% off ($7.50 off)",
+        "Budget: $50 (covers ~6 redemptions)",
+        "Eligibility: All customers",
+        "Schedule: 14 days starting tomorrow",
+        "Track via dashboard Economics tab \u2014 watch units_7d trend"
+      ],
+      "decision_after": "14 days. Score: redemptions, velocity delta, ACoS impact. If velocity > 0.7 units/day with positive contribution margin \u2192 renew + tighten coupon. If <0.5 or negative margin \u2192 kill, accept surcharge as cost of holding."
+    },
+    {
+      "id": "EXP-064",
+      "status": "TODO",
+      "priority": "CRITICAL",
+      "title": "PPC restructure \u2014 concentrate budget on 'cat water fountain stainless steel' winners + fix ad-group match-type hygiene",
+      "hypothesis": "All 15 KWs are CAMPAIGN_OUT_OF_BUDGET. Only 2 KW variants (both 'stainless steel cat water fountain' word-order swaps) generate sales. The 'Phrase Match' ad group contains 7 Exact + 1 Phrase KW (name is a lie) and shares duplicate KWs with the Manual ad group, causing internal auction competition. Restructuring to: (a) pause 11 dead KWs, (b) raise daily budget cap to remove OUT_OF_BUDGET status, (c) silo match types by ad group, (d) deduplicate KWs across ad groups \u2014 should drop ACoS from 66% to <40% by routing all budget to converters.",
+      "rationale": "May 1-4 reality check: $132.49 spent, $199.96 sales, 4 units. ACoS 66.3%. 13 of 15 KWs took 0 clicks. They are not failing because of bid \u2014 bid is at suggested median or above. They fail because they get 0 impressions: budget is exhausted on the winners before low-volume KWs ever reach auction. Simultaneously, the 'Phrase Match' ad group's structural mess fragments auction equity for the converters.",
+      "execution_steps": [
+        "Pause 11 dead-weight KWs (ENABLED\u2192PAUSED) listed in 2026-05-04 review",
+        "Raise daily budget on Manual Keywords Campaign by 50% (currently capping mid-day)",
+        "Phase 2 (next session): Move all Exact KWs to a new 'Cat Fountain \u2014 Exact' ad group; move Phrase KW to a new 'Cat Fountain \u2014 Phrase' ad group; delete duplicates across groups",
+        "Phase 3: Add 1-2 phrase-match seeds for harvesting in dedicated Phrase ad group",
+        "Phase 4: Add 1 broad-match seed in dedicated Broad ad group for discovery, capped at 5% of budget"
+      ],
+      "decision_after": "7 days post-restructure. Score: ACoS, daily budget utilization (should hit cap, not over-cap), impression share on winners (target >15%), # of winning KWs.",
+      "feeds_into": [
+        "EXP-065 (Broad)",
+        "EXP-066 (PAT defensive)",
+        "EXP-067 (PAT offensive)"
+      ]
+    },
+    {
+      "id": "EXP-065",
+      "status": "TODO",
+      "priority": "HIGH",
+      "title": "Broad match discovery group \u2014 capped 10% budget, Cerebro-seeded, pre-negated",
+      "depends_on": "EXP-064",
+      "hypothesis": "Modern Amazon Broad match uses semantic intent (not just word-stem expansion). Seeded with KWs that competitors rank for but we don't \u2014 sourced from Cerebro multi-ASIN \u2014 Broad will surface long-tail queries we'd never manually seed. Capped at 10% of campaign budget with the 26 existing negatives pre-loaded, it should produce 1-2 new convertible KWs per week to graduate into the Exact ad group.",
+      "rationale": "Discovery is the gap in our current keyword set. Manual ad groups are pattern-locked on 'cat water fountain stainless steel' variants. We have no mechanism to find queries like 'cat fountain that won't grow algae' or 'best cat fountain for tile floor' that buyers actually type. Broad in a separate ad group, with strict spend cap and aggressive negation, is the cheapest way to harvest these.",
+      "execution_steps": [
+        "Pull Cerebro multi-ASIN report on locked 7 competitors (Veken, FEELNEEDY, Pektaco, Selene, oneisall, APAUK)",
+        "Filter: KWs where competitor_avg_rank <= 30 AND we_rank IS NULL (gap KWs)",
+        "Filter again: SV >= 500 AND no clear irrelevance",
+        "Seed top 8-12 as Broad match in NEW ad group 'Cat Fountain \u2014 Broad'",
+        "Pre-load all 26 existing negatives + add new generics: 'dog', 'reptile', 'bird', 'large breed', 'outdoor'",
+        "Set bids at suggested-low (typically 60-70% of suggested-median)",
+        "Set ad group budget cap at 10% of campaign daily budget",
+        "Run 14 days \u2014 auto-graduate any KW with >2 conversions to Exact ad group at higher bid"
+      ],
+      "decision_after": "14 days. Score: # conversions, # graduates to Exact, ACoS for the Broad group only (<60% acceptable for discovery), waste rate (<30% spend on terms we negate)."
+    },
+    {
+      "id": "EXP-066",
+      "status": "TODO",
+      "priority": "HIGH",
+      "title": "PAT defensive \u2014 own-ASIN cross-targeting (fountain\u2194bundle, fountain\u2192filter)",
+      "depends_on": "EXP-064",
+      "hypothesis": "Buyers viewing fountain PDP will see ~6 'Sponsored Products related to this item' tiles. Currently those are filled by PETLIBRO, Veken, etc. Targeting our OWN bundle + filter on the fountain PDP (and vice versa) gives near-zero waste \u2014 every click is from a customer already in our funnel. Should lift bundle units from 0 toward parity with fountain.",
+      "rationale": "Bundle has shipped a fully refreshed listing (EXP-055) and is still at 0 sales/week. Issue is exposure, not copy. PAT defensive is the cheapest way to fix exposure \u2014 we own the ASINs, we set the bids, and the audience is already pre-qualified.",
+      "execution_steps": [
+        "Create campaign 'PAT_Defensive_OwnASIN' with $5/day budget",
+        "Ad group 1: Target B0DJHQVJYF (fountain PDP) \u2192 promote B0GMDM6CG2 (bundle) and B0FWXJ1GKT (filter)",
+        "Ad group 2: Target B0FWXJ1GKT (filter PDP) \u2192 promote B0GMDM6CG2 (bundle) and B0DJHQVJYF (fountain)",
+        "Ad group 3: Target B0GMDM6CG2 (bundle PDP) \u2192 promote B0FWXJ1GKT (filter)",
+        "Bids: start at $0.75 (low to test placement)",
+        "Run 14 days"
+      ],
+      "decision_after": "14 days. Score: bundle units sold, filter cross-attach rate to fountain orders, total ACoS for PAT_Defensive group (<25% target \u2014 we're not paying to acquire new customers)."
+    },
+    {
+      "id": "EXP-067",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "title": "PAT offensive \u2014 weak competitor ASINs (lower stars/reviews than us)",
+      "depends_on": "EXP-064 + competitor_intel.json scrape with current data",
+      "hypothesis": "Targeting competitor PDPs where the competitor has WEAKER signals than us (lower star rating, fewer reviews, OR materially lower price implying lower-quality positioning) wins comparison shoppers at 30-50% lower CPC than keyword-targeted traffic. Should produce ACoS in 40-60% range \u2014 better than our current keyword ACoS of 66%.",
+      "rationale": "PETLIBRO, oneisall and APAUK all have ASINs with characteristics we beat: APAUK has fewer reviews, oneisall has wireless gap, PETLIBRO recently dropped price (sign of weakness). EXP-056 already proposed PETLIBRO targeting; this generalizes the framework.",
+      "execution_steps": [
+        "Refresh competitor_intel.json scrape (run helium10_pipeline/competitor_snapshot.py)",
+        "Filter to competitors where: (rating < ours OR review_count < ours OR price > 1.2x ours)",
+        "Cross-reference with Cerebro: their top 5 KWs they rank organic 1-15 on",
+        "Create campaign 'PAT_Offensive_Competitors' with $5/day initial budget",
+        "Ad group per qualified competitor (max 4 ad groups Wave 1: PETLIBRO, oneisall, APAUK, Selene)",
+        "Bids start at $1.10 (between phrase and exact average)",
+        "Run 14 days, kill any ad group with ACoS > 80%"
+      ],
+      "decision_after": "14 days. Score: ACoS per ad group, sales velocity, attribution lift on fountain SKU, conquesting %."
+    },
+    {
+      "id": "EXP-068",
+      "status": "TODO",
+      "priority": "HIGH",
+      "title": "Dog market sizing \u2014 Cerebro pull on top dog fountain ASINs (no spend)",
+      "depends_on": "Tomorrow's Helium 10 session",
+      "hypothesis": "Same physical product, parallel audience. If combined SV on top 10 dog-water-fountain queries is >=5,000/mo, dog adjacency is worth a $50 validation test. If <2,000/mo, defer until cat is profitable. This step is FREE \u2014 just data collection.",
+      "rationale": "Adjacency is the cheapest growth lever ONLY if the demand pool is real. Building campaigns and rewriting copy without this measurement risks fragmenting a budget that already can't fund cat winners. One Cerebro pull tells us go/no-go.",
+      "execution_steps": [
+        "Identify top 3-5 dog-water-fountain ASINs (PETKIT, Wopet, Veken Dog, etc.) via Amazon search 'wireless dog water fountain'",
+        "Cerebro multi-ASIN pull on those ASINs",
+        "Filter: SV >= 500, relevancy score >= 7",
+        "Sum SV across top 10 KWs in result",
+        "Decision: SV_sum >= 5000 \u2192 green-light EXP-069 (Stage 1 validation). 2000-5000 \u2192 smaller test ($30/wk). <2000 \u2192 defer 30 days."
+      ],
+      "decision_after": "Same session \u2014 output is a decision, not a metric trend."
+    },
+    {
+      "id": "EXP-069",
+      "status": "QUEUED",
+      "priority": "MEDIUM",
+      "title": "Dog Stage 1 \u2014 cheap PPC validation against cat-coded listing ($50/wk cap)",
+      "depends_on": "EXP-068 green-light",
+      "hypothesis": "If we drive dog-search-term traffic to our current cat-coded listing, click-through and conversion behavior will tell us whether the bottleneck is (a) demand (no clicks) or (b) listing fit (clicks but no buys) or (c) ready to scale (clicks + buys). $50/wk is the cheapest way to learn this without rewriting copy first.",
+      "rationale": "Speculative listing rewrites for an unproven audience risk damaging the cat baseline. Stage 1 reverses the order: validate audience exists first, then invest in copy.",
+      "execution_steps": [
+        "Create campaign 'Dog_Discovery' with $3/day budget",
+        "Ad group 1 (Phrase): 'wireless dog water fountain', 'small dog water fountain', 'dog water fountain stainless steel' at $1.10 bid",
+        "Ad group 2 (PAT offensive): 2 weak dog-fountain competitor ASINs (rating < ours OR price > 1.2x ours) at $0.75 bid",
+        "DO NOT change listing copy",
+        "Run 14 days"
+      ],
+      "decision_after": "14 days. Decision tree: (a) <30 dog-search clicks \u2192 market thinner than expected, kill. (b) >=30 clicks + 0 sales \u2192 listing-fit is the blocker \u2192 ship EXP-049/060 listing bridge. (c) >=30 clicks + 1+ sales \u2192 audience is real and listing-tolerant \u2192 graduate to Stage 2/3 expansion."
     }
   ],
   "data_freshness": {
