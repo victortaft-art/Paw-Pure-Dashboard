@@ -1,0 +1,292 @@
+{
+  "_generated": "2026-05-06",
+  "_window": {
+    "start": "2026-04-03",
+    "end": "2026-05-07"
+  },
+  "_count": 25,
+  "series": [
+    {
+      "date": "2026-04-03",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-03.json"
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-04.json"
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-05.json"
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-06.json"
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-08.json"
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-09.json"
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "sessions": null,
+      "cvr": 3.8,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-11.json"
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "sessions": null,
+      "cvr": 2.74,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-12.json"
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "sessions": null,
+      "cvr": 3.21,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-13.json"
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "sessions": null,
+      "cvr": 4.76,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-14.json"
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "sessions": null,
+      "cvr": 7.14,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-15.json"
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "sessions": null,
+      "cvr": 4.76,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-16.json"
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "sessions": null,
+      "cvr": 5.56,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-17.json"
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "sessions": null,
+      "cvr": 1.01,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-19.json"
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-20.json"
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "sessions": 157,
+      "cvr": 3.18,
+      "revenue": 214.96,
+      "units": 5,
+      "page_views": 209,
+      "_sources": {
+        "sc": "SC_Data_2026-04-23.json"
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-27.json"
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-28.json"
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-29.json"
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "sessions": null,
+      "cvr": null,
+      "revenue": null,
+      "units": null,
+      "page_views": null,
+      "_sources": {
+        "sc": "SC_Data_2026-04-30.json"
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "sessions": 88,
+      "cvr": 9.09,
+      "revenue": 334.94,
+      "units": 8,
+      "page_views": 125,
+      "_sources": {
+        "sc": "SC_Data_2026-05-01.json"
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "sessions": 81,
+      "cvr": 4.94,
+      "revenue": 169.97,
+      "units": 4,
+      "page_views": 113,
+      "_sources": {
+        "sc": "SC_Data_2026-05-04.json"
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "sessions": 98,
+      "cvr": 5.1,
+      "revenue": 219.96,
+      "units": 5,
+      "page_views": 125,
+      "_sources": {
+        "sc": "SC_Data_2026-05-05.json"
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "sessions": 84,
+      "cvr": 8.33,
+      "revenue": 282.25,
+      "units": 7,
+      "page_views": 101,
+      "_sources": {
+        "sc": "SC_Data_2026-05-06.json"
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "ad_spend": 26.66,
+      "ad_sales_7d": 49.99,
+      "clicks": 12,
+      "impressions": 7002,
+      "ctr": 0.0017,
+      "cpc": 2.2217,
+      "sessions": 81,
+      "cvr": 7.41,
+      "revenue": 232.26,
+      "units": 6,
+      "page_views": 96,
+      "_sources": {
+        "ads": "ads_2026-05-07.json",
+        "sc": "SC_Data_2026-05-07.json"
+      }
+    }
+  ]
+}

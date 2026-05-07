@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+
+# Pipeline (automation/) — secrets and transient artifacts
+automation/.env
+automation/**/__pycache__/
+automation/amazon_api/data/raw/
+automation/amazon_api/data/logs/

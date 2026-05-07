@@ -1,0 +1,116 @@
+name: Daily data refresh
+
+# Runs the Paw Pure pipeline (amazon_api/ + helium10_pipeline/ + derived
+# builders), commits new JSON data files to public/data/, pushes, and deploys
+# to Vercel production.
+#
+# Schedule: 10:00 UTC-5 (= 15:00 UTC) every day.
+# GitHub Actions cron is always UTC. UTC-5 is fixed offset (no DST), so
+# 0 15 * * * always lines up with 10am local for the user.
+#
+# Manual run: GitHub UI → Actions → "Daily data refresh" → "Run workflow",
+# or `gh workflow run daily-refresh.yml`.
+
+on:
+  schedule:
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed for the GITHUB_TOKEN-authenticated git push
+
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      # SP-API
+      SP_API_CLIENT_ID:        ${{ secrets.SP_API_CLIENT_ID }}
+      SP_API_CLIENT_SECRET:    ${{ secrets.SP_API_CLIENT_SECRET }}
+      SP_API_REFRESH_TOKEN:    ${{ secrets.SP_API_REFRESH_TOKEN }}
+      SP_API_SELLER_ID:        ${{ secrets.SP_API_SELLER_ID }}
+      SP_API_REGION:           na
+      SP_API_ENDPOINT:         https://sellingpartnerapi-na.amazon.com
+      SP_API_MARKETPLACE_ID:   ATVPDKIKX0DER
+      # Ads API
+      ADS_API_CLIENT_ID:       ${{ secrets.ADS_API_CLIENT_ID }}
+      ADS_API_CLIENT_SECRET:   ${{ secrets.ADS_API_CLIENT_SECRET }}
+      ADS_API_REFRESH_TOKEN:   ${{ secrets.ADS_API_REFRESH_TOKEN }}
+      ADS_API_PROFILE_ID:      ${{ secrets.ADS_API_PROFILE_ID }}
+      # Vercel
+      VERCEL_TOKEN:            ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID:           ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID:       ${{ secrets.VERCEL_PROJECT_ID }}
+
+    steps:
+      - name: Checkout dashboard repo
+        uses: actions/checkout@v4
+        with:
+          # Use a token that allows pushing back to the same repo. The
+          # default GITHUB_TOKEN works for same-repo pushes when permissions
+          # contents: write is set above.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'automation/amazon_api/requirements.txt'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r automation/amazon_api/requirements.txt
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Run daily pipeline
+        run: |
+          python3 automation/amazon_api/daily_pipeline.py
+
+      - name: Commit refreshed data (if changed)
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Stage the data buckets the pipeline writes to. Keep this in sync
+          # with cron_daily.sh's git-add scope plus the derived files.
+          git add public/data/sc_data \
+                  public/data/pl_data \
+                  public/data/manifest.json \
+                  public/data/active_tracker.json \
+                  public/data/daily_kpis_history.json \
+                  public/data/keyword_history.json \
+                  public/data/experiment_advisor*.json \
+                  || true
+
+          if git diff --cached --quiet; then
+            echo "no_changes=true" >> "$GITHUB_OUTPUT"
+            echo "(no data changes — skipping commit)"
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "data: auto-refresh ${DATE}"
+            git push origin HEAD:main
+            echo "no_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy to Vercel (prod)
+        # VERCEL_ORG_ID + VERCEL_PROJECT_ID env vars link to the existing
+        # paw-pure-dash project without needing `.vercel/project.json`
+        # (which is gitignored).
+        run: |
+          vercel deploy --prod --yes --token="$VERCEL_TOKEN"

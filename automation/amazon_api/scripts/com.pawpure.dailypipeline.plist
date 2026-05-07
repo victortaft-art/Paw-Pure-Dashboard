@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.pawpure.dailypipeline</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/victortaft/Documents/Claude/Projects/AI Automations/amazon_api/scripts/cron_daily.sh</string>
+    </array>
+
+    <!-- 07:00 local time, every day -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- If the Mac was asleep at 07:00, run the job once it wakes. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/victortaft/Documents/Claude/Projects/AI Automations/amazon_api/data/logs/launchd.out</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/victortaft/Documents/Claude/Projects/AI Automations/amazon_api/data/logs/launchd.err</string>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/victortaft/Documents/Claude/Projects/AI Automations</string>
+</dict>
+</plist>

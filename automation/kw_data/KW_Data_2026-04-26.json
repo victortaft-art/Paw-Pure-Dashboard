@@ -1,0 +1,113 @@
+{
+  "_schema_version": "1.0",
+  "data_source": "partially_real",
+  "_source": "Amazon.com search results (Claude-in-Chrome live scrape Apr 26). BSR from SP-API catalog. Stars from listing page. PPC data from SP-API Finances (spend only, no impressions/clicks).",
+  "runDate": "2026-04-26",
+  "asin": "B0DJHQVJYF",
+  "amazon_choice_badge": {
+    "active": false,
+    "lost_since": "approx 2026-04-20",
+    "_note": "Badge was active Apr 17-19 (confirmed). Now confirmed absent Apr 26. FEELNEEDY B0F9WQGMH7 holds Amazon's Choice: Overall Pick for 'wireless cat water fountain'. To regain badge: (1) recover stars to 4.5+, (2) sustained sales velocity, (3) keep PPC active.",
+    "_maintenance_rules": [
+      "DO NOT change title — title stability is needed to re-earn badge.",
+      "Keep FBA in stock — 368 units available (healthy).",
+      "URGENT: Recover star rating to 4.5+ via new positive reviews.",
+      "Keep price at $49.99 — do not change while optimizing.",
+      "Keep PPC running — but audit spend immediately ($500.85/7d is unsustainable)."
+    ]
+  },
+  "tracked_keywords": [
+    {
+      "keyword": "wireless cat water fountain",
+      "search_volume": 18100,
+      "organic_rank": "not in top 60",
+      "organic_rank_delta": "unknown (not tracked previously)",
+      "ppc_status": "active",
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "tag": "core — BADGE LOST",
+      "_notes": "Paw Pure not in top 60 organic results for this keyword. Badge gone to FEELNEEDY. With 4.2 stars and no badge, organic visibility is very low. Focus PPC spend on more targeted keywords where we can compete."
+    },
+    {
+      "keyword": "cat water fountain stainless steel wireless",
+      "search_volume": 6400,
+      "organic_rank": 60,
+      "ppc_status": "active — bid increased by Victor Apr 17",
+      "match_type": "phrase",
+      "campaign": "Manual Keywords Campaign",
+      "tag": "core — WAS WINNER, SLIPPING",
+      "_notes": "Organic rank #60 (last on page 1 / top of page 2 area). Was best performing keyword historically. With 4.2 stars vs FEELNEEDY 4.4 and PEKTACO 4.5, organic conversion from this keyword is suppressed. Keep PPC active here but monitor ACoS."
+    },
+    {
+      "keyword": "wireless stainless steel pet water fountain",
+      "search_volume": 5600,
+      "ppc_status": "SHOULD BE PAUSED — EXP-024 decision was Apr 18",
+      "match_type": "broad",
+      "tag": "core — WASTE",
+      "_notes": "4+ weeks zero conversions. Should have been paused Apr 18. If Victor hasn't paused yet, do it immediately. With $500.85 total 7d spend this is the first place to save money."
+    },
+    {
+      "keyword": "cordless cat water fountain",
+      "search_volume": 8900,
+      "ppc_status": "auto — budget $10/day",
+      "match_type": "auto",
+      "campaign": "Close Automatic Campaign",
+      "tag": "core",
+      "_notes": "Auto campaign at $10/day. With overall spend at $71/day avg, the auto campaign is only $10 of the $71. The other $61/day is from manual keywords. Consider pausing high-ACoS manual keywords before touching auto."
+    },
+    {
+      "keyword": "battery operated cat fountain",
+      "search_volume": 7200,
+      "ppc_status": "not_indexed",
+      "tag": "opportunity — URGENT ADD",
+      "_notes": "Still not added despite being Priority #1 since Apr 17. With badge lost, this exact-match keyword is now even more important to capture targeted traffic. Add at $1.00 bid (lower from $1.30 given current ACoS crisis)."
+    },
+    {
+      "keyword": "rechargeable cat water fountain",
+      "search_volume": 4200,
+      "ppc_status": "not_indexed",
+      "tag": "opportunity",
+      "_notes": "Deferred due to ACoS crisis. Add only after stabilizing spend on existing campaigns."
+    },
+    {
+      "keyword": "cat water fountain bundle",
+      "search_volume": 1800,
+      "ppc_status": "not_indexed",
+      "tag": "opportunity — bundle PPC",
+      "_notes": "Bundle at 43% margin still unlaunched. With ad spend crisis, launch this carefully at $0.50 bid to test."
+    }
+  ],
+  "bsr_tracker": {
+    "asin": "B0DJHQVJYF",
+    "category": "Pet Supplies",
+    "bsr_today": 59768,
+    "_bsr_data_source": "REAL — SP-API catalog endpoint, scraped Apr 26",
+    "bsr_subcategory": { "rank": 859, "category": "Cat Fountains" },
+    "bsr_apr23": 137864,
+    "bsr_apr20": 103823,
+    "bsr_apr19": 81677,
+    "bsr_7day_improvement": 78096,
+    "bsr_trend": "STRONG RECOVERY — 5 fountain + 2 filter orders on Apr 22 + Apr 25 drove massive BSR improvement. Sub-60K is a new record.",
+    "_apr25_surge_note": "Apr 25 had 4 fountain + 2 filter orders in a single day — best sales day in account history. Possible cause: PPC ad serving surge, organic ripple from prior sessions, or external traffic."
+  },
+  "sessions_outlook": {
+    "confirmed_7day_sessions": null,
+    "_sessions_note": "Reports API quota exceeded — sessions not available this run. Last confirmed: 157 sessions/7d (Apr 23 data). Expected to be higher given Apr 25 sales surge.",
+    "baseline_sessions_per_day_est": 20,
+    "_est_basis": "Apr 23 showed 22.4 sessions/day. Badge gone so volume likely similar or slightly lower.",
+    "cvr_est": "3-4% based on Apr 23 data (3.18%). Apr 25 surge may have been driven by high CVR on a spike day."
+  },
+  "keyword_summary": {
+    "total_tracked": 7,
+    "active_in_ppc": 3,
+    "converting_est": 2,
+    "zero_conversion_ppc": 1,
+    "opportunity_not_targeted": 3,
+    "amazon_choice_active": false,
+    "bsr": 59768,
+    "bsr_delta_vs_apr23": -78096,
+    "stars": 4.5,
+    "stars_delta_vs_apr19": 0.0,
+    "wow_note": "BSR record 59,768 and stars stable at 4.5, but Amazon's Choice badge gone. Two urgent actions: (1) Fix star rating — check for negative reviews, get positive reviews from recent buyers. (2) AUDIT PPC SPEND — $500.85 in 7 days is unsustainable at $284.95 revenue."
+  }
+}

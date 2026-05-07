@@ -1,0 +1,121 @@
+{
+  "_schema_version": "1.0",
+  "data_source": "partially_real",
+  "_source": "BSR real (Manage Inventory). Amazon's Choice badge confirmed sustained. PPC keyword status estimated (Campaign Manager unavailable). Session data real (Business Reports).",
+  "runDate": "2026-04-19",
+  "asin": "B0DJHQVJYF",
+  "amazon_choice_badge": {
+    "active": true,
+    "detected": "2026-04-17",
+    "days_active": 2,
+    "bsr_impact": "BSR improved 23,994 positions in 2 days (105,671 → 81,677) with only 1 sale (Mallory Apr 18). Badge is sustaining BSR even on 0-sale days by driving sessions.",
+    "session_impact_confirmed": "397 sessions in 7-day window (Business Reports, real) vs ~72 estimated pre-badge = 5.5x session volume increase. Traffic surge ongoing.",
+    "_maintenance_rules": [
+      "Do NOT change title — EXP-019 title earned the badge. Stability is critical.",
+      "Keep FBA in stock — 374 units available.",
+      "Maintain 4.5+ star rating — request reviews urgently.",
+      "Keep price at $49.99 — do not raise while badge is active.",
+      "Keep PPC running — ad activity signals active listing management to Amazon."
+    ]
+  },
+  "tracked_keywords": [
+    {
+      "keyword": "wireless cat water fountain",
+      "search_volume": 18100,
+      "organic_rank": null,
+      "sponsored_rank": null,
+      "ppc_status": "active",
+      "ppc_acos_7d_est": 38.0,
+      "match_type": "broad",
+      "campaign": "Manual Keywords Campaign",
+      "tag": "core — AMAZON'S CHOICE",
+      "_notes": "Amazon's Choice badge likely for THIS keyword (18,100 SV, highest volume we're indexed for). Broad match at high SV is generating irrelevant clicks. Recommend reducing bid 15% — badge doing organic work. Monitor ACoS."
+    },
+    {
+      "keyword": "cat water fountain stainless steel wireless",
+      "search_volume": 6400,
+      "ppc_status": "active — BID INCREASED by Victor Apr 17",
+      "ppc_acos_7d_est": 28.0,
+      "match_type": "phrase",
+      "campaign": "Manual Keywords Campaign",
+      "tag": "core — WINNER",
+      "_notes": "Best performing keyword. Bid increase Apr 17 was correct. With Amazon's Choice badge + stainless steel title match, this should continue to outperform. ACoS estimated down to ~28% from 30.8%. Keep bidding aggressively."
+    },
+    {
+      "keyword": "wireless stainless steel pet water fountain",
+      "search_volume": 5600,
+      "ppc_status": "SHOULD BE PAUSED — EXP-024 decision date was Apr 18",
+      "ppc_acos_7d_est": null,
+      "ppc_cvr_pct": 0,
+      "match_type": "broad",
+      "tag": "core — WASTE",
+      "_notes": "4+ zero-conversion weeks. Decision date Apr 18 was yesterday. If Victor didn't pause, do it immediately. Confirmed waste: $14/week for no return."
+    },
+    {
+      "keyword": "cordless cat water fountain",
+      "search_volume": 8900,
+      "ppc_status": "auto — budget reduced to $10/day",
+      "match_type": "auto",
+      "campaign": "Close Automatic Campaign",
+      "tag": "core",
+      "_notes": "Budget cut to $10/day by Victor Apr 17. Auto campaign now constrained. Monitor conversion rate at this budget. If 0 conversions by Apr 24, pause fully (saves $70/week)."
+    },
+    {
+      "keyword": "battery operated cat fountain",
+      "search_volume": 7200,
+      "ppc_status": "not_indexed",
+      "tag": "opportunity — ADD THIS WEEK",
+      "_notes": "7,200 SV. Amazon's Choice badge will win exact match placement. Add as exact match at $1.30 bid. This was Priority #1 new keyword on Apr 17 — still not added. Act now."
+    },
+    {
+      "keyword": "rechargeable cat water fountain",
+      "search_volume": 4200,
+      "ppc_status": "not_indexed",
+      "tag": "opportunity",
+      "_notes": "Add as phrase match after search term report review. $0.90 bid starting point."
+    },
+    {
+      "keyword": "cat water fountain bundle",
+      "search_volume": 1800,
+      "ppc_status": "not_indexed",
+      "tag": "new_opportunity — bundle PPC",
+      "_notes": "Bundle ASIN B0GMDM6CG2 has 43% gross margin. No PPC. Launch dedicated bundle campaign — exact match, $0.80-1.00 bid. 1 bundle/week = $27.85 gross profit."
+    }
+  ],
+  "bsr_tracker": {
+    "asin": "B0DJHQVJYF",
+    "category": "Pet Supplies",
+    "bsr_today": 81677,
+    "_bsr_data_source": "REAL — Manage Inventory, scraped ~10:42 PM PDT Apr 19",
+    "bsr_apr17": 105671,
+    "bsr_apr16": 145776,
+    "bsr_7day_ago": 175000,
+    "bsr_trend": "ACCELERATING — 2-day improvement of 23,994 positions with only 1 sale",
+    "bsr_2day_improvement": 23994,
+    "bsr_7day_improvement": 93323,
+    "bsr_note": "81,677 — sub-82K for first time ever. 2-day improvement of 23,994 driven by Mallory Apr 18 + Amazon's Choice badge organic signal. BSR improved even on 0-sale Apr 19 — badge is acting as a BSR floor. Sub-80K BSR is now just 1-2 sales away."
+  },
+  "sessions_outlook": {
+    "confirmed_7day_sessions": 397,
+    "_sessions_source": "real — Business Reports Detail Page by Child Item",
+    "sessions_per_day_7day": 56.7,
+    "baseline_pre_badge": "8-10 sessions/day",
+    "current_with_badge": "~57 sessions/day (confirmed)",
+    "badge_session_multiplier": "5.7x",
+    "projected_cvr_recovery": "Currently 1.07% (traffic surge suppressing CVR). Expected to recover to 3-4% as traffic normalizes over 2-4 weeks.",
+    "projected_daily_sales_when_cvr_recovers": "1.7-2.3 units/day at 3-4% CVR with 57 sessions/day",
+    "_note": "At 57 sessions/day and 3% CVR = 1.71 units/day = ~12 units/week = ~$600/week revenue. This is the target state when traffic normalizes."
+  },
+  "keyword_summary": {
+    "total_tracked": 7,
+    "active_in_ppc": 3,
+    "converting_this_week": 2,
+    "zero_conversion_ppc": 1,
+    "opportunity_not_targeted": 3,
+    "amazon_choice_active": true,
+    "bsr": 81677,
+    "bsr_delta_2day": -23994,
+    "sessions_7day": 397,
+    "wow_note": "BSR sub-82K (new record). 397 sessions in 7 days (5.7x pre-badge). Amazon's Choice badge sustained day 2. Critical next steps: (1) Pull search term report, (2) Pause EXP-024 waste, (3) Add 'battery operated cat fountain' exact match, (4) Harvest converting terms from search term report."
+  }
+}

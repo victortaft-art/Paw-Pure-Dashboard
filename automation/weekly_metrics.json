@@ -1,0 +1,112 @@
+{
+  "_instructions": "Update these numbers every Monday morning before 9 AM. Pull from Amazon Seller Central → Business Reports (sessions, CVR) and Campaign Manager (spend, ACoS). Takes about 2 minutes.",
+  "_last_updated": "2026-04-03",
+
+  "fountain": {
+    "sku": "SKU1 - Wireless Fountain",
+    "asin": "B0C8TG35BF",
+    "price": 49.99,
+    "sessions_7day": 0,
+    "sessions_30day": 0,
+    "cvr_percent": 0,
+    "units_sold_7day": 0,
+    "units_sold_30day": 0,
+    "ad_spend_7day": 0,
+    "acos_percent": 0,
+    "revenue_7day": 0,
+    "reviews_total": 20,
+    "star_rating": 4.5,
+    "_notes": "Pull from Business Reports > Detail Page Sales and Traffic > Unit Session Percentage = CVR"
+  },
+
+  "filters": {
+    "sku": "SKU2 - Replacement Filters 4+4",
+    "price": 20.00,
+    "units_sold_7day": 0,
+    "units_sold_30day": 0,
+    "revenue_7day": 0,
+    "reviews_total": 0,
+    "star_rating": 0,
+    "_notes": "Filters run zero ad spend. Pull units from Business Reports only."
+  },
+
+  "bundle": {
+    "sku": "SKU3 - Bundle",
+    "price": 64.99,
+    "units_sold_7day": 0,
+    "units_sold_30day": 0,
+    "revenue_7day": 0,
+    "_notes": "Track separately to understand bundle attach rate"
+  },
+
+  "weekly_summary": {
+    "total_ad_spend": 0,
+    "total_revenue": 0,
+    "overall_acos": 0,
+    "best_performing_keyword": "",
+    "worst_performing_keyword": "",
+    "notable_observations": "",
+    "_notes": "Optional: add any observations you want the Experiment Strategist to factor in"
+  },
+
+  "active_experiments": [
+    {
+      "id": "EXP-019",
+      "element": "Title — battery life days claim",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Adding '[X]-day battery' to title will improve CVR by increasing buyer confidence",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "status": "QUEUED",
+      "_status_options": "QUEUED / RUNNING / KEEP / REVERT / ITERATE"
+    },
+    {
+      "id": "EXP-020",
+      "element": "A+ headline — 4.5-star social proof",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Adding '4.5★ rated' to A+ headline will improve scroll-to-cart conversion",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "status": "QUEUED"
+    },
+    {
+      "id": "EXP-021",
+      "element": "Secondary image — '20 dB Quietest in Class' overlay",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "20 dB claim as image overlay will increase CTR and CVR vs. generic 'quiet' claims",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "status": "QUEUED"
+    },
+    {
+      "id": "EXP-022",
+      "element": "Bullet 2 — add 3 flow modes explicitly",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Naming 3 smart flow modes in Bullet 2 reduces buyer uncertainty",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "status": "QUEUED"
+    },
+    {
+      "id": "EXP-023",
+      "element": "Title — add 'small dogs' keyword",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Adding 'for Cats & Small Dogs' to title will index for dog keywords and increase sessions",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "status": "QUEUED"
+    }
+  ],
+
+  "completed_experiments": []
+}

@@ -1,0 +1,1794 @@
+{
+  "_instructions": "This file is the shared memory for the Paw Pure Experiment Strategist. Each experiment includes an 'execution' block with exact copy-paste text and step-by-step instructions so Victor can implement immediately.",
+  "_last_updated": "2026-05-06",
+  "_last_run_by": "Claude (Apr 29 Cerebro + 6mo rank history pass)",
+  "_status_options": "QUEUED / RUNNING / KEEP / REVERT / ITERATE / OVERDUE / DONE",
+  "experiment_waves": [
+    {
+      "wave": 1,
+      "name": "Stop the Bleeding",
+      "theme": "Cut ad waste and add free keywords",
+      "start_date": "2026-04-12",
+      "end_date": "2026-04-25",
+      "run_days": 14,
+      "status": "ACTIVE",
+      "experiments": [
+        "EXP-025",
+        "EXP-026",
+        "EXP-024",
+        "EXP-028"
+      ],
+      "can_run_together": true,
+      "why_together": "These are all PPC/backend changes that don't affect the listing content shoppers see. No overlap, so results won't contaminate each other.",
+      "wave_success_criteria": "Total daily ad spend drops to $15 or less. No revenue decrease from organic sales.",
+      "measure_after": "2026-04-25"
+    },
+    {
+      "wave": 2,
+      "name": "Title Optimization",
+      "theme": "First impression in search results",
+      "start_date": "2026-04-12",
+      "end_date": "2026-04-25",
+      "run_days": 14,
+      "status": "ACTIVE",
+      "experiments": [
+        "EXP-019"
+      ],
+      "can_run_together": true,
+      "why_together": "Title is independent from PPC changes in Wave 1. Both can run at the same time because they affect different parts of the funnel (title affects CTR from search, PPC affects which searches you appear in).",
+      "wave_success_criteria": "CTR from search results improves, sessions increase, or CVR holds steady/improves within 14 days.",
+      "measure_after": "2026-04-25"
+    },
+    {
+      "wave": 3,
+      "name": "Bullet Rewrite",
+      "theme": "Convert visitors into buyers",
+      "start_date": "2026-04-26",
+      "end_date": "2026-05-09",
+      "run_days": 14,
+      "status": "READY",
+      "experiments": [
+        "EXP-022",
+        "EXP-031",
+        "EXP-033"
+      ],
+      "can_run_together": true,
+      "why_together": "EXP-031 and EXP-033 are included inside the EXP-022 full bullet rewrite. They are one single change, not three separate ones.",
+      "depends_on_wave": "EXP-046 + EXP-047 outcome (May 4)",
+      "why_wait": "Need to measure the title change impact first. If you change title AND bullets at the same time, you won't know which one moved the needle.",
+      "wave_success_criteria": "CVR increases from ~3.38% to 4.5%+ within 14 days.",
+      "measure_after": "2026-05-09"
+    },
+    {
+      "wave": 4,
+      "name": "PPC Relaunch + Image",
+      "theme": "Targeted ads with better creative",
+      "start_date": "2026-05-10",
+      "end_date": "2026-05-23",
+      "run_days": 14,
+      "status": "WAITING",
+      "experiments": [
+        "EXP-027",
+        "EXP-030",
+        "EXP-021"
+      ],
+      "can_run_together": true,
+      "why_together": "EXP-027 and EXP-030 are both new exact-match PPC campaigns targeting different keywords, so they won't compete. EXP-021 (image overlay) affects visual appeal in search results, which is independent from PPC keyword targeting.",
+      "depends_on_wave": 3,
+      "why_wait": "Your listing needs to be optimized (title + bullets) BEFORE you start spending money on ads again. Sending paid traffic to an unoptimized listing wastes money.",
+      "wave_success_criteria": "At least 1 ad-attributed sale within 14 days. ACoS under 50%.",
+      "measure_after": "2026-05-23"
+    },
+    {
+      "wave": 5,
+      "name": "A+ Content Upgrade",
+      "theme": "Below-the-fold conversion",
+      "start_date": "2026-05-24",
+      "end_date": "2026-06-06",
+      "run_days": 14,
+      "status": "WAITING",
+      "experiments": [
+        "EXP-020",
+        "EXP-032"
+      ],
+      "can_run_together": true,
+      "why_together": "Both are A+ content changes (headline and durability section). They appear in different parts of the A+ module and should be published together as one update.",
+      "depends_on_wave": 4,
+      "why_wait": "A+ content affects shoppers who scroll past the bullets. You want to fix the top of the listing first (title, bullets, images) before optimizing the bottom.",
+      "wave_success_criteria": "CVR increases from post-Wave-3 baseline. Time on page increases.",
+      "measure_after": "2026-06-06"
+    },
+    {
+      "wave": 6,
+      "name": "Structural Cleanup",
+      "theme": "Reduce costs and fix catalog",
+      "start_date": "2026-04-12",
+      "end_date": "2026-04-30",
+      "run_days": 0,
+      "status": "ANYTIME",
+      "experiments": [
+        "EXP-034",
+        "EXP-035",
+        "EXP-036",
+        "EXP-029",
+        "EXP-040"
+      ],
+      "can_run_together": true,
+      "why_together": "These are operational tasks (inventory removal, review requests, bundle deactivation, CVR audit) that don't affect listing content. They can be done anytime without interfering with A/B testing.",
+      "wave_success_criteria": "Storage fees reduced. Review velocity increases. Bundle deactivated.",
+      "measure_after": "2026-04-30"
+    }
+  ],
+  "active_experiments": [
+    {
+      "id": "EXP-024",
+      "element": "PPC - Negative keyword purge on zero-converting targets",
+      "status": "DONE",
+      "start_date": "2026-04-04",
+      "decision_date": "2026-04-18",
+      "hypothesis": "Negating/pausing targets with clicks but zero sales in 14 days will reduce wasted ad spend by ~46%.",
+      "priority": "CRITICAL",
+      "rationale": "You're paying for clicks on keywords like 'wireless cat water fountain' that have generated ZERO sales after $37+ in spend over 4 weeks. Every click costs $1-1.50 and none convert. Shoppers clicking these broad keywords may be looking for cheaper plastic fountains, not a $50 stainless steel one. By adding these as negative keywords, you tell Amazon to stop showing your ad for these specific searches, so your budget goes only to keywords that have a chance of converting.",
+      "expected_impact": "Stops ~46% of wasted ad spend immediately. At the current $15/day rate, this saves $7-10/day ($50-70/week). Your remaining budget gets focused on searches more likely to convert, improving overall return on ad spend.",
+      "wave": 1,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "wasted_ad_spend",
+        "baseline": "$15/day",
+        "target": "under $8/day",
+        "how_to_measure": "Check Campaign Manager spend report after 7 days"
+      },
+      "execution": {
+        "what_to_do": "Add negative exact-match keywords to Manual Keywords Campaign for all targets with $10+ spend and zero sales.",
+        "keywords_to_negate": [
+          "wireless cat water fountain",
+          "cat water fountain stainless steel wireless",
+          "wireless stainless steel pet water fountain"
+        ],
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Advertising \u2192 Campaign Manager",
+          "2. Click on 'Manual Keywords Campaign' (ID: A04350122JYLYFMZ59A3X)",
+          "3. Click 'Negative keywords' tab",
+          "4. Click 'Add negative keywords'",
+          "5. Select match type: 'Negative exact'",
+          "6. Paste each keyword below (one per line):",
+          "",
+          "   wireless cat water fountain",
+          "   cat water fountain stainless steel wireless",
+          "   wireless stainless steel pet water fountain",
+          "",
+          "7. Click 'Add keywords'",
+          "8. Click 'Save'"
+        ],
+        "seller_central_path": "Advertising \u2192 Campaign Manager \u2192 Manual Keywords Campaign \u2192 Negative keywords tab",
+        "blocker": "Campaign Manager has been inaccessible since 04/04 (8 consecutive days). If still blocked, contact Amazon support or try from desktop browser / mobile app."
+      },
+      "listing": "ppc",
+      "actual_result": "DONE 2026-04-19. Negatives rolled into EXP-045 broader batch. KEEP."
+    },
+    {
+      "id": "EXP-025",
+      "element": "PPC - Pause Close Automatic Campaign",
+      "status": "DONE",
+      "start_date": "2026-04-04",
+      "decision_date": "2026-04-18",
+      "hypothesis": "Pausing the auto campaign ($15/day budget) will stop irrelevant search term matches and reduce wasted spend by ~33%.",
+      "priority": "CRITICAL",
+      "rationale": "The automatic campaign lets Amazon decide which searches to show your ad for. Amazon is matching your ad to irrelevant or low-intent searches that cost money but never result in a sale. With only 20 reviews vs competitors with 590+, your listing can't compete on broad searches. Pausing stops this bleeding entirely. You can restart it later when reviews and CVR improve.",
+      "expected_impact": "Saves approximately $15/day ($105/week) by eliminating auto-targeted ad spend that has produced zero conversions. The new settlement period started at $0, so pausing now minimizes your 4/25 charge.",
+      "wave": 1,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "auto_campaign_spend",
+        "baseline": "$15/day",
+        "target": "$0/day",
+        "how_to_measure": "Campaign Manager shows auto campaign as Paused with $0 daily spend"
+      },
+      "_notes": "OVERDUE as of 2026-04-11. Campaign Manager blocked 8 consecutive days. Auto campaign still spending. Try Amazon Seller mobile app.",
+      "execution": {
+        "what_to_do": "Pause the 'Close Automatic Campaign' entirely.",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Advertising \u2192 Campaign Manager",
+          "2. Find 'Close Automatic Campaign' (ID: A022989918IF7J7DW716B)",
+          "3. Click the status toggle from 'Enabled' to 'Paused'",
+          "4. Confirm the pause",
+          "",
+          "Alternative (mobile app):",
+          "1. Open Amazon Seller app",
+          "2. Tap 'Advertising' \u2192 'Campaigns'",
+          "3. Find 'Close Automatic Campaign'",
+          "4. Toggle to 'Paused'"
+        ],
+        "seller_central_path": "Advertising \u2192 Campaign Manager \u2192 Close Automatic Campaign \u2192 Status toggle",
+        "blocker": "Campaign Manager blocked from Chrome extension. Try Amazon Seller mobile app or desktop browser directly."
+      },
+      "listing": "ppc",
+      "actual_result": "DONE 2026-04-19. Saved $37.02 across 19 days. KEEP."
+    },
+    {
+      "id": "EXP-026",
+      "element": "PPC - Budget reduction to $15/day total (manual only)",
+      "status": "DONE",
+      "start_date": "2026-04-04",
+      "decision_date": "2026-04-25",
+      "hypothesis": "Reducing total daily budget from $45/day to $15/day on the manual campaign only will cut wasted spend by 67%.",
+      "priority": "CRITICAL",
+      "rationale": "Your ads are currently spending ~$45/day but generating $0 in ad-attributed sales. That's $1,350/month going to waste. The product economics work at the gross margin level (28-34%), but ad spend is destroying all profitability. Cutting the budget to $15/day limits your maximum daily loss while keeping a small presence for testing. Once you have more reviews and better CVR, you can increase the budget again with confidence that the spend will convert.",
+      "expected_impact": "Reduces maximum daily ad spend from $45 to $15, saving up to $900/month. Combined with EXP-025 (pausing auto), total ad spend drops 67%. Your next settlement charge (4/25) will be significantly lower.",
+      "wave": 1,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "total_daily_ad_spend",
+        "baseline": "$45/day",
+        "target": "$15/day or less",
+        "how_to_measure": "Campaign Manager daily budget shows $15"
+      },
+      "_notes": "OVERDUE as of 2026-04-11. Campaign Manager blocked 8 days. Budget NOT reduced. Implement AFTER EXP-025 (pause auto).",
+      "execution": {
+        "what_to_do": "Change the Manual Keywords Campaign daily budget from $30 to $15.",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Advertising \u2192 Campaign Manager",
+          "2. Click on 'Manual Keywords Campaign' (ID: A04350122JYLYFMZ59A3X)",
+          "3. Click 'Campaign settings'",
+          "4. Find 'Daily budget'",
+          "5. Change from $30.00 to:",
+          "",
+          "   $15.00",
+          "",
+          "6. Click 'Save'",
+          "",
+          "IMPORTANT: Do this AFTER pausing the Auto Campaign (EXP-025). Combined effect: total ad spend drops from ~$45/day to ~$15/day."
+        ],
+        "seller_central_path": "Advertising \u2192 Campaign Manager \u2192 Manual Keywords Campaign \u2192 Campaign settings \u2192 Daily budget"
+      },
+      "listing": "ppc",
+      "actual_result": "DONE 2026-04-19. Manual budget set to $22 (not $15 \u2014 Victor conservative). Still -37% from pre-rescue. KEEP."
+    },
+    {
+      "id": "EXP-019",
+      "element": "Title - battery life days claim",
+      "status": "DONE",
+      "start_date": "2026-04-11",
+      "decision_date": "2026-04-11",
+      "completion_date": "2026-04-11",
+      "hypothesis": "Adding '30-Day Battery' to title will improve CVR by increasing buyer confidence, 7/10 competitors feature battery life days.",
+      "priority": "HIGH",
+      "data_trigger": "7/10 competitors feature battery life days claim; Paw Pure does not",
+      "rationale": "When shoppers search for cat water fountains, they scan titles in the search results before clicking. '30-Day Battery Life' answers their #1 question immediately: how often do I need to charge this? 7 out of 10 top competitors already feature battery life in their title, which means shoppers are trained to look for it. Without it, Paw Pure looks like it's hiding something. Adding it makes the listing competitive at the title level, which is the first thing shoppers see on mobile.",
+      "expected_impact": "Higher click-through rate (CTR) from search results because shoppers can see the battery spec before clicking. Higher conversion rate (CVR) because battery life is no longer a question mark. Expected 10-20% improvement in CTR within 14 days as Amazon re-indexes the listing.",
+      "wave": 2,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "ctr_and_sessions",
+        "baseline": "~5 sessions/day",
+        "target": "7+ sessions/day, CTR improvement visible in Search Query Performance",
+        "how_to_measure": "Business Reports > Sessions. Also check Search Query Performance report for CTR on main keywords."
+      },
+      "_notes": "COMPLETED 2026-04-11 by Victor.",
+      "execution": {
+        "what_to_do": "Replace the current title with the new title below.",
+        "current_title": "Wireless Cat Water Fountain 3L/108oz, Cordless Battery-Operated Pet Fountain with Stainless Steel Drinking Tray, Quiet 20 dB Automatic Modes, BPA-Free Easy-Clean Water Dispenser for Cats & Small Dogs",
+        "new_title": "Wireless Cat Water Fountain, 30-Day Battery Life, Stainless Steel Tray, 20dB Ultra-Quiet Cordless Pet Fountain for Cats & Small Dogs, 3L/108oz",
+        "why_this_version": "Leads with '30-Day Battery Life' immediately after primary keyword, visible on mobile. 'Stainless Steel Tray' is more specific than competitors. Scored 38/50 in Copy Variants analysis.",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com/myinventory/inventory",
+          "2. Find 'Wireless Cat Water Fountain 3L/108oz' (ASIN: B0DJHQVJYF)",
+          "3. Click 'Edit listing'",
+          "4. Click the 'Product details' or 'Vital info' tab",
+          "5. Find the 'Product Name' / 'Title' field",
+          "6. Select all text in the title field and replace with:",
+          "",
+          "   Wireless Cat Water Fountain, 30-Day Battery Life, Stainless Steel Tray, 20dB Ultra-Quiet Cordless Pet Fountain for Cats & Small Dogs, 3L/108oz",
+          "",
+          "7. Click 'Save and finish'",
+          "8. Wait 15-30 minutes for the listing to update",
+          "9. Verify on the product page that the new title appears"
+        ],
+        "seller_central_url": "https://sellercentral.amazon.com/abis/listing/edit?sku=8V-EUFB-4UF2&asin=B0DJHQVJYF&productType=ANIMAL_WATER_DISPENSER&marketplaceID=ATVPDKIKX0DER",
+        "blocker": "Must confirm exact battery life spec with supplier first. Do NOT publish '30-Day' claim unless verified."
+      },
+      "listing": "fountain"
+    },
+    {
+      "id": "EXP-021",
+      "element": "Secondary image - '20 dB Quietest in Class' overlay",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "20 dB claim as image overlay will increase CTR and CVR vs generic 'quiet' claims.",
+      "priority": "HIGH",
+      "rationale": "Right now your secondary images are generic product shots that don't highlight what makes Paw Pure special. Shoppers scroll through images before reading bullets, and most never scroll past image 3. A '20 dB Whisper-Quiet' overlay gives shoppers a concrete, measurable claim they can compare against competitors. KittySpout is already claiming <20dB, so every day without this image is a day your quietness advantage is invisible. Images with text overlays consistently outperform plain product photos because they communicate benefits without requiring shoppers to read.",
+      "expected_impact": "Improved click-through rate from search results (shoppers see secondary images in the gallery preview on desktop). Expected 5-15% improvement in CVR as shoppers absorb the noise claim visually before reaching the buy box. This also strengthens the '20 dB' message already in the bullets, reinforcing it through a second touchpoint.",
+      "wave": 4,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "ctr_from_search",
+        "baseline": "current CTR",
+        "target": "CTR increases 10%+ from search results",
+        "how_to_measure": "Search Query Performance report, compare CTR before and after image change"
+      },
+      "_notes": "KittySpout now also claims <20dB, urgency increased. Requires image design work.",
+      "execution": {
+        "what_to_do": "Create a secondary listing image with a '20 dB, Whisper-Quiet' overlay graphic, then upload it as image slot 2 or 3.",
+        "image_specs": {
+          "text_overlay": "20 dB, Whisper-Quiet",
+          "subtitle": "Quieter than a library",
+          "background": "Product photo showing fountain running with sleeping cat nearby",
+          "dimensions": "2000x2000px minimum, white or lifestyle background",
+          "format": "JPEG or PNG"
+        },
+        "steps": [
+          "1. Create the image (use Canva, designer, or AI image tool)",
+          "2. Go to: sellercentral.amazon.com/myinventory/inventory",
+          "3. Find fountain listing (ASIN: B0DJHQVJYF) \u2192 Click 'Edit listing'",
+          "4. Go to 'Images' tab",
+          "5. Upload the new image to slot 2, 3, or 4 (keep main image in slot 1)",
+          "6. Click 'Save and finish'",
+          "7. Wait 15-30 minutes and verify on the product page"
+        ],
+        "seller_central_url": "https://sellercentral.amazon.com/abis/listing/edit?sku=8V-EUFB-4UF2&asin=B0DJHQVJYF&productType=ANIMAL_WATER_DISPENSER&marketplaceID=ATVPDKIKX0DER",
+        "blocker": "Requires image creation. Consider Canva template or hiring a designer on Fiverr ($20-50)."
+      },
+      "listing": "fountain",
+      "target_growth_metric": "fountain_cvr"
+    },
+    {
+      "id": "EXP-028",
+      "element": "Backend search terms - add high-SV gap keywords",
+      "status": "DONE",
+      "start_date": "2026-04-11",
+      "decision_date": "2026-04-11",
+      "completion_date": "2026-04-11",
+      "hypothesis": "Adding high-SV gap keywords to backend search terms will improve organic indexing and increase sessions by 15%+ within 14 days.",
+      "priority": "HIGH, ZERO RISK",
+      "data_trigger": "4 keyword gaps totaling 19,300 SV where Paw Pure is not indexed.",
+      "rationale": "Right now, when someone searches 'battery operated cat fountain' (7,200 monthly searches) or 'quiet cat water fountain' (4,100 monthly searches), Paw Pure doesn't show up at all because Amazon hasn't indexed those words for your listing. Backend search terms are hidden keywords that tell Amazon what your product is. By adding these gap keywords, Amazon's algorithm will start matching your listing to those searches. This is completely invisible to shoppers, so there's zero risk of confusing anyone or hurting your current listing.",
+      "expected_impact": "Within 24-48 hours, Amazon will re-index the listing for these new keywords. Within 14 days, you should see an increase in organic sessions (people finding your listing without ads) from searches like 'battery operated cat fountain', 'quiet cat water fountain', and 'cordless cat water fountain'. Combined search volume of the gap keywords is 19,300/month. Even capturing 1% of that = ~193 new sessions/month for free.",
+      "wave": 1,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "organic_sessions",
+        "baseline": "~5 sessions/day",
+        "target": "7+ sessions/day within 14 days",
+        "how_to_measure": "Business Reports > Sessions column. Check if organic sessions increased after 48 hours."
+      },
+      "_notes": "COMPLETED 2026-04-11 by Victor. Zero-risk: backend changes are invisible to shoppers.",
+      "execution": {
+        "what_to_do": "Paste the backend search terms below into the 'Search Terms' field in Seller Central.",
+        "copy_paste_text": "battery operated quiet cordless rechargeable cat dog drinking dispenser portable automatic pump BPA free silent whisper no noise fountain bowl kitty puppy",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com/myinventory/inventory",
+          "2. Find fountain listing (ASIN: B0DJHQVJYF) \u2192 Click 'Edit listing'",
+          "3. Click the 'Keywords' tab (may also be called 'Search Terms' or 'Offer')",
+          "4. Find the 'Search Terms' field (sometimes labeled 'Generic Keywords')",
+          "5. Clear whatever is currently in the field",
+          "6. Paste this exact text:",
+          "",
+          "   battery operated quiet cordless rechargeable cat dog drinking dispenser portable automatic pump BPA free silent whisper no noise fountain bowl kitty puppy",
+          "",
+          "7. Click 'Save and finish'",
+          "8. Wait 24-48 hours for Amazon to re-index",
+          "9. After 48 hours, search 'battery operated cat fountain' on Amazon and check if Paw Pure appears"
+        ],
+        "seller_central_url": "https://sellercentral.amazon.com/abis/listing/edit?sku=8V-EUFB-4UF2&asin=B0DJHQVJYF&productType=ANIMAL_WATER_DISPENSER&marketplaceID=ATVPDKIKX0DER",
+        "important_notes": [
+          "Do NOT repeat words already in the title, Amazon ignores duplicates and it wastes character space",
+          "Use only lowercase, no commas needed",
+          "Max 250 bytes (this text is 155 characters, well within limit)"
+        ]
+      },
+      "listing": "fountain",
+      "actual_result": "DONE 2026-04-19. Backend search terms updated with high-SV gap KWs. Sessions improvement was not measurable due to Reports API quota gaps starting Apr 27 \u2014 see EXP-059 (quota retry). KEEP, but verdict pending Reports API recovery."
+    },
+    {
+      "id": "EXP-022",
+      "element": "Bullet 2 - add 3 flow modes explicitly",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Naming 3 smart flow modes in Bullet 2 reduces buyer uncertainty and improves CVR.",
+      "priority": "MEDIUM",
+      "rationale": "Your current bullets are vague and don't tell shoppers exactly what the 3 flow modes are or why they matter. Shoppers comparing fountains want specifics, not marketing fluff. Competitors with 590+ reviews can afford weak copy because their review count does the selling. With only 20 reviews, your bullets need to do the heavy lifting. This full rewrite names each flow mode (Gentle Stream, Bubble Flow, Continuous Flow), calls out the stainless steel difference, emphasizes the 20 dB noise level, and reassures shoppers that replacement filters are available. Each bullet targets a known buying concern from competitor review analysis.",
+      "expected_impact": "Expected 0.5-1.5% improvement in CVR (from ~3.38% toward 5%+) within 14 days. Better bullets reduce the 'I'm not sure about this product' hesitation that sends shoppers to competitors. The filter reassurance in Bullet 5 should also reduce return rate since 'where do I get filters?' is Paw Pure's #1 negative review theme.",
+      "wave": 3,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "conversion_rate",
+        "baseline": "3.38%",
+        "target": "4.5%+",
+        "how_to_measure": "Business Reports > Unit Session Percentage after 14 days"
+      },
+      "execution": {
+        "what_to_do": "Replace ALL 5 bullet points with the optimized set below. This is a full bullet rewrite that includes EXP-022 (flow modes), EXP-031 (quiet emphasis), and EXP-033 (filter ecosystem).",
+        "copy_paste_bullets": {
+          "bullet_1": "CORDLESS PET FOUNTAIN, PLACE IT ANYWHERE, No outlets, no tangled cords. Paw Pure's rechargeable battery lasts up to 30 days, giving you total freedom to put fresh water where your cat actually wants it. A truly wireless stainless steel pet water fountain.",
+          "bullet_2": "3 FLOW MODES YOUR CAT WILL LOVE, Gentle Stream entices hesitant drinkers. Bubble Flow triggers your cat's natural curiosity. Continuous Flow keeps water moving for multi-pet households. You pick the mode; the 20dB motor stays whisper-quiet in all three.",
+          "bullet_3": "STAINLESS STEEL WHERE IT COUNTS, Other fountains hide plastic behind steel trim. Paw Pure's entire drinking tray is food-grade stainless steel, the surface your cat's tongue actually touches. Zero plastic taste, zero BPA, zero compromise.",
+          "bullet_4": "20dB: QUIETER THAN A WHISPER, Most fountains hum. Paw Pure barely breathes. At 20dB, it's the quiet cat water fountain that won't wake light sleepers, startle skittish cats, or add background noise to your home. Silence is a feature, not an afterthought.",
+          "bullet_5": "BUILT FOR CATS & SMALL DOGS, 3L/108oz capacity means fewer refills for multi-pet homes. The wide, ergonomic tray fits cats and small dogs comfortably with minimal splash. Disassemble, rinse, and reassemble in under 60 seconds. Replacement filters always available on Amazon, search B0FWXJ1GKT."
+        },
+        "steps": [
+          "1. Go to: sellercentral.amazon.com/myinventory/inventory",
+          "2. Find fountain listing (ASIN: B0DJHQVJYF) \u2192 Click 'Edit listing'",
+          "3. Click the 'Description' tab (or 'Key product features' / 'Bullet points')",
+          "4. You will see 5 bullet point fields. Replace each one:",
+          "",
+          "   BULLET 1, Select all, then paste:",
+          "   CORDLESS PET FOUNTAIN, PLACE IT ANYWHERE, No outlets, no tangled cords. Paw Pure's rechargeable battery lasts up to 30 days, giving you total freedom to put fresh water where your cat actually wants it. A truly wireless stainless steel pet water fountain.",
+          "",
+          "   BULLET 2, Select all, then paste:",
+          "   3 FLOW MODES YOUR CAT WILL LOVE, Gentle Stream entices hesitant drinkers. Bubble Flow triggers your cat's natural curiosity. Continuous Flow keeps water moving for multi-pet households. You pick the mode; the 20dB motor stays whisper-quiet in all three.",
+          "",
+          "   BULLET 3, Select all, then paste:",
+          "   STAINLESS STEEL WHERE IT COUNTS, Other fountains hide plastic behind steel trim. Paw Pure's entire drinking tray is food-grade stainless steel, the surface your cat's tongue actually touches. Zero plastic taste, zero BPA, zero compromise.",
+          "",
+          "   BULLET 4, Select all, then paste:",
+          "   20dB: QUIETER THAN A WHISPER, Most fountains hum. Paw Pure barely breathes. At 20dB, it's the quiet cat water fountain that won't wake light sleepers, startle skittish cats, or add background noise to your home. Silence is a feature, not an afterthought.",
+          "",
+          "   BULLET 5, Select all, then paste:",
+          "   BUILT FOR CATS & SMALL DOGS, 3L/108oz capacity means fewer refills for multi-pet homes. The wide, ergonomic tray fits cats and small dogs comfortably with minimal splash. Disassemble, rinse, and reassemble in under 60 seconds. Replacement filters always available on Amazon, search B0FWXJ1GKT.",
+          "",
+          "5. Click 'Save and finish'",
+          "6. Wait 15-30 minutes and verify on the product page"
+        ],
+        "seller_central_url": "https://sellercentral.amazon.com/abis/listing/edit?sku=8V-EUFB-4UF2&asin=B0DJHQVJYF&productType=ANIMAL_WATER_DISPENSER&marketplaceID=ATVPDKIKX0DER",
+        "guardrail_note": "This changes all 5 bullets at once. Guardrails say 'no simultaneous title and bullets', so do NOT change the title and bullets on the same day. Change title first (EXP-019), wait 14 days, then change bullets."
+      },
+      "listing": "fountain",
+      "target_growth_metric": "fountain_cvr"
+    },
+    {
+      "id": "EXP-020",
+      "element": "A+ headline - 4.5-star social proof",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Adding '4.5\u2605 rated' narrative to A+ content will improve scroll-to-cart conversion.",
+      "priority": "MEDIUM",
+      "rationale": "Your A+ Content currently doesn't leverage the 4.5-star rating as a trust signal. With only 20 reviews, shoppers are skeptical. Leading with '4.5 Stars and Counting' reframes the low review count as a positive, the few people who bought it love it. A+ Content appears below the fold on the product page, and shoppers who scroll that far are seriously considering buying. This is your chance to close the deal with emotional, benefit-driven copy instead of repeating specs they already saw in the bullets.",
+      "expected_impact": "Expected 0.3-0.8% CVR improvement for shoppers who scroll below the fold (roughly 40-60% of visitors). The social proof headline builds trust, and the lifestyle-focused body copy addresses the 'is this worth $50?' question. Combined with the durability module (EXP-032), the A+ section becomes a persuasion engine.",
+      "wave": 5,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "conversion_rate",
+        "baseline": "post-Wave-3 CVR",
+        "target": "CVR increases 0.3-0.8% from A+ headline",
+        "how_to_measure": "Business Reports > Unit Session Percentage, compare 14 days before vs after"
+      },
+      "_notes": "DEPRIORITIZED during profitability crisis. Resume after PPC restructure.",
+      "execution": {
+        "what_to_do": "Replace the A+ Content headline and body text with the copy below.",
+        "copy_paste_text": {
+          "headline": "4.5 Stars and Counting: The Quietest Wireless Pet Fountain for Cats Who Deserve Better",
+          "body_paragraph_1": "Your cat won't drink stale water from a plastic bowl, and you shouldn't have to look at an ugly fountain to fix that. Paw Pure's stainless steel tray keeps water fresh and chemical-free, while the 20dB whisper-quiet motor makes other fountains sound like appliances.",
+          "body_paragraph_2": "No cords to hide. No refills for 30 days. No noise at 3 AM. Just clean water in a premium fountain that belongs in your home, not hidden behind the couch. There's a reason pet parents are switching, and it starts with the first sip your cat takes."
+        },
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Advertising \u2192 A+ Content Manager",
+          "   (or search 'A+ Content' in the Seller Central search bar)",
+          "2. Find the existing A+ Content for ASIN B0DJHQVJYF",
+          "3. Click 'Edit'",
+          "4. Find the headline module and replace with:",
+          "",
+          "   4.5 Stars and Counting: The Quietest Wireless Pet Fountain for Cats Who Deserve Better",
+          "",
+          "5. Replace the body text paragraph 1 with:",
+          "",
+          "   Your cat won't drink stale water from a plastic bowl, and you shouldn't have to look at an ugly fountain to fix that. Paw Pure's stainless steel tray keeps water fresh and chemical-free, while the 20dB whisper-quiet motor makes other fountains sound like appliances.",
+          "",
+          "6. Replace body text paragraph 2 with:",
+          "",
+          "   No cords to hide. No refills for 30 days. No noise at 3 AM. Just clean water in a premium fountain that belongs in your home, not hidden behind the couch. There's a reason pet parents are switching, and it starts with the first sip your cat takes.",
+          "",
+          "7. Click 'Submit for approval'",
+          "8. A+ Content takes 24-48 hours for Amazon review. Check status after 2 days."
+        ]
+      },
+      "listing": "fountain",
+      "target_growth_metric": "fountain_cvr"
+    },
+    {
+      "id": "EXP-027",
+      "element": "PPC - Exact match campaign for converting targets",
+      "status": "SUPERSEDED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Creating a new exact-match campaign with proven converting targets at $10/day will produce sub-33.5% ACoS.",
+      "priority": "MEDIUM",
+      "rationale": "Your current campaigns use broad and automatic targeting, which means Amazon shows your ad for loosely related searches that waste money. Exact match tells Amazon to ONLY show your ad when someone types the exact keyword you choose. The 3 keywords selected ('battery operated cat fountain' at 7,200 monthly searches, 'quiet cat water fountain' at 4,100, 'cordless cat water fountain' at 8,900) directly describe what Paw Pure is. Shoppers typing these exact phrases are looking for exactly your product, so they're much more likely to buy. The 'Dynamic bids, down only' strategy means Amazon will automatically lower your bid when it thinks a click is unlikely to convert, protecting your budget.",
+      "expected_impact": "At $10/day with exact match targeting, expect a 2-5% conversion rate on these keywords vs the current 0%. That translates to 1-3 sales per week from ads alone. Target ACoS below 33.5% (your breakeven). If this works, it proves paid ads can be profitable and gives you a template to scale with more keywords.",
+      "wave": 4,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "ad_attributed_sales",
+        "baseline": "0 sales from ads",
+        "target": "1+ sale within 14 days, ACoS under 50%",
+        "how_to_measure": "Campaign Manager > Manual Exact Campaign > Sales column"
+      },
+      "_notes": "Run AFTER EXP-024/025/026 stabilize. Requires Campaign Manager access.",
+      "execution": {
+        "what_to_do": "Create a new Sponsored Products campaign with exact match keywords and a $10/day budget.",
+        "campaign_settings": {
+          "campaign_name": "Paw Pure - Exact Match Winners",
+          "campaign_type": "Sponsored Products - Manual targeting",
+          "daily_budget": "$10.00",
+          "bidding_strategy": "Dynamic bids - down only",
+          "start_date": "After EXP-024/025/026 complete"
+        },
+        "keywords_to_add": [
+          {
+            "keyword": "battery operated cat fountain",
+            "match": "Exact",
+            "bid": "$0.75",
+            "sv": 7200
+          },
+          {
+            "keyword": "quiet cat water fountain",
+            "match": "Exact",
+            "bid": "$0.60",
+            "sv": 4100
+          },
+          {
+            "keyword": "cordless cat water fountain",
+            "match": "Exact",
+            "bid": "$0.80",
+            "sv": 8900
+          }
+        ],
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Advertising \u2192 Campaign Manager",
+          "2. Click 'Create campaign' \u2192 'Sponsored Products'",
+          "3. Set campaign name:",
+          "",
+          "   Paw Pure - Exact Match Winners",
+          "",
+          "4. Set daily budget:",
+          "",
+          "   $10.00",
+          "",
+          "5. Bidding strategy: 'Dynamic bids - down only'",
+          "6. Create an ad group, select ASIN B0DJHQVJYF",
+          "7. Choose 'Manual targeting' \u2192 'Keyword targeting'",
+          "8. Add these keywords one by one (select 'Exact' match for each):",
+          "",
+          "   battery operated cat fountain         ,Bid: $0.75",
+          "   quiet cat water fountain              ,Bid: $0.60",
+          "   cordless cat water fountain            ,Bid: $0.80",
+          "",
+          "9. Click 'Launch campaign'"
+        ],
+        "blocker": "Requires Campaign Manager access. Run AFTER EXP-025/026 (pause/reduce existing campaigns)."
+      },
+      "listing": "ppc",
+      "superseded_by": [
+        "EXP-046",
+        "EXP-051",
+        "EXP-052"
+      ],
+      "supersede_note": "Generic 'exact match campaign' replaced by data-driven specifics: bid surgery (EXP-046), filter campaign (EXP-051), 3 momentum-validated KWs (EXP-052)."
+    },
+    {
+      "id": "EXP-029",
+      "element": "Listing audit - investigate ad traffic vs organic traffic CVR gap",
+      "status": "SUPERSEDED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "The 5.13% organic CVR vs 0% ad CVR gap indicates mismatched ad targeting intent.",
+      "priority": "HIGH",
+      "rationale": "There's a telling gap in your data: shoppers who find Paw Pure organically (through search) convert at 5.13%, but shoppers who click your ads convert at 0%. This means the ads are attracting the wrong shoppers. The Search Terms Report will show you exactly which search phrases Amazon matched your ads to. By identifying the mismatched terms (for example, people searching for 'cheap cat fountain' or 'plastic cat fountain' seeing your $50 stainless steel product), you can either negate those terms or restructure your campaigns. This is detective work that directly informs EXP-024 and EXP-027.",
+      "expected_impact": "No direct revenue impact since this is a diagnostic step, but the findings will make every other PPC experiment more effective. Understanding which search terms waste money lets you negate them (saving $5-15/day), and understanding which terms convert lets you bid on them specifically. This could reveal 5-10 additional negative keywords beyond what EXP-024 already identified.",
+      "wave": 6,
+      "run_window_days": 0,
+      "success_criteria": {
+        "metric": "cvr_gap_diagnosis",
+        "baseline": "5.13% organic CVR vs 0% ad CVR",
+        "target": "identify 5+ actionable insights from search term report",
+        "how_to_measure": "Download search term report, compare converting organic terms vs non-converting ad terms"
+      },
+      "_notes": "DIAGNOSTIC experiment. Requires pulling search terms report from Campaign Manager.",
+      "execution": {
+        "what_to_do": "Pull the Search Terms Report and analyze which search terms are driving clicks but zero conversions.",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Advertising \u2192 Campaign Manager",
+          "2. Click 'Measurement and reporting' \u2192 'Sponsored ads reports'",
+          "3. Click 'Create report'",
+          "4. Report type: 'Search term'",
+          "5. Time unit: 'Summary'",
+          "6. Report period: Last 30 days",
+          "7. Click 'Run report'",
+          "8. Download the CSV when ready",
+          "9. Open in Excel/Google Sheets",
+          "10. Sort by 'Spend' descending",
+          "11. Look for search terms with spend > $5 and zero orders, these are the wasters",
+          "12. Add the worst offenders as negative exact match keywords (per EXP-024)"
+        ],
+        "blocker": "Requires Campaign Manager access (blocked 8 days)."
+      },
+      "listing": "fountain",
+      "superseded_by": [
+        "EXP-057"
+      ],
+      "supersede_note": "Premise outdated. Original used 5.13% organic / 0% ad CVR baseline that no longer reflects the Apr 28 data state (89.6% ACoS, sparse attribution). Replaced by EXP-057 quality-positioning rewrite."
+    },
+    {
+      "id": "EXP-030",
+      "element": "PPC - Launch 'battery operated cat fountain' exact match",
+      "status": "SUPERSEDED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Launching 'battery operated cat fountain' (SV 7,200) as exact match at $0.75 CPC will generate sub-33.5% ACoS.",
+      "priority": "MEDIUM",
+      "rationale": "'Battery operated cat fountain' has 7,200 monthly searches and describes Paw Pure perfectly, but your listing wasn't even indexed for it until EXP-028 added it to backend keywords. Once Amazon indexes you for this term organically, running an exact match ad on it puts you in front of high-intent shoppers who want exactly what you sell. The $0.75 bid is conservative (below the typical $1.00-1.50 CPC in this category), which keeps costs low while testing. This keyword is the single best match between what shoppers are searching and what Paw Pure actually is.",
+      "expected_impact": "At 7,200 monthly searches and a 1-2% ad conversion rate, expect 2-5 sales per month from this single keyword. At $0.75 CPC with a $49.99 price, that's an ACoS around 15-25%, well below the 33.5% breakeven. Even 1 sale per week from this keyword would justify the ad spend and prove the exact-match strategy works.",
+      "wave": 4,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "ad_attributed_sales",
+        "baseline": "0 sales from battery keyword",
+        "target": "1+ sale within 14 days, ACoS under 40%",
+        "how_to_measure": "Campaign Manager > search term report for 'battery operated cat fountain'"
+      },
+      "_notes": "BLOCKED: Do not launch until EXP-024/025/026 PPC restructure complete and EXP-028 backend keywords live.",
+      "execution": {
+        "what_to_do": "Add 'battery operated cat fountain' as a new exact match keyword to the Manual Keywords Campaign.",
+        "steps": [
+          "1. Go to: Advertising \u2192 Campaign Manager",
+          "2. Click 'Manual Keywords Campaign'",
+          "3. Click 'Ad groups' \u2192 select the ad group",
+          "4. Click 'Targeting' tab \u2192 'Add keywords'",
+          "5. Type:",
+          "",
+          "   battery operated cat fountain",
+          "",
+          "6. Select match type: 'Exact'",
+          "7. Set bid:",
+          "",
+          "   $0.75",
+          "",
+          "8. Click 'Add' then 'Save'",
+          "",
+          "NOTE: Only do this AFTER backend keywords (EXP-028) are live and indexed (48+ hours after EXP-028)."
+        ]
+      },
+      "listing": "ppc",
+      "superseded_by": [],
+      "supersede_note": "Apr 29 6-month rank history shows we're LOSING ground on 'battery operated cat fountain' (#144 \u2192 #263). Lessons file rule: don't bid up where algo is dropping us. DEPRECATED."
+    },
+    {
+      "id": "EXP-031",
+      "element": "Bullet 1 - emphasize '20 dB whisper-quiet' with customer language",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Leading Bullet 1 with '20 dB whisper-quiet' using verified customer language will improve CVR by 0.5%+.",
+      "priority": "HIGH",
+      "rationale": "Noise is the #2 concern for cat fountain shoppers (after price). Your current bullets mention 'quiet' but don't lead with the 20 dB spec or use the language real customers use ('whisper-quiet', 'won't wake light sleepers', 'won't startle skittish cats'). Competitors claim 'ultra-quiet' without giving a number, which makes Paw Pure's measurable 20 dB claim a real differentiator. This is included in the EXP-022 full bullet rewrite as Bullet 4.",
+      "expected_impact": "As part of the EXP-022 bullet rewrite, this contributes to the overall 0.5-1.5% CVR improvement. The quiet emphasis specifically targets shoppers with noise-sensitive cats or light-sleeping households, a large segment of the market.",
+      "wave": 3,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "conversion_rate",
+        "baseline": "3.38%",
+        "target": "included in EXP-022 measurement",
+        "how_to_measure": "Measured as part of EXP-022"
+      },
+      "_notes": "Included in the full bullet rewrite under EXP-022. Execute as part of that set.",
+      "execution": {
+        "what_to_do": "This is INCLUDED in the EXP-022 full bullet rewrite. See EXP-022 execution instructions, Bullet 4 contains the quiet emphasis. No separate action needed.",
+        "see_also": "EXP-022"
+      },
+      "listing": "fountain"
+    },
+    {
+      "id": "EXP-032",
+      "element": "A+ Content - add 'Outlasts the Competition' durability section",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Adding an A+ section highlighting pump durability will improve CVR, pump failure is the #1 complaint across competitors.",
+      "priority": "HIGH",
+      "rationale": "Competitor review analysis shows pump failure is the #1 complaint across the cat water fountain category. Shoppers reading 1-star reviews on competitors see 'pump died after 3 months' over and over. This creates a buying fear that Paw Pure can address head-on. By adding a durability-focused A+ module that directly calls out competitor pump failures, you flip their weakness into your selling point. Shoppers who scroll to A+ Content are seriously considering buying, and durability reassurance can be the tipping point.",
+      "expected_impact": "Expected 0.3-0.5% CVR improvement among shoppers who scroll to A+ Content. More importantly, this reduces post-purchase anxiety, which should lower return rates by 1-2%. Combined with the social proof headline (EXP-020), the A+ section becomes much more persuasive than the current generic content.",
+      "wave": 5,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "conversion_rate",
+        "baseline": "post-Wave-3 CVR",
+        "target": "CVR increases 0.3-0.5% from durability section",
+        "how_to_measure": "Business Reports > Unit Session Percentage"
+      },
+      "execution": {
+        "what_to_do": "Add a new A+ Content module with the durability messaging below.",
+        "copy_paste_text": {
+          "module_headline": "Built to Outlast the Competition",
+          "module_body": "While other pet fountains fail within 2-4 months (check their 1-star reviews), Paw Pure is engineered for the long haul. Our quiet-running motor is designed for continuous use, and our stainless steel tray won't crack, warp, or develop that 'plastic smell' after a few weeks. Your cat deserves a fountain that works on month 12 just like it did on day 1."
+        },
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Advertising \u2192 A+ Content Manager",
+          "2. Find and edit the A+ Content for ASIN B0DJHQVJYF",
+          "3. Click 'Add a module' (choose 'Standard image and text' or similar)",
+          "4. Set the headline:",
+          "",
+          "   Built to Outlast the Competition",
+          "",
+          "5. Set the body text:",
+          "",
+          "   While other pet fountains fail within 2-4 months (check their 1-star reviews), Paw Pure is engineered for the long haul. Our quiet-running motor is designed for continuous use, and our stainless steel tray won't crack, warp, or develop that 'plastic smell' after a few weeks. Your cat deserves a fountain that works on month 12 just like it did on day 1.",
+          "",
+          "6. Optional: add a product durability image alongside this text",
+          "7. Click 'Submit for approval'",
+          "8. Wait 24-48 hours for Amazon review"
+        ]
+      },
+      "listing": "fountain"
+    },
+    {
+      "id": "EXP-033",
+      "element": "Bullet 5 - add filter ecosystem reassurance copy",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Adding filter availability messaging will reduce returns and improve CVR, filter availability is Paw Pure's #1 negative theme.",
+      "priority": "HIGH",
+      "rationale": "'Where do I get replacement filters?' is the #1 negative theme in Paw Pure reviews. Shoppers worry about buying a fountain and then not being able to find filters later, which is a real concern with newer brands. By adding 'Replacement filters always available on Amazon, search B0FWXJ1GKT' directly in Bullet 5, you answer the question before it becomes a reason not to buy. This also cross-sells the filter product, which has a 35.71% CVR and 45% margin. This is included in the EXP-022 full bullet rewrite.",
+      "expected_impact": "As part of the EXP-022 bullet rewrite, this contributes to the overall CVR improvement. Specifically, the filter reassurance should reduce the 'will I be able to find filters?' objection and drive cross-sales to the filter listing (B0FWXJ1GKT), which is your highest-margin product at $9.08 profit per sale.",
+      "wave": 3,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "conversion_rate",
+        "baseline": "3.38%",
+        "target": "included in EXP-022 measurement",
+        "how_to_measure": "Measured as part of EXP-022"
+      },
+      "_notes": "Included in the EXP-022 full bullet rewrite. Bullet 5 ends with 'Replacement filters always available on Amazon, search B0FWXJ1GKT.'",
+      "execution": {
+        "what_to_do": "This is INCLUDED in the EXP-022 full bullet rewrite. See EXP-022 Bullet 5. No separate action needed.",
+        "see_also": "EXP-022"
+      },
+      "listing": "fountain"
+    },
+    {
+      "id": "EXP-034",
+      "element": "Inventory - FBA removal/liquidation assessment for excess fountain stock",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Removing 200+ excess fountain units via FBA removal or liquidation will reduce monthly storage fees by ~$130/month, improving contribution margin by 23%.",
+      "priority": "HIGH",
+      "rationale": "You have 377 fountain units sitting in Amazon's warehouse, enough inventory for 1,412 days (almost 4 years) at current sales velocity. Amazon charges you $246.63 every month to store them, which is more than your monthly gross profit of $120.16. In other words, storage fees alone are eating all your profit and then some. By removing 200-300 units (either shipping them home or liquidating), you cut storage fees by $130+/month immediately. Keeping 60-77 units gives you 6-9 months of cover, which is plenty of runway to grow sales.",
+      "expected_impact": "Removing 200 units saves approximately $130/month in storage fees, improving contribution margin by 23%. The one-time cost to ship units home is about $100 (at $0.50/unit), which pays for itself in less than 1 month of storage savings. Over 6 months, that's $780 saved. If you liquidate instead, Amazon pays you 5-10% of retail (~$5-10/unit), so you recover $1,000-2,000 while also eliminating the storage drag.",
+      "wave": 6,
+      "run_window_days": 0,
+      "success_criteria": {
+        "metric": "monthly_storage_fees",
+        "baseline": "$246.63/month",
+        "target": "under $100/month",
+        "how_to_measure": "Payments > Fee Preview or Inventory > Monthly Storage Fee column"
+      },
+      "data_trigger": "PL_Data_2026-04-11: 1,412 days of cover, $246.63/month storage, -$576.47 contribution margin. Storage = 57% of monthly revenue.",
+      "source": "experiment_strategist",
+      "baseline_sessions": null,
+      "baseline_cvr": null,
+      "baseline_units_per_day": 0.267,
+      "decision_days": 14,
+      "_notes": "Generated 2026-04-11. This is a cost-reduction experiment, not a CVR experiment. Decision metric = storage fee reduction.",
+      "execution": {
+        "what_to_do": "Request FBA removal order for excess fountain inventory. Keep ~60 units (6 months of cover at current velocity).",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Inventory \u2192 Manage FBA Inventory",
+          "2. Find B0DJHQVJYF (Wireless Cat Water Fountain)",
+          "3. Select the listing checkbox",
+          "4. From 'Action on selected' dropdown, choose 'Create removal order'",
+          "5. Choose disposal method:",
+          "   - 'Return to me' (costs ~$0.50/unit, you get units back)",
+          "   - 'Liquidate' (Amazon sells at ~5-10% of price, you get small payment)",
+          "   - 'Dispose' (Amazon destroys units, ~$0.15/unit, last resort)",
+          "6. Enter quantity to remove: 300 (keeps ~77 units = ~288 days of cover)",
+          "   OR enter 200 (keeps ~177 units = ~663 days of cover, more conservative)",
+          "7. Click 'Confirm'",
+          "8. Monitor removal order status under Inventory \u2192 Removal Order Detail",
+          "",
+          "IMPORTANT: Start with 'Return to me' for a portion, you can sell these via other channels or store at home (cheaper than FBA).",
+          "COST ANALYSIS: Returning 200 units costs ~$100 one-time vs $130/month ongoing savings."
+        ],
+        "seller_central_url": "https://sellercentral.amazon.com/inventoryplanning/manageinventoryhealth"
+      },
+      "listing": "ops"
+    },
+    {
+      "id": "EXP-035",
+      "element": "Reviews - systematic Request-a-Review campaign for all delivered orders",
+      "status": "DONE",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Sending Request-a-Review to all delivered fountain and filter orders will increase review velocity from 0.65/week to 2+/week within 30 days, improving social proof and CVR.",
+      "priority": "HIGH",
+      "rationale": "Reviews are the #1 reason shoppers pick a competitor over Paw Pure. You have 20 reviews while competitors range from 590 to 15,320. At your current rate of 0.65 reviews per week, it would take over 3 years just to reach 100 reviews. Amazon's 'Request a Review' button is a free, TOS-compliant way to ask every delivered customer to leave a review. Most sellers don't use it consistently, which means reviews trickle in randomly. By clicking this button for every delivered order twice a week, you systematically capture reviews from the 5-15% of customers who are willing to leave one. This is the single most important long-term action for closing the competitive gap.",
+      "expected_impact": "Expected to increase review velocity from 0.65/week to 1.5-2.0/week within 30 days. At 2 reviews per week, you reach 50 reviews in ~4 months and 100 reviews in ~10 months instead of 3 years. Every 10 new reviews improves CVR by an estimated 0.5-1.0% because shoppers trust products with more social proof. The filter listing also benefits since filter customers tend to leave positive reviews (35.71% CVR suggests high satisfaction).",
+      "wave": 6,
+      "run_window_days": 0,
+      "success_criteria": {
+        "metric": "review_count",
+        "baseline": "20 reviews, 0.65/week velocity",
+        "target": "1.5+ reviews/week velocity",
+        "how_to_measure": "Count reviews on product page weekly. Track date of each new review."
+      },
+      "data_trigger": "VoC_Data: 21 reviews, 9 days without new review, 13x behind competitor velocity (0.65/wk vs 8.5/wk). CI_Data: competitor range 38-5,552 reviews. Reviews are #1 CVR blocker.",
+      "source": "experiment_strategist",
+      "baseline_sessions": null,
+      "baseline_cvr": null,
+      "baseline_units_per_day": 0.267,
+      "decision_days": 30,
+      "_notes": "Generated 2026-04-11. Review velocity is the single biggest long-term competitive disadvantage. At 0.65/week it takes 3 years to reach 100 reviews.",
+      "execution": {
+        "what_to_do": "Use Seller Central's 'Request a Review' button on each delivered order to solicit product reviews and seller feedback.",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Orders \u2192 Manage Orders",
+          "2. Filter by status: 'Delivered'",
+          "3. For EACH delivered order (shipped 5-30 days ago):",
+          "   a. Click the order number to open order details",
+          "   b. Click 'Request a Review' button (top right of order page)",
+          "   c. Confirm the request",
+          "4. Repeat for ALL delivered fountain and filter orders",
+          "5. Set a reminder to do this 2x per week going forward",
+          "",
+          "NOTES:",
+          "- Amazon allows 1 review request per order, 5-30 days after delivery",
+          "- This is Amazon's official tool, fully compliant with TOS",
+          "- Expected response rate: 5-15% of requests \u2192 reviews",
+          "- With ~13 units sold in 30 days, expect 1-2 new reviews per batch",
+          "",
+          "AUTOMATION OPTION: Tools like FeedbackWhiz, Jungle Scout, or Helium 10 can automate this. ~$20-50/month but handles it automatically."
+        ],
+        "seller_central_url": "https://sellercentral.amazon.com/orders-v3/ref=xx_myo_dnav_xx"
+      },
+      "listing": "brand",
+      "completed_date": "2026-05-04",
+      "actual_result": "Founder confirmed all available eligible orders had review requests sent on 2026-05-04 (Apr 25 buyer + Apr 29 buyer). Going forward managed by EXP-058 (automation) cadence."
+    },
+    {
+      "id": "EXP-036",
+      "element": "Catalog - deactivate bundle listing B0GMDM6CG2",
+      "status": "SUPERSEDED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "Deactivating the zero-converting bundle listing will clean up the catalog, eliminate buy box competition with the main listing, and simplify inventory management.",
+      "priority": "LOW",
+      "rationale": "The bundle listing (B0GMDM6CG2) has sold zero units, generated $0 revenue, and has no inventory. It's a dead listing that clutters your catalog. Worse, it only has 85.71% buy box ownership (not 100%), which means another seller could theoretically list against it and cause confusion. Having multiple ASINs for essentially the same product splits your catalog and can confuse Amazon's algorithm about which listing to show. Closing it is a simple cleanup task with no downside, and you can always reactivate it later if you want to relaunch a bundle offer.",
+      "expected_impact": "No direct revenue impact since the listing generates $0 already. The benefit is operational: cleaner catalog, no risk of buy box issues, and Amazon's algorithm focuses on your main fountain ASIN (B0DJHQVJYF) without confusion. Takes 2 minutes to do.",
+      "wave": 6,
+      "run_window_days": 0,
+      "success_criteria": {
+        "metric": "bundle_status",
+        "baseline": "active with 0 sales",
+        "target": "deactivated",
+        "how_to_measure": "Manage Inventory shows bundle as Inactive"
+      },
+      "data_trigger": "SC_Data: 0 units, $0 revenue, no inventory. CI_Data: bundle has 85.71% buy box (not 100%). PPC_Analysis: recommended deactivation.",
+      "source": "experiment_strategist",
+      "baseline_sessions": null,
+      "baseline_cvr": null,
+      "baseline_units_per_day": 0,
+      "decision_days": 7,
+      "_notes": "Generated 2026-04-11. Low priority but zero downside. Cleans up catalog.",
+      "execution": {
+        "what_to_do": "Close/deactivate the bundle listing B0GMDM6CG2.",
+        "steps": [
+          "1. Go to: sellercentral.amazon.com \u2192 Inventory \u2192 Manage All Inventory",
+          "2. Find B0GMDM6CG2 (Paw Pure Wireless Stainless Steel Cat Water Fountain 3L + Replacement Filters Kit)",
+          "3. Click 'Edit' \u2192 'Close listing' (or select listing \u2192 Action \u2192 Close listing)",
+          "4. Confirm closure",
+          "",
+          "NOTE: This does NOT delete the ASIN, it just removes your offer. You can reactivate anytime."
+        ],
+        "seller_central_url": "https://sellercentral.amazon.com/myinventory/inventory"
+      },
+      "listing": "bundle",
+      "superseded_by": [
+        "EXP-040",
+        "EXP-055"
+      ],
+      "supersede_note": "Original plan was to deactivate the bundle. Today's strategy is the opposite \u2014 EXP-040 rewrites copy + EXP-055 audits images/A+. DEPRECATED in favor of revival path."
+    },
+    {
+      "id": "EXP-037",
+      "element": "Bullet 1 - Lead with quiet operation + pet adoption proof",
+      "status": "ALTERNATE",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "I believe changing Bullet 1 to lead with '20 dB whisper-quiet' plus 'pets switch from day 1' language will improve CVR because 7/10 Paw Pure reviews mention pet adoption and 3/10 mention quiet operation - these are the top 2 customer-validated selling points. Competitors' #1 complaint (mold/noise) is Paw Pure's strength. I will know it worked if CVR increases by 1%+ within 21 days.",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "current_cvr": 0,
+      "current_sessions": 0,
+      "priority": "HIGH",
+      "data_trigger": "7/10 reviews mention pet adoption; 3/10 mention quiet operation; current bullets don't lead with these validated angles",
+      "source": "voice_of_customer",
+      "_notes": "Customer quote: 'My dog switched instantly to her new water fountain from day 1' + 'It's really quiet' - combine both into opening bullet",
+      "listing": "fountain",
+      "wave": 3,
+      "consolidated_into": "EXP-031",
+      "consolidate_note": "Three Bullet 1 rewrite hypotheses overlap. EXP-031 stays primary. EXP-037 retained as ALTERNATE variant if EXP-031 underperforms."
+    },
+    {
+      "id": "EXP-038",
+      "element": "Bullet 2 - 'Every piece comes apart for deep cleaning' + competitor mold contrast",
+      "status": "ALTERNATE",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "I believe adding 'every piece fully disassembles - no hidden crevices where mold grows' to Bullet 2 will improve CVR because the #1 competitor complaint across 5+ brands is mold/bacteria buildup in hard-to-clean areas (67 helpful votes on one PETKIT review alone). Paw Pure reviewers cite 'super easy to clean' (5/10 reviews). I will know it worked if CVR increases by 0.5%+ within 21 days.",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "current_cvr": 0,
+      "current_sessions": 0,
+      "priority": "HIGH",
+      "data_trigger": "5/10 Paw Pure reviews mention easy cleaning; competitor mold complaints appear across 5+ brands with high helpful vote counts (67, 12, 9)",
+      "source": "voice_of_customer",
+      "_notes": "Competitor quotes: 'RED MOLD BEWARE' (12 helpful), 'Cover impossible to clean - MOLD' (67 helpful), 'Impossible to keep slime/mold out' - Paw Pure's easy-clean design directly addresses this category-wide pain point",
+      "listing": "fountain",
+      "wave": 3,
+      "consolidated_into": "EXP-031",
+      "consolidate_note": "Bullet 2 cleanability messaging \u2014 moved into EXP-031 as a secondary angle. Retained as ALTERNATE."
+    },
+    {
+      "id": "EXP-039",
+      "element": "Main image - Add 'BPA-Free | Safety Tested' badge overlay",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "hypothesis": "I believe adding a visible safety badge to the main image will improve CTR because competitor reviews reveal serious safety concerns (fire hazard with 9 helpful votes, electric shock with 5 helpful votes on PEKTACO). No competitor prominently displays safety certifications. I will know it worked if CTR improves by 0.3%+ within 21 days.",
+      "baseline_sessions": 0,
+      "baseline_cvr": 0,
+      "baseline_units_per_day": 0,
+      "current_cvr": 0,
+      "current_sessions": 0,
+      "priority": "MEDIUM",
+      "data_trigger": "PEKTACO fire hazard (9 helpful) + electric shock (5 helpful) reviews show safety is a purchase concern; no competitor addresses this visually",
+      "source": "voice_of_customer",
+      "_notes": "Customer quotes: 'Fire Hazard! Flames shooting 18 inches into the air' (9 helpful), 'electric SHOCK hazard - Very dangerous for these kitties' (5 helpful) - safety differentiation opportunity",
+      "listing": "fountain",
+      "wave": 4
+    },
+    {
+      "id": "EXP-040",
+      "listing": "bundle",
+      "element": "Bundle Listing - Value-led title + bullet revamp to drive first sale",
+      "status": "QUEUED",
+      "start_date": "2026-04-12",
+      "decision_date": "2026-04-26",
+      "hypothesis": "The bundle (fountain + 4-pack filters, B0GMDM6CG2) has zero sales because the title buries the value prop. Leading with 'Starter Kit' and 'Save vs buying separately' framing will generate the first sale within 14 days.",
+      "priority": "HIGH",
+      "rationale": "Zero units sold since launch on a product that should be the highest-margin item in the catalog. The bundle is the razor-blade model's home run: customers who buy it are locked in for filter repurchases. Since baseline is zero, we can rewrite title + bullets simultaneously \u2014 nothing to lose, and this ASIN is completely separate from the fountain listing so it doesn't interfere with any running experiments.",
+      "expected_impact": "First bundle sale within 14 days. Each bundle sale = fountain + 4 filters at potentially 20%+ savings for customer, full COGS+margin for us. Unlocks the filter subscription flywheel.",
+      "wave": 6,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "bundle_units_sold_14d",
+        "baseline": "0 units (30+ days of zero sales)",
+        "target": "1+ unit sold within 14 days",
+        "how_to_measure": "Seller Central > Business Reports > By ASIN > filter ASIN B0GMDM6CG2 > Units Ordered"
+      },
+      "execution": {
+        "what_to_do": "Rewrite bundle title and all 5 bullets with value-savings framing. Can run at same time as fountain and PPC experiments \u2014 completely separate ASIN.",
+        "steps": [
+          "1. Go to sellercentral.amazon.com > Catalog > Manage Inventory",
+          "2. Search for ASIN B0GMDM6CG2 or filter by product name 'Bundle'",
+          "3. Click Edit on the bundle listing",
+          "4. BEFORE making changes: screenshot current title and bullets",
+          "5. On Vital Info tab: paste the new title below",
+          "6. On Description tab: replace all 5 bullet points with new bullets below",
+          "7. Click Save and Finish \u2014 changes go live in 15-30 min",
+          "8. Check the listing on Amazon.com to confirm changes published",
+          "9. In 14 days (by Apr 26): check Business Reports for any B0GMDM6CG2 unit sales"
+        ],
+        "new_title": "PAW PURE Wireless Cat Water Fountain Starter Kit | Fountain + 4 Replacement Filters | 3L/108oz, 30-Day Battery, Stainless Steel Tray \u2014 BPA-Free",
+        "copy_paste_bullets": {
+          "bullet_1": "COMPLETE STARTER KIT \u2014 Everything you need from day one: the full 3L/108oz wireless fountain PLUS a 4-pack of replacement filters. No extra purchases, no subscriptions \u2014 just plug in and your cat drinks clean water immediately.",
+          "bullet_2": "SAVE VS BUYING SEPARATELY \u2014 Bundle price beats purchasing the fountain and filters individually. Same stainless steel tray, same whisper-quiet 20dB motor, same 30-day rechargeable battery. More value, one box.",
+          "bullet_3": "NO CORDS, NO PLUMBING \u2014 2500mAh rechargeable battery lasts 30 days on Auto mode. Place anywhere in your home \u2014 kitchen counter, bedroom, balcony. USB-C charging, full in 4 hours.",
+          "bullet_4": "FILTERS INCLUDED FOR 4-6 MONTHS \u2014 Each filter lasts 4-6 weeks. Your 4-pack covers your cat for up to 6 months of fresh, filtered water. Triple-layer filtration removes hair, debris, and odor.",
+          "bullet_5": "20dB WHISPER-QUIET WITH STAINLESS STEEL TRAY \u2014 The drinking surface your cat's tongue actually touches is food-grade stainless steel, not plastic painted to look like it. Combined with a 20dB pump that won't wake light sleepers or startle skittish cats, it's the calm, clean fountain your home deserves."
+        },
+        "seller_central_path": "Catalog > Manage Inventory > ASIN B0GMDM6CG2 > Edit",
+        "seller_central_url": "https://sellercentral.amazon.com/inventory"
+      }
+    },
+    {
+      "id": "EXP-044",
+      "listing": "ppc",
+      "element": "Negative keyword batch \u2014 pumpless / filterless / battery families",
+      "wave": "Rescue (parallel to EXP-045)",
+      "priority": "HIGH",
+      "status": "DONE",
+      "start_date": "2026-04-18",
+      "decision_date": "2026-04-26",
+      "run_window_days": 8,
+      "hypothesis": "12 search terms (pumpless, filterless, no filter, filter free, battery, etc.) are pulling Manual Keywords Campaign impressions and clicks but never converting. Adding them as phrase negatives across all SP campaigns will redirect that spend toward the 6 active exact-match keywords.",
+      "rationale": "Cerebro showed our listing was matching against intents we cannot fulfill. Customers searching 'pumpless cat water fountain' want a no-pump bowl, not our Paw Pure model. Wasted impression cost compounds in low-CTR placements.",
+      "expected_impact": "Eliminate $20-40/wk wasted spend with no impact on conversion volume. CTR rises as remaining impressions are higher-intent.",
+      "success_criteria": {
+        "metric": "wasted_spend_7d",
+        "baseline": "$30-50/wk on negated families (estimated from H10 search-term data)",
+        "target": "<$5/wk on negated families",
+        "how_to_measure": "Ads API spSearchTerm report \u2014 confirm zero impressions on negated stems"
+      },
+      "actual_result": "KEEP \u2014 Apr 26 Ads API CTR 0.52% vs prior 0.31% baseline. Per-keyword data confirms no spend on negated families. Search Term report not yet pulled to verify zero-impression at term level."
+    },
+    {
+      "id": "EXP-045",
+      "listing": "ppc",
+      "element": "PPC Rescue Plan Phase 1+2+2.5 \u2014 cut budgets, harvest 2 winners, sandbox test campaign",
+      "wave": "Rescue",
+      "priority": "CRITICAL",
+      "status": "DONE",
+      "start_date": "2026-04-19",
+      "decision_date": "2026-04-26",
+      "run_window_days": 7,
+      "hypothesis": "157% portfolio ACoS is driven by un-disciplined budgets and an under-performing Close Auto campaign. Cutting Manual budget $35\u2192$22, pausing Close Auto, and harvesting 2 proven exact matches into a $5/day sandbox will drop daily spend to $20-30 while holding sales at 0.30/day.",
+      "rationale": "Pre-rescue, the account spent $45/day with no per-keyword visibility. The Finances API confirmed $500/wk burn but couldn't isolate where. Phase 1+2 cut the bleeding via blunt budget cuts; Phase 2.5 set up a controlled sandbox to test specific exact matches in isolation.",
+      "expected_impact": "ACoS drops from 157% to <60% within 7 days. Daily spend $20-30. At least 0.30 sales/day held.",
+      "success_criteria": {
+        "metric": "daily_spend_AND_acos",
+        "baseline": "$45/day, 157% ACoS",
+        "target": "$20-30/day, <60% ACoS, sales 0.30+/day",
+        "how_to_measure": "Ads API per-day rollup vs Orders API"
+      },
+      "actual_result": "KEEP \u2014 RESCUE WORKED. Apr 26 Ads API: $21.98 spend (target \u2713), 44% ACoS (target \u2713), 0.5 sales/day held. SUPERSEDED by EXP-046 which uses real per-keyword ACoS for next-phase optimization."
+    },
+    {
+      "id": "EXP-049",
+      "listing": "fountain",
+      "element": "Wave 3 listing copy \u2014 small-dog/multi-pet bridge",
+      "wave": 3,
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "run_window_days": 14,
+      "hypothesis": "Adding a small-dog/multi-pet angle to bullet 4 + an A+ image showing a small dog drinking will allow Phase 3 dog PPC (EXP-050) to convert. Without listing-copy support, dog buyers bounce.",
+      "rationale": "Cerebro shows dog-fountain SV is 2-3x larger than cat-side equivalents. We cannot bid on dog terms profitably until the listing answers 'will this work for my dog?' in the first scroll.",
+      "expected_impact": "Unblocks EXP-050. Holds cat CVR steady (4.5%+) \u2014 dog angle is additive, not replacement.",
+      "success_criteria": {
+        "metric": "wave3_listing_published_AND_cat_cvr_held",
+        "baseline": "Listing currently cat-only",
+        "target": "Listing live with dog imagery + bullet 4 mention. Cat CVR within \u00b10.5pt of pre-publish baseline at 14d.",
+        "how_to_measure": "Listing view + Business Reports CVR by ASIN"
+      }
+    },
+    {
+      "id": "EXP-050",
+      "listing": "ppc",
+      "element": "Dog PPC validation \u2014 2 phrase keywords, $5/day, 60% ACoS gate",
+      "wave": "Dog Expansion",
+      "priority": "MEDIUM",
+      "status": "QUEUED",
+      "start_date": "",
+      "decision_date": "",
+      "run_window_days": 14,
+      "hypothesis": "Once EXP-049 publishes the dog-friendly listing copy, bidding on 2 phrase-match dog keywords at $0.60 with $5/day cap should yield 1-2 dog-attributed sales in 14 days at <60% ACoS.",
+      "rationale": "Dog SV 2-3x cat. If even 30% of clicks convert, we unlock a category that's larger than our current cat focus.",
+      "expected_impact": "1-2 dog sales/14d. ACoS data validates whether to scale or kill dog targeting.",
+      "success_criteria": {
+        "metric": "dog_attributed_units_AND_acos",
+        "baseline": "0 dog PPC spend today",
+        "target": "1+ unit at <60% ACoS in 14 days",
+        "how_to_measure": "Ads API per-keyword rollup, filter to dog-named keywords"
+      }
+    },
+    {
+      "id": "EXP-051",
+      "element": "Launch Filters_Manual campaign \u2014 first-ever PPC on B0FWXJ1GKT",
+      "status": "DONE",
+      "start_date": "2026-04-29",
+      "decision_date": "2026-05-06",
+      "hypothesis": "Filter cross-sell at 45% margin can sustain higher ACoS than fountain (9% margin). Top-SV filter terms (cat water fountain filter SV 28K, cat fountain filter SV 18K) have 0-1 competitors in top 30 organic \u2014 uncontested PPC space.",
+      "priority": "CRITICAL",
+      "rationale": "Filter B0FWXJ1GKT has had $0 in PPC spend ever. Cerebro Apr 28 reveals 4 high-SV filter KWs with low competitor density. Razor-blade margin economics + uncontested terms = highest expected ROI per dollar in the entire portfolio.",
+      "expected_impact": "Filter monthly unit sales ~50% lift over current organic-only baseline. Hard ACoS gate at 30% (vs 33.5% breakeven on fountain \u2014 filters have headroom).",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "filter_acos_7d",
+        "baseline": null,
+        "target": 30.0,
+        "unit": "%",
+        "direction": "down",
+        "how_to_measure": "Ads API filter campaign report \u2014 pull on 2026-05-06"
+      },
+      "execution": {
+        "what_to_do": "Seller Central > Create Campaign > Sponsored Products > Manual targeting > Continue",
+        "steps": [
+          "Seller Central > Create Campaign > Sponsored Products > Manual targeting > Continue",
+          "Campaign name: SP_Filters_Manual_2026-04-29",
+          "Daily budget: $5.00",
+          "Bidding strategy: Dynamic bids \u2014 down only",
+          "Placement: Top of search 0%, Product pages 0%",
+          "Ad group: Filters_Exact, Default bid: $0.80",
+          "Add product: B0FWXJ1GKT",
+          "Add keywords (EXACT match):",
+          "  cat water fountain filter \u2014 $0.80",
+          "  cat fountain filter \u2014 $0.80",
+          "  veken water fountain filters \u2014 $0.80",
+          "  petlibro water fountain filter \u2014 $0.65",
+          "Launch campaign. Monitor daily for first 3 days; verify ACoS < 30% by 2026-05-06."
+        ]
+      },
+      "listing": "filters",
+      "actual_result": "DONE 2026-04-30. Filters_Manual campaign launched on B0FWXJ1GKT with 4 exact-match KWs at $0.65-$0.80. First ACoS pull on 2026-05-07 \u2014 gate at 30%.",
+      "completed_date": "2026-04-30"
+    },
+    {
+      "id": "EXP-052",
+      "element": "Add 3 momentum-validated cat KWs to Manual Keywords Campaign",
+      "status": "DONE",
+      "start_date": "2026-04-29",
+      "decision_date": "2026-05-06",
+      "hypothesis": "6-month rank history (KT export Apr 29) shows we're GAINING organic rank on `cat water fountain stainless steel wireless` (#147 \u2192 #86, +61), `rechargeable cat water fountain` (#255 \u2192 #166, +89), and `kitty spout` is brand-search arbitrage. Bidding here amplifies a winning algorithmic signal.",
+      "priority": "HIGH",
+      "rationale": "Per the lessons file (Apr 29): bid HIGHER on KWs we're already gaining organic rank on (algo reinforcement); avoid pouring money into broad terms where we're losing ground. These 3 KWs satisfy that rule. Replaces the original `stainless steel cat water fountain` plan, which the rank history invalidates.",
+      "expected_impact": "3 new exact-match KWs convert at 2-3x current portfolio CVR because they're niche-specific. Adds ~$3-5/day spend, expected to recover via 1-2 incremental orders/week.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "new_kw_orders_7d",
+        "baseline": 0,
+        "target": 3,
+        "unit": "orders",
+        "direction": "up",
+        "how_to_measure": "Ads API SP Targeting report \u2014 count attributed orders for the 3 new KWs"
+      },
+      "execution": {
+        "what_to_do": "Seller Central > Sponsored Products > Manual Keywords Campaign > add keywords",
+        "steps": [
+          "Seller Central > Sponsored Products > Manual Keywords Campaign > add keywords",
+          "Add (EXACT match):",
+          "  cat water fountain stainless steel wireless \u2014 bid $1.30",
+          "  rechargeable cat water fountain \u2014 bid $1.00",
+          "  kitty spout cat water fountain \u2014 bid $1.20",
+          "Save. First ACoS read on 2026-05-02; verdict on 2026-05-06."
+        ]
+      },
+      "listing": "fountain",
+      "actual_result": "DONE 2026-04-30. 3 momentum-validated cat KWs added to Manual Keywords Campaign (cat water fountain stainless steel wireless $1.30, rechargeable cat water fountain $1.00, kitty spout cat water fountain $1.20). First ACoS pull 2026-05-02.",
+      "completed_date": "2026-04-30"
+    },
+    {
+      "id": "EXP-053",
+      "element": "Bulk-negate 26 wasted-spend terms flagged by Cerebro",
+      "status": "DONE",
+      "start_date": "2026-04-29",
+      "decision_date": "2026-05-06",
+      "hypothesis": "Cerebro Apr 28 flagged 26 KWs containing 'ceramic', 'no filter', 'pumpless', etc \u2014 wrong product attribute matches. Adding as negatives saves PPC dollars on clicks that will not convert.",
+      "priority": "HIGH",
+      "rationale": "We are paying for impressions/clicks on KWs that semantically can't sell our product (e.g. 'ceramic cat water fountain' \u2014 we're stainless). Per lessons (Apr 18 / EXP-024): every negative we should have added but didn't is a daily leak.",
+      "expected_impact": "Daily wasted spend down ~$2-4. ACoS improvement of 3-5pp portfolio-wide.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "wasted_spend_daily",
+        "baseline": 4.0,
+        "target": 1.0,
+        "unit": "$",
+        "direction": "down",
+        "how_to_measure": "Dashboard Strategy > Wasted Spend (7d) block \u2014 should drop"
+      },
+      "execution": {
+        "what_to_do": "Open dashboard > PPC Strategy > H10 Opportunities panel > Negatives filter",
+        "steps": [
+          "Open dashboard > PPC Strategy > H10 Opportunities panel > Negatives filter",
+          "Click 'Add as negatives' button \u2014 routes to experiments draft flow with all 26 terms",
+          "OR direct: Seller Central > Manual Keywords Campaign > Negative Keywords > paste in the 26 terms (full list in cerebro_opportunities_2026-04-28.json under tag=negative)",
+          "Save. Effect compounds daily \u2014 verify wasted spend reduction on 2026-05-06."
+        ]
+      },
+      "listing": "fountain",
+      "actual_result": "DONE 2026-04-30. 26 wasted-spend negatives added to Manual Keywords Campaign (ceramic / no filter / pumpless families). Effect compounds daily \u2014 verify wasted-spend reduction on 2026-05-06.",
+      "completed_date": "2026-04-30"
+    },
+    {
+      "id": "EXP-054",
+      "element": "Filter listing audit + refresh (B0FWXJ1GKT) \u2014 images, A+, copy",
+      "status": "DONE",
+      "start_date": "2026-04-30",
+      "decision_date": "2026-05-13",
+      "hypothesis": "Filter listing currently has weak images and minimal A+ content. With Filters_Manual campaign launching Apr 29, every dollar of new traffic will convert poorly until the listing matches buyer intent (compatibility, freshness, multi-pack value).",
+      "priority": "HIGH",
+      "rationale": "Filter is 45% margin and razor-blade economics depend on it converting. Driving PPC to a weak listing is throwing money into a sieve. Listing improvements compound with PPC traffic \u2014 get them shipping in parallel.",
+      "expected_impact": "Filter session-to-order CVR from current baseline (TBD \u2014 needs SP-API session pull) to +30%. A+ + better images = better organic indexing too.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "filter_listing_cvr",
+        "baseline": null,
+        "target": "+30%",
+        "unit": "%",
+        "direction": "up",
+        "how_to_measure": "SP-API Business Reports \u2014 sessions/units conversion for B0FWXJ1GKT"
+      },
+      "execution": {
+        "what_to_do": "Step 1 (Claude): Live scrape of B0FWXJ1GKT via Chrome \u2014 capture current state of: hero image, image carousel (count + content), bullets, A+ modules, comparison table",
+        "steps": [
+          "Step 1 (Claude): Live scrape of B0FWXJ1GKT via Chrome \u2014 capture current state of: hero image, image carousel (count + content), bullets, A+ modules, comparison table",
+          "Step 2 (Claude): Audit against top-converting filter listings (Veken filter, FEELNEEDY filter) \u2014 identify gaps in visual hierarchy, social proof, compatibility messaging",
+          "Step 3 (Victor): Decide on 3-5 image refreshes (ranked by impact)",
+          "Step 4 (Victor): Update via Seller Central > Manage Inventory > Edit listing",
+          "Step 5: Verify rank impact in next Sunday's KT pull"
+        ]
+      },
+      "listing": "filters",
+      "actual_result": "DONE 2026-04-30. Filter listing quick fixes shipped: (1) Title rewritten with 'PAW PURE' brand prefix + corrected to '4 Filters + 4 Sponges' + 'Multi-Layer Filtration' wording. (2) Bullet 1 corrected from '2 sponges' \u2192 '4 sponges' (was a returnable-claim risk). (3) Bullet 2 reworded to 'Multi-Layer Filtration Design' for consistency with title and bundle. (4) Added OEM Paw Pure authenticity bullet to compete with RIZZARI. Bigger items deferred to next week: hi-res hero image, A+ Premium upgrade (now the only Paw Pure listing without it), full image alt-text rewrite. Verify 2026-05-13 \u2014 measure CVR delta + organic indexing.",
+      "completed_date": "2026-04-30"
+    },
+    {
+      "id": "EXP-055",
+      "element": "Bundle listing audit + refresh \u2014 images, A+, copy",
+      "status": "DONE",
+      "start_date": "2026-05-01",
+      "decision_date": "2026-05-15",
+      "hypothesis": "Bundle listing has weak images / A+ / copy. Bundle is at 43% margin and was identified as 'unlaunched' in KW_Data Apr 26. PPC won't be effective without first ensuring the listing converts.",
+      "priority": "MEDIUM",
+      "rationale": "Same logic as EXP-054 \u2014 listing fundamentals must match marketing intent before paid traffic can compound. Bundle has the highest margin among our SKUs; getting its conversion right multiplies every other PPC effort.",
+      "expected_impact": "Bundle attach rate (% of fountain orders that include bundle) from current baseline to +25%. Bundle SKU sessions/orders ratio improves.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "bundle_attach_rate",
+        "baseline": null,
+        "target": "+25%",
+        "unit": "%",
+        "direction": "up",
+        "how_to_measure": "SP-API Orders \u2014 bundle SKU orders / fountain SKU orders"
+      },
+      "execution": {
+        "what_to_do": "Step 1 (Claude): Live scrape of bundle ASIN via Chrome \u2014 confirm ASIN first, then capture full listing state",
+        "steps": [
+          "Step 1 (Claude): Live scrape of bundle ASIN via Chrome \u2014 confirm ASIN first, then capture full listing state",
+          "Step 2 (Claude): Compare against top-rated bundle competitors in cat fountain category (any competitor selling fountain+filter combo)",
+          "Step 3 (Victor): Confirm bundle ASIN and provide listing access",
+          "Step 4 (Victor): Update images / A+ / bullets based on audit",
+          "Step 5: First impact reading on 2026-05-15"
+        ]
+      },
+      "listing": "bundle",
+      "actual_result": "DONE 2026-04-30. Bundle listing quick fixes shipped: (1) Bundle pricing dropped to $62.29 / 11% off (from $4.90 / 7% off) \u2014 meaningful psychological discount while preserving margin. (2) Bundle A+ typo fixed ('fourreplacement' \u2192 'four replacement'). (3) BONUS: Bundle A+ upgraded to A+ Premium (matches main fountain listing). Hero image already correct (bundle composition shot). EXP-040 bullets confirmed shipped (5 new bullets including the corrected 20dB+stainless steel bullet 5). Filter listing is now the ONLY Paw Pure listing without A+ Premium \u2014 see EXP-062. Verify 2026-05-15 \u2014 first bundle sale within 14 days.",
+      "completed_date": "2026-04-30"
+    },
+    {
+      "id": "EXP-056",
+      "element": "PAT campaign on PETLIBRO B0FDKQGRCK \u2014 comparison-shopper interception",
+      "status": "TODO",
+      "start_date": "2026-04-30",
+      "decision_date": "2026-05-07",
+      "hypothesis": "PETLIBRO sits BSR #5 in Cat Fountains at $66.36 with 1,813 reviews. Buyers comparison-shopping on their listing are exactly the premium-tier segment we want. PAT bids on their detail page can intercept at 30-50% of broad-keyword CPC.",
+      "priority": "HIGH",
+      "rationale": "Today's Insights tab shows PETLIBRO with Threat Score 50 \u2014 third-highest. Premium positioning means their browsers can afford ours. Their 4.3\u2605 vs our 4.5\u2605 is a real wedge.",
+      "expected_impact": "5-15 sponsored impressions/day on B0FDKQGRCK detail page, 1-2 clicks/day at <$0.50 CPC, first attributed click within 7 days. Monitor for ACoS \u2014 gate at 50% (filters' ACoS gate is 30%; PAT against premium has more headroom because basket size and CVR are higher).",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "pat_clicks_7d",
+        "baseline": 0,
+        "target": 5,
+        "unit": "clicks",
+        "direction": "up",
+        "how_to_measure": "Ads API SP Targeting report \u2014 filter by campaign SP_PAT_PETLIBRO_2026-04-30"
+      },
+      "execution": {
+        "what_to_do": "Seller Central > Create Campaign > Sponsored Products > Manual targeting > Continue",
+        "steps": [
+          "Seller Central > Create Campaign > Sponsored Products > Manual targeting > Continue",
+          "Campaign name: SP_PAT_PETLIBRO_2026-04-30",
+          "Daily budget: $3.00",
+          "Bidding strategy: Dynamic bids \u2014 down only",
+          "Placement: Top of search 0%, Product pages +20%",
+          "Ad group: PAT_PETLIBRO_Dockstream",
+          "Default bid: $0.45",
+          "Add product: B0DJHQVJYF",
+          "Product targeting > Individual products > Enter list:",
+          "  B0FDKQGRCK    bid $0.45    (PETLIBRO Dockstream 2)",
+          "Negative product targeting:",
+          "  B0DJHQVJYF    (exclude our own)",
+          "Launch. Daily check-in for first 3 days. Decision on 2026-05-07."
+        ]
+      },
+      "listing": "fountain",
+      "actual_result": null
+    },
+    {
+      "id": "EXP-057",
+      "element": "Fountain bullets \u2014 quality-positioning rewrite vs APAUK / PawPoll",
+      "status": "TODO",
+      "start_date": "2026-05-01",
+      "decision_date": "2026-05-14",
+      "hypothesis": "APAUK ($21.99, 4.5\u2605 \u00d7 2,502 rev) and PawPoll ($39.99, 4.1\u2605 \u00d7 3,668 rev) attack on price. We can't win on price. The lever we DO have: we are 4.5\u2605 \u2014 matching APAUK and ABOVE PawPoll. Lead bullets with quality + materials, not feature-list parity.",
+      "priority": "HIGH",
+      "rationale": "Replaces stale EXP-029 which still assumed CVR investigation was the bottleneck. Apr 28 listing audit + competitor data make the actual answer clear: premium positioning is the only path. Bullets must STOP sounding like every other listing and START sounding like a premium product.",
+      "expected_impact": "CVR lift 15-25% on premium-intent terms (`stainless steel`, `quiet`, `cordless`). No measurable change on price-shopping terms (`cheap`, `bundle`) \u2014 that's intentional, those buyers go to APAUK.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "premium_kw_cvr_14d",
+        "baseline": "TBD from prior 14d",
+        "target": "+15%",
+        "unit": "%",
+        "direction": "up",
+        "how_to_measure": "SP-API Business Reports + Ads API attributed CVR for KWs containing 'stainless', 'quiet', 'cordless'"
+      },
+      "execution": {
+        "what_to_do": "Open Strategy tab > Listing Touchpoint Map for fountain B0DJHQVJYF",
+        "steps": [
+          "Open Strategy tab > Listing Touchpoint Map for fountain B0DJHQVJYF",
+          "Identify which bullets currently mirror competitor language (genericness check)",
+          "Rewrite using framework: <PREMIUM-CLAIM> \u2014 <CONCRETE-DIFF-VS-COMPETITOR> \u2014 <BUYER-OUTCOME>",
+          "Example new Bullet 1: 'WHISPER-QUIET 20dB MOTOR \u2014 Most fountains hum at 30-40dB. Paw Pure runs at 20dB, the loudness of a quiet library. Won't startle skittish cats, won't wake light sleepers. The premium pump that justifies the price.'",
+          "Example new Bullet 2: 'FOOD-GRADE STAINLESS STEEL TRAY \u2014 Other brands hide plastic behind a steel rim. The surface your cat's tongue touches is 304 stainless steel \u2014 the same grade used in commercial kitchens. Zero plastic taste, BPA-free.'",
+          "Submit via Seller Central > Manage Inventory > B0DJHQVJYF > Edit",
+          "Wait 24h for live, then verify changes",
+          "Monitor SP-API Business Reports for CVR delta over 14 days vs prior 14-day baseline"
+        ]
+      },
+      "listing": "fountain",
+      "actual_result": null
+    },
+    {
+      "id": "EXP-058",
+      "element": "Daily Request-a-Review automation via SP-API Solicitations",
+      "status": "TODO",
+      "start_date": "2026-05-02",
+      "decision_date": "2026-06-02",
+      "hypothesis": "Reviews are THE bottleneck (we have 21 vs APAUK 2,502). At our current ~0.65 reviews/week pace, we'd need 38 years to match APAUK. Solicitations API can request a review on every delivered order, ~2.5x our current organic ask rate.",
+      "priority": "CRITICAL",
+      "rationale": "Generalises stale EXP-035 with concrete tactics. The Solicitations API is ready-but-gated per data_freshness notes. Closing this gap unlocks: (1) Amazon's Choice re-eligibility, (2) organic CVR floor, (3) ladder pricing milestones in pricingLadder.",
+      "expected_impact": "Review velocity from 0.65/wk \u2192 2/wk within 30 days. Hit 50 reviews by mid-June (currently 21 + 30 days \u00d7 2/wk = 30). Subsequent ladder unlocks $42.99 price point at 50 reviews per strategy_pricing.json.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "reviews_per_week",
+        "baseline": 0.65,
+        "target": 2.0,
+        "unit": "reviews/week",
+        "direction": "up",
+        "how_to_measure": "data.voc.current.paw_pure.total_ratings 7-day delta"
+      },
+      "execution": {
+        "what_to_do": "Verify SP-API Solicitations endpoint is callable (check Auth scope: solicitations.requestReviewSolicitation:create)",
+        "steps": [
+          "Verify SP-API Solicitations endpoint is callable (check Auth scope: solicitations.requestReviewSolicitation:create)",
+          "If gated: open Seller Central case to request access \u2014 usually 24-48h",
+          "Build amazon_api/pullers/request_reviews.py: pulls delivered orders from last 4-30 days, filters out already-asked (track in solicitation_log.json), calls POST /solicitations/v1/orders/{orderId}/solicitations/productReviewAndSellerFeedback",
+          "Add to daily_pipeline.py to run every morning",
+          "Track outcomes in dashboard: new column 'requested' on orders table",
+          "Insert thank-you cards in next inventory shipment with QR code \u2192 review page (parallel manual lever)"
+        ]
+      },
+      "listing": "brand",
+      "actual_result": null
+    },
+    {
+      "id": "EXP-059",
+      "element": "Reports API quota retry + backfill \u2014 no more Sessions/CVR gaps",
+      "status": "TODO",
+      "start_date": "2026-05-01",
+      "decision_date": "2026-05-07",
+      "hypothesis": "Sessions and CVR have been null since Apr 27 (Reports API quota exceeded). The dashboard now uses last-known-good (Apr 23: 157 sessions, 3.18% CVR) but this hides real movement. A retry-with-exponential-backoff inside pull_business_reports.py would close the gap.",
+      "priority": "CRITICAL",
+      "rationale": "Daily KPI history shows we're flying blind on the conversion side of the funnel. Without sessions data, we cannot confirm whether the 89.6% ACoS is being caused by traffic drying up OR PPC inefficiency.",
+      "expected_impact": "Sessions/CVR populated daily within 7 days. 'as of Apr 23 (Reports API quota)' annotation disappears from PPC Strategy tab. EXP-057 success_criteria becomes measurable.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "days_with_sessions_data_last_7d",
+        "baseline": 0,
+        "target": 5,
+        "unit": "days",
+        "direction": "up",
+        "how_to_measure": "Count of dates in daily_kpis_history.series where sessions != null in last 7 days"
+      },
+      "execution": {
+        "what_to_do": "Read amazon_api/pullers/pull_business_reports.py \u2014 find quota error handling",
+        "steps": [
+          "Read amazon_api/pullers/pull_business_reports.py \u2014 find quota error handling",
+          "Wrap report request in retry-with-exponential-backoff: 1s, 5s, 30s, 5min, 30min \u2014 give up after 4 hours total",
+          "On quota_exceeded: log to amazon_api/data/logs/reports_quota.log with timestamp",
+          "Add cron retry: if pipeline ran but business_reports came back null, queue a retry 4h later",
+          "Backfill: scan ads_*.json window dates and try to pull historical Reports data for any missing days (if API allows)",
+          "Verify: run scripts/build_daily_kpis_history.py after first successful pull \u2014 gaps should fill in"
+        ]
+      },
+      "listing": "ops",
+      "actual_result": null,
+      "priority_history": [
+        {
+          "date": "2026-04-30",
+          "from": "HIGH",
+          "to": "CRITICAL",
+          "reason": "Reports API quota gap blocks verdicts on every conversion-related experiment. Apr 30 audit upgrade."
+        }
+      ]
+    },
+    {
+      "id": "EXP-060",
+      "element": "Wave 3 dog bullet copy \u2014 ship the concrete bridge for Phase 3",
+      "status": "TODO",
+      "start_date": "2026-05-05",
+      "decision_date": "2026-05-14",
+      "hypothesis": "EXP-049 exists but is undated and lacks the actual copy. Phase 3 dog PPC (EXP-050) is gated on this. Today's competitor data (oneisall $175K/mo at 10L) confirms we cannot compete on capacity but CAN on wireless + multi-pet positioning.",
+      "priority": "HIGH",
+      "rationale": "Concrete version of EXP-049 with real copy. Without this, dog SVs (57K/57K/33K) stay un-bid and Phase 3 cannot start.",
+      "expected_impact": "Listing indexes for dog/multi-pet KWs within 7 days. Unlocks EXP-050 dog PPC validation.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "dog_kws_indexed_7d",
+        "baseline": 0,
+        "target": 3,
+        "unit": "keywords",
+        "direction": "up",
+        "how_to_measure": "Count of dog KWs (those matching DOG_REGEX) where rank_history shows organic rank \u2264 306"
+      },
+      "execution": {
+        "what_to_do": "Update Bullet 4 of fountain B0DJHQVJYF: replace existing text with",
+        "steps": [
+          "Update Bullet 4 of fountain B0DJHQVJYF: replace existing text with",
+          "  'WORKS FOR CATS AND SMALL DOGS \u2014 3L/108oz capacity is enough for cats AND small dogs to share. Three flow modes (Gentle Stream, Bubble, Continuous) keep every pet drinking \u2014 even hesitant ones. Multi-pet households, one fountain.'",
+          "Update A+ Module 3: add a small dog drinking image alongside cat",
+          "Update backend search terms: add 'small dog water fountain wireless', 'cordless dog water fountain', 'multi pet water fountain'",
+          "Submit via Seller Central > B0DJHQVJYF > Edit",
+          "After 7 days: pull KW_Data, verify dog KWs are now indexed (rank \u2264 306)",
+          "If indexed: launch EXP-050 (dog PPC validation) on 2026-05-12"
+        ]
+      },
+      "listing": "fountain",
+      "actual_result": null
+    },
+    {
+      "id": "EXP-061",
+      "element": "Kill SP_Test_Expansion + fold `cat drinking fountain` into Manual Keywords Campaign",
+      "status": "DONE",
+      "start_date": "2026-04-30",
+      "decision_date": "2026-05-07",
+      "hypothesis": "SP_Test_Expansion_2026-04-19 has produced 1 impression in 8 days because its single keyword (`cat drinking fountain` exact) is bid too low to win the auction. Per Apr 30 lesson: single-KW low-bid test campaigns are silent failures. Folding the KW into the active Manual Keywords Campaign at competitive bid will capture impressions immediately.",
+      "priority": "MEDIUM",
+      "rationale": "Cerebro Apr 28 + KT rank history confirm `cat drinking fountain` (SV 5,519) gained 104 organic positions in the last 30 days (#280 \u2192 #176). The Apr 29 lesson says: bid up where the algo is favoring us. Test campaign has zero discoverability; main campaign already wins impressions on similar terms.",
+      "expected_impact": "Campaign accounting cleaner. `cat drinking fountain` exact gets 5-15 impressions/day inside Manual Keywords Campaign at $0.80 bid. First attributed click within 7 days.",
+      "wave": 1,
+      "run_window_days": 7,
+      "success_criteria": {
+        "metric": "cat_drinking_fountain_impressions_7d",
+        "baseline": 1,
+        "target": 35,
+        "unit": "impressions",
+        "direction": "up",
+        "how_to_measure": "Ads API SP Targeting report \u2014 filter keyword 'cat drinking fountain'."
+      },
+      "execution": {
+        "what_to_do": "Seller Central > Sponsored Products > Campaigns > select SP_Test_Expansion_2026-04-19",
+        "steps": [
+          "Seller Central > Sponsored Products > Campaigns > select SP_Test_Expansion_2026-04-19",
+          "Campaign settings > Pause campaign (do NOT delete \u2014 keep history for reference)",
+          "Open Manual Keywords Campaign > add keyword:",
+          "  cat drinking fountain \u2014 match: exact \u2014 bid: $0.80",
+          "Save. Daily monitor for first 3 days; verify impressions > 0 by 2026-05-03.",
+          "Add to lessons file: 'Single-KW test campaigns produce zero data unless bid is competitive.'"
+        ]
+      },
+      "listing": "fountain",
+      "actual_result": "SP_Test_Expansion confirmed deleted in Ads API pull 2026-05-04. Only Manual Keywords + Filters_Manual active. NOTE: cat drinking fountain KW not yet folded into Manual \u2014 still TODO.",
+      "completed_date": "2026-05-04"
+    },
+    {
+      "id": "EXP-062",
+      "element": "Upgrade filter listing (B0FWXJ1GKT) to A+ Premium",
+      "status": "QUEUED",
+      "start_date": "2026-05-04",
+      "decision_date": "2026-05-18",
+      "hypothesis": "Bundle (B0GMDM6CG2) and main fountain (B0DJHQVJYF) are both on A+ Premium. Filter (B0FWXJ1GKT) is the only Paw Pure listing still on basic A+ Content. A+ Premium adds video modules, 1000-pixel hero rows, hover-zoom, and comparison tables \u2014 all of which lift CVR ~5-15% per Amazon's own benchmarks for sub-$30 SKUs.",
+      "priority": "MEDIUM",
+      "rationale": "We just shipped EXP-054 quick fixes (title + bullet 1 sponge count + OEM bullet + multi-layer wording). Filter Campaign EXP-051 starts driving paid traffic this week. Every dollar of new PPC traffic on the filter converts at a higher rate when the listing has Premium A+ vs basic. Closing the gap brings filter listing parity with bundle and main listing.",
+      "expected_impact": "Filter session-to-order CVR lifts 5-15% post-Premium upgrade. Hover-zoom + 1000px hero rows give buyers more detail before clicking away. Comparison module helps frame Paw Pure vs RIZZARI on real attributes (e.g. compatibility specifically with Paw Pure fountain).",
+      "wave": 1,
+      "run_window_days": 14,
+      "success_criteria": {
+        "metric": "filter_session_to_order_cvr",
+        "baseline": "TBD (post EXP-059 Reports API recovery)",
+        "target": "+10%",
+        "unit": "%",
+        "direction": "up",
+        "how_to_measure": "SP-API Business Reports \u2014 sessions_total / units_ordered for B0FWXJ1GKT, weekly delta vs prior 14d baseline."
+      },
+      "execution": {
+        "what_to_do": "Confirm Brand Registry 2.0 status on Paw Pure brand (required for A+ Premium)",
+        "steps": [
+          "Confirm Brand Registry 2.0 status on Paw Pure brand (required for A+ Premium)",
+          "Seller Central > Stores > Manage A+ Content > Create A+ Premium Content",
+          "Use the same module library as the bundle/fountain Premium A+ but tailor to filter narrative:",
+          "  Module 1: Hero with hover-zoom \u2014 'Multi-Layer Filtration Inside'",
+          "  Module 2: Video module \u2014 30s show-and-tell of swapping a filter (already have footage, edit and upload)",
+          "  Module 3: 1000px crossover row \u2014 three side-by-side panels: (a) cotton mesh, (b) activated carbon, (c) ion-exchange resin \u2014 each with a single-line benefit",
+          "  Module 4: Comparison table \u2014 Paw Pure OEM filter vs generic third-party filters on: dimensions match, pump compatibility, multi-layer construction, food-grade materials",
+          "  Module 5: 'When to replace' calendar visual \u2014 4 filters covering 4-6 months",
+          "  Module 6: Cross-link CTA \u2014 'Don't have the fountain yet?' with link to B0DJHQVJYF and bundle B0GMDM6CG2",
+          "Submit for Amazon review (Premium A+ approval typically 24-72h)",
+          "Once approved, monitor filter CVR weekly \u2014 expect lift to register by 2026-05-18"
+        ]
+      },
+      "listing": "filters",
+      "actual_result": null
+    },
+    {
+      "id": "EXP-072",
+      "element": "Verify Cat_Test_Expansion \u2014 graduate/kill cycle",
+      "status": "TRACKING",
+      "start_date": "2026-05-06",
+      "decision_date": "2026-05-13",
+      "priority": "HIGH",
+      "wave": 4,
+      "listing": "fountain"
+    },
+    {
+      "id": "EXP-073",
+      "element": "Verify Dog_Discovery \u2014 go/listing-bridge/kill",
+      "status": "TRACKING",
+      "start_date": "2026-05-06",
+      "decision_date": "2026-05-20",
+      "priority": "HIGH",
+      "wave": 4,
+      "listing": "fountain"
+    },
+    {
+      "id": "EXP-074",
+      "element": "Verify Cat_Winners \u2014 sustained <40% ACoS",
+      "status": "TRACKING",
+      "start_date": "2026-05-06",
+      "decision_date": "2026-05-13",
+      "priority": "CRITICAL",
+      "wave": 4,
+      "listing": "fountain"
+    }
+  ],
+  "recommended_execution_order": [
+    {
+      "step": 1,
+      "wave": 1,
+      "what": "Wave 1: Stop the Bleeding, pause auto campaign, cut budget, negate zero-converters, add backend keywords",
+      "when": "Apr 12-25",
+      "time_required": "15 minutes total"
+    },
+    {
+      "step": 2,
+      "wave": 2,
+      "what": "Wave 2: Title Optimization, apply new title with battery life claim",
+      "when": "Apr 12-25 (runs parallel with Wave 1)",
+      "time_required": "5 minutes"
+    },
+    {
+      "step": 3,
+      "wave": 3,
+      "what": "Wave 3: Bullet Rewrite, replace all 5 bullets with optimized copy",
+      "when": "Apr 26 - May 9 (after measuring Wave 1+2 results)",
+      "time_required": "10 minutes"
+    },
+    {
+      "step": 4,
+      "wave": 4,
+      "what": "Wave 4: PPC Relaunch + Image, launch exact match campaigns and upload image overlay",
+      "when": "May 10-23 (after measuring Wave 3)",
+      "time_required": "20 minutes"
+    },
+    {
+      "step": 5,
+      "wave": 5,
+      "what": "Wave 5: A+ Content Upgrade, update headline and add durability section",
+      "when": "May 24 - Jun 6 (after measuring Wave 4)",
+      "time_required": "20 minutes"
+    },
+    {
+      "step": 6,
+      "wave": 6,
+      "what": "Wave 6: Structural Cleanup, remove excess inventory, request reviews, deactivate bundle, audit CVR gap",
+      "when": "Anytime, no dependencies",
+      "time_required": "30 minutes total"
+    }
+  ],
+  "completed_experiments": [
+    {
+      "id": "EXP-023",
+      "element": "Title - add 'small dogs' keyword",
+      "status": "DONE",
+      "start_date": null,
+      "decision_date": "2026-04-11",
+      "hypothesis": "Adding 'for Cats & Small Dogs' to title will index for dog keywords and increase sessions.",
+      "priority": "HIGH",
+      "rationale": "'Small dog water fountain wireless' has 3,200 monthly searches, and Paw Pure wasn't showing up for any dog-related keywords because 'dog' wasn't in the title. Adding 'for Cats & Small Dogs' to the title tells Amazon to index the listing for both cat AND small dog searches, effectively opening a second audience with zero additional cost. The fountain works perfectly for small dogs, so there's no misleading claim.",
+      "expected_impact": "Indexes Paw Pure for dog-related fountain keywords totaling 3,200+ monthly searches. Even capturing 1% of those searches adds ~32 new sessions per month for free. Also positions the product for the less competitive 'small dog water fountain' niche where review counts are lower and Paw Pure can compete more effectively.",
+      "run_window_days": 0,
+      "success_criteria": {
+        "metric": "keyword_indexing",
+        "baseline": "not indexed for dog keywords",
+        "target": "indexed for 'small dog water fountain' within 48 hours",
+        "how_to_measure": "Search 'small dog water fountain' on Amazon and check if Paw Pure appears in first 10 pages"
+      },
+      "outcome": "Already implemented in current title. Monitoring for dog keyword indexing. KW_Data shows 'small dog water fountain wireless' (SV 3,200) now trackable.",
+      "completed_date": "2026-04-11"
+    },
+    {
+      "id": "EXP-046",
+      "listing": "ppc",
+      "element": "Bid surgery on 6 active keywords \u2014 data-driven adjustments from Ads API",
+      "wave": "PPC Optimization (post-rescue)",
+      "priority": "CRITICAL",
+      "status": "DONE",
+      "start_date": "2026-04-27",
+      "decision_date": "2026-05-04",
+      "run_window_days": 7,
+      "hypothesis": "Apr 26 Ads API shows 1 of 6 active keywords (`cat fountain stainless steel`) drove 100% of conversion at 20.3% ACoS. Another (`stainless steel cat water fountain`) consumed 46% of spend with 0% conversion. Cutting the bleeder bid by 31% and raising the winner bid by 11% should compound into ~30% portfolio ACoS within 7 days.",
+      "rationale": "First time in the program we have per-keyword ACoS instead of campaign-aggregate. The bleeder has 1358 impressions with only 5 clicks \u2014 CTR 0.37% suggests poor relevance match. Cut bid first; if it survives 7 days at $1.10 with no conversion, pause entirely.",
+      "expected_impact": "Daily spend drops $22\u2192$15-18. Portfolio ACoS 44%\u219230%. Winner gains 30-50% more impression share.",
+      "success_criteria": {
+        "metric": "portfolio_acos_7d",
+        "baseline": "44% (Apr 26)",
+        "target": "<35% by May 4",
+        "how_to_measure": "Daily Ads API pull, 7-day average"
+      },
+      "execution": {
+        "what_to_do": "Apply 3 bid changes in Seller Central > Campaign Manager > Manual Keywords Campaign > Phrase Match ad group.",
+        "seller_central_path": "Seller Central > Campaigns > Sponsored Products > Manual Keywords Campaign > Phrase Match",
+        "steps": [
+          "1. Open Manual Keywords Campaign",
+          "2. Find keyword `stainless steel cat water fountain` \u2014 change bid from $1.60 to $1.10",
+          "3. Find keyword `cat fountain stainless steel` \u2014 change bid from $1.80 to $2.00",
+          "4. Find keyword `cat water fountain stainless steel` \u2014 change bid from $1.49 to $1.80",
+          "5. Save changes. Re-run pull_ads.py daily for 7 days."
+        ]
+      },
+      "completed_date": "2026-05-06"
+    },
+    {
+      "id": "EXP-047",
+      "listing": "ppc",
+      "element": "Add 5 missing Tier 1 cat exact-match keywords",
+      "wave": "PPC Optimization",
+      "priority": "HIGH",
+      "status": "DONE",
+      "start_date": "2026-04-28",
+      "decision_date": "2026-05-04",
+      "run_window_days": 7,
+      "hypothesis": "Cerebro confirms 5 cat-fountain keywords (combined ~14K SV) have low title density (<30) and competitor ranks 60-200 \u2014 competitor weakness we can exploit. The strategy doc assumed they were already in our campaigns; Ads API confirmed they are NOT. Adding them at conservative bids (H10 sugg. min \u00d7 0.7-0.8) should yield 1-2 incremental conversions in 7d.",
+      "rationale": "All 5 keywords tested by competitor brands but not by us. We rank #160+ organically across the board, so PPC is the only access path. Conservative bids prevent runaway spend; if any one keyword gets 0 impressions in 3 days, raise +20%.",
+      "expected_impact": "Add ~$3-5/day spend at 30-40% ACoS. 1-2 incremental units/wk.",
+      "success_criteria": {
+        "metric": "new_keyword_conversions_7d",
+        "baseline": "0 conversions (not running)",
+        "target": "1+ conversion across the 5 new keywords",
+        "how_to_measure": "Ads API per-keyword rollup, filter to the 5 new exact matches"
+      },
+      "execution": {
+        "what_to_do": "Add 5 new exact-match keywords to Manual Keywords Campaign > Phrase Match ad group.",
+        "seller_central_path": "Seller Central > Campaigns > Sponsored Products > Manual Keywords Campaign > Phrase Match > Add keywords",
+        "steps": [
+          "1. Open ad group, click 'Add keywords'",
+          "2. Add as exact match with these bids:",
+          "   - wireless cat water fountain \u2014 $0.90",
+          "   - cordless cat water fountain \u2014 $1.10",
+          "   - cat water fountain wireless \u2014 $1.00",
+          "   - cat water fountain cordless \u2014 $1.00",
+          "   - metal cat water fountain \u2014 $1.20",
+          "3. Save. Confirm all 5 show 'Active' status.",
+          "4. Add negatives: pumpless, filterless, ceramic, no filter (already done in EXP-044, just verify they are scoped to this ad group)"
+        ]
+      },
+      "completed_date": "2026-05-06"
+    },
+    {
+      "id": "EXP-048",
+      "listing": "filters",
+      "element": "Filter cross-sell campaign launch (B0FWXJ1GKT)",
+      "wave": "Filter Activation",
+      "priority": "HIGH",
+      "status": "DONE",
+      "start_date": "2026-04-28",
+      "decision_date": "2026-05-11",
+      "run_window_days": 14,
+      "hypothesis": "B0FWXJ1GKT (filters) has zero PPC, organic sales of 2 units/7d, and 43% gross margin (vs fountain 33%). Branded-search filter terms (`veken cat water fountain filters` SV 3,256) have demonstrable buyer intent. Spending $5/day at $0.80 exact bid should yield 1-2 filter sales/wk.",
+      "rationale": "Filter is the 'razor blade' in our razor-blade model. Currently 0.27 razor-blade ratio \u2014 way below industry standard (0.6+). PPC on filters is the cheapest possible scale lever and the customer cohort already converted on the fountain.",
+      "expected_impact": "$5/day spend \u2192 1-2 filter sales/wk at 30-50% ACoS. Razor-blade ratio rises 0.27 \u2192 0.35+.",
+      "success_criteria": {
+        "metric": "filter_units_sold_14d_via_ppc",
+        "baseline": "0 units via PPC (campaign doesn't exist)",
+        "target": "2+ units in 14 days",
+        "how_to_measure": "Ads API per-campaign report filtered to Filters_Manual"
+      },
+      "execution": {
+        "what_to_do": "Create new SP campaign for filter ASIN.",
+        "seller_central_path": "Seller Central > Campaigns > Create campaign > Sponsored Products > Manual targeting",
+        "steps": [
+          "1. Campaign name: Filters_Manual_2026-04-28",
+          "2. Daily budget: $5",
+          "3. ASIN: B0FWXJ1GKT",
+          "4. Targeting: Manual > Keyword targeting > Exact match",
+          "5. Add keyword: `veken cat water fountain filters` at $0.80 bid",
+          "6. Add negatives (campaign-level): `pawira filter`, `petlibro filter`, `paws & pals filter`",
+          "7. Save and launch."
+        ]
+      },
+      "completed_date": "2026-05-06"
+    }
+  ],
+  "guardrails": {
+    "one_element_at_a_time": "Change title OR bullets in a given 14-day period, not both",
+    "no_price_testing_q4": "Oct\u2013Dec",
+    "no_simultaneous_title_and_bullets": true,
+    "minimum_run_days": 14,
+    "minimum_sessions_for_significance": 50,
+    "never_claim_unverified_specs": "Do not publish battery life claim until supplier confirms",
+    "premium_positioning": "Never compete on price, never use 'budget' language"
+  },
+  "north_star": {
+    "breakeven_acos_percent": 33.5,
+    "target_cvr_percent": 8,
+    "fountain_margin_dollars": 4.42,
+    "fountain_margin_percent": 9,
+    "filter_margin_dollars": 9.08,
+    "filter_margin_percent": 45,
+    "strategy": "Sell fountain to acquire customer; profit on filter repurchase"
+  },
+  "urgent_alerts": [
+    {
+      "date": "2026-04-11",
+      "type": "PPC_OVERDUE_9_DAYS",
+      "severity": "CRITICAL - ESCALATED",
+      "description": "EXP-024/025/026 now marked OVERDUE. Campaign Manager blocked 8 consecutive days. Estimated $105-135 wasted since activation. New settlement period started 4/11 already at -$7.94. MUST use Amazon Seller mobile app or desktop browser to pause campaigns. Every additional day = ~$15 wasted."
+    },
+    {
+      "date": "2026-04-11",
+      "type": "PROFITABILITY_CRISIS_WEEK_2",
+      "severity": "CRITICAL",
+      "description": "Second consecutive week of PROFITABILITY_CRISIS. Contribution margin worsened from -$7.69/week to -$100.31/week. 30-day margin: -$576.47. Revenue declining in rolling window ($429 vs prior $549.91). Zero fountain sales for 3+ consecutive days."
+    },
+    {
+      "date": "2026-04-11",
+      "type": "STORAGE_FEE_DRAG",
+      "severity": "HIGH",
+      "description": "Storage fees ($246.63/month) now exceed monthly gross profit ($120.16). 1,412 days of fountain cover. New EXP-034 created to address via FBA removal/liquidation."
+    },
+    {
+      "date": "2026-04-11",
+      "type": "REVIEW_STAGNATION",
+      "severity": "HIGH",
+      "description": "1 new review this period (20\u219221) but 9 days without activity prior. 13x behind competitor velocity. New EXP-035 created for systematic review requests."
+    }
+  ],
+  "paw_pure_asins": {
+    "main": "B0DJHQVJYF",
+    "filters": "B0FWXJ1GKT",
+    "bundle": "B0GMDM6CG2"
+  },
+  "weekly_goal": {
+    "week_of": "2026-04-12",
+    "goal": "Stop the PPC bleed and decide the bundle listing's fate \u2014 simultaneously",
+    "narrative": "We're in week 2 of a profitability crisis (-$15.74 contribution margin this week). Two things can move the needle right now: (1) pausing the 2 zero-conversion PPC keywords saves ~$24/week instantly, and (2) the bundle listing has never sold a single unit \u2014 we either revamp it with value-led copy or deactivate it. Because these are separate ASINs/systems, both can run at the same time.",
+    "kpi_targets": [
+      "ACoS < 80% (from 104%)",
+      "Contribution margin > -$10/week",
+      "Bundle: 1 sale OR decision to deactivate by Apr 26"
+    ],
+    "why_this_matters": "Every week at current burn rate costs ~$15-50 in wasted ad spend. The bundle fix is free to test and separate from fountain experiments.",
+    "active_listing_experiments": {
+      "fountain": [
+        "EXP-024",
+        "EXP-025",
+        "EXP-026"
+      ],
+      "bundle": [
+        "EXP-040"
+      ],
+      "brand": [
+        "EXP-035"
+      ]
+    },
+    "can_run_simultaneously": true,
+    "simultaneously_note": "Fountain PPC changes and Bundle listing copy changes touch completely different ASINs and systems \u2014 zero interference risk."
+  }
+}
