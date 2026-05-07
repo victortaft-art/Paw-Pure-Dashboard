@@ -1,5 +1,5 @@
 {
-  "_generated": "2026-05-06",
+  "_generated": "2026-05-07",
   "_window": {
     "start": "2026-04-03",
     "end": "2026-05-07"
@@ -272,16 +272,16 @@
     },
     {
       "date": "2026-05-07",
-      "ad_spend": 26.66,
+      "ad_spend": 31.98,
       "ad_sales_7d": 49.99,
-      "clicks": 12,
-      "impressions": 7002,
-      "ctr": 0.0017,
-      "cpc": 2.2217,
+      "clicks": 17,
+      "impressions": 9412,
+      "ctr": 0.0018,
+      "cpc": 1.8812,
       "sessions": 81,
-      "cvr": 7.41,
-      "revenue": 232.26,
-      "units": 6,
+      "cvr": 8.64,
+      "revenue": 282.25,
+      "units": 7,
       "page_views": 96,
       "_sources": {
         "ads": "ads_2026-05-07.json",

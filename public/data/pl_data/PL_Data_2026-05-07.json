@@ -8,18 +8,18 @@
   "inventory": {
     "fountain": {
       "asin": "B0DJHQVJYF",
-      "fba_available": 345,
+      "fba_available": 346,
       "fba_inbound": 0,
-      "total_stock": 345,
+      "total_stock": 346,
       "daily_velocity_7day": 0.57,
       "daily_velocity_30day": 0.57,
-      "days_of_cover_7day": 605,
-      "days_of_cover_30day": 605,
+      "days_of_cover_7day": 607,
+      "days_of_cover_30day": 607,
       "status": "OVERSTOCKED",
       "reorder_needed": false,
-      "bsr": 79608,
+      "bsr": 82342,
       "bsr_subcategory": {
-        "rank": 1064,
+        "rank": 1122,
         "category": "Cat Fountains"
       }
     },
@@ -384,9 +384,9 @@
     "contribution_margin_pct_est": null,
     "sessions_7d": 81,
     "sessions_per_day_7d": 11.6,
-    "cvr_7d_pct": 7.41,
-    "days_of_cover_fountain_30d": 605,
-    "days_of_cover_fountain_7d": 605,
+    "cvr_7d_pct": 8.64,
+    "days_of_cover_fountain_30d": 607,
+    "days_of_cover_fountain_7d": 607,
     "days_of_cover_filters": 680,
     "razor_blade_ratio_30d": 0.35,
     "ppc_spend_7d": null,
