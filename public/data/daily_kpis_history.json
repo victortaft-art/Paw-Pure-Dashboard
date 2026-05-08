@@ -283,12 +283,19 @@
     },
     {
       "date": "2026-05-08",
+      "ad_spend": 22.54,
+      "ad_sales_7d": 0.0,
+      "clicks": 11,
+      "impressions": 6724,
+      "ctr": 0.0016,
+      "cpc": 2.0491,
       "sessions": 88,
       "cvr": 7.95,
       "revenue": 282.25,
       "units": 7,
       "page_views": 108,
       "_sources": {
+        "ads": "ads_2026-05-08.json",
         "sc": "SC_Data_2026-05-08.json"
       }
     }

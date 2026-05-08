@@ -17,9 +17,9 @@
       "days_of_cover_30day": 607,
       "status": "OVERSTOCKED",
       "reorder_needed": false,
-      "bsr": 82824,
+      "bsr": 82896,
       "bsr_subcategory": {
-        "rank": 1125,
+        "rank": 1133,
         "category": "Cat Fountains"
       }
     },
@@ -29,9 +29,9 @@
       "fba_inbound": 0,
       "total_stock": 136,
       "daily_velocity_7day": 0.14,
-      "daily_velocity_30day": 0.2,
+      "daily_velocity_30day": 0.17,
       "days_of_cover_7day": 971,
-      "days_of_cover_30day": 680,
+      "days_of_cover_30day": 799,
       "status": "OVERSTOCKED",
       "reorder_needed": false,
       "bsr": null,
@@ -113,14 +113,14 @@
       "margin_pct": 32.83
     },
     "filters": {
-      "units": 6,
-      "revenue": 114.94,
-      "amazon_fee": 41.7,
-      "_fee_calc": "6 \u00d7 $6.95",
-      "cogs": 23.82,
-      "_cogs_calc": "6 \u00d7 $3.97",
-      "gross_profit": 49.42,
-      "margin_pct": 43.0
+      "units": 5,
+      "revenue": 94.94,
+      "amazon_fee": 34.75,
+      "_fee_calc": "5 \u00d7 $6.95",
+      "cogs": 19.85,
+      "_cogs_calc": "5 \u00d7 $3.97",
+      "gross_profit": 40.34,
+      "margin_pct": 42.49
     },
     "bundle": {
       "units": 0,
@@ -133,15 +133,15 @@
       "margin_pct": 0.0
     },
     "totals": {
-      "units": 23,
-      "revenue": 952.13,
-      "amazon_fee": 305.2,
-      "cogs": 322.68,
-      "gross_profit": 324.25,
-      "gross_margin_pct": 34.06,
+      "units": 22,
+      "revenue": 932.13,
+      "amazon_fee": 298.25,
+      "cogs": 318.71,
+      "gross_profit": 315.17,
+      "gross_margin_pct": 33.81,
       "ad_spend_est": 500.85,
-      "true_contribution_margin_est": -176.6,
-      "contribution_margin_pct_est": -18.55
+      "true_contribution_margin_est": -185.68,
+      "contribution_margin_pct_est": -19.92
     }
   },
   "daily_sales": {
@@ -150,11 +150,9 @@
     "days": [
       {
         "date": "2026-04-08",
-        "revenue": 20.0,
-        "units": 1,
-        "orders": [
-          "113-8321562-4207448 filters $20.0"
-        ]
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
       },
       {
         "date": "2026-04-09",
@@ -375,11 +373,11 @@
   },
   "kpis": {
     "revenue_7d": 262.25,
-    "revenue_30d": 952.13,
+    "revenue_30d": 932.13,
     "units_7d": 6,
-    "units_30d": 23,
+    "units_30d": 22,
     "gross_margin_7d_pct": 32.77,
-    "gross_margin_30d_pct": 34.06,
+    "gross_margin_30d_pct": 33.81,
     "contribution_margin_7d_est": null,
     "contribution_margin_pct_est": null,
     "sessions_7d": 88,
@@ -387,8 +385,8 @@
     "cvr_7d_pct": 7.95,
     "days_of_cover_fountain_30d": 607,
     "days_of_cover_fountain_7d": 487,
-    "days_of_cover_filters": 680,
-    "razor_blade_ratio_30d": 0.35,
+    "days_of_cover_filters": 799,
+    "razor_blade_ratio_30d": 0.29,
     "ppc_spend_7d": null,
     "ppc_spend_30d": 500.85,
     "refunds_7d": 0.0,
