@@ -46,7 +46,8 @@
     "SC_Data_2026-05-04.json",
     "SC_Data_2026-05-05.json",
     "SC_Data_2026-05-06.json",
-    "SC_Data_2026-05-07.json"
+    "SC_Data_2026-05-07.json",
+    "SC_Data_2026-05-08.json"
   ],
   "ci_data": [
     "CI_Data_2026-04-03.json",
@@ -90,6 +91,7 @@
     "PL_Data_2026-05-05.json",
     "PL_Data_2026-05-06.json",
     "PL_Data_2026-05-07.json",
+    "PL_Data_2026-05-08.json",
     "Sales_Diagnostics_2026-04-19.json",
     "pl_config.json"
   ],
