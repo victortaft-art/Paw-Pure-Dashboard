@@ -1,10 +1,10 @@
 {
-  "_generated": "2026-05-23",
+  "_generated": "2026-05-24",
   "_window": {
     "start": "2026-04-03",
-    "end": "2026-05-23"
+    "end": "2026-05-24"
   },
-  "_count": 41,
+  "_count": 42,
   "series": [
     {
       "date": "2026-04-03",
@@ -448,20 +448,31 @@
     },
     {
       "date": "2026-05-23",
-      "ad_spend": 33.11,
-      "ad_sales_7d": 0.0,
-      "clicks": 23,
-      "impressions": 3471,
-      "ctr": 0.0066,
-      "cpc": 1.4396,
       "sessions": 121,
       "cvr": 4.13,
       "revenue": 189.97,
       "units": 5,
       "page_views": 175,
       "_sources": {
-        "ads": "ads_2026-05-23.json",
         "sc": "SC_Data_2026-05-23.json"
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "ad_spend": 30.34,
+      "ad_sales_7d": 0.0,
+      "clicks": 24,
+      "impressions": 4668,
+      "ctr": 0.0051,
+      "cpc": 1.2642,
+      "sessions": 131,
+      "cvr": 3.05,
+      "revenue": 169.97,
+      "units": 4,
+      "page_views": 174,
+      "_sources": {
+        "ads": "ads_2026-05-24.json",
+        "sc": "SC_Data_2026-05-24.json"
       }
     }
   ]
