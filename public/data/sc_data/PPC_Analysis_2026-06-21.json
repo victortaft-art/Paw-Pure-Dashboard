@@ -1,0 +1,143 @@
+{
+  "_schema_version": "2.0",
+  "_data_source": "ads_api",
+  "_generated_at": "2026-06-21",
+  "report_date": "2026-06-20",
+  "pulled_at": "2026-06-21T16:47:59.705407Z",
+  "profile_id": "1155580961392513",
+  "summary": {
+    "overall_acos_7d": null,
+    "total_spend_7d": 29.88,
+    "total_attributed_sales_7d": 0.0,
+    "total_clicks_7d": 20,
+    "total_impressions_7d": 7389,
+    "overall_ctr": 0.0027,
+    "overall_cpc": 1.49,
+    "_days_with_data": 1,
+    "_sales_as_of": null
+  },
+  "summary_1d": {
+    "total_spend_1d": 29.88,
+    "total_attributed_sales_7d": 0.0,
+    "total_clicks_1d": 20,
+    "total_impressions_1d": 7389,
+    "overall_acos": null,
+    "overall_ctr": 0.0027,
+    "overall_cpc": 1.494
+  },
+  "campaigns": [
+    {
+      "campaign": "Dog_Discovery",
+      "campaign_id": 60774559449292,
+      "impressions": 6866,
+      "clicks": 17,
+      "spend": 24.62,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.0025,
+      "cpc": 1.4482
+    },
+    {
+      "campaign": "Cat_Winners",
+      "campaign_id": 419389443127224,
+      "impressions": 517,
+      "clicks": 3,
+      "spend": 5.26,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.0058,
+      "cpc": 1.7533
+    },
+    {
+      "campaign": "PAT_Defensive_OwnASIN",
+      "campaign_id": 206825345005683,
+      "impressions": 6,
+      "clicks": 0,
+      "spend": 0.0,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.0,
+      "cpc": null
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "dog water fountain",
+      "match_type": "phrase",
+      "campaign": "Dog_Discovery",
+      "ad_group": "Dog_Phrase_Seeds",
+      "bid": 1.75,
+      "impressions": 6628,
+      "clicks": 13,
+      "spend": 20.0,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.002,
+      "cpc": 1.5385
+    },
+    {
+      "keyword": "cat water fountain stainless steel",
+      "match_type": "phrase",
+      "campaign": "Cat_Winners",
+      "ad_group": "Phrase Match",
+      "bid": 1.17,
+      "impressions": 517,
+      "clicks": 3,
+      "spend": 5.26,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.0058,
+      "cpc": 1.7533
+    },
+    {
+      "keyword": "pet water fountain",
+      "match_type": "phrase",
+      "campaign": "Dog_Discovery",
+      "ad_group": "Dog_Exact_Explore",
+      "bid": 1.21,
+      "impressions": 238,
+      "clicks": 4,
+      "spend": 4.62,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.0168,
+      "cpc": 1.155
+    },
+    {
+      "keyword": "asin-expanded=\"B0FWXJ1GKT\"",
+      "match_type": "targeting_expression",
+      "campaign": "PAT_Defensive_OwnASIN",
+      "ad_group": "OnFilter_PromoteFountain",
+      "bid": 0.75,
+      "impressions": 1,
+      "clicks": 0,
+      "spend": 0.0,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.0,
+      "cpc": null
+    },
+    {
+      "keyword": "asin-expanded=\"B0DJHQVJYF\"",
+      "match_type": "targeting_expression",
+      "campaign": "PAT_Defensive_OwnASIN",
+      "ad_group": "OnFountain_PromoteFilter",
+      "bid": 0.75,
+      "impressions": 5,
+      "clicks": 0,
+      "spend": 0.0,
+      "attributed_sales_7d": 0.0,
+      "conversions_7d": 0,
+      "acos": null,
+      "ctr": 0.0,
+      "cpc": null
+    }
+  ]
+}
