@@ -133,7 +133,8 @@
     "SC_Data_2026-06-22.json",
     "SC_Data_2026-06-23.json",
     "SC_Data_2026-06-24.json",
-    "SC_Data_2026-06-25.json"
+    "SC_Data_2026-06-25.json",
+    "SC_Data_2026-06-26.json"
   ],
   "ci_data": [
     "CI_Data_2026-04-03.json",
@@ -224,6 +225,7 @@
     "PL_Data_2026-06-23.json",
     "PL_Data_2026-06-24.json",
     "PL_Data_2026-06-25.json",
+    "PL_Data_2026-06-26.json",
     "Sales_Diagnostics_2026-04-19.json",
     "pl_config.json"
   ],
