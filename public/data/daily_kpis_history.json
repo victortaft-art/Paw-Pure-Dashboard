@@ -1,10 +1,10 @@
 {
-  "_generated": "2026-06-26",
+  "_generated": "2026-06-27",
   "_window": {
     "start": "2026-04-03",
-    "end": "2026-06-26"
+    "end": "2026-06-27"
   },
-  "_count": 73,
+  "_count": 74,
   "series": [
     {
       "date": "2026-04-03",
@@ -807,6 +807,17 @@
       "page_views": 176,
       "_sources": {
         "sc": "SC_Data_2026-06-26.json"
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "sessions": 140,
+      "cvr": 5.71,
+      "revenue": 309.95,
+      "units": 8,
+      "page_views": 183,
+      "_sources": {
+        "sc": "SC_Data_2026-06-27.json"
       }
     }
   ]
