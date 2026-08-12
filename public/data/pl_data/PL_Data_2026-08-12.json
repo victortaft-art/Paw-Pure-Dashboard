@@ -1,0 +1,553 @@
+{
+  "date": "2026-08-12",
+  "period": "daily",
+  "data_source": "sp_api",
+  "config_last_updated": "2026-04-03",
+  "_fee_note": "Fees are computed from pl_config.json per-unit schedule. Real settlement fees available in Finances dump (amazon_api/data/raw/).",
+  "sc_data_source": "sp_api_composite",
+  "inventory": {
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "fba_available": 142,
+      "fba_inbound": 0,
+      "total_stock": 142,
+      "daily_velocity_7day": 3.14,
+      "daily_velocity_30day": 4.5,
+      "days_of_cover_7day": 45,
+      "days_of_cover_30day": 31,
+      "status": "REORDER",
+      "reorder_needed": true,
+      "bsr": 52945,
+      "bsr_subcategory": {
+        "rank": 850,
+        "category": "Cat Fountains"
+      }
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "fba_available": 58,
+      "fba_inbound": 150,
+      "total_stock": 208,
+      "daily_velocity_7day": 1.29,
+      "daily_velocity_30day": 1.07,
+      "days_of_cover_7day": 44,
+      "days_of_cover_30day": 54,
+      "status": "REORDER",
+      "reorder_needed": true,
+      "bsr": null,
+      "bsr_subcategory": {
+        "rank": null,
+        "category": null
+      }
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "fba_available": null,
+      "fba_inbound": 0,
+      "total_stock": null,
+      "daily_velocity_7day": 0.0,
+      "daily_velocity_30day": 0.0,
+      "days_of_cover_7day": null,
+      "days_of_cover_30day": null,
+      "status": null,
+      "reorder_needed": null,
+      "bsr": 173742,
+      "bsr_subcategory": {
+        "rank": 2041,
+        "category": "Cat Fountains"
+      }
+    }
+  },
+  "pl_7day": {
+    "fountain": {
+      "units": 22,
+      "revenue": 765.93,
+      "amazon_fee": 341.0,
+      "_fee_calc": "22 \u00d7 $15.5",
+      "cogs": 386.76,
+      "_cogs_calc": "22 \u00d7 $17.58",
+      "gross_profit": 38.17,
+      "margin_pct": 4.98
+    },
+    "filters": {
+      "units": 9,
+      "revenue": 177.8,
+      "amazon_fee": 62.55,
+      "_fee_calc": "9 \u00d7 $6.95",
+      "cogs": 35.73,
+      "_cogs_calc": "9 \u00d7 $3.97",
+      "gross_profit": 79.52,
+      "margin_pct": 44.72
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0.0,
+      "amazon_fee": 0.0,
+      "_fee_calc": "0 \u00d7 $15.25",
+      "cogs": 0.0,
+      "_cogs_calc": "0 \u00d7 $21.55",
+      "gross_profit": 0.0,
+      "margin_pct": 0.0
+    },
+    "totals": {
+      "units": 31,
+      "revenue": 943.73,
+      "amazon_fee": 403.55,
+      "cogs": 422.49,
+      "gross_profit": 117.69,
+      "gross_margin_pct": 12.47,
+      "ad_spend_est": 506.41,
+      "true_contribution_margin_est": -388.72,
+      "contribution_margin_pct_est": -41.19
+    }
+  },
+  "pl_30day": {
+    "fountain": {
+      "units": 135,
+      "revenue": 4352.12,
+      "amazon_fee": 2092.5,
+      "_fee_calc": "135 \u00d7 $15.5",
+      "cogs": 2373.3,
+      "_cogs_calc": "135 \u00d7 $17.58",
+      "gross_profit": -113.68,
+      "margin_pct": -2.61
+    },
+    "filters": {
+      "units": 32,
+      "revenue": 633.4,
+      "amazon_fee": 222.4,
+      "_fee_calc": "32 \u00d7 $6.95",
+      "cogs": 127.04,
+      "_cogs_calc": "32 \u00d7 $3.97",
+      "gross_profit": 283.96,
+      "margin_pct": 44.83
+    },
+    "bundle": {
+      "units": 0,
+      "revenue": 0.0,
+      "amazon_fee": 0.0,
+      "_fee_calc": "0 \u00d7 $15.25",
+      "cogs": 0.0,
+      "_cogs_calc": "0 \u00d7 $21.55",
+      "gross_profit": 0.0,
+      "margin_pct": 0.0
+    },
+    "totals": {
+      "units": 167,
+      "revenue": 4985.52,
+      "amazon_fee": 2314.9,
+      "cogs": 2500.34,
+      "gross_profit": 170.28,
+      "gross_margin_pct": 3.42,
+      "ad_spend_est": 2144.03,
+      "true_contribution_margin_est": -1973.75,
+      "contribution_margin_pct_est": -39.59
+    }
+  },
+  "daily_sales": {
+    "_data_source": "sp_api_orders",
+    "_source": "Aggregated from /orders/v0/orders response",
+    "days": [
+      {
+        "date": "2026-07-13",
+        "revenue": 89.97,
+        "units": 3,
+        "orders": [
+          "112-5883097-4000269 fountain $29.99",
+          "114-0878656-8061013 fountain $29.99",
+          "111-9865140-1012254 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-14",
+        "revenue": 109.97,
+        "units": 4,
+        "orders": [
+          "111-0772846-1157006 filters $20.0",
+          "111-6261448-5577061 fountain $29.99",
+          "114-0173620-2478673 fountain $29.99",
+          "113-6422488-9108243 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-15",
+        "revenue": 89.97,
+        "units": 3,
+        "orders": [
+          "114-9573505-0765861 fountain $29.99",
+          "114-4267576-4927459 fountain $29.99",
+          "114-8023215-5373863 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-16",
+        "revenue": 119.96,
+        "units": 4,
+        "orders": [
+          "112-8525250-8964222 fountain $29.99",
+          "112-9418362-1129068 fountain $29.99",
+          "113-3461271-6141038 fountain $29.99",
+          "114-5747618-1960223 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "revenue": 149.97,
+        "units": 6,
+        "orders": [
+          "114-6604122-4402645 filters $20.0",
+          "114-5622336-2614637 filters $20.0",
+          "111-3258481-7830628 filters $20.0",
+          "111-6097721-9997063 fountain $29.99",
+          "111-0750703-3603444 fountain $29.99",
+          "114-1707090-4537040 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-18",
+        "revenue": 139.96,
+        "units": 5,
+        "orders": [
+          "112-4799609-6565015 fountain $29.99",
+          "112-4799609-6565015 filters $20.0",
+          "111-3629200-2630623 fountain $29.99",
+          "111-6879600-4264243 fountain $29.99",
+          "113-9286668-2076201 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-19",
+        "revenue": 119.96,
+        "units": 4,
+        "orders": [
+          "111-8890702-7121801 fountain $29.99",
+          "111-6748996-9989019 fountain $29.99",
+          "111-5034822-8649051 fountain $29.99",
+          "111-1617081-2692234 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "revenue": 169.95,
+        "units": 6,
+        "orders": [
+          "112-1797140-2361009 fountain $29.99",
+          "114-8222636-6574609 fountain $29.99",
+          "114-0709807-2640247 fountain $29.99",
+          "111-0479687-2585041 filters $20.0",
+          "111-9088570-1840210 fountain $29.99",
+          "111-2334975-5978604 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-21",
+        "revenue": 179.94,
+        "units": 7,
+        "orders": [
+          "114-0273654-4829863 fountain $29.99",
+          "111-8969790-9725860 fountain $29.99",
+          "112-7258834-5321043 fountain $29.99",
+          "112-6182240-4680264 fountain $29.99",
+          "114-9787189-3923427 fountain $29.99",
+          "112-9324576-7891443 fountain $29.99",
+          "113-2304581-9137066 fountain $0.0"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "revenue": 89.97,
+        "units": 4,
+        "orders": [
+          "113-9163701-1727400 fountain $0.0",
+          "114-9502613-3440206 fountain $29.99",
+          "113-2567393-2890664 fountain $29.99",
+          "114-1072122-1641041 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-23",
+        "revenue": 359.88,
+        "units": 12,
+        "orders": [
+          "113-3468012-6905807 fountain $29.99",
+          "113-0947633-8966660 fountain $29.99",
+          "111-0625599-8873066 fountain $29.99",
+          "114-1629411-0421052 fountain $29.99",
+          "112-7811112-0661014 fountain $29.99",
+          "113-5290041-0024209 fountain $29.99",
+          "114-7253725-6200268 fountain $29.99",
+          "113-6978084-5533806 fountain $59.98",
+          "114-3111911-7013805 fountain $29.99",
+          "113-2077544-2079420 fountain $29.99",
+          "111-4195325-4985063 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-24",
+        "revenue": 319.92,
+        "units": 9,
+        "orders": [
+          "113-7667055-0996222 fountain $29.99",
+          "111-4084721-8206637 fountain $29.99",
+          "112-3988259-7539445 fountain $29.99",
+          "114-2228036-2637829 fountain $29.99",
+          "114-8668564-4063417 fountain $29.99",
+          "111-5493210-1704211 filters $20.0",
+          "111-5032574-8165812 fountain $49.99",
+          "111-4845016-8810620 fountain $49.99",
+          "112-0277204-0493805 fountain $49.99"
+        ]
+      },
+      {
+        "date": "2026-07-25",
+        "revenue": 179.96,
+        "units": 7,
+        "orders": [
+          "112-5518807-9531463 filters $20.0",
+          "114-3057206-1345010 filters $20.0",
+          "114-1178185-8714652 fountain $59.98",
+          "111-8522134-4091443 fountain $29.99",
+          "111-2318218-1292258 filters $20.0",
+          "112-2317897-2744230 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-26",
+        "revenue": 319.92,
+        "units": 12,
+        "orders": [
+          "114-4168163-2281020 fountain $29.99",
+          "111-2577876-0406628 filters $20.0",
+          "111-2577876-0406628 fountain $29.99",
+          "112-4976829-5441845 fountain $29.99",
+          "112-1644104-0132220 filters $20.0",
+          "112-7445801-2730667 fountain $29.99",
+          "111-1122689-3055457 fountain $29.99",
+          "111-1122689-3055457 filters $20.0",
+          "112-0649780-2600237 fountain $29.99",
+          "112-0649780-2600237 filters $20.0",
+          "114-4707150-2796201 fountain $29.99",
+          "112-6814818-2053010 fountain $29.99"
+        ]
+      },
+      {
+        "date": "2026-07-27",
+        "revenue": 159.96,
+        "units": 5,
+        "orders": [
+          "111-2859803-6944208 filters $20.0",
+          "113-4138650-3611452 fountain $34.99",
+          "112-3539880-5921806 fountain $34.99",
+          "114-4873048-1983440 fountain $34.99",
+          "114-6527802-9021858 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-07-28",
+        "revenue": 54.99,
+        "units": 2,
+        "orders": [
+          "111-2375696-3085069 fountain $34.99",
+          "113-5114634-6507401 filters $20.0"
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "revenue": 139.96,
+        "units": 4,
+        "orders": [
+          "114-7330123-6605830 fountain $34.99",
+          "112-8846112-4072232 fountain $34.99",
+          "113-9699105-6473069 fountain $34.99",
+          "113-2973666-5785849 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-07-30",
+        "revenue": 229.94,
+        "units": 7,
+        "orders": [
+          "112-9561904-3561059 fountain $34.99",
+          "114-1790113-3942619 fountain $34.99",
+          "112-0862899-4997816 fountain $34.99",
+          "113-3878098-3813028 filters $20.0",
+          "114-4702075-1497020 fountain $34.99",
+          "114-7108363-6109022 fountain $34.99",
+          "111-5319584-9077852 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-07-31",
+        "revenue": 229.94,
+        "units": 7,
+        "orders": [
+          "113-8350432-4902641 fountain $34.99",
+          "112-5523205-8943424 fountain $34.99",
+          "112-4091210-1948202 fountain $34.99",
+          "114-3112775-3432205 fountain $34.99",
+          "112-5165959-0422617 filters $20.0",
+          "112-5165959-0422617 fountain $34.99",
+          "114-2749867-3203426 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-01",
+        "revenue": 264.93,
+        "units": 8,
+        "orders": [
+          "113-7172964-0793810 fountain $34.99",
+          "114-2575639-7457069 fountain $34.99",
+          "113-0163173-2941823 fountain $34.99",
+          "112-2523090-2024212 fountain $34.99",
+          "114-9333985-6222609 fountain $34.99",
+          "114-3535116-7848255 fountain $34.99",
+          "112-3769732-6813808 filters $20.0",
+          "111-5741750-4770636 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-02",
+        "revenue": 153.91,
+        "units": 5,
+        "orders": [
+          "112-8755034-9764224 fountain $34.99",
+          "112-6493553-1143434 fountain $34.99",
+          "114-4564399-1679450 fountain $34.99",
+          "114-1530860-8563435 fountain $31.14",
+          "114-1530860-8563435 filters $17.8"
+        ]
+      },
+      {
+        "date": "2026-08-03",
+        "revenue": 104.97,
+        "units": 3,
+        "orders": [
+          "112-6767337-1886654 fountain $34.99",
+          "112-4476080-7425804 fountain $34.99",
+          "112-7885212-6434654 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-04",
+        "revenue": 104.97,
+        "units": 3,
+        "orders": [
+          "113-7178189-0961862 fountain $34.99",
+          "114-9556071-7813805 fountain $34.99",
+          "111-9478697-4804220 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "revenue": 193.91,
+        "units": 7,
+        "orders": [
+          "113-3483829-3439404 fountain $34.99",
+          "113-3483829-3439404 filters $20.0",
+          "114-1505026-8286659 filters $20.0",
+          "114-1505026-8286659 filters $17.8",
+          "114-1505026-8286659 fountain $31.14",
+          "112-8423050-2045823 fountain $34.99",
+          "113-0502583-9500262 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-06",
+        "revenue": 109.98,
+        "units": 4,
+        "orders": [
+          "114-8586832-3771469 fountain $34.99",
+          "111-4699103-7643438 filters $40.0",
+          "114-6970291-7658607 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-07",
+        "revenue": 264.93,
+        "units": 8,
+        "orders": [
+          "111-6932408-1955443 fountain $34.99",
+          "111-0963293-1393862 fountain $34.99",
+          "113-6801400-5496235 fountain $34.99",
+          "112-7369240-0613856 fountain $34.99",
+          "111-6799564-0032215 fountain $34.99",
+          "112-8162876-1328264 fountain $34.99",
+          "114-7896660-4829861 fountain $34.99",
+          "112-5990806-8250634 filters $20.0"
+        ]
+      },
+      {
+        "date": "2026-08-08",
+        "revenue": 158.92,
+        "units": 6,
+        "orders": [
+          "113-9547559-2616239 fountain $31.14",
+          "113-9547559-2616239 filters $17.8",
+          "114-4274572-3304245 filters $20.0",
+          "112-8604277-1389028 filters $20.0",
+          "112-1337772-7863457 fountain $34.99",
+          "112-8108540-2757041 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-09",
+        "revenue": 199.96,
+        "units": 7,
+        "orders": [
+          "113-7382252-5110641 filters $20.0",
+          "113-9045509-9417859 filters $20.0",
+          "111-1846507-1619456 fountain $34.99",
+          "112-5994086-9545032 fountain $34.99",
+          "112-5994086-9545032 filters $20.0",
+          "114-4993877-1732256 fountain $34.99",
+          "114-3545703-5325829 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-10",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      },
+      {
+        "date": "2026-08-11",
+        "revenue": 174.95,
+        "units": 5,
+        "orders": [
+          "113-1881936-7597812 fountain $34.99",
+          "114-7354120-8165801 fountain $34.99",
+          "113-9085079-0900208 fountain $34.99",
+          "112-8571299-1205848 fountain $34.99",
+          "114-9313785-3922660 fountain $34.99"
+        ]
+      },
+      {
+        "date": "2026-08-12",
+        "revenue": 0.0,
+        "units": 0,
+        "orders": []
+      }
+    ]
+  },
+  "kpis": {
+    "revenue_7d": 943.73,
+    "revenue_30d": 4985.52,
+    "units_7d": 31,
+    "units_30d": 167,
+    "gross_margin_7d_pct": 12.47,
+    "gross_margin_30d_pct": 3.42,
+    "contribution_margin_7d_est": -388.72,
+    "contribution_margin_pct_est": -41.19,
+    "sessions_7d": 513,
+    "sessions_per_day_7d": 73.3,
+    "cvr_7d_pct": 7.6,
+    "days_of_cover_fountain_30d": 31,
+    "days_of_cover_fountain_7d": 45,
+    "days_of_cover_filters": 54,
+    "razor_blade_ratio_30d": 0.24,
+    "ppc_spend_7d": 506.41,
+    "ppc_spend_30d": 2144.03,
+    "refunds_7d": -37.26,
+    "refunds_30d": -433.31
+  }
+}
