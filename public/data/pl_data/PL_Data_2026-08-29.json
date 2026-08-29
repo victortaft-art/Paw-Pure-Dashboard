@@ -8,30 +8,30 @@
   "inventory": {
     "fountain": {
       "asin": "B0DJHQVJYF",
-      "fba_available": 106,
+      "fba_available": 105,
       "fba_inbound": 0,
-      "total_stock": 106,
-      "daily_velocity_7day": 1.0,
-      "daily_velocity_30day": 3.13,
-      "days_of_cover_7day": 106,
-      "days_of_cover_30day": 33,
+      "total_stock": 105,
+      "daily_velocity_7day": 1.14,
+      "daily_velocity_30day": 3.03,
+      "days_of_cover_7day": 92,
+      "days_of_cover_30day": 34,
       "status": "REORDER",
       "reorder_needed": true,
-      "bsr": 53015,
+      "bsr": 54245,
       "bsr_subcategory": {
-        "rank": 815,
+        "rank": 841,
         "category": "Cat Fountains"
       }
     },
     "filters": {
       "asin": "B0FWXJ1GKT",
-      "fba_available": 23,
+      "fba_available": 21,
       "fba_inbound": 150,
-      "total_stock": 173,
-      "daily_velocity_7day": 0.71,
+      "total_stock": 171,
+      "daily_velocity_7day": 0.86,
       "daily_velocity_30day": 1.7,
-      "days_of_cover_7day": 32,
-      "days_of_cover_30day": 13,
+      "days_of_cover_7day": 24,
+      "days_of_cover_30day": 12,
       "status": "CRITICAL",
       "reorder_needed": true,
       "bsr": null,
@@ -51,32 +51,32 @@
       "days_of_cover_30day": null,
       "status": null,
       "reorder_needed": null,
-      "bsr": 202921,
+      "bsr": 204492,
       "bsr_subcategory": {
-        "rank": 2335,
+        "rank": 2354,
         "category": "Cat Fountains"
       }
     }
   },
   "pl_7day": {
     "fountain": {
-      "units": 7,
-      "revenue": 244.93,
-      "amazon_fee": 108.5,
-      "_fee_calc": "7 \u00d7 $15.5",
-      "cogs": 123.06,
-      "_cogs_calc": "7 \u00d7 $17.58",
-      "gross_profit": 13.37,
+      "units": 8,
+      "revenue": 279.92,
+      "amazon_fee": 124.0,
+      "_fee_calc": "8 \u00d7 $15.5",
+      "cogs": 140.64,
+      "_cogs_calc": "8 \u00d7 $17.58",
+      "gross_profit": 15.28,
       "margin_pct": 5.46
     },
     "filters": {
-      "units": 5,
-      "revenue": 100.0,
-      "amazon_fee": 34.75,
-      "_fee_calc": "5 \u00d7 $6.95",
-      "cogs": 19.85,
-      "_cogs_calc": "5 \u00d7 $3.97",
-      "gross_profit": 45.4,
+      "units": 6,
+      "revenue": 120.0,
+      "amazon_fee": 41.7,
+      "_fee_calc": "6 \u00d7 $6.95",
+      "cogs": 23.82,
+      "_cogs_calc": "6 \u00d7 $3.97",
+      "gross_profit": 54.48,
       "margin_pct": 45.4
     },
     "bundle": {
@@ -90,12 +90,12 @@
       "margin_pct": 0.0
     },
     "totals": {
-      "units": 12,
-      "revenue": 344.93,
-      "amazon_fee": 143.25,
-      "cogs": 142.91,
-      "gross_profit": 58.77,
-      "gross_margin_pct": 17.04,
+      "units": 14,
+      "revenue": 399.92,
+      "amazon_fee": 165.7,
+      "cogs": 164.46,
+      "gross_profit": 69.76,
+      "gross_margin_pct": 17.44,
       "ad_spend_est": null,
       "true_contribution_margin_est": null,
       "contribution_margin_pct_est": null
@@ -103,14 +103,14 @@
   },
   "pl_30day": {
     "fountain": {
-      "units": 94,
-      "revenue": 3188.28,
-      "amazon_fee": 1457.0,
-      "_fee_calc": "94 \u00d7 $15.5",
-      "cogs": 1652.52,
-      "_cogs_calc": "94 \u00d7 $17.58",
-      "gross_profit": 78.76,
-      "margin_pct": 2.47
+      "units": 91,
+      "revenue": 3083.31,
+      "amazon_fee": 1410.5,
+      "_fee_calc": "91 \u00d7 $15.5",
+      "cogs": 1599.78,
+      "_cogs_calc": "91 \u00d7 $17.58",
+      "gross_profit": 73.03,
+      "margin_pct": 2.37
     },
     "filters": {
       "units": 51,
@@ -133,15 +133,15 @@
       "margin_pct": 0.0
     },
     "totals": {
-      "units": 145,
-      "revenue": 4190.68,
-      "amazon_fee": 1811.45,
-      "cogs": 1854.99,
-      "gross_profit": 524.24,
-      "gross_margin_pct": 12.51,
+      "units": 142,
+      "revenue": 4085.71,
+      "amazon_fee": 1764.95,
+      "cogs": 1802.25,
+      "gross_profit": 518.51,
+      "gross_margin_pct": 12.69,
       "ad_spend_est": 1641.88,
-      "true_contribution_margin_est": -1117.64,
-      "contribution_margin_pct_est": -26.67
+      "true_contribution_margin_est": -1123.37,
+      "contribution_margin_pct_est": -27.5
     }
   },
   "daily_sales": {
@@ -150,14 +150,9 @@
     "days": [
       {
         "date": "2026-07-30",
-        "revenue": 229.94,
-        "units": 7,
+        "revenue": 69.98,
+        "units": 2,
         "orders": [
-          "112-9561904-3561059 fountain $34.99",
-          "114-1790113-3942619 fountain $34.99",
-          "112-0862899-4997816 fountain $34.99",
-          "113-3878098-3813028 filters $20.0",
-          "114-4702075-1497020 fountain $34.99",
           "114-7108363-6109022 fountain $34.99",
           "111-5319584-9077852 fountain $34.99"
         ]
@@ -492,9 +487,12 @@
       },
       {
         "date": "2026-08-28",
-        "revenue": 0.0,
-        "units": 0,
-        "orders": []
+        "revenue": 54.99,
+        "units": 2,
+        "orders": [
+          "112-3244132-7385022 fountain $34.99",
+          "111-1827708-9417004 filters $20.0"
+        ]
       },
       {
         "date": "2026-08-29",
@@ -505,24 +503,24 @@
     ]
   },
   "kpis": {
-    "revenue_7d": 344.93,
-    "revenue_30d": 4190.68,
-    "units_7d": 12,
-    "units_30d": 145,
-    "gross_margin_7d_pct": 17.04,
-    "gross_margin_30d_pct": 12.51,
+    "revenue_7d": 399.92,
+    "revenue_30d": 4085.71,
+    "units_7d": 14,
+    "units_30d": 142,
+    "gross_margin_7d_pct": 17.44,
+    "gross_margin_30d_pct": 12.69,
     "contribution_margin_7d_est": null,
     "contribution_margin_pct_est": null,
-    "sessions_7d": 226,
-    "sessions_per_day_7d": 32.3,
-    "cvr_7d_pct": 8.85,
-    "days_of_cover_fountain_30d": 33,
-    "days_of_cover_fountain_7d": 106,
-    "days_of_cover_filters": 13,
-    "razor_blade_ratio_30d": 0.54,
+    "sessions_7d": 202,
+    "sessions_per_day_7d": 28.9,
+    "cvr_7d_pct": 9.41,
+    "days_of_cover_fountain_30d": 34,
+    "days_of_cover_fountain_7d": 92,
+    "days_of_cover_filters": 12,
+    "razor_blade_ratio_30d": 0.56,
     "ppc_spend_7d": null,
     "ppc_spend_30d": 1641.88,
     "refunds_7d": -21.85,
-    "refunds_30d": -517.43
+    "refunds_30d": -421.63
   }
 }
