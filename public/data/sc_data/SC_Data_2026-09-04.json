@@ -1,0 +1,452 @@
+{
+  "date": "2026-09-04",
+  "period": "daily",
+  "data_source": "sp_api",
+  "source": "SP-API pipeline: Orders + Inventory + Catalog + Reports (GET_SALES_AND_TRAFFIC_REPORT) + Finances",
+  "status": "Composed automatically by amazon_api/build_sc_data.py",
+  "timestamp": "2026-09-04T18:28:21.830158Z",
+  "highlights": {
+    "revenue_7d": "7-day revenue $338.92 across 11 orders (15 units).",
+    "sessions_7d": "7-day sessions 173, CVR 12.72%.",
+    "fountain_cover": "Fountain days of cover (7d velocity): 237.",
+    "filters_cover": "Filter days of cover (7d velocity): 7."
+  },
+  "business_reports": {
+    "date_range": "2026-08-27 to 2026-09-03",
+    "period_days": 7,
+    "_data_source": "sp_api_reports",
+    "_note": "Pulled via Reports API: GET_SALES_AND_TRAFFIC_REPORT",
+    "units_sold": 22,
+    "revenue": 553.87,
+    "sessions_total": 173,
+    "page_views_total": 259,
+    "cvr_percent": 12.72,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 153,
+        "sessions_b2b": 4,
+        "page_views": 233,
+        "page_views_b2b": 4,
+        "browser_sessions": 48,
+        "mobile_app_sessions": 105,
+        "units": 8,
+        "ordered_product_sales": 276.07,
+        "total_order_items": 8,
+        "cvr_pct": 5.23,
+        "buy_box_pct_avg": 98.94
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 17,
+        "sessions_b2b": 1,
+        "page_views": 23,
+        "page_views_b2b": 1,
+        "browser_sessions": 4,
+        "mobile_app_sessions": 13,
+        "units": 14,
+        "ordered_product_sales": 277.8,
+        "total_order_items": 10,
+        "cvr_pct": 82.35,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 3,
+        "sessions_b2b": 0,
+        "page_views": 3,
+        "page_views_b2b": 0,
+        "browser_sessions": 2,
+        "mobile_app_sessions": 1,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    },
+    "_all_asins": {
+      "B0DJHQVJYF": {
+        "sessions": 153,
+        "sessions_b2b": 4,
+        "page_views": 233,
+        "page_views_b2b": 4,
+        "browser_sessions": 48,
+        "mobile_app_sessions": 105,
+        "units": 8,
+        "ordered_product_sales": 276.07,
+        "total_order_items": 8,
+        "cvr_pct": 5.23,
+        "buy_box_pct_avg": 98.94
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 17,
+        "sessions_b2b": 1,
+        "page_views": 23,
+        "page_views_b2b": 1,
+        "browser_sessions": 4,
+        "mobile_app_sessions": 13,
+        "units": 14,
+        "ordered_product_sales": 277.8,
+        "total_order_items": 10,
+        "cvr_pct": 82.35,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 3,
+        "sessions_b2b": 0,
+        "page_views": 3,
+        "page_views_b2b": 0,
+        "browser_sessions": 2,
+        "mobile_app_sessions": 1,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    }
+  },
+  "business_reports_30day": {
+    "date_range": "2026-08-04 to 2026-09-03",
+    "period_days": 30,
+    "_data_source": "sp_api_reports",
+    "_note": "Pulled via Reports API: GET_SALES_AND_TRAFFIC_REPORT",
+    "units_sold": 133,
+    "revenue": 3635.89,
+    "sessions_total": 1351,
+    "page_views_total": 2122,
+    "cvr_percent": 9.84,
+    "per_asin": {
+      "B0DJHQVJYF": {
+        "sessions": 1247,
+        "sessions_b2b": 23,
+        "page_views": 1962,
+        "page_views_b2b": 27,
+        "browser_sessions": 291,
+        "mobile_app_sessions": 956,
+        "units": 73,
+        "ordered_product_sales": 2453.49,
+        "total_order_items": 73,
+        "cvr_pct": 5.85,
+        "buy_box_pct_avg": 99.38
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 81,
+        "sessions_b2b": 1,
+        "page_views": 112,
+        "page_views_b2b": 1,
+        "browser_sessions": 21,
+        "mobile_app_sessions": 60,
+        "units": 60,
+        "ordered_product_sales": 1182.4,
+        "total_order_items": 52,
+        "cvr_pct": 74.07,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 23,
+        "sessions_b2b": 0,
+        "page_views": 48,
+        "page_views_b2b": 0,
+        "browser_sessions": 5,
+        "mobile_app_sessions": 18,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    },
+    "_all_asins": {
+      "B0DJHQVJYF": {
+        "sessions": 1247,
+        "sessions_b2b": 23,
+        "page_views": 1962,
+        "page_views_b2b": 27,
+        "browser_sessions": 291,
+        "mobile_app_sessions": 956,
+        "units": 73,
+        "ordered_product_sales": 2453.49,
+        "total_order_items": 73,
+        "cvr_pct": 5.85,
+        "buy_box_pct_avg": 99.38
+      },
+      "B0FWXJ1GKT": {
+        "sessions": 81,
+        "sessions_b2b": 1,
+        "page_views": 112,
+        "page_views_b2b": 1,
+        "browser_sessions": 21,
+        "mobile_app_sessions": 60,
+        "units": 60,
+        "ordered_product_sales": 1182.4,
+        "total_order_items": 52,
+        "cvr_pct": 74.07,
+        "buy_box_pct_avg": 100.0
+      },
+      "B0GMDM6CG2": {
+        "sessions": 23,
+        "sessions_b2b": 0,
+        "page_views": 48,
+        "page_views_b2b": 0,
+        "browser_sessions": 5,
+        "mobile_app_sessions": 18,
+        "units": 0,
+        "ordered_product_sales": 0.0,
+        "total_order_items": 0,
+        "cvr_pct": 0.0,
+        "buy_box_pct_avg": 100.0
+      }
+    }
+  },
+  "fba_orders_detail": {
+    "_data_source": "sp_api_orders",
+    "_source": "SP-API: /orders/v0/orders + /orders/v0/orders/{id}/orderItems",
+    "total_order_lines_7day": 12,
+    "orders": [
+      {
+        "order_id": "111-1827708-9417004",
+        "date": "2026-08-28",
+        "time_utc": "23:57:43",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 20.0,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "111-7310823-1106632",
+        "date": "2026-08-29",
+        "time_utc": "17:18:07",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Paw Pure Wireless Pet Water Fountain",
+        "item_subtotal": 31.14,
+        "status": "Shipped",
+        "type": "bundle_component"
+      },
+      {
+        "order_id": "111-7310823-1106632",
+        "date": "2026-08-29",
+        "time_utc": "17:18:07",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 17.8,
+        "status": "Shipped",
+        "type": "bundle_component"
+      },
+      {
+        "order_id": "112-2740718-1261828",
+        "date": "2026-08-30",
+        "time_utc": "11:29:40",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Paw Pure Wireless Pet Water Fountain",
+        "item_subtotal": 34.99,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "112-8890659-2268265",
+        "date": "2026-08-30",
+        "time_utc": "21:36:54",
+        "buyer": null,
+        "asin": "B0DJHQVJYF",
+        "product": "Paw Pure Wireless Pet Water Fountain",
+        "item_subtotal": 34.99,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "113-8779229-8008232",
+        "date": "2026-08-30",
+        "time_utc": "23:10:21",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 20.0,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "113-7896043-3596206",
+        "date": "2026-08-31",
+        "time_utc": "19:40:53",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 20.0,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "112-4728180-6009861",
+        "date": "2026-08-31",
+        "time_utc": "21:05:56",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 20.0,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "111-6524841-9754648",
+        "date": "2026-08-31",
+        "time_utc": "23:29:50",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 20.0,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "114-4658001-8827467",
+        "date": "2026-09-01",
+        "time_utc": "02:53:39",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 20.0,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "114-2383527-0130604",
+        "date": "2026-09-03",
+        "time_utc": "01:49:33",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 80.0,
+        "status": "Shipped",
+        "type": "standalone"
+      },
+      {
+        "order_id": "111-1594733-3541800",
+        "date": "2026-09-03",
+        "time_utc": "02:05:41",
+        "buyer": null,
+        "asin": "B0FWXJ1GKT",
+        "product": "Paw Pure Replacement Filter Pack",
+        "item_subtotal": 20.0,
+        "status": "Shipped",
+        "type": "standalone"
+      }
+    ]
+  },
+  "sales_today": {
+    "_data_source": "sp_api_orders",
+    "total_order_items_today": 0,
+    "units_ordered_today": 0,
+    "revenue_today": 0,
+    "ad_spend_today_so_far": null,
+    "_ad_note": "Today's ad spend: Ads API reports use yesterday's data (today still accumulating)."
+  },
+  "campaign_manager": {
+    "_data_source": "sp_api_finances",
+    "_note": "Ad spend from Finances API ProductAdsPaymentEventList. Per-keyword detail requires Ads API.",
+    "ad_spend_7day": 421.84,
+    "ad_spend_30day": 1429.5,
+    "impressions_7day": null,
+    "clicks_7day": null,
+    "ad_sales_7day": null,
+    "acos_7day": null,
+    "acos_percent_30day": null,
+    "ad_sales_30day": null
+  },
+  "reviews": {
+    "_data_source": "pending_api",
+    "_note": "Review count not yet pulled from API; existing value carried forward manually.",
+    "asin": "B0DJHQVJYF"
+  },
+  "fba_inventory": {
+    "scraped_at": "2026-09-04T18:11:57.205670Z",
+    "data_source": "sp_api",
+    "_source": "SP-API: /fba/inventory/v1/summaries + /catalog/2022-04-01/items",
+    "fountain": {
+      "asin": "B0DJHQVJYF",
+      "sku": "8V-EUFB-4UF2",
+      "fba_available": 102,
+      "inbound": 0,
+      "reserved": 6,
+      "bsr_pet_supplies": 95809,
+      "bsr_subcategory": {
+        "rank": 1265,
+        "category": "Cat Fountains"
+      },
+      "_bsr_source": "SP-API Catalog (displayGroupRanks + classificationRanks)",
+      "units_sold_7day": 3,
+      "units_sold_30day": 67,
+      "revenue_7day": 101.12,
+      "revenue_30day": 2247.4,
+      "price": 49.99,
+      "total_fee_per_unit": 15.5,
+      "daily_velocity_7day": 0.43,
+      "daily_velocity_30day": 2.23,
+      "days_of_supply_est_7day": 237,
+      "days_of_supply_est_30day": 45
+    },
+    "filters": {
+      "asin": "B0FWXJ1GKT",
+      "sku": "97-VFBK-LUWE",
+      "fba_available": 12,
+      "inbound": 150,
+      "reserved": 1,
+      "bsr_pet_supplies": null,
+      "bsr_subcategory": {
+        "rank": null,
+        "category": null
+      },
+      "_bsr_source": "SP-API Catalog (displayGroupRanks + classificationRanks)",
+      "units_sold_7day": 12,
+      "units_sold_30day": 56,
+      "revenue_7day": 237.8,
+      "revenue_30day": 1104.6,
+      "price": 20.0,
+      "total_fee_per_unit": 6.95,
+      "daily_velocity_7day": 1.71,
+      "daily_velocity_30day": 1.87,
+      "days_of_supply_est_7day": 7,
+      "days_of_supply_est_30day": 6
+    },
+    "bundle": {
+      "asin": "B0GMDM6CG2",
+      "sku": null,
+      "fba_available": null,
+      "inbound": null,
+      "reserved": null,
+      "bsr_pet_supplies": 197129,
+      "bsr_subcategory": {
+        "rank": 2274,
+        "category": "Cat Fountains"
+      },
+      "_bsr_source": "SP-API Catalog (displayGroupRanks + classificationRanks)",
+      "units_sold_7day": 0,
+      "units_sold_30day": 0,
+      "revenue_7day": 0.0,
+      "revenue_30day": 0.0,
+      "price": 64.99,
+      "total_fee_per_unit": 15.25,
+      "daily_velocity_7day": 0.0,
+      "daily_velocity_30day": 0.0,
+      "days_of_supply_est_7day": null,
+      "days_of_supply_est_30day": null
+    }
+  },
+  "amazon_choice": {
+    "_data_source": "manual",
+    "_note": "Amazon's Choice badge status requires manual verification (no public SP-API field)."
+  },
+  "pending_data_requests": [
+    "Solicitations API: request-review status (ready but gated)",
+    "RDT for PII: buyer names in fba_orders_detail"
+  ],
+  "_financials_summary": {
+    "refunds_7d": -241.68,
+    "refunds_30d": -547.65,
+    "ads_payments_7d": -421.84,
+    "ads_payments_30d": -1429.5
+  }
+}
