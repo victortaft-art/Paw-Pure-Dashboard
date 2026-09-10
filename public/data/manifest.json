@@ -90,6 +90,7 @@
     "PPC_Analysis_2026-09-05.json",
     "PPC_Analysis_2026-09-06.json",
     "PPC_Analysis_2026-09-09.json",
+    "PPC_Analysis_2026-09-10.json",
     "PPC_Diagnostics_2026-04-19.json",
     "SC_Data_2026-04-03.json",
     "SC_Data_2026-04-04.json",
@@ -233,7 +234,8 @@
     "SC_Data_2026-09-06.json",
     "SC_Data_2026-09-07.json",
     "SC_Data_2026-09-08.json",
-    "SC_Data_2026-09-09.json"
+    "SC_Data_2026-09-09.json",
+    "SC_Data_2026-09-10.json"
   ],
   "ci_data": [
     "CI_Data_2026-04-03.json",
@@ -395,6 +397,7 @@
     "PL_Data_2026-09-07.json",
     "PL_Data_2026-09-08.json",
     "PL_Data_2026-09-09.json",
+    "PL_Data_2026-09-10.json",
     "Sales_Diagnostics_2026-04-19.json",
     "pl_config.json"
   ],
