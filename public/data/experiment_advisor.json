@@ -1,18 +1,18 @@
 {
-  "_generated": "2026-10-11",
+  "_generated": "2026-10-12",
   "_input_window": {
     "cerebro": "2026-04-28",
     "rank_history": "2026-04-29",
     "kpi_window": {
       "start": "2026-04-03",
-      "end": "2026-10-11"
+      "end": "2026-10-12"
     },
     "competitor_intel_updated": null
   },
   "summary": {
     "to_deprecate": 0,
     "to_update": 0,
-    "proposed_new": 2
+    "proposed_new": 1
   },
   "findings": {
     "to_deprecate": [],
@@ -27,16 +27,6 @@
         "suggested_bid": 0.6,
         "metric": "attributed_orders_7d",
         "target": 1
-      },
-      {
-        "kind": "proposed_new",
-        "title": "Audit & negate: 7d spend $44.99 vs sales $0.00 \u2014 ACoS unsustainable",
-        "listing": "fountain",
-        "rationale": "Spend-to-sales ratio implies portfolio ACoS > 2.5x breakeven. Pull SP Targeting report, identify zero-converting KWs with >$3 spend, add as negatives.",
-        "suggested_match": "n/a",
-        "suggested_bid": null,
-        "metric": "spend_to_sales_ratio_7d",
-        "target": 0.4
       }
     ]
   }
