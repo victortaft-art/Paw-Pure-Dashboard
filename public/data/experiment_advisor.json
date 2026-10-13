@@ -1,11 +1,11 @@
 {
-  "_generated": "2026-10-12",
+  "_generated": "2026-10-13",
   "_input_window": {
     "cerebro": "2026-04-28",
     "rank_history": "2026-04-29",
     "kpi_window": {
       "start": "2026-04-03",
-      "end": "2026-10-12"
+      "end": "2026-10-13"
     },
     "competitor_intel_updated": null
   },
