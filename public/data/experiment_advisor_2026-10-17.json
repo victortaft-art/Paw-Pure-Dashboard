@@ -1,0 +1,33 @@
+{
+  "_generated": "2026-10-17",
+  "_input_window": {
+    "cerebro": "2026-04-28",
+    "rank_history": "2026-04-29",
+    "kpi_window": {
+      "start": "2026-04-03",
+      "end": "2026-10-17"
+    },
+    "competitor_intel_updated": null
+  },
+  "summary": {
+    "to_deprecate": 0,
+    "to_update": 0,
+    "proposed_new": 1
+  },
+  "findings": {
+    "to_deprecate": [],
+    "to_update": [],
+    "proposed_new": [
+      {
+        "kind": "proposed_new",
+        "title": "Bid up on 'cat drinking fountain' \u2014 gained 104 rank positions in 30d",
+        "listing": "fountain",
+        "rationale": "Organic rank improved from #280 \u2192 #176 (\u0394 +104). SV 5,519. Algo signal: bid here amplifies a winning trend (per Apr 29 lessons).",
+        "suggested_match": "phrase",
+        "suggested_bid": 0.6,
+        "metric": "attributed_orders_7d",
+        "target": 1
+      }
+    ]
+  }
+}
